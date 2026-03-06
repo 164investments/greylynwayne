@@ -59,10 +59,6 @@ export const metadata: Metadata = {
       "Portland's award-winning home staging & interior design company. Free consultation — (971) 930-0220.",
     images: ["/images/og-image.png"],
   },
-  icons: {
-    icon: "/images/favicon.png",
-    apple: "/images/favicon.png",
-  },
   alternates: {
     canonical: "https://www.greylynwayne.com",
   },
