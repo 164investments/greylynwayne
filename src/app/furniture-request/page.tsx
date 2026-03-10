@@ -3,12 +3,16 @@
 import type { FormEvent } from "react";
 import { useState } from "react";
 import Link from "next/link";
+import { trackFormSubmit } from "@/lib/tracking";
 
 export default function FurnitureRequestPage() {
   const [submitted, setSubmitted] = useState(false);
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    const form = e.currentTarget;
+    const interest = (form.elements.namedItem("interest") as HTMLSelectElement)?.value;
+    trackFormSubmit("furniture_request", interest || undefined);
     setSubmitted(true);
   }
 

@@ -3,6 +3,7 @@
 import type { FormEvent } from "react";
 import { useState } from "react";
 import Link from "next/link";
+import { trackFormSubmit } from "@/lib/tracking";
 
 const serviceOptions = [
   "Home Staging — Vacant Property",
@@ -21,6 +22,9 @@ export default function ContactPage() {
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    const form = e.currentTarget;
+    const service = (form.elements.namedItem("service") as HTMLSelectElement)?.value;
+    trackFormSubmit("contact", service || undefined);
     setSubmitted(true);
   }
 

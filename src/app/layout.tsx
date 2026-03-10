@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import { LocalBusinessJsonLd } from "@/components/JsonLd";
 import { GoogleTagManager, GoogleTagManagerNoScript } from "@/components/GoogleTagManager";
+import SiteTracker from "@/components/SiteTracker";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -83,6 +84,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <StickyMobileCTA />
+        <SiteTracker />
       </body>
     </html>
   );
