@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { cities, getCityBySlug } from "@/data/service-areas";
 import { BreadcrumbJsonLd, FAQJsonLd } from "@/components/JsonLd";
-import { ProofStrip } from "@/components/Proof";
+import SplitHero from "@/components/SplitHero";
 
 export function generateStaticParams() {
   return cities.map((city) => ({ city: city.slug }));
@@ -141,54 +140,19 @@ export default async function CityPage({
       <CityServiceJsonLd city={city} />
       <FAQJsonLd faqs={faqs} />
 
-      {/* Hero */}
-      <section className="pt-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 lg:py-24">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            <div className="order-2 lg:order-1">
-            <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
-              {city.region}
-            </p>
-            <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl text-charcoal mb-6">
-              Home Staging & Interior Design in {city.name},{" "}
-              {city.stateShort}
-            </h1>
-            <p className="text-charcoal-light text-lg leading-relaxed">
-              {city.description}
-            </p>
-            <ProofStrip tone="light" className="mt-6" />
-            <div className="mt-8 flex flex-col sm:flex-row gap-4">
-              <button
-                type="button"
-                data-open-chat
-                className="inline-flex items-center justify-center gap-2 bg-teal text-white px-8 py-4 text-sm tracking-wider uppercase hover:bg-teal-dark transition-colors font-medium text-center"
-              >
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-2.685.16 4.486 4.486 0 001.276-2.876c.026-.198-.07-.392-.246-.487A8.225 8.225 0 013 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
-                </svg>
-                Text Us
-              </button>
-              <a
-                href="tel:9719300220"
-                className="inline-flex items-center justify-center gap-2 border-2 border-teal text-teal px-8 py-4 text-sm tracking-wider uppercase hover:bg-teal hover:text-white transition-colors font-medium text-center"
-              >
-                Call (971) 930-0220
-              </a>
-            </div>
-            </div>
-            <div className="relative order-1 lg:order-2 aspect-[4/3] lg:aspect-[5/4] overflow-hidden">
-              <Image
-                src="/images/hero-home.webp"
-                alt={`Professionally staged living room by Greylyn Wayne — serving ${city.name}, ${city.stateShort}`}
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero — split editorial */}
+      <SplitHero
+        eyebrow={city.region}
+        title={
+          <>
+            Home Staging & Interior Design in {city.name}, {city.stateShort}
+          </>
+        }
+        subtitle={city.description}
+        imageSrc="/images/hero-home.webp"
+        imageAlt={`Professionally staged living room by Greylyn Wayne — serving ${city.name}, ${city.stateShort}`}
+        titleClassName="text-3xl md:text-4xl lg:text-5xl"
+      />
 
       {/* Why staging in this city */}
       <section className="py-24 lg:py-32 bg-warm">

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FAQJsonLd } from "@/components/JsonLd";
-import { ProofStrip } from "@/components/Proof";
+import SplitHero from "@/components/SplitHero";
 
 const services = [
   {
@@ -87,53 +87,19 @@ export default function Home() {
     <>
       <FAQJsonLd faqs={homeFaqs} />
 
-      {/* Hero */}
-      <section className="relative min-h-screen flex items-center">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/hero-interior.webp"
-            alt="Luxury interior design by Greylyn Wayne — Alla Famiglia Street of Dreams dining room in Portland, Oregon"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />
-        </div>
-        <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 py-32">
-          <div className="max-w-2xl">
-            <p className="text-white/90 text-sm tracking-[0.3em] uppercase mb-6">
-              Portland, Oregon &middot; Est. 2015
-            </p>
-            <h1 className="font-[family-name:var(--font-playfair)] text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-6">
-              Home Staging &<br />
-              Interior Design
-            </h1>
-            <p className="text-gray-300 text-lg md:text-xl leading-relaxed mb-4 max-w-lg">
-              We transform spaces into stunning showcases that sell faster, live
-              better, and feel like home.
-            </p>
-            <ProofStrip tone="dark" className="mb-10" />
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button
-                type="button"
-                data-open-chat
-                className="inline-flex items-center justify-center gap-2 bg-teal text-white px-8 py-4 text-sm tracking-wider uppercase hover:bg-teal-dark transition-colors duration-200 text-center font-medium"
-              >
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-2.685.16 4.486 4.486 0 001.276-2.876c.026-.198-.07-.392-.246-.487A8.225 8.225 0 013 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
-                </svg>
-                Text Us
-              </button>
-              <a
-                href="tel:9719300220"
-                className="inline-flex items-center justify-center gap-2 border border-white/40 text-white px-8 py-4 text-sm tracking-wider uppercase hover:bg-white/10 transition-colors duration-200 text-center"
-              >
-                Call (971) 930-0220
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero — split editorial */}
+      <SplitHero
+        eyebrow="Portland, Oregon · Est. 2015"
+        title={
+          <>
+            Home Staging &<br />
+            Interior Design
+          </>
+        }
+        subtitle="We transform spaces into stunning showcases that sell faster, live better, and feel like home."
+        imageSrc="/images/hero-interior.webp"
+        imageAlt="Luxury interior design by Greylyn Wayne — Alla Famiglia Street of Dreams dining room in Portland, Oregon"
+      />
 
       {/* Trust bar */}
       <section className="py-6 bg-warm border-b border-gray-100">

@@ -6,7 +6,7 @@ import {
   ServiceJsonLd,
   FAQJsonLd,
 } from "@/components/JsonLd";
-import { ProofStrip } from "@/components/Proof";
+import SplitHero from "@/components/SplitHero";
 
 export const metadata: Metadata = {
   title: "Home Staging Portland, Oregon | Sell Faster & For Top Dollar",
@@ -113,52 +113,14 @@ export default function HomeStagingPage() {
       />
       <FAQJsonLd faqs={stagingFaqs} />
 
-      {/* Hero */}
-      <section className="relative pt-20">
-        <div className="relative h-[60vh] min-h-[400px]">
-          <Image
-            src="/images/hero-staging.webp"
-            alt="Professionally staged home kitchen by Greylyn Wayne in Portland, Oregon — bright white kitchen with open shelving, natural wood accents, and gold fixtures"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />
-          <div className="absolute inset-0 flex items-center">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <p className="text-white/90 text-sm tracking-[0.3em] uppercase mb-4">
-                Home Staging &middot; Portland, Oregon
-              </p>
-              <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl text-white max-w-2xl mb-5">
-                Sell Your Home Faster & For More
-              </h1>
-              <p className="text-white/90 text-lg max-w-xl mb-5">
-                Portland sellers trust us to stage homes that move — one recent
-                listing sold in 5 days above asking.
-              </p>
-              <ProofStrip tone="dark" className="mb-8" />
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button
-                  type="button"
-                  data-open-chat
-                  className="inline-flex items-center justify-center gap-2 bg-teal text-white px-8 py-4 text-sm tracking-wider uppercase hover:bg-teal-dark transition-colors font-medium text-center"
-                >
-                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-2.685.16 4.486 4.486 0 001.276-2.876c.026-.198-.07-.392-.246-.487A8.225 8.225 0 013 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
-                  </svg>
-                  Text Us
-                </button>
-                <a
-                  href="tel:9719300220"
-                  className="inline-flex items-center justify-center gap-2 border border-white/40 text-white px-8 py-4 text-sm tracking-wider uppercase hover:bg-white/10 transition-colors text-center"
-                >
-                  Call (971) 930-0220
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero — split editorial */}
+      <SplitHero
+        eyebrow="Home Staging · Portland, Oregon"
+        title="Sell Your Home Faster & For More"
+        subtitle="Portland sellers trust us to stage homes that move — one recent listing sold in 5 days above asking."
+        imageSrc="/images/hero-staging.webp"
+        imageAlt="Professionally staged home kitchen by Greylyn Wayne in Portland, Oregon — bright white kitchen with open shelving, natural wood accents, and gold fixtures"
+      />
 
       {/* Intro */}
       <section className="py-24 lg:py-32">
