@@ -112,10 +112,12 @@ export function LocalBusinessJsonLd() {
         },
       ],
     },
+    // Live Google Business Profile numbers (pulled 2026-06-15). Keep in sync
+    // with the GBP rating/count — these are the legitimate, verifiable source.
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "50",
+      ratingValue: "4.9",
+      reviewCount: "163",
       bestRating: "5",
       worstRating: "1",
     },

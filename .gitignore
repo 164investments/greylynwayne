@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Large house-details PDF — re-host a web-optimized version before committing
+/public/alla-famiglia-house-details.pdf

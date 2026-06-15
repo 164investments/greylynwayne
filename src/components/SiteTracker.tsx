@@ -30,6 +30,15 @@ export default function SiteTracker() {
   // Delegated click tracking for links across the entire site
   useEffect(() => {
     function handleClick(e: MouseEvent) {
+      // "Text Us" CTAs anywhere on the page open the chat-capture widget.
+      const chatTrigger = (e.target as Element).closest("[data-open-chat]");
+      if (chatTrigger) {
+        e.preventDefault();
+        window.dispatchEvent(new Event("gw:open-chat"));
+        trackEvent("text_cta_click", { cta_location: getLocation(chatTrigger) });
+        return;
+      }
+
       const link = (e.target as Element).closest("a");
       if (!link) return;
       const href = link.getAttribute("href") || "";

@@ -3,9 +3,9 @@ import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Careers | Home Staging & Interior Design Jobs",
+  title: "Home Staging & Design Jobs in Portland, OR | Careers",
   description:
-    "Join the Greylyn Wayne team in Portland, Oregon. We're hiring home staging assistants, moving specialists, and design team members. Apply today!",
+    "Now hiring in Portland, Oregon: home staging assistants, moving specialists, and design team members. Join Greylyn Wayne — see open positions and apply today.",
   alternates: { canonical: "https://www.greylynwayne.com/careers" },
 };
 

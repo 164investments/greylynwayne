@@ -19,13 +19,48 @@ const serviceOptions = [
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
-    const service = (form.elements.namedItem("service") as HTMLSelectElement)?.value;
-    trackFormSubmit("contact", service || undefined);
-    setSubmitted(true);
+    const get = (name: string) =>
+      (form.elements.namedItem(name) as HTMLInputElement | null)?.value?.trim() || "";
+    const service = get("service");
+
+    setLoading(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          formType: "contact",
+          firstName: get("firstName"),
+          lastName: get("lastName"),
+          email: get("email"),
+          phone: get("phone"),
+          service,
+          message: get("message"),
+          company: get("company"), // honeypot
+        }),
+      });
+      const data = await res.json().catch(() => ({ ok: false }));
+      if (!res.ok || !data.ok) {
+        throw new Error(data.error || "Something went wrong. Please try again.");
+      }
+      trackFormSubmit("contact", service || undefined);
+      setSubmitted(true);
+    } catch (err) {
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Something went wrong. Please call us at (971) 930-0220.",
+      );
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -97,6 +132,15 @@ export default function ContactPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {/* Honeypot — hidden from real users, catches bots */}
+                  <input
+                    type="text"
+                    name="company"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    aria-hidden="true"
+                    className="hidden"
+                  />
                   {/* Trust signal above form */}
                   <div className="bg-warm p-4 flex items-center gap-3 text-sm text-charcoal-light mb-2">
                     <svg
@@ -225,11 +269,22 @@ export default function ContactPage() {
                       className="w-full border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:border-teal transition-colors resize-vertical placeholder:text-gray-400"
                     />
                   </div>
+                  {error && (
+                    <p
+                      role="alert"
+                      className="text-sm text-red-700 bg-red-50 border border-red-200 px-4 py-3"
+                    >
+                      {error}
+                    </p>
+                  )}
                   <button
                     type="submit"
-                    className="bg-teal text-white px-10 py-4 text-sm tracking-wider uppercase hover:bg-teal-dark transition-colors w-full font-medium"
+                    disabled={loading}
+                    className="bg-teal text-white px-10 py-4 text-sm tracking-wider uppercase hover:bg-teal-dark transition-colors w-full font-medium disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    Send Message &amp; Get Your Free Consultation
+                    {loading
+                      ? "Sending…"
+                      : "Send Message & Get Your Free Consultation"}
                   </button>
                   <p className="text-xs text-charcoal-light text-center">
                     We typically respond within 24 hours on business days.

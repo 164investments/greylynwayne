@@ -7,13 +7,47 @@ import { trackFormSubmit } from "@/lib/tracking";
 
 export default function FurnitureRequestPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
-    const interest = (form.elements.namedItem("interest") as HTMLSelectElement)?.value;
-    trackFormSubmit("furniture_request", interest || undefined);
-    setSubmitted(true);
+    const get = (name: string) =>
+      (form.elements.namedItem(name) as HTMLInputElement | null)?.value?.trim() || "";
+    const interest = get("interest");
+
+    setLoading(true);
+    setError(null);
+    try {
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          formType: "furniture_request",
+          name: get("name"),
+          email: get("email"),
+          phone: get("phone"),
+          interest,
+          details: get("details"),
+          company: get("company"), // honeypot
+        }),
+      });
+      const data = await res.json().catch(() => ({ ok: false }));
+      if (!res.ok || !data.ok) {
+        throw new Error(data.error || "Something went wrong. Please try again.");
+      }
+      trackFormSubmit("furniture_request", interest || undefined);
+      setSubmitted(true);
+    } catch (err) {
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Something went wrong. Please call us at (971) 930-0220.",
+      );
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -58,6 +92,15 @@ export default function FurnitureRequestPage() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Honeypot — hidden from real users, catches bots */}
+              <input
+                type="text"
+                name="company"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                className="hidden"
+              />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm text-charcoal-light mb-2">
@@ -126,11 +169,20 @@ export default function FurnitureRequestPage() {
                   className="w-full border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:border-teal transition-colors resize-vertical placeholder:text-gray-400"
                 />
               </div>
+              {error && (
+                <p
+                  role="alert"
+                  className="text-sm text-red-700 bg-red-50 border border-red-200 px-4 py-3"
+                >
+                  {error}
+                </p>
+              )}
               <button
                 type="submit"
-                className="bg-teal text-white px-10 py-4 text-sm tracking-wider uppercase hover:bg-teal-dark transition-colors w-full font-medium"
+                disabled={loading}
+                className="bg-teal text-white px-10 py-4 text-sm tracking-wider uppercase hover:bg-teal-dark transition-colors w-full font-medium disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Submit Furniture Inquiry
+                {loading ? "Sending…" : "Submit Furniture Inquiry"}
               </button>
             </form>
           )}

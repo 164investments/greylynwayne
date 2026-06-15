@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
+import ChatWidget from "@/components/ChatWidget";
 import { LocalBusinessJsonLd } from "@/components/JsonLd";
 import { GoogleTagManager, GoogleTagManagerNoScript } from "@/components/GoogleTagManager";
 import SiteTracker from "@/components/SiteTracker";
@@ -64,9 +65,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.greylynwayne.com",
   },
-  verification: {
-    google: "ADD_GOOGLE_VERIFICATION_CODE",
-  },
+  // No `verification` block: greylynwayne.com is already verified in Google
+  // Search Console via DNS (sc-domain property), so a meta tag is unnecessary.
 };
 
 export default function RootLayout({
@@ -84,6 +84,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <StickyMobileCTA />
+        <ChatWidget />
         <SiteTracker />
       </body>
     </html>
