@@ -4,15 +4,16 @@
 
 ## Stack
 - Next.js 16.1.6 / React 19 / TailwindCSS 4 / TypeScript
-- Fully static site — no database, no API routes, no server-side processing
-- Vercel (auto-deploy on push to main)
-- Repo: cascadelogic/greylynwayne
+- Mostly static, prerendered — plus ONE serverless route handler (`src/app/api/lead/route.ts`, emails form/chat leads via Resend) and `src/middleware.ts` (noindex on the *.vercel.app host). No database.
+- Repo: **164investments/greylynwayne** (GitHub)
 
 ## Deploy
-Push to `main` triggers auto-deploy. No manual Vercel CLI needed.
+⚠️ **GitHub→Vercel auto-deploy is BROKEN** (last auto-deploy 2026-03-10). Pushing to `main` lands on GitHub but does NOT build on Vercel. **Deploy manually:**
 ```bash
-npm run build  # always verify before pushing
+npm run build               # always verify first
+vercel --prod --yes         # from ~/greylynwayne; ships WORKING TREE, resolves under the simplyvrm Vercel scope
 ```
+Note: `vercel --prod` also aliases greylynwayne.com (already added to the project) — harmless while DNS still points to Wix.
 
 ## Environment Variables
 - `NEXT_PUBLIC_GTM_ID` — `GTM-T9FTK8JN` (Google Tag Manager, set in Vercel)
@@ -36,12 +37,12 @@ npm run build  # always verify before pushing
 - City data: `src/data/service-areas.ts`
 - JSON-LD: `src/components/JsonLd.tsx` (LocalBusiness, Breadcrumb, FAQ, Service schemas)
 - Sitemap: `src/app/sitemap.ts` (auto-generates all 51 URLs)
-- `next.config.ts` — empty (no redirects, headers, or custom config)
+- `next.config.ts` — full 301 redirect map (old Wix slugs → new slugs) for the migration.
 
-## Contact Form
-- **Component**: `src/app/contact/page.tsx` (client component)
-- **Important**: Client-side only — form data is NOT sent anywhere (no backend/email). `handleSubmit` fires tracking events (`trackFormSubmit`) and shows a success message.
-- **Fields**: firstName, lastName, email, phone, service (9 options), message
+## Lead capture
+- **Endpoint**: `src/app/api/lead/route.ts` — emails Contact, Furniture Request, AND chat leads to design@greylynwayne.com via **Resend** (reply-to = customer; honeypot `company` field). Env: `RESEND_API_KEY`, `LEAD_FROM_EMAIL`, `LEAD_TO_EMAIL` (set in Vercel; GW's own Resend account, sends from `leads@greylynwayne.com`).
+- **Forms**: `src/app/contact/page.tsx` + `src/app/furniture-request/page.tsx` POST JSON to `/api/lead` (loading/error states).
+- **CTAs are Text-first** (most leads are call/text): "Text Us" (primary) opens `ChatWidget.tsx` (captures name+phone → /api/lead → SMS handoff); Call is secondary + in the header. "Text Us" buttons carry `data-open-chat` → SiteTracker dispatches `gw:open-chat`.
 
 ## Brand
 - Colors: teal #6b8f90, warm #faf8f5, cream #f0ebe4, charcoal #2a2a2a

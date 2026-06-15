@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import {
+  RatingStars,
+  RATING,
+  REVIEW_COUNT,
+  GOOGLE_REVIEWS_URL,
+} from "@/components/Proof";
 
 export const metadata: Metadata = {
   title: "Client Reviews | Home Staging & Interior Design Testimonials",
@@ -107,10 +113,31 @@ export default function ReviewsPage() {
             <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl text-charcoal mb-6">
               Client Reviews
             </h1>
-            <p className="text-charcoal-light text-lg max-w-2xl mx-auto">
+            <p className="text-charcoal-light text-lg max-w-2xl mx-auto mb-10">
               Don&apos;t just take our word for it — hear from homeowners, real
               estate agents, and builders who&apos;ve trusted Greylyn Wayne.
             </p>
+            <div className="inline-flex flex-col items-center gap-3">
+              <div className="flex items-center gap-3">
+                <span className="text-amber-400">
+                  <RatingStars className="h-6 w-6" />
+                </span>
+                <span className="font-[family-name:var(--font-playfair)] text-3xl text-charcoal">
+                  {RATING}
+                </span>
+                <span className="text-charcoal-light text-sm">
+                  from {REVIEW_COUNT} Google reviews
+                </span>
+              </div>
+              <Link
+                href={GOOGLE_REVIEWS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-teal text-sm tracking-wider uppercase font-medium hover:text-teal-dark transition-colors"
+              >
+                Read all {REVIEW_COUNT} on Google &rarr;
+              </Link>
+            </div>
           </div>
         </div>
       </section>

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { cities, getCityBySlug } from "@/data/service-areas";
 import { BreadcrumbJsonLd, FAQJsonLd } from "@/components/JsonLd";
+import { ProofStrip } from "@/components/Proof";
 
 export function generateStaticParams() {
   return cities.map((city) => ({ city: city.slug }));
@@ -141,8 +143,9 @@ export default async function CityPage({
 
       {/* Hero */}
       <section className="pt-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24 lg:py-32">
-          <div className="max-w-3xl">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 lg:py-24">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div className="order-2 lg:order-1">
             <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
               {city.region}
             </p>
@@ -153,7 +156,8 @@ export default async function CityPage({
             <p className="text-charcoal-light text-lg leading-relaxed">
               {city.description}
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+            <ProofStrip tone="light" className="mt-6" />
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <button
                 type="button"
                 data-open-chat
@@ -170,6 +174,17 @@ export default async function CityPage({
               >
                 Call (971) 930-0220
               </a>
+            </div>
+            </div>
+            <div className="relative order-1 lg:order-2 aspect-[4/3] lg:aspect-[5/4] overflow-hidden">
+              <Image
+                src="/images/hero-home.webp"
+                alt={`Professionally staged living room by Greylyn Wayne — serving ${city.name}, ${city.stateShort}`}
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
           </div>
         </div>
@@ -193,18 +208,18 @@ export default async function CityPage({
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-6 bg-white">
                   <p className="font-[family-name:var(--font-playfair)] text-3xl text-teal mb-1">
-                    73%
+                    4.9&#9733;
                   </p>
                   <p className="text-charcoal-light text-sm">
-                    of buyers can better visualize a staged home as their own
+                    rated by 163 Portland-area clients on Google
                   </p>
                 </div>
                 <div className="text-center p-6 bg-white">
                   <p className="font-[family-name:var(--font-playfair)] text-3xl text-teal mb-1">
-                    25%
+                    4x
                   </p>
                   <p className="text-charcoal-light text-sm">
-                    faster time to sale for staged properties
+                    NW Natural Street of Dreams featured designer
                   </p>
                 </div>
               </div>

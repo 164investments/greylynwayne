@@ -6,11 +6,12 @@ import {
   ServiceJsonLd,
   FAQJsonLd,
 } from "@/components/JsonLd";
+import { ProofStrip } from "@/components/Proof";
 
 export const metadata: Metadata = {
   title: "Home Staging Portland, Oregon | Sell Faster & For Top Dollar",
   description:
-    "Professional home staging in Portland, OR by Greylyn Wayne. Staged homes sell 73% faster and for up to 10% more. Vacant, occupied, luxury & model home staging. Free consultation — (971) 930-0220.",
+    "Professional home staging in Portland, OR by Greylyn Wayne — 4.9★ from 163 clients and a 4x Street of Dreams designer. Vacant, occupied, luxury & model home staging. Free consultation — (971) 930-0220.",
   alternates: { canonical: "https://www.greylynwayne.com/home-staging" },
   openGraph: {
     title: "Home Staging Portland, Oregon | Greylyn Wayne",
@@ -23,12 +24,12 @@ export const metadata: Metadata = {
 
 const benefits = [
   {
-    title: "Sell 73% Faster",
+    title: "Sell Faster",
     description:
       "Staged homes spend significantly less time on the market compared to unstaged properties, reducing your carrying costs and getting you to closing sooner.",
   },
   {
-    title: "Sell for Up to 10% More",
+    title: "Sell for More",
     description:
       "Professional staging helps buyers see your home's full potential, often resulting in offers above the asking price. The ROI on staging consistently outperforms the investment.",
   },
@@ -122,15 +123,20 @@ export default function HomeStagingPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-charcoal/40" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />
           <div className="absolute inset-0 flex items-center">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <p className="text-teal-light text-sm tracking-[0.3em] uppercase mb-4">
+              <p className="text-white/90 text-sm tracking-[0.3em] uppercase mb-4">
                 Home Staging &middot; Portland, Oregon
               </p>
-              <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl text-white max-w-2xl mb-6">
+              <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl text-white max-w-2xl mb-5">
                 Sell Your Home Faster & For More
               </h1>
+              <p className="text-white/90 text-lg max-w-xl mb-5">
+                Portland sellers trust us to stage homes that move — one recent
+                listing sold in 5 days above asking.
+              </p>
+              <ProofStrip tone="dark" className="mb-8" />
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
                   type="button"

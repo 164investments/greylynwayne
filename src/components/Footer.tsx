@@ -68,11 +68,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Image
-              src="/images/logo-offwhite.png"
-              alt="Greylyn Wayne"
-              width={180}
-              height={112}
-              className="h-16 w-auto mb-6 brightness-200"
+              src="/images/logo-teal.png"
+              alt="Greylyn Wayne Interior Design & Staging"
+              width={200}
+              height={50}
+              className="h-12 w-auto mb-6"
             />
             <p className="text-gray-400 text-sm leading-relaxed">
               Portland&apos;s trusted home staging and interior design experts.

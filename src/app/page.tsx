@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FAQJsonLd } from "@/components/JsonLd";
+import { ProofStrip } from "@/components/Proof";
 
 const services = [
   {
@@ -33,7 +34,7 @@ const stats = [
   { value: "10+", label: "Years in Business" },
   { value: "4x", label: "Street of Dreams Designer" },
   { value: "500+", label: "Homes Transformed" },
-  { value: "5.0", label: "Star Rating" },
+  { value: "4.9★", label: "163 Google Reviews" },
 ];
 
 const testimonials = [
@@ -96,11 +97,11 @@ export default function Home() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-charcoal/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />
         </div>
         <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 py-32">
           <div className="max-w-2xl">
-            <p className="text-teal-light text-sm tracking-[0.3em] uppercase mb-6">
+            <p className="text-white/90 text-sm tracking-[0.3em] uppercase mb-6">
               Portland, Oregon &middot; Est. 2015
             </p>
             <h1 className="font-[family-name:var(--font-playfair)] text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-6">
@@ -111,9 +112,7 @@ export default function Home() {
               We transform spaces into stunning showcases that sell faster, live
               better, and feel like home.
             </p>
-            <p className="text-teal-light text-sm mb-10">
-              4x Street of Dreams Featured Designer &middot; Award-Winning
-            </p>
+            <ProofStrip tone="dark" className="mb-10" />
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 type="button"

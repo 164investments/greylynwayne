@@ -6,6 +6,7 @@ import {
   ServiceJsonLd,
   FAQJsonLd,
 } from "@/components/JsonLd";
+import { ProofStrip } from "@/components/Proof";
 
 export const metadata: Metadata = {
   title: "Interior Designer Portland, Oregon | Full-Service Home Design",
@@ -116,15 +117,20 @@ export default function InteriorDesignPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-charcoal/45" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />
           <div className="absolute inset-0 flex items-center">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <p className="text-teal-light text-sm tracking-[0.3em] uppercase mb-4">
+              <p className="text-white/90 text-sm tracking-[0.3em] uppercase mb-4">
                 Interior Design &middot; Portland, Oregon
               </p>
-              <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl text-white max-w-2xl mb-6">
+              <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl text-white max-w-2xl mb-5">
                 Spaces That Feel Beautiful & Livable
               </h1>
+              <p className="text-white/90 text-lg max-w-xl mb-5">
+                Design you&apos;ll love coming home to — by Portland&apos;s 4x
+                Street of Dreams team.
+              </p>
+              <ProofStrip tone="dark" className="mb-8" />
               <div className="flex flex-col sm:flex-row gap-4">
                 <button
                   type="button"

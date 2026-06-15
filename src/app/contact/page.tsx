@@ -4,6 +4,7 @@ import type { FormEvent } from "react";
 import { useState } from "react";
 import Link from "next/link";
 import { trackFormSubmit } from "@/lib/tracking";
+import { RatingBadge } from "@/components/Proof";
 
 const serviceOptions = [
   "Home Staging — Vacant Property",
@@ -79,8 +80,29 @@ export default function ContactPage() {
               Tell us about your space and we&apos;ll get back to you within 24
               hours with next steps.
             </p>
-            <p className="text-teal text-sm font-medium">
+            <p className="text-teal text-sm font-medium mb-8">
               Free &middot; No obligation &middot; Same-week availability
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <button
+                type="button"
+                data-open-chat
+                className="inline-flex items-center justify-center gap-2 bg-teal text-white px-8 py-4 text-sm tracking-wider uppercase hover:bg-teal-dark transition-colors font-medium"
+              >
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-2.685.16 4.486 4.486 0 001.276-2.876c.026-.198-.07-.392-.246-.487A8.225 8.225 0 013 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                </svg>
+                Text Us
+              </button>
+              <a
+                href="tel:9719300220"
+                className="inline-flex items-center justify-center gap-2 border border-teal text-teal px-8 py-4 text-sm tracking-wider uppercase hover:bg-teal hover:text-white transition-colors font-medium"
+              >
+                Call (971) 930-0220
+              </a>
+            </div>
+            <p className="text-charcoal-light text-sm mt-6">
+              Prefer the form below? It reaches us just as fast.
             </p>
           </div>
         </div>
@@ -258,14 +280,14 @@ export default function ContactPage() {
                       htmlFor="message"
                       className="block text-sm text-charcoal-light mb-2"
                     >
-                      Tell us about your project *
+                      Tell us about your project{" "}
+                      <span className="text-charcoal-light/60">(optional)</span>
                     </label>
                     <textarea
                       id="message"
                       name="message"
                       rows={5}
-                      required
-                      placeholder="Tell us about your home, your goals, and your timeline. The more detail you share, the more helpful our response will be."
+                      placeholder="Optional — a quick note on your home, goals, or timeline helps us reply faster. Or just say hi and we'll take it from there."
                       className="w-full border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:border-teal transition-colors resize-vertical placeholder:text-gray-400"
                     />
                   </div>
@@ -286,9 +308,12 @@ export default function ContactPage() {
                       ? "Sending…"
                       : "Send Message & Get Your Free Consultation"}
                   </button>
-                  <p className="text-xs text-charcoal-light text-center">
-                    We typically respond within 24 hours on business days.
-                  </p>
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-x-3 gap-y-1 text-center">
+                    <RatingBadge />
+                    <span className="text-xs text-charcoal-light">
+                      We typically respond within 24 hours.
+                    </span>
+                  </div>
                 </form>
               )}
             </div>

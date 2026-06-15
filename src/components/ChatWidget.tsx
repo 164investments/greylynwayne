@@ -173,7 +173,10 @@ export default function ChatWidget() {
         onClick={toggle}
         aria-label={open ? "Close chat" : "Text us"}
         aria-expanded={open}
-        className="flex items-center gap-2 bg-teal text-white pl-4 pr-5 py-3.5 rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.25)] hover:bg-teal-dark transition-colors"
+        // Desktop-only floating handle. On mobile the sticky bottom bar is the
+        // single persistent Text action — avoids two stacked "Text Us" controls.
+        // The panel still opens on mobile via any [data-open-chat] CTA.
+        className={`${open ? "flex" : "hidden lg:flex"} items-center gap-2 bg-teal text-white pl-4 pr-5 py-3.5 rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.25)] hover:bg-teal-dark transition-colors`}
       >
         <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-2.685.16 4.486 4.486 0 001.276-2.876c.026-.198-.07-.392-.246-.487A8.225 8.225 0 013 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
