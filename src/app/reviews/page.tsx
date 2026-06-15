@@ -142,6 +142,27 @@ export default function ReviewsPage() {
         </div>
       </section>
 
+      {/* Featured testimonial — real, named broker (from the live site) */}
+      <section className="pb-4">
+        <div className="mx-auto max-w-3xl px-6 lg:px-8">
+          <figure className="bg-warm border-l-4 border-teal p-8 lg:p-12">
+            <Stars count={5} />
+            <blockquote className="font-[family-name:var(--font-playfair)] text-xl md:text-2xl text-charcoal leading-relaxed mb-6">
+              &ldquo;I&apos;ve used many staging companies in the past, but since
+              I started using Jody, I have not gone back to the other
+              companies.&rdquo;
+            </blockquote>
+            <figcaption className="text-sm">
+              <span className="text-charcoal font-medium">Liz Carpenter</span>
+              <span className="text-charcoal-light">
+                {" "}
+                — Principal Broker, West Hills RE/MAX
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
       {/* Reviews grid */}
       <section className="pb-24 lg:pb-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

@@ -13,7 +13,15 @@ type NavItem = {
 const navigation: NavItem[] = [
   { name: "Home Staging", href: "/home-staging" },
   { name: "Interior Design", href: "/interior-design" },
-  { name: "Portfolio", href: "/portfolio" },
+  {
+    name: "Portfolio",
+    href: "/portfolio",
+    children: [
+      { name: "Design Portfolio", href: "/portfolio" },
+      { name: "Staged Homes", href: "/staged-homes" },
+      { name: "Street of Dreams", href: "/street-of-dreams" },
+    ],
+  },
   { name: "Reviews", href: "/reviews" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },

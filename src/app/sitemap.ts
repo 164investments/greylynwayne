@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/street-of-dreams`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/alla-famiglia`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/portfolio`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/staged-homes`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/before-and-after`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/reviews`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },

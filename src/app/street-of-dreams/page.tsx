@@ -21,27 +21,31 @@ export const metadata: Metadata = {
 const homes = [
   {
     year: "2025",
-    title: "Street of Dreams 2025",
+    title: "Alla Famiglia",
+    location: "Lake Oswego, OR",
     description:
-      "Our latest Street of Dreams showcase, continuing a tradition of pushing the boundaries of luxury residential design in the Pacific Northwest.",
+      'Meaning "for the family," this European-style estate on 1.6 acres was designed for multi-generational living. At 8,725 square feet — the largest home in recent Street of Dreams history — it houses four generations under one roof, with artisanal finishes and timeless materials throughout. Built by Red Hills Land and Design.',
   },
   {
     year: "2024",
-    title: "Street of Dreams 2024",
+    title: "Vista",
+    location: "Northwest Hills, Portland",
     description:
-      "A stunning contemporary residence featuring our signature blend of warm textures, curated furnishings, and artful details throughout every room.",
+      "A full-scale remodel of a historic home in Portland's Northwest Hills, honoring the property's original character with custom finishes, high-end appliances, and artisanal details throughout.",
   },
   {
     year: "2021",
-    title: "Alla Famiglia",
+    title: "Ohana",
+    location: "Happy Valley, OR",
     description:
-      'Meaning "For the Family" in Italian, this European-style home was designed for multi-generational living. At 8,725 square feet, it was the largest home in recent Street of Dreams history.',
+      "A 3,800-square-foot custom home with four bedrooms and four baths. Boho- and tropical-inspired, blending contemporary and mid-century modern elements for multi-generational living.",
   },
   {
     year: "2019",
-    title: "People\'s & Professional\'s Choice",
+    title: "Bespoke",
+    location: "Portland, OR",
     description:
-      "Our debut Street of Dreams home earned the highest honors — voted both People's and Professional's Best Interior Design at the NW Natural Street of Dreams.",
+      "Our debut Street of Dreams home — a 4,600-square-foot modern farmhouse with Tuscan influences, featuring barrel doors, exposed beams, and a distinctive 3,300-pound quartz kitchen island. Voted both People's and Professional's Best Interior Design.",
   },
 ];
 
@@ -147,9 +151,12 @@ export default function StreetOfDreamsPage() {
                   {home.year}
                 </div>
                 <div>
-                  <h3 className="font-[family-name:var(--font-playfair)] text-2xl mb-3">
+                  <h3 className="font-[family-name:var(--font-playfair)] text-2xl mb-1">
                     {home.title}
                   </h3>
+                  <p className="text-teal text-xs tracking-wider uppercase mb-3">
+                    {home.location}
+                  </p>
                   <p className="text-charcoal-light leading-relaxed">
                     {home.description}
                   </p>

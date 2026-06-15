@@ -1,0 +1,51 @@
+[
+  {
+    "ref": "26-NS-074",
+    "street": "2828 NW Ariel Ter",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97210",
+    "status": "renting",
+    "installed_on": "2026-04-13",
+    "signed_total_cents": 315500,
+    "zillow": "https://www.zillow.com/homes/2828-NW-Ariel-Ter-Portland-OR-97210_rb/",
+    "redfin": "https://www.redfin.com/?q=2828%20NW%20Ariel%20Ter%2C%20Portland%2C%20OR%2097210",
+    "redfin_verified": false,
+    "photo": null,
+    "beds_baths": null
+  },
+  {
+    "ref": "26-NS-073",
+    "street": "10831 SW Creightonwood Pl",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97219",
+    "status": "renting",
+    "installed_on": "2026-04-10",
+    "signed_total_cents": 390000,
+    "zillow": "https://www.zillow.com/homes/10831-SW-Creightonwood-Pl-Portland-OR-97219_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/10831-SW-Creightonwood-Pl-97219/home/25851937",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-073.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 2621
+    }
+  },
+  {
+    "ref": "26-NS-072",
+    "street": "12600 SW Crescent St #206",
+    "city": "Beaverton",
+    "state": "OR",
+    "zip": "97005",
+    "status": "renting",
+    "installed_on": "2026-04-09",
+    "signed_total_cents": 320500,
+    "zillow": "https://www.zillow.com/homes/12600-SW-Crescent-St-206-Beaverton-OR-97005_rb/",
+    "redfin": "https://www.redfin.com/OR/Beaverton/12600-SW-Crescent-St-97005/home/186143950",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-072.jpg",
+    "beds_baths": null
+  }
+]

@@ -8,7 +8,8 @@ const services = [
   { name: "Short-Term Rental", href: "/short-term-rental-design" },
   { name: "Furniture Rental", href: "/furniture-request" },
   { name: "Street of Dreams", href: "/street-of-dreams" },
-  { name: "Portfolio", href: "/portfolio" },
+  { name: "Design Portfolio", href: "/portfolio" },
+  { name: "Staged Homes", href: "/staged-homes" },
 ];
 
 const company = [

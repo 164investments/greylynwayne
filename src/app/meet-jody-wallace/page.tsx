@@ -87,10 +87,10 @@ export default function MeetJodyPage() {
             </div>
             <div className="relative aspect-[3/4] overflow-hidden">
               <Image
-                src="/images/street-of-dreams.webp"
-                alt="Alla Famiglia dining room designed by Jody Wallace for Street of Dreams Portland"
+                src="/images/team/jody-wallace.webp"
+                alt="Jody Wallace — founder and head of design at Greylyn Wayne, Portland, Oregon"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
           </div>

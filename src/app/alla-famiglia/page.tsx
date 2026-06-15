@@ -48,7 +48,7 @@ export default function AllaFamigliaPage() {
           <div className="absolute inset-0 flex items-center">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <p className="text-teal-light text-sm tracking-[0.3em] uppercase mb-4">
-                Street of Dreams 2021
+                Street of Dreams 2025 &middot; Lake Oswego
               </p>
               <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl text-white max-w-2xl">
                 Alla Famiglia

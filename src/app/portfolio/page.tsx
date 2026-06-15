@@ -4,40 +4,24 @@ import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Home Staging & Interior Design Portfolio | Portland, Oregon",
+  title: "Interior Design Portfolio | Street of Dreams & Luxury Homes — Portland",
   description:
-    "Explore our home staging and interior design portfolio featuring beautifully styled spaces across Portland, Oregon. Street of Dreams, luxury estates, and residential staging. Book a consultation — (971) 930-0220.",
+    "The Greylyn Wayne interior design portfolio: four-time NW Natural Street of Dreams featured designer, award-winning luxury residences, and full-service custom interiors across Portland, Oregon. (971) 930-0220.",
   alternates: { canonical: "https://www.greylynwayne.com/portfolio" },
   openGraph: {
-    title: "Home Staging & Interior Design Portfolio | Greylyn Wayne",
+    title: "Interior Design Portfolio | Greylyn Wayne — Portland, OR",
     description:
-      "Explore our portfolio of beautifully styled spaces in Portland, Oregon. Street of Dreams, luxury estates, and residential staging.",
+      "Four-time Street of Dreams featured designer. Award-winning luxury residences and full-service custom interiors in Portland, Oregon.",
     url: "https://www.greylynwayne.com/portfolio",
     images: [{ url: "/images/og-image.png" }],
   },
 };
 
-const projects = [
-  {
-    title: "Alla Famiglia — Street of Dreams",
-    category: "Interior Design",
-    image: "/images/street-of-dreams.webp",
-  },
-  {
-    title: "Industrial Loft Staging",
-    category: "Home Staging",
-    image: "/images/home-staging-1.webp",
-  },
-  {
-    title: "Modern Portland Home",
-    category: "Home Staging",
-    image: "/images/home-staging-2.jpg",
-  },
-  {
-    title: "New Construction Model Home",
-    category: "Builder Staging",
-    image: "/images/before-after.jpg",
-  },
+const streetOfDreams = [
+  { year: "2025", title: "Street of Dreams 2025", note: "Latest featured residence" },
+  { year: "2024", title: "Street of Dreams 2024", note: "Contemporary luxury showcase" },
+  { year: "2021", title: "Alla Famiglia", note: "8,725 sq ft — largest in recent SOD history" },
+  { year: "2019", title: "People's & Professional's Choice", note: "Best Interior Design winner" },
 ];
 
 export default function PortfolioPage() {
@@ -52,70 +36,167 @@ export default function PortfolioPage() {
 
       {/* Hero */}
       <section className="pt-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24 lg:py-32">
-          <div className="text-center">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-20 lg:py-28">
+          <div className="text-center max-w-3xl mx-auto">
             <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
-              Our Work
+              Interior Design
             </p>
             <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl text-charcoal mb-6">
-              Portfolio
+              Design Portfolio
             </h1>
-            <p className="text-charcoal-light text-lg max-w-2xl mx-auto">
-              Explore our collection of home staging and interior design
-              projects across Portland, Oregon and beyond.
+            <p className="text-charcoal-light text-lg leading-relaxed">
+              Award-winning luxury residences and full-service custom interiors.
+              As a four-time featured designer at the NW Natural Street of
+              Dreams, we bring the same craftsmanship to every home we touch.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Gallery */}
-      <section className="pb-24 lg:pb-32">
+      {/* Street of Dreams feature */}
+      <section className="pb-8">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {projects.map((project) => (
-              <div key={project.title} className="group cursor-pointer">
-                <div className="relative aspect-[4/3] overflow-hidden mb-4">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-colors duration-500" />
-                </div>
-                <p className="text-teal text-xs tracking-[0.2em] uppercase mb-1">
-                  {project.category}
+          <Link href="/street-of-dreams" className="group block">
+            <div className="relative aspect-[16/10] md:aspect-[16/7] overflow-hidden">
+              <Image
+                src="/images/street-of-dreams.webp"
+                alt="Alla Famiglia Street of Dreams interior by Greylyn Wayne"
+                fill
+                priority
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-charcoal/40 group-hover:bg-charcoal/30 transition-colors" />
+              <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+                <p className="text-teal-light text-sm tracking-[0.3em] uppercase mb-3">
+                  4× Featured Designer
                 </p>
-                <h3 className="font-[family-name:var(--font-playfair)] text-xl group-hover:text-teal transition-colors">
-                  {project.title}
+                <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-5xl text-white max-w-3xl">
+                  NW Natural Street of Dreams
+                </h2>
+                <span className="mt-6 inline-block border border-white/70 text-white px-7 py-3 text-sm tracking-wider uppercase group-hover:bg-white group-hover:text-charcoal transition-colors">
+                  Explore the Showcase Homes
+                </span>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </section>
+
+      {/* SOD year grid */}
+      <section className="py-16 lg:py-20">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {streetOfDreams.map((home) => (
+              <div key={home.year} className="bg-warm p-8">
+                <p className="font-[family-name:var(--font-playfair)] text-4xl text-teal-light mb-3">
+                  {home.year}
+                </p>
+                <h3 className="font-[family-name:var(--font-playfair)] text-lg text-charcoal mb-2">
+                  {home.title}
                 </h3>
+                <p className="text-charcoal-light text-sm leading-relaxed">
+                  {home.note}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Before & After */}
-      <section className="py-24 lg:py-32 bg-warm">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
-          <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
-            The Difference Staging Makes
-          </p>
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal mb-6">
-            Before & After
-          </h2>
-          <p className="text-charcoal-light max-w-2xl mx-auto mb-12">
-            See how our expert staging transforms properties, helping real
-            estate agents and homeowners sell faster and at higher prices.
-          </p>
-          <div className="relative aspect-[16/9] max-w-4xl mx-auto overflow-hidden">
-            <Image
-              src="/images/before-after.jpg"
-              alt="Home staging before and after by Greylyn Wayne"
-              fill
-              className="object-cover"
-            />
+      {/* Alla Famiglia spotlight */}
+      <section className="py-16 lg:py-24 bg-warm">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="relative aspect-[4/5] overflow-hidden order-last lg:order-first">
+              <Image
+                src="/images/street-of-dreams.webp"
+                alt="Alla Famiglia dining room designed by Greylyn Wayne"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
+                Featured Project
+              </p>
+              <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal mb-3">
+                Alla Famiglia
+              </h2>
+              <p className="text-charcoal-light italic mb-6">
+                &ldquo;For the Family&rdquo; — our 2021 Street of Dreams home
+              </p>
+              <p className="text-charcoal-light leading-relaxed mb-8">
+                A European-style residence designed for multi-generational
+                living on 1.6 acres. At 8,725 square feet, it is the largest
+                home in recent Street of Dreams history — anchored by a handmade
+                spiral staircase framed in a 30-foot window wall.
+              </p>
+              <Link
+                href="/alla-famiglia"
+                className="inline-block border border-teal text-teal px-8 py-3 text-sm tracking-wider uppercase hover:bg-teal hover:text-white transition-colors"
+              >
+                View the Full Project
+              </Link>
+            </div>
           </div>
+        </div>
+      </section>
+
+      {/* Full-service interior design */}
+      <section className="py-16 lg:py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div>
+              <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
+                Full-Service Interiors
+              </p>
+              <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal mb-6">
+                Designed for the Way You Live
+              </h2>
+              <p className="text-charcoal-light leading-relaxed mb-6">
+                Beyond the showcase homes, we partner with homeowners on
+                whole-house renovations, new builds, and room-by-room refreshes
+                — bringing the same eye for warm textures, curated furnishings,
+                and artful detail to projects of every scale.
+              </p>
+              <Link
+                href="/interior-design"
+                className="inline-block bg-teal text-white px-8 py-3 text-sm tracking-wider uppercase hover:bg-teal-dark transition-colors font-medium"
+              >
+                Explore Interior Design
+              </Link>
+            </div>
+            <div className="relative aspect-[4/3] overflow-hidden">
+              <Image
+                src="/images/hero-interior.webp"
+                alt="Custom interior design by Greylyn Wayne in Portland, Oregon"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cross-link to staging portfolio */}
+      <section className="py-16 bg-charcoal">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
+          <p className="text-teal-light text-sm tracking-[0.3em] uppercase mb-4">
+            Selling a Home?
+          </p>
+          <h2 className="font-[family-name:var(--font-playfair)] text-2xl md:text-3xl text-white mb-5">
+            See Our Home Staging Portfolio
+          </h2>
+          <p className="text-gray-400 leading-relaxed mb-8 max-w-2xl mx-auto">
+            Browse real listings we&apos;ve staged across the Portland metro and
+            SW Washington — each linked to its live status on Redfin and Zillow.
+          </p>
+          <Link
+            href="/staged-homes"
+            className="inline-block bg-teal text-white px-8 py-3 text-sm tracking-wider uppercase hover:bg-teal-dark transition-colors font-medium"
+          >
+            View Staged Homes
+          </Link>
         </div>
       </section>
 
@@ -123,11 +204,11 @@ export default function PortfolioPage() {
       <section className="py-24 lg:py-32 text-center">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal mb-6">
-            Ready to See What We Can Do for You?
+            Ready to Create Something Beautiful?
           </h2>
           <p className="text-charcoal-light leading-relaxed mb-10">
-            Every project is unique. Let&apos;s discuss yours and create
-            something beautiful together.
+            Every project begins with a conversation. Let&apos;s talk about your
+            home and the vision you have for it.
           </p>
           <Link
             href="/contact"
