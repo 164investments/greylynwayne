@@ -25,7 +25,7 @@ export type StagedHome = {
   } | null;
 };
 
-const SOLD_FAST_DAYS = 7;
+const SOLD_FAST_DAYS = 10;
 
 export function money(cents?: number | null): string | null {
   if (!cents && cents !== 0) return null;
@@ -48,7 +48,12 @@ export type SaleInfo = {
 
 export function saleInfo(h: StagedHome): SaleInfo {
   const s = h.sale ?? {};
-  const isSold = !!s.is_sold;
+  // Only count RECENT sales as sold — Redfin's "Last Sold Price" can be a 1995/2014
+  // historical sale on a home that's actually on the market now. Require sold_date ≥ 2025,
+  // or a current "Sold Price" label (Redfin's tag for a recent close) when date is absent.
+  const isSold =
+    !!s.is_sold &&
+    (s.sold_date ? s.sold_date >= "2025-01-01" : s.price_label === "Sold Price");
   const price = s.price_cents ?? null;
   const list = s.list_price_cents ?? null;
   const overAskCents = isSold && price != null && list != null ? price - list : null;
@@ -133,19 +138,31 @@ export function pill(h: StagedHome): { label: string; tone: Tone } {
   return { label: "Sold", tone: "sold" }; // destaged/closed without sale data
 }
 
-// Standout sales for the Featured strip: sold over ask, or sold fast. Ranked by impact.
+// Standout sales for the Featured strip. Guarantee the fast sales are represented
+// (the speed story), then fill the rest with the biggest over-ask wins.
 export function featuredHomes(limit = 6): StagedHome[] {
-  return homes
+  const pool = homes
     .map((h) => ({ h, s: saleInfo(h) }))
-    .filter(({ h, s }) => h.photo && s.isSold && ((s.overAskCents ?? 0) > 0 || s.soldFast))
-    .sort((a, b) => {
-      // fast sales and big over-ask both rank high; score = over-ask% + fast bonus
-      const score = (x: SaleInfo) =>
-        (x.overAskPct ?? 0) + (x.soldFast ? 100 - (x.dom ?? 0) : 0);
-      return score(b.s) - score(a.s);
-    })
-    .slice(0, limit)
-    .map(({ h }) => h);
+    .filter(({ h, s }) => h.photo && s.isSold);
+
+  const fast = pool
+    .filter(({ s }) => s.soldFast)
+    .sort((a, b) => (a.s.dom ?? 99) - (b.s.dom ?? 99));
+
+  const overAsk = pool
+    .filter(({ s }) => (s.overAskCents ?? 0) > 0 && !fast.includes({} as never))
+    .sort((a, b) => (b.s.overAskCents ?? 0) - (a.s.overAskCents ?? 0));
+
+  const picked: StagedHome[] = [];
+  const seen = new Set<string>();
+  // fast sales first, then biggest over-ask, dedup by ref
+  for (const { h } of [...fast, ...overAsk]) {
+    if (seen.has(h.ref)) continue;
+    seen.add(h.ref);
+    picked.push(h);
+    if (picked.length >= limit) break;
+  }
+  return picked;
 }
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];

@@ -15,68 +15,93 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.greylynwayne.com/reviews" },
 };
 
+// Real, verbatim 5-star Google reviews pulled from Greylyn Wayne's Google
+// Business Profile via the My Business API (src/data/google-reviews.json,
+// 163 reviews / 4.9★). Service labels are inferred from each review's content.
+// Do NOT add invented testimonials here — only real GBP reviews.
 const reviews = [
   {
     quote:
-      "Greylyn Wayne transformed our listing into a breathtaking showcase. The staging was impeccable and the home sold in just 5 days above asking price. I recommend them to every seller I work with.",
-    author: "Portland Real Estate Agent",
-    service: "Vacant Home Staging",
+      "I have used Greylyn Wayne for a number of stages for my listings, they have always done a great job but I was especially thrilled with my last experience with their team. We initially had a sale fail and they were quick to remove their staging and were incredibly sensitive to my clients and I. Once the repairs were completed, they were quick to help us re-stage and launch right away. Once re-listed, we received a full price offer in less than a week. Their service and stage were both exceptional and I'll absolutely be using them in the future.",
+    author: "Jake Grant",
+    service: "Home Staging · Real Estate Agent",
     stars: 5,
   },
   {
     quote:
-      "Their attention to detail is exceptional. From start to finish, the process was stress-free and the results exceeded all expectations. Our home looked like it belonged in a magazine.",
-    author: "Happy Valley Homeowner",
+      "Is this MY home? Greylyn Wayne did an amazing job showcasing the best of our home in the areas requested. After living in a home you love for 26 years, it is so heart-warming to see it staged with care. With your good work, we are putting our best foot forward! Thank you!",
+    author: "Joan Medlen",
+    service: "Home Staging",
+    stars: 5,
+  },
+  {
+    quote:
+      "We had the good fortune to work with Tori. She furnished our entire apartment — she is incredibly skilled at making good use of small spaces. She is creative and responsive. And she is frugal. I only regret that I don't have another project to let her complete for us!!",
+    author: "Tony Fargason",
     service: "Interior Design",
     stars: 5,
   },
   {
     quote:
-      "Working with Jody and her team was an absolute pleasure. They brought our vision to life with creativity and professionalism we didn't think was possible.",
-    author: "Lake Oswego Client",
-    service: "Full Home Redesign",
+      "GW is truly a top stager in Portland. They focus down to the detail, will not leave the project until it is completely dialed. Their special planning and choice of furniture, art, decor always showcases the home's architectural style and really has helped to highlight the homes I have sold. They are awesome to work with too! You won't be disappointed.",
+    author: "Carey Hunt",
+    service: "Home Staging · Real Estate Agent",
     stars: 5,
   },
   {
     quote:
-      "As a builder, I need staging that sells homes fast. Greylyn Wayne consistently delivers — our model homes stage beautifully and buyers can immediately see themselves living there.",
-    author: "Portland Home Builder",
-    service: "New Construction Staging",
+      "Alicia Leon is incredibly talented and has such a great eye for design. Whether you're getting a home ready to sell or just want to refresh your space, she and the Greylyn Wayne team know how to make everything look polished, stylish, and inviting. Alicia really takes the time to understand your vision and brings it to life beautifully. If you want your space to look its absolute best, I highly recommend Alicia and the team at Greylyn Wayne!",
+    author: "Miguel Tenorio",
+    service: "Home Staging & Interior Design",
     stars: 5,
   },
   {
     quote:
-      "We were nervous about staging costs, but the investment paid for itself many times over. Our home sold for $45,000 over asking price within the first weekend on the market.",
-    author: "West Linn Homeowner",
-    service: "Occupied Home Staging",
+      "Working with Greylyn Wayne for staging was a game changer. They knew exactly how to highlight the space without making it feel forced. The setup felt fresh, balanced, and really brought out the best parts of the home. Start to finish, it all felt easy and professional.",
+    author: "Megan Zehngut",
+    service: "Home Staging",
     stars: 5,
   },
   {
     quote:
-      "Jody's eye for design is truly exceptional. She understood exactly what our space needed and created an interior that feels both luxurious and comfortable. We love coming home now.",
-    author: "Pearl District Client",
-    service: "Interior Design Consultation",
+      "It was wonderful to work with the team at Greylyn Wayne for my interior design needs. They listened to my needs and were prompt, professional and artistic in their design ideas. Thank you for your prompt and on time attention to my needs. I love the look you created.",
+    author: "Linda Stine",
+    service: "Interior Design",
     stars: 5,
   },
   {
     quote:
-      "The team was incredibly professional and efficient. They staged our entire home in a single day and the transformation was unbelievable. Best decision we made before listing.",
-    author: "Beaverton Homeowner",
-    service: "Vacant Home Staging",
+      "Thank you Greylyn Wayne! Being super busy with work did not allow me to properly design my house the way I planned to. I hired them for interior design and they were kind, efficient, professional, and made my house feel like a home. I would definitely use them again!",
+    author: "Callie Enos",
+    service: "Interior Design",
     stars: 5,
   },
   {
     quote:
-      "We hired Greylyn Wayne to design our Airbnb property and bookings went through the roof. The space photographs beautifully and guests consistently mention the design in their 5-star reviews.",
-    author: "Bend Vacation Rental Owner",
-    service: "Short-Term Rental Design",
+      "We were so pleased with Alicia's choices and recommendations of the custom design plans and execution. Our time was limited and her design and execution was spot on.",
+    author: "Patricia Schaub",
+    service: "Interior Design",
     stars: 5,
   },
   {
     quote:
-      "Close collaboration from day one. They listened to our vision, made brilliant suggestions, and delivered a result that was even better than what we imagined. Competitive pricing for the quality delivered.",
-    author: "Tigard Homeowner",
-    service: "Full-Service Interior Design",
+      "Always love working with Greylyn Wayne Staging! They're always so professional, and do a phenomenal job at making our staged houses look amazing. 🏡 Thank you GW Team!",
+    author: "Patrick Janzen",
+    service: "Home Staging · Real Estate Agent",
+    stars: 5,
+  },
+  {
+    quote:
+      "Greylyn Wayne is the best! So easy to work with and seriously talented. The space turned out gorgeous—clean, stylish, and totally pulled together. I definitely encourage others to use this company!",
+    author: "Halle Harris",
+    service: "Interior Design",
+    stars: 5,
+  },
+  {
+    quote:
+      "Greylyn Wayne has a great team and are able to provide a variety of services including staging, interior design services, and consultations. Whatever your need in the design realm they can and will successfully help you!",
+    author: "Kevin Hill",
+    service: "Home Staging & Interior Design",
     stars: 5,
   },
 ];
@@ -142,21 +167,24 @@ export default function ReviewsPage() {
         </div>
       </section>
 
-      {/* Featured testimonial — real, named broker (from the live site) */}
+      {/* Featured testimonial — real, verbatim Google review (GBP API) */}
       <section className="pb-4">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <figure className="bg-warm border-l-4 border-teal p-8 lg:p-12">
             <Stars count={5} />
             <blockquote className="font-[family-name:var(--font-playfair)] text-xl md:text-2xl text-charcoal leading-relaxed mb-6">
-              &ldquo;I&apos;ve used many staging companies in the past, but since
-              I started using Jody, I have not gone back to the other
-              companies.&rdquo;
+              &ldquo;I have always referred Greylyn Wayne to the agents I
+              supervise, but recently had a delightful experience of my own. On
+              short notice they transformed a lovely property from plain to
+              magazine-quality! The home sold on its first open house. Their
+              entire staff was a delight to work with and their fee was very
+              fair. You will love working with this company.&rdquo;
             </blockquote>
             <figcaption className="text-sm">
-              <span className="text-charcoal font-medium">Liz Carpenter</span>
+              <span className="text-charcoal font-medium">Joanne Sterling</span>
               <span className="text-charcoal-light">
                 {" "}
-                — Principal Broker, West Hills RE/MAX
+                — Real Estate Broker
               </span>
             </figcaption>
           </figure>

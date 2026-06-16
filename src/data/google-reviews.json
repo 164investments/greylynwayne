@@ -1,92 +1,2123 @@
 {
-  "_meta": {
-    "source": "Google Business Profile — Greylyn Wayne Home Staging & Interior Design",
-    "placeUrl": "https://www.google.com/maps/place/Greylyn+Wayne+Home+Staging+%26+Interior+Design/@45.5205172,-122.6552987,17z/data=!4m6!3m5!1s0x54950a0ba494f92b:0xca9afceb84839947",
-    "rating": 4.9,
-    "reviewCount": 163,
-    "scrapedOn": "2026-06-16",
-    "note": "Scraped via Claude-in-Chrome from the live GBP. These are REAL reviews. The grid currently on /reviews is fabricated placeholder copy and should be replaced with these. Reviews marked complete:true have full text; complete:false were truncated by Google's 'More' and need re-capture before use."
-  },
+  "name": "Greylyn Wayne Home Staging & Interior Design",
+  "rating": 4.9,
+  "user_rating_count": 163,
+  "five_star_count": 159,
+  "fetched_at": "2026-06-16",
+  "source": "google-business-profile-api",
   "reviews": [
     {
-      "author": "Patrick Janzen",
-      "badge": "Local Guide · 12 reviews · 21 photos",
-      "date": "7 months ago",
-      "stars": 5,
-      "complete": true,
-      "text": "Always love working with Greylyn Wayne Staging! They're always so professional, and do a phenomenal job at making our staged houses look amazing. 🏡"
+      "rating": 5,
+      "publish_time": "2026-03-08T13:16:03.660706Z",
+      "relative_time": null,
+      "author_name": "Tony Fargason",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJAdiBjGwol8uBp0I9K1kpeBuBPXlq4uEc3JTq6emX6DXCM=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "We had the good fortune to work with Tori.  She furnished our entire apartment — she is incredibly skilled at making good use of small spaces.  She is creative and responsive.  And she is frugal.  I only regret that I don’t have another project to let her complete for us!!",
+      "owner_reply": null
     },
     {
-      "author": "Joan Medlen",
-      "badge": "Local Guide · 22 reviews · 24 photos",
-      "date": "a year ago",
-      "stars": 5,
-      "complete": true,
-      "text": "Is this MY home? Greylyn Wayne did an amazing job showcasing the best of our home in the areas requested. After living in a home you love for 26 years, it is so heart-warming to see it staged with care. With your good work, we are putting our best foot forward! Thank you!"
+      "rating": 5,
+      "publish_time": "2025-10-20T00:24:35.368574Z",
+      "relative_time": null,
+      "author_name": "Patrick Janzen",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXzsK8Dv6J69caatyPNVP4-IDdcbovXgARVQigDQBgyEniawfKX=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "Always love working with Greylyn Wayne Staging! They’re always so professional, and do a phenomenal job at making our staged houses look amazing.🏡\n\nThank you GW Team!",
+      "owner_reply": {
+        "text": "Thank you so much, Patrick! We're delighted to know you love working with us. Professionalism and making spaces look amazing are at the core of what we do, and it's wonderful to hear you appreciate that.",
+        "updated": "2025-10-20T02:25:04.015173Z"
+      }
     },
     {
-      "author": "Tony Fargason",
-      "badge": "1 review",
-      "date": "3 months ago",
-      "stars": 5,
-      "complete": true,
-      "text": "We had the good fortune to work with Tori. She furnished our entire apartment — she is incredibly skilled at making good use of small spaces. She is creative and responsive. And she is frugal. I only regret that I don't have another project to let her complete for us!!"
+      "rating": 5,
+      "publish_time": "2025-10-14T23:04:04.543399Z",
+      "relative_time": null,
+      "author_name": "Jake Grant",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjUc5taFbshvVtMZB46bLl-3MOSM3ogLN7gQYn-scyKANvGwboDK2Q=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "I have used Greylyn Wayne for a number of stages for my listings, they have always done a great job but I was especially thrilled with my last experience with their team and wanted to share it with those considering stagers. We initially had a sale fail and they were quick to remove their staging and were incredibly sensitive to my clients and I, who were dealing with an unexpected surprise of numerous repairs. Once they were completed, they were quick to help us re-stage and launch right away. Once re-listed, we received a full price offer less than a week. Their service and stage were both exceptional and I'll absolutely be using them in the future. Thank you Jacqueline and the Greylyn Wayne team!",
+      "owner_reply": {
+        "text": "Thank you, Jake, for sharing your positive experience with Greylyn Wayne! I'm glad to hear that our team's promptness, sensitivity, and exceptional staging helped you achieve a full price offer in less than a week. We look forward to continuing to work with you on future projects.",
+        "updated": "2025-10-15T01:04:24.261621Z"
+      }
     },
     {
-      "author": "Patricia Schaub",
-      "badge": "4 reviews · 2 photos",
-      "date": "10 months ago",
-      "stars": 5,
-      "complete": true,
-      "text": "We were so pleased with Alicia's choices and recommendations of the custom design plans and execution. Our time was limited and her design and execution was spot on."
+      "rating": 5,
+      "publish_time": "2025-08-08T14:54:44.969404Z",
+      "relative_time": null,
+      "author_name": "Joe Creech",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjWCdt_9eQH_TqNagr3xIbx_GPID9A4KJcJxVMmKvqdanGvsGRM=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Great company to work with, quality staging, loved the result.",
+      "owner_reply": {
+        "text": "Thank you so much, Joe! I'm so glad to hear that you enjoyed working with us and loved the staging results. It's always rewarding to know our efforts are appreciated.",
+        "updated": "2025-08-08T15:20:28.443471Z"
+      }
     },
     {
-      "author": "kayla davila-elrite",
-      "badge": "2 reviews",
-      "date": "a year ago",
-      "stars": 5,
-      "complete": false,
-      "text": "Greylyn Wayne exceeded all expectations. Their team was professional, easy to work with, and incredibly talented. They brought out the best in the space with thoughtful, stylish touches that felt both elevated and welcoming. …"
+      "rating": 5,
+      "publish_time": "2025-07-31T00:03:18.451403Z",
+      "relative_time": null,
+      "author_name": "Austin Pitschka",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXVfllk77Kqv7Q38WwvW1d5RVFoxsZQv8XYXLQJoJ0pL91TT0Gz=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "",
+      "owner_reply": {
+        "text": "Thank you so much for the 5-star rating, Austin! We're delighted to hear that you had a great experience with Greylyn Wayne Home Staging & Interior Design. We're always here to help make properties stand out and achieve that perfect style for successful showings.",
+        "updated": "2025-07-31T00:30:30.149096Z"
+      }
     },
     {
-      "author": "Jake Grant",
-      "badge": "Local Guide · 19 reviews · 2 photos",
-      "date": "8 months ago",
-      "stars": 5,
-      "complete": false,
-      "text": "I have used Greylyn Wayne for a number of stages for my listings, they have always done a great job but I was especially thrilled with my last experience with their team and wanted to share it with those considering stagers. We initially … [truncated — owner reply notes it 'helped you achieve a full price offer in less than a week']"
+      "rating": 5,
+      "publish_time": "2025-07-27T05:56:43.801432Z",
+      "relative_time": null,
+      "author_name": "Pati Eberle",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJC05Ln2jS2c-KQ9baVT-1SLxNe1FK_l0TbyvvBq6vjTll1Ww=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "",
+      "owner_reply": {
+        "text": "Thank you so much for the 5-star rating, Pati! We're delighted to know you had a positive experience with Greylyn Wayne Home Staging & Interior Design. Your support means the world to us.",
+        "updated": "2025-07-27T06:20:14.775128Z"
+      }
     },
     {
-      "author": "Carey Hunt",
-      "badge": "Local Guide · 19 reviews · 6 photos",
-      "date": "a year ago",
-      "stars": 5,
-      "complete": false,
-      "text": "GW is truly a top stager in Portland. They focus down to the detail, will not leave the project until it is completely dialed. Their special planning and choice of furniture, art, decor always showcases the home's architectural style and … [truncated]"
+      "rating": 5,
+      "publish_time": "2025-07-27T05:48:35.805007Z",
+      "relative_time": null,
+      "author_name": "Colby Beck",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLqiIDEseEUEXpH96SkUt3z5igVTf-yNZ6W2pnhJMYpH2SGKw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "The process was a lot easier than I imagined. They really made the space come to life. Employee Alicia was especially helpful.",
+      "owner_reply": {
+        "text": "Thank you so much for the great review, Colby! I'm glad to hear that our process surpassed your expectations and that we were able to bring the space to life. I'll be sure to pass your kind words along to Alicia.",
+        "updated": "2025-07-27T06:00:16.967788Z"
+      }
     },
     {
-      "author": "Joanne Sterling",
-      "badge": "Local Guide · 12 reviews · 2 photos",
-      "date": "a year ago",
-      "stars": 5,
-      "complete": false,
-      "text": "I have always referred Greylyn Wayne to the agents I supervise, but recently had a delightful experience of my own with this company. On short notice they transformed a lovely property in Forest Heights from plain to magazine-quality! … [truncated — owner reply notes the home went pending after the open house]"
+      "rating": 5,
+      "publish_time": "2025-07-27T04:40:18.174340Z",
+      "relative_time": null,
+      "author_name": "Keaton Kirrene",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJKHVnKae_nA1FteavY3S3hFs47v0zDEP1oGQEuvBLRYnrMAA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "They showed up with serious interior design skills—made the space look so good I almost changed my mind and decided to keep my house.",
+      "owner_reply": {
+        "text": "Thank you so much for the wonderful review, Keaton! We're delighted to hear that our staging impressed you so much. It's always our goal to highlight a home's potential and create beautiful, inviting spaces.",
+        "updated": "2025-07-27T05:00:16.588257Z"
+      }
     },
     {
-      "author": "Brayden Garver",
-      "badge": "6 reviews",
-      "date": "a year ago",
-      "stars": 5,
-      "complete": false,
-      "text": "Working with Greylyn Wayne Home Staging and Interior Design was an exceptional experience from start to finish! The staging team was professional, efficient, … [truncated]"
+      "rating": 5,
+      "publish_time": "2025-07-27T04:09:14.951143Z",
+      "relative_time": null,
+      "author_name": "Taylor Parks",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLrRprBErpCYy2FQEG3xTtE2jtvJFNQ9nu7MR5qMPtIjyqyIA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne did a great job at using their interior design skills to make my house look amazing and bring a homier vibe. Their design consulting skills allowed them to cater my decor to exactly what I was looking for.",
+      "owner_reply": {
+        "text": "Thank you so much for the wonderful review, Taylor! I’m thrilled to hear that our design consulting helped create the perfect vibe you envisioned. We loved bringing that homier touch to your space!",
+        "updated": "2025-07-27T04:20:15.570327Z"
+      }
     },
     {
-      "author": "Miguel Tenorio",
-      "badge": "Local Guide · 10 reviews · 43 photos",
-      "date": "10 months ago",
-      "stars": 5,
-      "complete": false,
-      "text": "Alicia Leon is incredibly talented and has such a great eye for design. Whether you're getting a home ready to sell or just want to refresh your space, she and the Greylyn Wayne team know how to make everything look polished, stylish, and … [truncated]"
+      "rating": 5,
+      "publish_time": "2025-07-27T02:47:11.300828Z",
+      "relative_time": null,
+      "author_name": "Patricia Schaub",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocI7lJ3fUsEalZxOcf4IvIX8pzzr3IPruGAgstll-O04oF8lFQ=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "We were so pleased with Alicia’s choices and recommendations of the custom design plans and execution.  Our time was limited and her design and execution was spot on.",
+      "owner_reply": {
+        "text": "Thank you, Patricia! I'm delighted to hear that Alicia's choices and recommendations were spot on and that the custom design plans worked perfectly even within your limited time frame. We appreciate your feedback and are glad we could meet your expectations.",
+        "updated": "2025-07-27T03:10:14.359701Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-27T02:46:28.240462Z",
+      "relative_time": null,
+      "author_name": "C K",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjVqQpR5plbSoR2qd4hCpRdHLv3CigxJ8rggMfxClCn4yTgoOdpL=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Great service and attention to detail",
+      "owner_reply": {
+        "text": "Thank you so much for the wonderful review! I'm delighted to hear that you enjoyed our service and appreciated our attention to detail. We look forward to working with you again in the future!",
+        "updated": "2025-07-27T03:00:18.693058Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-27T01:59:47.162892Z",
+      "relative_time": null,
+      "author_name": "Halle Harris",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjWxFc6n4gb1bw_aiQQTK-Ki-Dq_-fAFcl0L1RP-5hZrUxrW9g5-=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne is the best! So easy to work with and seriously talented. The space turned out gorgeous—clean, stylish, and totally pulled together. I definitely encourage others to use this company!",
+      "owner_reply": {
+        "text": "Thank you so much, Halle! I'm delighted to hear that you found us easy to work with and appreciated the stylish and cohesive look we created. Your recommendation means a lot to us!",
+        "updated": "2025-07-27T02:20:13.906080Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-27T01:04:21.635684Z",
+      "relative_time": null,
+      "author_name": "Maureen",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLOW2r_PF1skerjdIphII7EvSQGREp2PpHsi0CGftQBLns2C0k=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I came across Greylyn Wayne from their Street of Dreams feature on Instagram, last year. I was instantly hooked by how fresh and polished everything looked. Their design work is next level—every detail hits. I’m really looking forward to seeing what they’ve done for Street of Dreams this year!",
+      "owner_reply": {
+        "text": "Thank you so much, Maureen! I'm delighted that our design work captured your attention and that you enjoyed the fresh and polished look. We're excited for you to see what we've put together for Street of Dreams this year!",
+        "updated": "2025-07-27T01:20:17.569150Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-27T01:01:33.342917Z",
+      "relative_time": null,
+      "author_name": "Paola Santiago",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjVXsQ-kQPPvEmNB5i8V9B_2Arhb2r8Gqa7AHVqHZjs5YAVBm9k6=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne gets it. Their staging is clean, modern, and instantly makes a space feel high-end. The design side? So creative and customized—nothing ever feels basic. Super easy to work with and always deliver. 10/10 recommend.",
+      "owner_reply": {
+        "text": "Thank you, Paola! I'm delighted to hear that you appreciated our clean, modern staging and found our design work creative and customized. It’s wonderful to know that our process felt easy for you and that we're able to consistently deliver the results you're looking for.",
+        "updated": "2025-07-27T01:40:22.836178Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-27T00:55:25.126295Z",
+      "relative_time": null,
+      "author_name": "Callie Enos",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocKEK25L7ZM_P-ye2u7uGkwhLukBiWqqECntSxe49umSCVTWwA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Thank you Greylyn Wayne! Being super busy with work did not allow me to properly design my house the way I planned to. I hired them for interior design and they were kind, efficient, professional, and made my house feel like a home. I would definitely use them again!",
+      "owner_reply": {
+        "text": "Thank you so much, Callie! I'm delighted to hear that our team helped make your house feel like a home with kindness, efficiency, and professionalism. We look forward to the opportunity to work with you again!",
+        "updated": "2025-07-27T01:20:17.495408Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-27T00:43:21.515619Z",
+      "relative_time": null,
+      "author_name": "Alli",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJ8krah_tIRYqIAdp9XxEOvGZp7Wrh7RB_rkOZq_9y3UZ4_lg=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Absolutely impeccable design! They never miss and I cannot wait to see the house they have been working on for Street of Dreams.\n\nI found this company through their social media accounts and was just blown away by their work!",
+      "owner_reply": {
+        "text": "Thank you so much for your wonderful review, Alli! We're delighted to hear that you find our designs impeccable and that our social media impressed you. We're excited to unveil our work for the Street of Dreams and grateful for your enthusiastic support!",
+        "updated": "2025-07-27T01:10:16.900299Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-26T23:54:08.562820Z",
+      "relative_time": null,
+      "author_name": "Logan McRae",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjUN6fNtdsOw7F2aZN5BmColS2yXTSuEBmDWjqE9k1jUE4senWLb=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Staging was seamless. They understood the space and made it look sharp without overdoing it.",
+      "owner_reply": {
+        "text": "Thank you, Logan, for the wonderful review! We’re glad to hear that you felt our staging was both seamless and effectively highlighted the space. It's always our goal to enhance each property's potential without overwhelming it.",
+        "updated": "2025-07-27T00:20:25.274212Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-26T04:56:32.388290Z",
+      "relative_time": null,
+      "author_name": "Kevin Hill",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjWE1B2XcjH2UPRh0qKIHnk7OLn8MH9dKePMTfIik03rX0R16TQ=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne has a great team and are able to provide a variety of services including staging, interior design services, and consultations. Whatever your need in the design realm they can and will successfully help you!",
+      "owner_reply": {
+        "text": "Thank you so much for your kind words, Kevin! We're delighted to hear that you appreciate our team's efforts and the variety of services we offer. We're committed to providing successful outcomes for all your design needs.",
+        "updated": "2025-07-26T05:20:14.492544Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-26T04:27:58.948487Z",
+      "relative_time": null,
+      "author_name": "Samantha Eberle",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocKULqE6EgFRc3HzdpSAbgw1ar3ZaSjzVDgYeW3h7ucXaqGC=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "",
+      "owner_reply": {
+        "text": "Thank you so much for the 5-star review, Samantha! We're delighted to hear you found our staging and design services helpful. Your support means a lot to us, and we're eager to assist you with your future projects!",
+        "updated": "2025-07-26T04:40:10.996409Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-26T04:06:32.984446Z",
+      "relative_time": null,
+      "author_name": "Linda Stine",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJCV8AzBcv0UkUM0r9WWRkeEraSHDVj1x1A_tSz9ObcMy9R3g=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "It was wonderful to work with the team at Greylyn Wayne for my interior design needs.  They listened to my needs and were prompt, professional and artistic in their design ideas. Thank you for your prompt and on time attention to my needs. I love the look you created.",
+      "owner_reply": {
+        "text": "Thank you so much, Linda! We're delighted to hear that you appreciated our promptness, professionalism, and creative design ideas. It was a pleasure working with you to bring your vision to life!",
+        "updated": "2025-07-26T04:30:15.428548Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-25T23:41:38.839986Z",
+      "relative_time": null,
+      "author_name": "Miguel Tenorio",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjVxNvWMw2g_TPw9z5V0cqm0XZYKrL09NGeLBhmjzOIUL2SqWx_9Eg=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "Alicia Leon is incredibly talented and has such a great eye for design. Whether you're getting a home ready to sell or just want to refresh your space, she and the Greylyn Wayne team know how to make everything look polished, stylish, and inviting.\n\nTheir home staging work helps homes stand out, and their interior design and consulting services are thoughtful and personalized. Alicia really takes the time to understand your vision and brings it to life beautifully.\n\nIf you want your space to look its absolute best, I highly recommend Alicia and the team at Greylyn Wayne!",
+      "owner_reply": {
+        "text": "Thank you so much, Miguel, for your wonderful review! I'm delighted to hear that Alicia and the Greylyn Wayne team were able to bring polish, style, and a welcoming atmosphere to the spaces. Your appreciation for our thoughtful and personalized approach means a lot to us!",
+        "updated": "2025-07-26T00:10:20.945129Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-25T16:26:40.398724Z",
+      "relative_time": null,
+      "author_name": "Megan Zehngut",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjUYYgR4Ub6HreO_veb791xsjKXtoUl8jvqhB44T4jd-SOF4jQniMg=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Working with Greylyn Wayne for staging was a game changer. They knew exactly how to highlight the space without making it feel forced. The setup felt fresh, balanced, and really brought out the best parts of the home. Start to finish, it all felt easy and professional.",
+      "owner_reply": {
+        "text": "Thank you so much for the fantastic review, Megan! We're glad to hear that our approach to showcasing the space resonated with you and made the process seamless. Highlighting the best features with a balanced and fresh setup is what we aim for, and your feedback means a lot to us.",
+        "updated": "2025-07-25T18:10:51.965985Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-25T04:47:38.142269Z",
+      "relative_time": null,
+      "author_name": "Pedro L.",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjVZyKIzj-TcJKSBEfuZRjY2gX9C0I79dcFV3jtsuXPgmLnQgzg=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Loved what you did with the house, the staging  was beautiful, the interior design team really knows their stuff.",
+      "owner_reply": {
+        "text": "Thank you so much, Pedro! I'm delighted to hear that you loved the staging and found our team's design expertise impressive. We always strive to showcase properties in the best possible light, and it's wonderful to know we hit the mark for you.",
+        "updated": "2025-07-25T05:00:12.872570Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-25T04:28:16.661771Z",
+      "relative_time": null,
+      "author_name": "Misha Kleronomos",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjWRyA1aj7-ybGgwsGi-nB5eSUQyB8ewiJ09Mg93QvRKda23Y3xE=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "This company did an awesome job staging our house.",
+      "owner_reply": {
+        "text": "Thank you so much, Misha! I'm delighted to hear that you thought we did an awesome job with the staging. It was a pleasure working with you to bring your vision to life!",
+        "updated": "2025-07-25T04:50:07.214Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-25T04:27:30.364689Z",
+      "relative_time": null,
+      "author_name": "Nicole Hart",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocI84bWq4sM3ovPdzxKeDpUABi-wHaq3fVLb1k7e0wzIar2gdg=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Loved the work you did putting together my home’s interior design. Completely modernized the entire look. Wish I could give more than 5 stars. You’re my go to for any future projects!",
+      "owner_reply": {
+        "text": "Thank you so much, Nicole! I'm delighted to hear that you loved the modernized look we created for your project. We're honored to be your go-to for future designs!",
+        "updated": "2025-07-25T04:40:10.682988Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-25T00:54:25.013353Z",
+      "relative_time": null,
+      "author_name": "Kati Lee",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjVDJ1sMRJtb5TfExnxM5PGVCJ_TjdhMbiTkc8wmI-3lffiQCehX=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne does an amazing job when staging homes for sale. I would choose them next time I need an interior designer.",
+      "owner_reply": {
+        "text": "Thank you so much, Kati! I’m delighted to hear that you were impressed with our staging work. We look forward to the opportunity to help with your interior design needs in the future!",
+        "updated": "2025-07-25T01:20:17.867686Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-24T22:54:01.346693Z",
+      "relative_time": null,
+      "author_name": "Nico Esposito",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocIEWHSddVZ_ng8wf8YH-apprc1_GX3D2TszACGc0hwmeC4wAA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne got it right from the jump. Clean work, good energy, and made the whole space feel fresh. Would definitely link up again.",
+      "owner_reply": {
+        "text": "Thank you, Nico! We're delighted to hear that our clean work and good energy resonated with you and made the space feel fresh. We look forward to collaborating with you again in the future!",
+        "updated": "2025-07-24T23:10:23.211511Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-24T22:18:31.409510Z",
+      "relative_time": null,
+      "author_name": "Oldman Malloney",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXHPKSbIKEReDrqaa0zQ8iGdc9cAMrSBfca6vOQvNHULGaOgMxZ=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "The interior design was wonderful.  I was wondering who could have stage it so perfectly.",
+      "owner_reply": {
+        "text": "Thank you so much for your kind words! We're delighted to hear that you found the interior design wonderful and perfectly staged. It's always rewarding to know our efforts are appreciated.",
+        "updated": "2025-07-24T16:20:25.687054Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-24T21:45:09.391635Z",
+      "relative_time": null,
+      "author_name": "Skyler Forman",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocIomIRN_DZ1_OGi79OZKZpCxvM0UUmuuWetMN2pykFCovPZO1s=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "The staging was great and the team handled all my design requests with professionalism",
+      "owner_reply": {
+        "text": "Thank you, Skyler! I'm delighted to hear that you found our staging exceptional and appreciated our team's professionalism in handling your design requests. We look forward to working together again in the future!",
+        "updated": "2025-07-24T22:10:34.083129Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-24T18:40:31.357543Z",
+      "relative_time": null,
+      "author_name": "Chloe Johnson",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocKrUsXslgxHI1Q9035kD4ulb3NnnN0VIlTzDewT5b7hZfmRWw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne’s work is beautiful! I am impressed the home staging skills. She can take an ordinary space and turn it into something fresh and fun!",
+      "owner_reply": {
+        "text": "Thank you so much for your kind words, Chloe! I'm delighted to hear that you were impressed with the transformation of the space. It's always a joy to bring a fresh and fun aesthetic to each project.",
+        "updated": "2025-07-24T19:10:39.466993Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-24T16:57:29.198987Z",
+      "relative_time": null,
+      "author_name": "Tony Lee",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocL44xiLxAUQj6dKDOYNR76IvBR8ojjzYxbigvNpxsDQQhyIuw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "",
+      "owner_reply": {
+        "text": "Thank you so much for the 5-star rating! We're glad to hear that you're satisfied with our staging and design services. Looking forward to working with you again in the future!",
+        "updated": "2025-07-24T17:10:44.694691Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-24T16:08:32.756717Z",
+      "relative_time": null,
+      "author_name": "Les Lee",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjVlnCX8FR0z6n3c7wMgKubpo1Vm2WT_ULKtxlMEvYUkdHCNmkEl=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "The Interior designs and Staging I see on your website are so beautiful.  Would definitely use your services",
+      "owner_reply": {
+        "text": "Thank you for your wonderful review! I'm glad to hear you loved the interior designs and staging projects featured on our website. We look forward to working with you in the future!",
+        "updated": "2025-07-24T16:20:25.525484Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-24T02:10:27.800967Z",
+      "relative_time": null,
+      "author_name": "Mackenzie Rosalee Ruff",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLz193WUWslsLB002Xr25M1H3lmKNub1XWyzj76i4V9Ic5J2A=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne crushed the interior design. Clean, thoughtful, and easy to work with. Whole space came together smooth.",
+      "owner_reply": {
+        "text": "Thank you so much, Mackenzie! I'm delighted to hear you loved the clean and thoughtful design we provided. It's always our goal to make the process as smooth and easy as possible.",
+        "updated": "2025-07-24T02:20:13.962384Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-24T01:01:08.485494Z",
+      "relative_time": null,
+      "author_name": "Network of Care",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocI_7M7DoWWTIPYRvPBK-5syfHtebIQ_Rp4ZY7xU_kVQo4ngqg=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Working with Greylyn Wayne was effortless in the best way. They understood the vibe right away and made everything look elevated without trying too hard. Super easy to collaborate with and made the whole process feel smooth start to finish.",
+      "owner_reply": {
+        "text": "Thank you so much for the wonderful review! I'm delighted you found the collaboration seamless and that we captured the vibe perfectly. We strive to make every project feel easy and elevated, and it's great to hear you felt the process was smooth from start to finish.",
+        "updated": "2025-07-24T01:20:19.847821Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-24T00:58:16.843609Z",
+      "relative_time": null,
+      "author_name": "Kari Lee",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocL26ns-P53IVi5yDNclpLX5cn5Vj2Ii6a55MwnIbyo17xN4-Q=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "",
+      "owner_reply": {
+        "text": "Thank you for the wonderful review, Kari! We're delighted to know our staging and design services met your expectations. We look forward to working with you again in the future!",
+        "updated": "2025-07-24T01:20:19.676186Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-23T17:17:07.544694Z",
+      "relative_time": null,
+      "author_name": "Ainsley G Beck",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocKAamlMP4430yMo1xekEAi-SgTQKtvwKOSFuVPM9oq_NUE0pg=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne interior design is attentive to every detail and professional to work with! They truly care about home staging and want to make the experience as smooth as possible. Their ability to transform any space is impressive. Highly recommend!",
+      "owner_reply": {
+        "text": "Thank you so much for your kind words, Ainsley! I'm delighted to hear that you found our attention to detail and professionalism impressive and enjoyed the smooth experience. It's always a pleasure to transform spaces and create environments that clients love.",
+        "updated": "2025-07-23T17:30:31.093057Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-23T13:09:26.878009Z",
+      "relative_time": null,
+      "author_name": "Howard Cooper",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXFcGoULoFS1eDgXgPUkCkfFhtbapnuJw4z9YIEbl4BwtQZpidd=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "She did an amazing job!",
+      "owner_reply": {
+        "text": "Thank you so much, Howard! I'm delighted to hear that you loved the work we did. Your kind words mean the world to us, and we're grateful for the opportunity to help showcase the property's true potential.",
+        "updated": "2025-07-23T13:20:13.614050Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-23T06:21:25.364113Z",
+      "relative_time": null,
+      "author_name": "Rhys Schluter",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocKOFVovzLofPZ33gUHjUCf2tZ159W2MHxAjw1W5nCIEIXYeZg=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Great expertise and opinions as well as wonderful follow through! Would definitely go to this company in the future!",
+      "owner_reply": {
+        "text": "Thank you so much, Rhys! I'm happy to hear that you appreciated our expertise and follow-through. Looking forward to collaborating again in the future!",
+        "updated": "2025-07-23T06:50:07.509926Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-23T03:04:53.141916Z",
+      "relative_time": null,
+      "author_name": "Summer Mullins",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJTCiXxvsqvywU94gxVBNZm9mRqEZMu8K-Td6W3Op6WdUOCbw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne was a wonderful company to work with. Their home staging was beautiful ( took a few of their ideas for myself! ) fast, easy and professional. I would recommend to a friend and would use them again!",
+      "owner_reply": {
+        "text": "Thank you so much, Summer! I'm delighted to hear that you found our home staging to be beautiful and the process fast, easy, and professional. We appreciate your recommendation and look forward to working with you again!",
+        "updated": "2025-07-23T03:20:07.374006Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-22T23:53:41.419125Z",
+      "relative_time": null,
+      "author_name": "Bionce Vincent",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXJEAXPQtk45700U7h0Vy7anHTosWMdjnGoA2jz3LgPecmppVOC=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne is seriously amazing! Their design work is so beautiful and stylish—they know exactly how to make a space feel fresh and put-together. They’re super detail-oriented, easy to work with, and just really fun to be around. I’d recommend them to anyone looking to make their home feel like a dream.",
+      "owner_reply": {
+        "text": "Thank you so much, Bionce! I'm thrilled to hear that you loved our design work and found it beautiful and stylish. We always strive to be detail-oriented and create a fun and collaborative experience for everyone we work with. Your recommendation truly means a lot to us!",
+        "updated": "2025-07-23T00:10:23.201454Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-22T23:36:59.460653Z",
+      "relative_time": null,
+      "author_name": "Sara Watts",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJH0U03OMXrnKvbPxf-l8WQB2YleR_P46iK2IGV8fQVcxMN6w=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne is amazing! They take the time to curate each space perfectly. They are super fun to work with, professional and completely brought the vision to life. Would work with them again in a heartbeat!",
+      "owner_reply": {
+        "text": "Thank you so much, Sara! We're delighted to hear that you enjoyed the curated and thoughtful staging process. It's wonderful to know our professionalism and fun approach helped bring the vision to life for your projects. We look forward to working with you again!",
+        "updated": "2025-07-23T00:00:28.776155Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-22T22:19:29.938112Z",
+      "relative_time": null,
+      "author_name": "Mark Codinha",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJD09KQstm74JnW0g1Es-bQ36UalysBjQSOUbsiZUSXVu77Yw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "They did an amazing job!! I would highly recommend if you don’t have a keen eye like me!!",
+      "owner_reply": {
+        "text": "Thank you so much, Mark! We're delighted to hear that you're pleased with our staging work. It was our pleasure to assist and ensure everything looked just right.",
+        "updated": "2025-07-22T22:30:23.286788Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-22T22:08:32.054781Z",
+      "relative_time": null,
+      "author_name": "James Eckholdt Jr",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXy93R__Awz2dqUVU8si4L_RHZUURhhjA28xhIfObEgF6wX608=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Had the best experience with Greylyn Wayne! Their team was extremely dependable and were as nice as could be!",
+      "owner_reply": {
+        "text": "Thank you so much, James! I'm delighted to hear that our team's dependability and friendliness made for such a positive experience. Your kind words mean a lot to us, and we look forward to working with you again in the future.",
+        "updated": "2025-07-22T22:20:24.166974Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-22T22:07:10.491755Z",
+      "relative_time": null,
+      "author_name": "Logan Hatfield",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXLxMg9n2Sgz34bHkeR3TfAsyl_oP9O3S1j7ODseJbWZ91e9eiY=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "It’s been great working with Greylyn Wayne! Their interior design is like no other!",
+      "owner_reply": {
+        "text": "Thank you so much for the wonderful review, Logan! We're delighted to hear that you enjoyed our unique approach to interior design. It's been a pleasure working with you too!",
+        "updated": "2025-07-22T22:20:23.347276Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-22T17:55:58.463704Z",
+      "relative_time": null,
+      "author_name": "Truman Martin",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjVkHG9iu7yfNdFmDEqFvAvtz-5P8UQY836ZDXG1msp0ouHlhHRG=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne has done an amazing job with the interior design and decoration of my house. They are definitely the number one pick for interior design in Portland and I would recommend anyone selling their house to use them for all interior/design needs!",
+      "owner_reply": {
+        "text": "Thank you so much, Truman! I'm delighted to hear that you found our interior design and decoration work impressive. We pride ourselves on being a top choice in Portland, and your recommendation means the world to us!",
+        "updated": "2025-07-22T18:10:25.209595Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-22T17:11:44.631970Z",
+      "relative_time": null,
+      "author_name": "Sean Hoffmans",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjUn8CXKTsRSuhEsePEUxatNTraWzQZwC8ycfqvPnPJxS2rT_H-t=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn was great! The interior design for my house was incredible and I couldn’t be more thankful to have met her!",
+      "owner_reply": {
+        "text": "Thank you so much for your wonderful review, Sean! I'm delighted to hear that you're thrilled with the interior design we provided. It was a pleasure working with you!",
+        "updated": "2025-07-22T17:20:25.469484Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-22T17:03:24.703401Z",
+      "relative_time": null,
+      "author_name": "Dakota Schwartz",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjUSK_RCtAnNAur3Z4XnPpyM4VsjL_N5uhb9Q3aCHmkhzdOhups=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne has done an amazing job with their interior design and how they staged the home. It made everything look so put together and beautiful!!!",
+      "owner_reply": {
+        "text": "Thank you so much, Dakota, for your wonderful feedback! I'm delighted to hear that you found the interior design and staging to be beautifully put together. It's always our goal to create stunning and cohesive spaces!",
+        "updated": "2025-07-22T17:20:24.909711Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-22T02:51:18.012964Z",
+      "relative_time": null,
+      "author_name": "L D",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXcWSR9TO-8ae9NTOUvgy9_FkjswWLRH2dzp5hxX_Viga8oQEdr=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "So amazing, I loved working with the team. What an easy and chill decor experience. Glad I could put my staging into their hands",
+      "owner_reply": {
+        "text": "Thank you for the kind review, Lexi! We're delighted to hear that you enjoyed the smooth and relaxed experience with our team at Greylyn Wayne Home Staging & Interior Design. It was a pleasure working with you to bring your staging vision to life.",
+        "updated": "2025-07-22T03:10:14.447682Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-22T00:03:55.101433Z",
+      "relative_time": null,
+      "author_name": "Navis Nas",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocIGQEn8RC28t_ryoI-m-WLASGodDdz5nxliy03EpwvuhsYXfQ=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Fantastic interior design work, lovely team very efficient, made the process easy and comfortable.",
+      "owner_reply": {
+        "text": "Thank you so much for your wonderful review! I'm delighted to hear that you found our interior design work fantastic and that our team made the process easy and comfortable for you. It's great to know we were efficient in meeting your needs!",
+        "updated": "2025-07-22T01:40:25.042982Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-21T23:47:55.899802Z",
+      "relative_time": null,
+      "author_name": "Jeret Fusselman",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjWnX1CexRAhIzt0fuv_pzPTwKcvLIi2tOmVg1ftTbM_exUmge0=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Great interior design work, exactly what I was looking for, and even better people, went by super easy!",
+      "owner_reply": {
+        "text": "Thank you so much, Jeret! I'm delighted to hear that our interior design work matched your vision and that you found the process seamless and enjoyable. Looking forward to working with you again!",
+        "updated": "2025-07-22T01:20:26.473107Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-21T23:47:14.473102Z",
+      "relative_time": null,
+      "author_name": "Ellery",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXluE8H_T5Aa_l7WSCdm7ulyfCdpP08s6g7z3m8F-Mt8zFc3PP4=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "Thank you to Alicia for being so professional and knowledgeable! We will definitely be recommending this team in the future!",
+      "owner_reply": {
+        "text": "Thank you so much for the wonderful review, Ellery! I'm delighted to hear Alicia's professionalism and expertise made a great impression on you. We truly appreciate your recommendation and look forward to working with you again soon!",
+        "updated": "2025-07-22T01:20:26.287473Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-21T23:38:52.495847Z",
+      "relative_time": null,
+      "author_name": "yom yom",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocIm4RLih9muLSV-AdetkjzhJDpb08B2Dg12H0aD4RqAJHRtHg=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne was fantastic. The home staging process was completed with great care and had a professional touch that should significantly help with a home sale. At the same time, taking into account the overall interior design used provided a much needed injection to a more modern style. Highly recommend for those he need that change of pace.",
+      "owner_reply": {
+        "text": "Thank you so much for your kind words! I'm delighted to hear that you appreciated the professional touch and modern style we brought through our home staging process. Your recommendation truly means a lot to us!",
+        "updated": "2025-07-22T01:10:25.621043Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-21T21:46:44.368143Z",
+      "relative_time": null,
+      "author_name": "Madeline Schaaf",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjWltq8Ew6_TfSia2SI_96C_EICTpBje5BDXoY0bOIFnFNb6cmdD=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Alicia at Greylyn Wayne Home Staging was fantastic! She is helpful and knowledgeable about interior design.",
+      "owner_reply": {
+        "text": "Thank you so much, Madeline! I'm delighted to hear that you found Alicia to be both helpful and knowledgeable. We truly appreciate your kind words and look forward to working with you again!",
+        "updated": "2025-07-21T22:00:44.354466Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-21T17:41:15.906842Z",
+      "relative_time": null,
+      "author_name": "audrey m",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjUAkRN8WpvPqkkbSQ6WsWmhhgduLnMR9BuOId1pjaSEBB_lyACX2A=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne has a great eye for creating beautiful, welcoming spaces. Their staging feels natural and elevated.  Their design work is thoughtful and well-balanced. All the employees are incredibly easy to work with and truly care about their clients. Highly recommend.",
+      "owner_reply": {
+        "text": "Thank you so much, Audrey, for your wonderful review! I'm delighted to hear that you appreciated our eye for creating beautiful and welcoming spaces and found our staging natural and elevated. It's also great to know that you felt well cared for by our team, as client satisfaction is our top priority.",
+        "updated": "2025-07-21T18:00:40.444494Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-21T17:09:01.827329Z",
+      "relative_time": null,
+      "author_name": "Kylee Olivares",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJ2SvMoOZBon_9gz_Q3QhNiqaq2KLqWtgzN69nkCwf1cdDy=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne is amazing. Their designs looked incredible and they were so fun and easy to work with. They are so creative when it comes to interior design. So pleased with the outcome!",
+      "owner_reply": {
+        "text": "Thank you so much, Kylee! I'm delighted to hear that you found our designs incredible and enjoyed working with our creative team. It's wonderful to know that you are pleased with the outcome!",
+        "updated": "2025-07-21T17:30:24.721495Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-21T16:19:21.447743Z",
+      "relative_time": null,
+      "author_name": "Kylie Starr",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocIv_WEL1ptCcDtPJD8B_Zqou6-Ve91Um_yHrTFdLGFEwa17iGk=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne exceeded all expectations! Their design skills are truly exceptional—every detail is thoughtfully curated with style, purpose, and sophistication. The team is not only talented but also a dream to work with: professional, communicative, and genuinely invested in bringing your vision to life. Whether it’s staging or interior design, they approach each project with creativity and care. Highly recommend!",
+      "owner_reply": {
+        "text": "Thank you so much, Kylie! We're delighted to hear that you found our design skills exceptional and that our team was professional and communicative throughout the process. It's wonderful to know that we could bring your vision to life with creativity and care.",
+        "updated": "2025-07-21T16:40:25.508955Z"
+      }
+    },
+    {
+      "rating": 4,
+      "publish_time": "2025-07-21T13:49:04.827880Z",
+      "relative_time": null,
+      "author_name": "Dianna Lee",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjWONgEEdZQ3ie4XWb9LfSxGwre9YJHc-O9G-VdkfaEJbajgfryu=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "As an interior designer, I truly appreciate Greylyn Wayne’s exceptional eye for detail. Their staging work help boast the  property’s appeal to potential buyers. They were professional, collaborative and easy to work with. I would use them again and suggest to anyone looking to use them",
+      "owner_reply": {
+        "text": "Thank you, Dianna, for the kind words! I'm glad to hear that you appreciated our attention to detail and found our collaboration smooth. Your recommendation means a lot to us!",
+        "updated": "2025-07-21T14:00:21.968445Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-21T05:37:24.082311Z",
+      "relative_time": null,
+      "author_name": "Adaora Nwankwo",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjV-4C5E0__QOfFClN3W5vx9JYgrbFYiQCwMGlR3LdGrJjoqNGVZ=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Working with Greylyn Wayne was such a great experience! Their designs looked incredible and they were so fun and easy to work with. They made the whole process feel effortless.",
+      "owner_reply": {
+        "text": "Thank you so much, Adaora! I'm delighted to hear that you enjoyed working with Greylyn Wayne and found our designs incredible. It's wonderful to know that the process felt effortless and enjoyable for you.",
+        "updated": "2025-07-21T05:50:08.158070Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-20T17:35:48.882573Z",
+      "relative_time": null,
+      "author_name": "Smurf Sexington",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocIXiJwK422ISObIG2rHCtXjXJ57SDCcA-v68IqCGC4zEHeZ0A=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I have never been more impressed in my life than with how beautiful and tasteful my home looked after working with Greylyn Wayne Home staging. Thank goodness I had them around because I wouldn’t have known what to do otherwise.",
+      "owner_reply": {
+        "text": "Thank you for your wonderful review! I'm delighted to hear that you were impressed with the beauty and tastefulness of the staging. It was our pleasure to assist and ensure everything looked perfect!",
+        "updated": "2025-07-20T18:00:16.769596Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-20T17:30:50.784821Z",
+      "relative_time": null,
+      "author_name": "Sarah Swanson",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJPfuAu18VzZrcE47Gb6ESCvvxKdaoIUwUBskr2_xrUUmo7rA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Working with Greylyn Wayne home staging was so easy and stress free. True interior design experts, I loved their choices.",
+      "owner_reply": {
+        "text": "Thank you so much, Sarah! I'm delighted to hear that you found working with Greylyn Wayne Home Staging & Interior Design easy and stress-free. We're glad you loved the design choices, and we aim to make every project seamless for our clients.",
+        "updated": "2025-07-20T18:00:16.580071Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-20T16:11:17.832252Z",
+      "relative_time": null,
+      "author_name": "Kristi L",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJTEHrnp8el0Zb4z6s_Ph_ymOtrVq_VKZEzUx0lpsNCWt8ko39C=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Working with Maria and her team at Greylyn Wayne Home Staging & Interior Design was so easy!  Her design eye was impeccable.  I love what they did for my home.",
+      "owner_reply": {
+        "text": "Thank you so much, Kristi! We're delighted to hear that working with Maria and the team was a great experience for you. It's wonderful that you loved the transformation our design brought!",
+        "updated": "2025-07-20T16:30:18.870187Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-20T15:28:30.836791Z",
+      "relative_time": null,
+      "author_name": "Alicia León",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjWY-RT0A2Tt_rJxf7Rv_GdpYfpoA0u0h6AGLvTvrMnJc2cmcOdibA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "The Greylyn Wayne team is amazing to work with and provides so many different design services depending on your needs- interior design, airBNB design, home staging, and more.",
+      "owner_reply": {
+        "text": "Thank you, Alicia! We're delighted to hear that you enjoyed our range of design services. It was a pleasure working with you, and we appreciate your kind words about our team.",
+        "updated": "2025-07-20T15:50:12.229199Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-12T00:39:39.978749Z",
+      "relative_time": null,
+      "author_name": "Megan Kucera",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjUGO_M_5VMws-3b2AGrSAy7-j1EmL9vdnNeCkM9eZ1SYrQiGds=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Such a great team to work with. Their designs are great and they do an amazing job of transforming spaces! Highly recommended!",
+      "owner_reply": {
+        "text": "Thank you so much, Megan! We're delighted to hear that you enjoyed working with our team and appreciated the transformations we achieved. Your recommendation means a lot to us!",
+        "updated": "2025-07-12T00:50:16.768292Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-11T21:05:47.913353Z",
+      "relative_time": null,
+      "author_name": "Tom Gile",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjUefFsrdKwDmZUW8ha9vfdAmEOlAEaD6JugOJuTI47W7H8tubds=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne has been our primary staging company for years. Staging is all about creating an image or story. Greylyn Wayne  does a great not just staging but telling that story to potential home buyers. Their staging comes out fantastic; we get many complements from clients and would be home buyers.",
+      "owner_reply": {
+        "text": "Thank you so much, Tom! I'm delighted to hear that our staging has effectively helped create compelling stories for potential buyers. It's always wonderful to receive compliments, and we’re thrilled to be your go-to staging company for so many years.",
+        "updated": "2025-07-11T21:20:30.958672Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-11T18:39:41.539037Z",
+      "relative_time": null,
+      "author_name": "Lauren Pelkey",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocK1ft1Vt1sduu-26jtuCKYiPczSAiav5Dc20QM87ThHdFbtxw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Such a great company to work with! They were very professional and I loved the style they went with.  Would definitely recommend!",
+      "owner_reply": {
+        "text": "Thank you so much, Lauren! We're delighted to hear that you found our team professional and loved the style we chose. We truly appreciate your recommendation and look forward to the opportunity to work with you again!",
+        "updated": "2025-07-11T19:00:31.622067Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-11T09:49:34.893529Z",
+      "relative_time": null,
+      "author_name": "Eric Riley",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocK1kTMjzyQXmBEiqVmeE_JLo9F20rcmWUKVDFhJeZjkswoxgw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Great company with an amazing eye for detail. Friendly staff made all the difference.",
+      "owner_reply": {
+        "text": "Thank you so much, Eric! I'm delighted to hear that our attention to detail and friendly staff stood out to you. We're grateful for your support and look forward to working with you again!",
+        "updated": "2025-07-11T10:00:09.867840Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-10T17:30:35.350741Z",
+      "relative_time": null,
+      "author_name": "Carmen Felgentrager",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJqoiQJC3rYMIuy2WVPCUg2j2PGwOKV1jb3nrVEVz_wDo00Nw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "",
+      "owner_reply": {
+        "text": "Thank you for the fantastic rating, Carmen! We're so glad you enjoyed our home staging and interior design services. Your support means a lot to us, and we look forward to working together again!",
+        "updated": "2025-07-10T17:50:32.956442Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-10T15:41:22.304473Z",
+      "relative_time": null,
+      "author_name": "Marie Felgentrager",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLJ5FOkJO8EfYZQCozNJThEb1rSX0PO2Dh_n_qYJtXGy9J6Vw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Excellent design skills!  Thorough & wonderful to work with.",
+      "owner_reply": {
+        "text": "Thank you so much for the kind words, Marie! I'm delighted to hear that you appreciated our design skills and found working with us to be a wonderful experience. We always strive to provide thorough service and are thrilled that it resonated with you.",
+        "updated": "2025-07-10T16:00:41.736710Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-10T14:05:34.726552Z",
+      "relative_time": null,
+      "author_name": "Jesse Felgentrager",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLz-OQjMpydl_kevlZy7oG446--KpMl6--kPOFifIysuvOc9Q=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "The design team is by far the most courteous and professional group I have ever had the pleasure of working with. Their suggestions and willingness to make use of my own really solidified my experience as one of utmost positivity. I strongly recommend them and hope to work with them again in the future!",
+      "owner_reply": {
+        "text": "Thank you so much for your wonderful review, Jesse! I'm delighted that our design team was able to provide such a courteous and professional experience while incorporating your suggestions. We look forward to working with you again soon!",
+        "updated": "2025-07-10T14:30:40.649817Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-09T18:53:06.275479Z",
+      "relative_time": null,
+      "author_name": "Mikayla Baird",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLZj_K6TCZCGkikBMI8R72jGWNuWISULX92E1TyoSSalEa-=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "The design team here is amazing! They really know how to pull together a room and tie everything in perfectly!",
+      "owner_reply": {
+        "text": "Thank you so much, Mikayla! We're delighted to hear that our design team impressed you with their ability to create cohesive and harmonious spaces. It's always our goal to deliver exceptional results that leave a lasting impression.",
+        "updated": "2025-07-09T19:20:29.320890Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-09T14:30:09.532759Z",
+      "relative_time": null,
+      "author_name": "Alexis Dettrich",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocIxRmjgFePlEIZObPuoklymKo6XnjHKtFq2ERY-S_zN9uAwug=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Everyone was super nice and welcoming! They really worked with me to come up with designs that are functional, fit in with my lifestyle, and are absolutely beautiful! Their team has not only met my expectations. They 100% exceeded them!",
+      "owner_reply": {
+        "text": "Thank you so much, Alexis! We're delighted to hear that our team was able to create designs that are functional and beautifully align with your lifestyle. Exceeding your expectations is what we aim for, and we're so glad we achieved that with you!",
+        "updated": "2025-07-09T15:00:27.380814Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-09T00:03:20.930918Z",
+      "relative_time": null,
+      "author_name": "Logan Riley",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjUYaxRWDBhD3pTvMGdV57zpkRcSSbPoIN8OkZicORq8pS9Z73eo=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "The team at Greylyn Wayne was amazing. The design team did a wonderful job and I was very pleased with the time and effort they put in!",
+      "owner_reply": {
+        "text": "Thank you, Logan! We're so glad to hear that you were pleased with the design work from our team at Greylyn Wayne. Your kind words about our effort and dedication mean a lot to us.",
+        "updated": "2025-07-09T00:20:20.195200Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-08T23:59:42.361467Z",
+      "relative_time": null,
+      "author_name": "Cole Riley",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXGIMKw8aJiAN9ImTa3SSVUwEDDq7W4aLyriadsRE54pE46bhjt=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Great Experience. The design team is very kind and knowledgeable and is helpful every step of the way when creating our interior spaces. I would definitely recommend them for future home staging/interior design needs.",
+      "owner_reply": {
+        "text": "Thank you so much for your kind words, Cole! I'm glad to hear that you found our design team to be both knowledgeable and helpful throughout the process. We truly appreciate your recommendation and look forward to assisting with future staging and design projects.",
+        "updated": "2025-07-09T00:20:19.870010Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-08T15:43:36.102561Z",
+      "relative_time": null,
+      "author_name": "Kris Corona",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjWQcTK79X72K87hlemO1dWp2i7qTdm6K7S9szpsAnoRr6DOPkEr=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I sure wouldn’t use any other staging service.",
+      "owner_reply": {
+        "text": "Thank you so much for your kind words! We're delighted to hear that you trust Greylyn Wayne Home Staging & Interior Design for all your staging needs. We look forward to working with you on more projects!",
+        "updated": "2025-07-08T16:00:53.369488Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-08T15:20:14.751834Z",
+      "relative_time": null,
+      "author_name": "Carsyn Munger",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJLUnFJgmihIhAQXBy6NkH1sQP7XWKhLBFlw16zFfSzYDQmUA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "They have done an amazing job. Not only in their professional behaviors but their designs are outstanding!",
+      "owner_reply": {
+        "text": "Thank you so much for your wonderful review, Carsyn! I'm glad to hear that you appreciated both our professional approach and our design work. Your positive feedback means a lot to us!",
+        "updated": "2025-07-08T15:30:17.087818Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-08T14:28:23.697477Z",
+      "relative_time": null,
+      "author_name": "Tyler Kucera",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjVtYdecPqCYad3QDsURbOIrZ5T1LllTtGqRoM16DArwNduVkN8S=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "",
+      "owner_reply": {
+        "text": "Thank you for the fantastic review! We're delighted to know you had a positive experience with Greylyn Wayne Home Staging & Interior Design. Your feedback encourages us to continue providing exceptional service.",
+        "updated": "2025-07-08T14:50:19.014599Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-08T02:10:27.682773Z",
+      "relative_time": null,
+      "author_name": "Jeannette Phillips",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXznyEayf2hjhAx6eZ7uNOrr1Yvaimpg8l_okv9P50uUy34CvPW=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Olivia and team were amazing. Professional, and produced exceptional mood boards. They  followed up when we had questions promptly and made sure we were happy.",
+      "owner_reply": {
+        "text": "Thank you so much for your wonderful review, Jeannette! I'm delighted to hear that Olivia and the team impressed you with their professionalism and exceptional mood boards. It's great to know our prompt communication and commitment to your satisfaction made a positive impact.",
+        "updated": "2025-07-08T02:30:14.245516Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-08T00:53:50.533273Z",
+      "relative_time": null,
+      "author_name": "Matthew Parks",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocL58EL2P3oUuhZq8xb8I5qkjoq-1VXcWU-eIzA33HroURCYvw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Kaitlyn and her team are great!!",
+      "owner_reply": {
+        "text": "Thank you so much, Matthew! I'm delighted to hear that Kaitlyn and the team made a great impression. Looking forward to working together again!",
+        "updated": "2025-07-08T01:10:16.686072Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-07T23:20:44.033830Z",
+      "relative_time": null,
+      "author_name": "Gile Group",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjU4YxmIt0LJpquaUcA87FALGqhDV4lfoAW89QV26QYI53io2EU=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I have been using GreyLyn Wayne exclusively to do staging on our listings.  They are always professional and responsive and even provided a little special \"touch\" which was unexpected and delightful. I highly recommend GreyLyn Wayne!",
+      "owner_reply": {
+        "text": "Thank you for your kind review! We're delighted to hear that our professionalism, responsiveness, and special touches have been appreciated in your listings. Your recommendation means a lot to us, and we're excited to continue working together!",
+        "updated": "2025-07-07T23:50:24.466028Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-07T18:12:24.445316Z",
+      "relative_time": null,
+      "author_name": "E Dods",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocKOmbvPOgBVQLKeylX7ZMqSTBjgCTxN9Z6Q34JroS6wARYQ=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I’ve followed Greylyn Wayne’s work for a while now and am always impressed by the level of detail and beauty they bring to each space. While I haven’t personally worked with them yet, I definitely want to use them in the future!",
+      "owner_reply": {
+        "text": "Thank you so much for following our work and for your kind words! It's wonderful to hear that our attention to detail and the beauty we aim to create resonates with you. We look forward to the opportunity to work together in the future!",
+        "updated": "2025-07-07T18:30:27.801752Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-07T14:25:28.905740Z",
+      "relative_time": null,
+      "author_name": "Kristin Parks",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjU731ufaImiDRKpvquavtrZ3yrbXEeVySAllrZqHWGSi7b5XjQ=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "",
+      "owner_reply": {
+        "text": "Thank you so much for the 5-star rating, Kristin! We're glad to know you were pleased with our staging and design services. We look forward to working with you on future projects!",
+        "updated": "2025-07-07T14:50:17.657517Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-07-06T15:45:34.925789Z",
+      "relative_time": null,
+      "author_name": "J.T. Gile",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocKPlFvMRBPGGybl-caZvE0PsZdWtfRBHVyxfFXXrEQZzBId6x_7=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Kaitlyn did a fantastic job while working with Gile Group Inc. She was always professional and responsive, as was the entire Greylyn Wayne crew.",
+      "owner_reply": {
+        "text": "Thank you for the wonderful review! It's great to hear that Kaitlyn and the team were professional and responsive while working with the Gile Group Inc. We're delighted that you were pleased with our service!",
+        "updated": "2025-07-06T16:00:25.221714Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-24T05:37:36.547086Z",
+      "relative_time": null,
+      "author_name": "Tim Symolon",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocL5R0qIaIDNJUxNB9vGBZfEePLD0w2r0xEcHrnEyJxG7FdIqA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "“I’m an interior designer of course I have a favorite vase.” - Liv\nShe knows her vases that’s for sure! She helped us pick out plenty of vases for our home and we couldn’t have done it without her eye for design. Her creative ideas took our house and created a home. She’s the best!",
+      "owner_reply": {
+        "text": "Thank you, Tim, for sharing such a wonderful review! It's fantastic to hear that Liv's creative touch and expert eye for design were able to transform your house with her vase selections. We're delighted to be part of making it feel more like a home.",
+        "updated": "2025-06-24T06:00:37.439709Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-24T05:37:26.394621Z",
+      "relative_time": null,
+      "author_name": "Reed Overfield",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJ3XNr2p5_rV5_mvCjwB5Q75fMXkNEG5yCbMye5qAV1TjPL=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Great experience working with Greylyn Wayne!",
+      "owner_reply": {
+        "text": "Thank you, Reed! I'm delighted to hear that you had a great experience with Greylyn Wayne Home Staging & Interior Design. We truly appreciate your support and look forward to working together again.",
+        "updated": "2025-06-24T06:00:36.541700Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-24T05:36:06.441342Z",
+      "relative_time": null,
+      "author_name": "Kaeli Tegland",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLxGW3hAYoN5lMCakH_xsfKdL5E-EI-GAkLG8s1VW0HOuOLxg=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne did an amazing job with my house! Their attention to detail and excellent customer service truly stood out. I highly recommend them!!",
+      "owner_reply": {
+        "text": "Thank you so much, Kaeli! We're delighted to hear that you appreciated our attention to detail and excellent customer service. Your recommendation means a lot to us!",
+        "updated": "2025-06-24T05:40:07.046336Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-24T05:31:17.280218Z",
+      "relative_time": null,
+      "author_name": "Seth K",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjWuutLuEeEMD_8Pq6VxZuGyoBnW9xG73TVXY0OQlgQWZ4gjZU-n=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Very satisfied working with Greylyn Wayne!",
+      "owner_reply": {
+        "text": "Thank you, Seth! We're delighted to hear you're very satisfied. It was a pleasure working with you to create beautiful spaces!",
+        "updated": "2025-06-24T06:00:40.730316Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-24T05:23:53.777465Z",
+      "relative_time": null,
+      "author_name": "Braden Baxter",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXkhFoyaY0zD0abm9ywuz8ZhNlhI-cc-z_VHQ9FbR_NtLqikXt2=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Had a great experience with their services",
+      "owner_reply": {
+        "text": "Thank you so much for your kind words, Braden! I'm delighted to hear you had a great experience with our services at Greylyn Wayne Home Staging & Interior Design. We look forward to working with you again in the future!",
+        "updated": "2025-06-24T05:50:08.636603Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-24T03:41:07.888941Z",
+      "relative_time": null,
+      "author_name": "Britney Fischer",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocIWfxTPlwz95GkHOsvls7idfJPHIUjZRmawDnOae9lebwwpug=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I had an amazing time working with Olivia and Jac! They have amazing design skills and great style. Plus they are the cutest duo and very hard workers.😊",
+      "owner_reply": {
+        "text": "Thank you so much, Britney! We're delighted to hear that you enjoyed working with Olivia and Jac. They truly have a knack for design and style, and we're happy they could provide such a positive experience.",
+        "updated": "2025-06-24T04:10:09.674158Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-24T03:30:46.233261Z",
+      "relative_time": null,
+      "author_name": "Allison Macartney",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLQIc1gA8cVQdfzFXNud56MeEfBcFHHNZY54XKZ3GsVPqA0nw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I used Greylyn Wayne for interior design in my home and couldn’t be happier. They truly understood my style and brought everything together beautifully. Professional, talented, and easy to work with, I highly recommend!!",
+      "owner_reply": null
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-24T03:20:40.546223Z",
+      "relative_time": null,
+      "author_name": "Olivia Brodeur",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocKzGraKU4AtdfTd355EEIQpW-faZ6LAeZDm0Mtq4TJUItZMaA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I used Greylyn Wayne’s interior design service to design my home and I loved it!",
+      "owner_reply": {
+        "text": "Thank you for the stellar review, Olivia! ",
+        "updated": "2024-12-16T21:14:52.712810Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-23T00:54:30.489375Z",
+      "relative_time": null,
+      "author_name": "Alex Tegland",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjUWCA9ORhqKrtT61CNIeTclddI5uMpRYMt0508yVFP4WiWDBaPP=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I worked with Greylyn Wayne and it went great! They did such a great job and I will definitely be using them again!",
+      "owner_reply": {
+        "text": "Thank you so much for your kind words and the 5-star rating, Alex! I'm delighted to hear that you had a great experience with us and that you're planning to work with us again. We look forward to partnering with you on future projects!",
+        "updated": "2025-06-30T17:30:43.478158Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-23T00:50:39.666736Z",
+      "relative_time": null,
+      "author_name": "Dana Tegland",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocIsnh4oQjskeGTTlWnJ3Z_MEYVJBTFZNpHQgn9JBTHDMdudBw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Positive experience.  Enjoyed the experience",
+      "owner_reply": {
+        "text": "Thank you for leaving such a positive review, Dana! I'm delighted to hear that you enjoyed your experience with Greylyn Wayne Home Staging & Interior Design.",
+        "updated": "2025-06-23T01:10:11.519600Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-23T00:46:27.506942Z",
+      "relative_time": null,
+      "author_name": "Marc Brodeur",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocIlVZDjdy_JzE1p_DwnAjl0GZp5KRzdCdTC9c6IH4zXNk0TFg=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I had a Greylyn Wayne designer decorate a house we were putting up for sale and she knocked it out of the park!",
+      "owner_reply": {
+        "text": "Thank you, Marc, for the wonderful review! I'm delighted to hear that our designer exceeded your expectations with the house staging. Your success in selling the property is our top priority, and I'm glad we could help make it stand out.",
+        "updated": "2025-06-23T01:01:21.241567Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-23T00:40:19.526084Z",
+      "relative_time": null,
+      "author_name": "Leslie Brodeur",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLBukllfEsiWQpyLxD2wC9_2o81H45Y9bTbTY5bpg3WjxMavA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Working with Greylyn Wayne was a pleasure. Thank you again for a spectacular job.",
+      "owner_reply": {
+        "text": "Thank you so much for your kind words, Leslie! I'm delighted to hear that you enjoyed working with us and that you found our staging to be spectacular. We look forward to collaborating with you again in the future!",
+        "updated": "2025-06-23T01:10:12.745480Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-19T14:18:48.297375Z",
+      "relative_time": null,
+      "author_name": "Charity Chesnek",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXIynYnS0uIiuCObvLNFIZITBppbe0P2qjIvVJDacjCwEtfvHtI=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Thank you so much for offering your styling consult service! It is so so helpful! I am always in awe at how quickly your team can assess a house and make extremely useful recommendations, and my clients are always impressed.",
+      "owner_reply": {
+        "text": "Thank you, Charity, for the fantastic review! I'm delighted to hear that our styling consult service has been helpful for you and your clients. It's wonderful to know that our team's quick assessments and recommendations are making a positive impact.",
+        "updated": "2025-06-19T14:30:50.190686Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-06T12:59:33.055248Z",
+      "relative_time": null,
+      "author_name": "Kimberly",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjUAL4L_6-sXHG1GwUcXXhaA3TdnSwr88vNq3za4t93edr4nmPWJtA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "First time using Greylyn Wayne and honestly — why didn’t I do this sooner? Miguel and the team made the place look so good I almost wanted to buy my own house back! Smooth process, great style, and the house sold fast. Highly recommend if you want staging that actually makes a difference (and makes you wonder if you should redecorate your next place the same way).",
+      "owner_reply": {
+        "text": "Thank you so much, Kimberly! I'm delighted to hear that Miguel and the team impressed you with their style and made the process smooth. It's great to know that the staging made such a difference in selling the house quickly.",
+        "updated": "2025-06-06T13:20:11.608297Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-06T04:36:09.224832Z",
+      "relative_time": null,
+      "author_name": "Liam Devine",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLT8SOL8h-rx12MoLAdlQGCi3zhXOxGzdMX0p-0U2gcnr3xyA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Loved the transformation, they made our place market-ready and stunning! A home run from Miguel and the friendly faces at Greylyn Wayne. Thanks guys!",
+      "owner_reply": {
+        "text": "Thank you, Liam! We're delighted to hear that Miguel and the team could help make the property market-ready and stunning. We appreciate your kind words and look forward to collaborating again.",
+        "updated": "2025-06-06T04:50:07.481334Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-06T02:16:43.935814Z",
+      "relative_time": null,
+      "author_name": "Mario Olmedo gonzalez",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocKfDDspJvvMk0bRO446dXBAOoiZUR6gng-GvKkSEAm8ehHf=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Beautiful staging that made a big impact! thank you, Greylyn Wayne!",
+      "owner_reply": {
+        "text": "Thank you, Mario! I'm so glad to hear that the staging made a big impact. Your kind words mean a lot to us at Greylyn Wayne Home Staging & Interior Design!",
+        "updated": "2025-06-06T02:30:25.507831Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-06T02:07:41.357812Z",
+      "relative_time": null,
+      "author_name": "Maribel Diaz",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLFPBHdcp5FzCc5YI7Zq3QqyF1SAMwKS4yVHhREOArclra45Q=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Impressive work by Greylyn Wayne—they made the space shine. Great style, smooth process, and real results.",
+      "owner_reply": {
+        "text": "Thank you so much for the wonderful review, Maribel! I'm delighted to hear that you loved the style and appreciated the seamless process. It’s fantastic to know that our efforts truly made the space shine for you.",
+        "updated": "2025-06-06T02:20:10.213619Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-06T01:23:58.565130Z",
+      "relative_time": null,
+      "author_name": "ethan ainslie",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocK1G7Qc-lZMD_niUGRwFnj6J0wWwd-fa5mcTC35eIYG_mxf_A0=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne truly knows how to transform a space. Every detail was thoughtfully executed, creating a warm, inviting atmosphere that really highlights the potential of the home. Their work made a huge impact, and I wouldn’t hesitate to recommend them to anyone looking to make their property stand out.",
+      "owner_reply": {
+        "text": "Thank you, Ethan, for your kind words! I'm delighted to hear that our attention to detail and transformative touch left such a positive impact. We appreciate your recommendation and look forward to working together again in the future.",
+        "updated": "2025-06-06T01:40:12.499898Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-06T00:10:17.099456Z",
+      "relative_time": null,
+      "author_name": "Booboo 7361",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJDjg3rLiX9aR95EbcE1Hfas9ah1E3_X1wZxmEuXa5hgDD1lQ=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne did a fantastic job staging my home—everything looked great and felt so welcoming. Really happy with the results!",
+      "owner_reply": {
+        "text": "Thank you for the wonderful review! I'm delighted to hear that you loved how welcoming and great everything looked after our staging. Your satisfaction means a lot to us!",
+        "updated": "2025-06-06T00:30:15.007656Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-05T23:19:29.246802Z",
+      "relative_time": null,
+      "author_name": "José Luis Arturo Carranza Díaz",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXv3fs7blHMFwbL2pJNVPodDz-YwUX13vUNpKJm9uRvSTt7um5B=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne did an amazing job staging my home! It looked so warm and inviting—totally helped it stand out. Super easy to work with and really knows their stuff. Highly recommend!",
+      "owner_reply": {
+        "text": "Thank you so much, José, for your wonderful review! I'm delighted to hear that you found the staging warm and inviting and that it truly helped make the space stand out. It's always great to hear that the process was easy and that our expertise made a positive impact.",
+        "updated": "2025-06-05T23:30:15.928287Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-05T23:17:54.289374Z",
+      "relative_time": null,
+      "author_name": "Mario Diaz",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjU7p4uR085XUscwL0C6gEpY0E2deSwYp2dLwe9i_Zp_ocpQsBE=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne did an awesome job on the house! Super easy to work with, quick and reliable, the results turned out amazing and beyond what i expected, Definitely recommend!",
+      "owner_reply": {
+        "text": "Thank you so much for your wonderful review, Mario! I'm delighted to hear that you found our team easy to work with and that the results exceeded your expectations. Your recommendation means a lot to us!",
+        "updated": "2025-06-05T23:30:15.492380Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-05T23:01:31.945010Z",
+      "relative_time": null,
+      "author_name": "Jaquay",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLmTdzutXMCza0Rawm1EB32XT5OFCfhM_0BbCYMAve9jf3SwQ=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Miguel and his team did an awesome job today. The place looks amazing! Totally nailed the vibe I was going for thank you again!",
+      "owner_reply": {
+        "text": "Thank you so much, Jaquay! I'm delighted to hear that Miguel and the team nailed the vibe you were going for and that everything looks amazing. We truly appreciate your kind words and are thrilled to have been part of your project.",
+        "updated": "2025-06-05T23:20:15.126414Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-05T22:59:58.328708Z",
+      "relative_time": null,
+      "author_name": "Jerardo Olmedo-diaz",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjVmNL4YXcuB_GEzqDOeBzD2KtSZgaHWOJcmMK3x6n2OHSG9gtA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "This was my first time using a staging company and I’m amazed on how everything turned out! There team was great and helped make this a smooth process! Highly recommend Greylyn Wayne!",
+      "owner_reply": {
+        "text": "Thank you so much, Jerardo! We're delighted to hear that you were amazed with how everything turned out and that our team made the process smooth for you. We appreciate your recommendation!",
+        "updated": "2025-06-05T23:20:14.853046Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-05T22:49:26.789376Z",
+      "relative_time": null,
+      "author_name": "Justin Hickey",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocIWQ28veiqofQbozazNceeZf6e959Wtvz1a4U5sdkb_IiBu=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Absolutely loved the design work done in my home! Miguel brought everything together beautifully—stylish, functional, and totally my vibe. Super happy with the results!",
+      "owner_reply": {
+        "text": "Thank you so much, Justin! I'm thrilled that Miguel's design work resonated with your vibe and brought everything together beautifully. We love creating stylish and functional spaces, and I'm delighted to hear you're super happy with the results.",
+        "updated": "2025-06-05T23:00:19.600231Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-05T22:46:00.396382Z",
+      "relative_time": null,
+      "author_name": "Miguel Olmedo-m",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXcrHpWGnikQOBQdKbw9Cpm6ih0Z1R7-ih3bwZSyd4bJQ6TYpWy=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Big thanks to Greylyn Wayne for helping me sell my house! You made everything so smooth and stress-free—I really appreciate it!",
+      "owner_reply": {
+        "text": "Thank you, Miguel! I'm glad to hear that our staging services brought ease and efficiency to your selling process. We appreciate your kind words and enthusiasm!",
+        "updated": "2025-06-05T23:00:19.088528Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-05T22:24:58.068890Z",
+      "relative_time": null,
+      "author_name": "Yareili Diaz",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocIlxzYztT-e4iRVz55qxgi-dOsnW_lNq1SG6e-B1KVnrwoThw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Very impressed with their work, they will be my go to stagers moving forward! Very professional and creative people they have at Greylyn Wayne! Highly recommend!",
+      "owner_reply": {
+        "text": "Thank you so much for the kind words, Yareili! I'm delighted to hear that you were impressed with our work and find us professional and creative. We look forward to working with you again in the future!",
+        "updated": "2025-06-05T22:40:16.584327Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-05T18:44:57.234275Z",
+      "relative_time": null,
+      "author_name": "Colton",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJVYTjwJXVy47d32mmqkhpCU6tCcInhDmOnxKuHAFdDHK0Jlw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Very quick and efficient team! Can’t thank them enough for helping my family sell our home!",
+      "owner_reply": {
+        "text": "Thank you so much for your kind review, Colton! I'm delighted to hear that our team's quick and efficient service made such a positive impact on your family's selling experience. It was a pleasure working with you!",
+        "updated": "2025-06-05T19:00:46.308153Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-06-05T15:55:12.422062Z",
+      "relative_time": null,
+      "author_name": "Brayden Garver",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjUkb-kWfpyVFrMC8sBISK9O71kkOZ4Z0bApuiWBvz2W_bfdSs8=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "⭐️⭐️⭐️⭐️⭐️\nWorking with Greylyn Wayne Home Staging and Interior Design was an exceptional experience from start to finish! The staging team was professional, efficient, and incredibly talented. They brought a clear vision and transformed the space into something truly beautiful and market-ready.\n\nEvery room was thoughtfully styled to highlight the home’s best features, creating a warm, welcoming atmosphere that appealed to a wide range of buyers. The attention to detail and design expertise was evident throughout the entire home. Thanks to their work, the property stood out and made a fantastic impression — we’re confident it helped us achieve a quick and successful sale.\n\nIf you’re looking to stage your home for maximum impact, Greylyn Wayne is the team to call. Highly recommended!",
+      "owner_reply": {
+        "text": "Thank you so much, Brayden, for your wonderful review! I'm delighted to hear that our staging work impressed you with its professional design and ability to transform spaces to really stand out on the market. Your kind words about our attention to detail and the atmosphere we create truly mean a lot to us.",
+        "updated": "2025-06-05T16:10:15.957479Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-05-24T21:01:23.292694Z",
+      "relative_time": null,
+      "author_name": "Anna Vargas",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjVXq3k68shhB3Smf2Gvx-wm8vpQUV1F3XmgdKjw2QnyMEpjzX6R=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "We had a great experience! They were professional, fast, and brought in pieces that completely transformed the space. The home looked beautiful and photographed so well. We had multiple offers within days. Highly recommend for anyone looking to make a strong first impression.",
+      "owner_reply": {
+        "text": "Thank you, Anna! I'm delighted to hear that our team's professionalism and the pieces we selected helped transform the space so beautifully. It's wonderful to know that the transformation aided in generating multiple offers quickly.",
+        "updated": "2025-05-24T21:20:14.110428Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-05-24T05:17:26.045531Z",
+      "relative_time": null,
+      "author_name": "Kylie McCabe",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjVc9cd53K9PVPG5Wf7lSkRRFi8DE-lq92XOmj2ZB4ooeu55INnc=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I recently had the pleasure of working with Jacqueline on this team, and I cannot recommend them highly enough! From start to finish, their professionalism, creativity, and attention to detail were truly exceptional.\n\nThe team transformed my property into a stunning, inviting space that felt both elegant and approachable. They have an incredible eye for design, seamlessly blending modern trends with timeless touches. Every room was thoughtfully curated, and the result was nothing short of breathtaking. The staging not only enhanced the home’s appeal but also helped potential buyers envision themselves living there.\n\nWhat stood out most was their ability to listen to my needs and tailor their approach accordingly. They were communicative, punctual, and respectful of my time and budget. The entire process was stress-free, and their passion for what they do was evident. They are worth every penny!",
+      "owner_reply": {
+        "text": "Thank you so much, Kylie, for your wonderful feedback! We're delighted to hear that Jacqueline and the team were able to create a stunning and inviting space that struck the perfect balance between elegance and approachability. Your kind words about our professionalism, creativity, and thoughtful approach truly warm our hearts.",
+        "updated": "2025-05-24T05:30:12.859723Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-05-23T02:10:00.547049Z",
+      "relative_time": null,
+      "author_name": "Mayte Z Blanco",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJX8saX07Z9Srti-siL9d43AboZQjQ4mrvQuSvZX_sOGZaeRw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I recently hired Greylyn Wayne Home Staging & Interior Design to stage my home before listing it for sale, and I couldn't be happier with the results. From the initial consultation to the final setup, the entire process was smooth, professional, and well-executed.\n\nJacqueline had a keen eye for design and knew exactly how to highlight the best features of my home. Her furnishings and décor choices were stylish, modern, and perfectly suited to the space. Within days of staging, we saw a significant increase in interest from potential buyers—and I truly believe the staging played a major role in the quick sale of the home.\n\nCommunication was excellent throughout. They were punctual, respectful of my property, and responsive to any questions or changes I had.\n\nIf you're looking to make a strong impression on buyers and get top dollar for your home, I highly recommend Greylyn Wayne Home Staging & Interior Design. Their work exceeded my expectations",
+      "owner_reply": {
+        "text": "Thank you so much, Mayte, for sharing your experience with Greylyn Wayne Home Staging & Interior Design! We’re delighted to hear that Jacqueline’s design expertise and the staging were so impactful in attracting potential buyers and contributing to a quick sale. Your kind words about our professionalism and communication mean a lot to us!",
+        "updated": "2025-05-23T02:30:52.519269Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-05-22T01:08:05.339754Z",
+      "relative_time": null,
+      "author_name": "Jordan Kelly",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJuUIX95iWzS8gGSjHjnYvTKapb9YH4CH-MGi3c2yzBQkIwLA=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "The work they do is stunning 🤩",
+      "owner_reply": {
+        "text": "Thank you so much, Jordan! I'm delighted to hear that you found our work stunning. Feedback like yours inspires us to continue delivering beautiful results.",
+        "updated": "2025-05-22T01:20:20.171653Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-05-21T17:15:50.599629Z",
+      "relative_time": null,
+      "author_name": "kayla davila-elrite",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJQd2ipQgjqFDMfeBVcsqL5iZ2zQS6zpP0wN57sd0JFwXBERQ=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne exceeded all expectations. Their team was professional, easy to work with, and incredibly talented. They brought out the best in the space with thoughtful, stylish touches that felt both elevated and welcoming.\n\nTheir eye for detail and ability to create cohesive, beautiful interiors is unmatched. If you’re looking for expert design that transforms a space into something truly special, I highly recommend Greylyn Wayne.",
+      "owner_reply": {
+        "text": "Thank you so much for your kind words, Kayla! I'm delighted to hear that you found our team professional and talented, and that we were able to bring out the best in the space with our stylish touches. Your recommendation means the world to us, and we're grateful for the opportunity to create a beautiful, cohesive interior.",
+        "updated": "2025-05-21T17:30:29.837946Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-05-20T20:54:43.466437Z",
+      "relative_time": null,
+      "author_name": "B K",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLy92HiX9uzTren2eFJF7YMkwwPA0Xorujq0CSjfEABtjDrUA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "We had a wonderful experience! Our home looked incredible — stylish, inviting, and ready to sell. We got multiple offers in just days. Highly recommend, and would use again if we weren’t moving out of state.",
+      "owner_reply": {
+        "text": "Thank you so much for the fantastic review! I'm delighted to hear that the home looked incredible and helped attract multiple offers quickly. Wishing you smooth transitions with your move, and we'd be honored to work with you again should the opportunity arise.",
+        "updated": "2025-05-20T21:10:14.828277Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-05-20T19:37:25.846120Z",
+      "relative_time": null,
+      "author_name": "Sara Sargent",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjWLtR9yCvAyq_lmC6Brkyo6TKtw6j7e8--CFd3m3lvVr60K5RXi=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne did such an amazing job staging our home. It looked so beautiful! Super friendly team, and easy to work with.",
+      "owner_reply": {
+        "text": "Thank you, Sara! I'm so glad to hear you found our team friendly and easy to work with, and that you were pleased with how beautiful everything looked. We really enjoyed helping!",
+        "updated": "2025-05-20T19:50:31.582717Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-05-12T18:05:07.114198Z",
+      "relative_time": null,
+      "author_name": "Michelle Ortega",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocKBF1wekUCkqTa_AM2tvZOHzbqjON332IrXxk3U17Wxlw8-cw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Working with Greylyn Wayne Home Staging & Interior Design was an absolute dream from start to finish. Their professionalism, attention to detail, and deep understanding of design truly set them apart. From the very first consultation, they took the time to understand my vision and brought it to life in ways I couldn’t have imagined. Every room they touched felt elevated—polished yet personal, stylish yet livable.\n\nWhat impressed me most was how seamless and collaborative the process felt. They were organized, communicative, and consistently went above and beyond to ensure everything aligned with my vision.\n\nIf you’re looking for a team who can translate your ideas into beautifully curated spaces with grace, efficiency, and serious design chops, look no further. Highly recommend!",
+      "owner_reply": {
+        "text": "Thank you, Michelle, for such a kind review! I'm delighted to hear you enjoyed our professionalism and design understanding, and it's wonderful knowing we could bring your vision to life in a way that exceeded your expectations. We aim to make the process seamless and collaborative, so it’s rewarding to know that stood out for you.",
+        "updated": "2025-05-12T18:20:31.110463Z"
+      }
+    },
+    {
+      "rating": 3,
+      "publish_time": "2025-05-12T17:25:51.155415Z",
+      "relative_time": null,
+      "author_name": "reasonable person",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocKOqY4QDdHS6cjC9glPidpN0KNjADX5lo0z7kRPHaKtoqFn5aDI=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "The people were prompt and nice to work with but staging from any company is so expensive.  I furnished my entire 1000 sq2 loft from Wayfair for 2/3 the price of a 2 month staging rental (over $3000) and now own the furniture and artwork.  It's all new and looks great. I can donate the furniture to a good cause for a tax deduction, give it to our condo staff or keep some of it if desired, and I don't have to rack up more ongoing staging expenses in a slow condo market. Something to consider!",
+      "owner_reply": {
+        "text": "Thank you for acknowledging that our team was prompt and professional. That said, it’s frustrating to receive a 3-star review from someone who didn’t actually use our services.\n\nWe understand that staging isn’t for everyone—but comparing professional staging (which includes skilled designers, insured movers, warehoused inventory, and furnishings built for repeated installation) to buying fast-assembly furniture online isn’t a fair comparison. We use high-quality, durable pieces designed to elevate a listing and withstand constant use.\n\nIf you didn’t move forward with us, we kindly ask you to consider removing this review. Feedback like this can be extremely damaging to small, local businesses who are simply doing their best to serve clients with care and professionalism.\n\n—The Greylyn Wayne Team",
+        "updated": "2025-06-13T22:53:47.262188Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-04-25T01:24:36.475210Z",
+      "relative_time": null,
+      "author_name": "Sherry Francis",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjU2JhL4r9pQctQTpPF_AbLvWfx4uVu1lVW591eXXhQYtSJ8sZu1=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "I had big shoes to fill when my previous stager—who was amazing—had to step back due to a back injury. So I was on the hunt for a new staging partner who could bring the same magic… enter Greylyn Wayne.✨\n\nAfter seeing several of their beautifully staged listings, I decided to give them a shot—and let me tell you, they did not disappoint. From the moment we connected, the GW team went above and beyond: they nailed the scheduling, took the time to understand the property and target audience, and handled everything from setup to teardown with total professionalism and style.\n\nThey don’t just stage homes—they deliver the WOW factor. If you want your listing to stop buyers in their tracks, this is your team.",
+      "owner_reply": {
+        "text": "Thank you so much, Sherry, for your incredible feedback! I'm really pleased our team could exceed your expectations and bring that WOW factor to your listings. We're dedicated to understanding each property and its audience, and it's wonderful to hear our efforts made such a positive impact.",
+        "updated": "2025-04-25T01:40:10.034187Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-04-18T16:46:03.147200Z",
+      "relative_time": null,
+      "author_name": "Marshall Talley",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjVsXQGPjC_zkYsuG0Qv57nxVb-6MAmrNG-LEqnbERbdNh9dQMlH=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I was involved with selling my Grandmother’s house and it was a way bigger job than we first anticipated. We needed a staging company but had no idea where to start. We looked at a few but Greylyn Wayne stood out with great reviews so we gave them call. It was the best decision we could have made. They were very friendly, extremely knowledgeable, fast and professional with competitive pricing. They helped us so much in a rough time for our family. We would definitely recommend Greylyn Wayne to anyone than needs home staging and will use them again when the time comes. Thank you 😊",
+      "owner_reply": {
+        "text": "Thank you so much, Marshall! We're glad to hear you found our team at Greylyn Wayne friendly, knowledgeable, and fast, especially during such an important time for your family. Your kind words truly mean a lot to us, and we look forward to helping you again in the future.😊",
+        "updated": "2025-04-18T17:00:17.743750Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-04-18T16:46:02.484376Z",
+      "relative_time": null,
+      "author_name": "Jacqueline O",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXmzKln2-qEDT6_F1sOAv9YN5595YTaAAmMsXAWlRYLASoGVsU=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I had such a great experience working with Greylyn Wayne Home Staging & Interior Design. From the very beginning, the team was so easy to communicate with—friendly, responsive, and really took the time to understand my style and what I was looking for. The quality of the design work blew me away. Every space they touched looked beautiful, polished, and thoughtfully put together. They made the entire process smooth and stress-free, and I couldn’t be happier with the final result. Highly recommend to anyone looking to transform their space!",
+      "owner_reply": {
+        "text": "Thank you so much for your wonderful review, Jacqueline! We're delighted to hear that you found our team friendly, responsive, and attentive to your style preferences. It’s fantastic to know that you were impressed with the quality and transformation of the designs. We're thrilled we could make the process smooth and stress-free for you!",
+        "updated": "2025-04-18T17:00:18.623142Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-04-03T15:06:01.898603Z",
+      "relative_time": null,
+      "author_name": "O'Donnell Group Realty",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJJ-KjHLfBpSpr-0n38sHLiiCnGz94nDJVftXcwCAqgsRwn9A=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I love using this staging service for my luxury listings. They know how to make the home even more elegant!",
+      "owner_reply": {
+        "text": "Thank you for your kind words! We're delighted to hear that you appreciate the execution we bring to your luxury listings. It's always a pleasure to help create stunning spaces that speak to potential buyers. ",
+        "updated": "2025-04-03T16:59:09.820974Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-03-24T19:25:20.416918Z",
+      "relative_time": null,
+      "author_name": "Mona Kelly",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjVoakIMfutq0DG-ylIyUdupCJAc52SjOBTHxyEFxJAhE-mKABs=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "As a professional realtor, I would use no one other than GreylynWayne for my Staging. Their designs are incredible. They have a wonderful team and go beyond to make it perfect for my clients. And, I have used them personally for the sale of my home. I highly recommend GreylynWayne. You won’t be disappointed!\n\nMona Kelly-Beebe",
+      "owner_reply": {
+        "text": "Thank you so much, Mona! We're delighted to hear that you and your clients have enjoyed our staging and designs. It means the world to us that you'd personally choose Greylyn Wayne for your own home, and we look forward to continuing to work together! ",
+        "updated": "2025-03-24T20:42:44.026434Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-03-22T19:01:08.909752Z",
+      "relative_time": null,
+      "author_name": "Kody Kozak",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjVHgX_v-s6ADwCT_EsjfZmTLdV3aY5BQWIvSi2_7D91Z3NCyMKg=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "",
+      "owner_reply": {
+        "text": "Thank you so much for the awesome rating! We appreciate your support and are delighted that you had a great experience with Greylyn Wayne Home Staging & Interior Design.",
+        "updated": "2025-03-22T19:20:07.613817Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-03-18T00:40:31.694889Z",
+      "relative_time": null,
+      "author_name": "Sean Heyworth",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJr6c9U6m0fHHmgYUCwyJ16YmCoOvkfD6NgwIo85l01CzQGng=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "GW's staging is paramount to selling our homes.  They are the necessary finising touch that allows prospective buyers to envision themselves living in the home.   It's no secret that homes sell faster and for more money when they are stagged.  GW's staging is always on point and fits price points we are selling at as well as the homes aesthetic.  From communication, to interior design, to delivery, to installation, to staging removal after the home sells....GW delivers full service from beginning to end.  Give them a shot!!",
+      "owner_reply": {
+        "text": "Thank you, Sean, for such a wonderful review! I'm glad to hear that our staging has made such a positive impact on selling your homes and that our full-service approach has met your expectations. We look forward to continuing our collaboration and helping more buyers envision their future homes.",
+        "updated": "2025-03-18T01:00:08.279854Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-03-03T21:43:36.410504Z",
+      "relative_time": null,
+      "author_name": "Highland Farms",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocKhsqNdExIk4t-OueDFy7W_RNfgSdR42XGq0mCJPfqWMfLdaA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne Home Staging & Interior Design exceeded my expectations with its exceptional services, perfectly blending functional space planning with timeless design principles. As one of the top home staging companies, their expertise in improving curb appeal and enhancing a home's selling potential is truly remarkable.",
+      "owner_reply": {
+        "text": "Thank you for your wonderful review! We're delighted to hear that our blend of functional space planning and timeless design left a lasting impression. It's incredibly rewarding to know our efforts in enhancing curb appeal and selling potential met your expectations.",
+        "updated": "2025-03-03T22:00:06.834202Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-01-31T17:38:53.621265Z",
+      "relative_time": null,
+      "author_name": "Carey Hunt",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXt5eRnp9J7NuwjDX0a7wxFNyrzLo5vzzT40XQXgJaK7R6G995oGg=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "GW is truly a top stager in Portland. They focus down to the detail, will not leave the project until it is completely dialed . Their special planning and choice of furniture , art , decor always showcases the home’s architectural style and really has helped to highlight the homes I have sold. They are awesome to work with too!  You won’t be disappointed .",
+      "owner_reply": {
+        "text": "Thank you for the kind review, Carey! We strive to produce nothing shy of quality stages for our clients. Thank you for entrusting us with your listings. This one in particular was a pleasure to design!",
+        "updated": "2025-01-31T19:51:37.730307Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2025-01-15T02:48:44.981268Z",
+      "relative_time": null,
+      "author_name": "tye ybarra.",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjVUNracn0f_GrjHOyWxL0NNPqlMAcORH8xsdhYKvrAs30gGmxhu=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "Was a great experience, they came in and staged my home it’s so nice now I dont want to sell it. Thanks again I can’t wait to use you all again",
+      "owner_reply": {
+        "text": "Tye, thank you for the lovely review! We understand that listing your home is such a personal experience and we appreciate you entrusting Greylyn Wayne with your home staging needs. It's a joy for us to experience the transformation of the before and after staging. We hope to work with you again!",
+        "updated": "2025-01-15T17:26:03.715165Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2024-12-16T19:42:55.792363Z",
+      "relative_time": null,
+      "author_name": "Kaitlyn Gile",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjUfZoSvQakkirfI1eNNOhRH_6bC6ch1jcdSAYXV-00CsxUoK3h-TA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Great team to work with!",
+      "owner_reply": {
+        "text": "We enjoy having you on our team, Kaitlyn! Your enthusiastic energy you bring to the team daily is greatly appreciated.",
+        "updated": "2024-12-16T21:12:35.597993Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2024-11-28T20:39:01.456657Z",
+      "relative_time": null,
+      "author_name": "George Serrill",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjVzg_WmzolnnOmGMxQOF1dSGsvuABs6dBdgtUxLbG4U7dhjC7kz=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "beautiful home staging",
+      "owner_reply": {
+        "text": "Thank you for the 5 star review, George! ",
+        "updated": "2024-12-02T19:44:14.545429Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2024-11-28T19:40:32.945214Z",
+      "relative_time": null,
+      "author_name": "Nicholas Zalk",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJcyArN9Bo9eU-11SckoKUzsPS11OEkhCSo8KT7iZRn7NfpBQ=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Unbelievable service, they truly care about everyone they interact with. Would recommend them to anyone!",
+      "owner_reply": {
+        "text": "Thank you for your review, Nicholas! We appreciate your kind words regarding your customer service experience. We strive to meet the expectations for our homeowner and Realtor clients and are happy to hear that we met yours!",
+        "updated": "2024-12-02T19:49:38.253390Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2024-11-28T03:08:33.001057Z",
+      "relative_time": null,
+      "author_name": "Austin Pitschka",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjWYLd1PKhX7DQLOs4j51DCWF6_dsaQacQCTO8XDg1ztDGmYGtdI=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Thank you, Greylen Wayne, for elevating my home decor, furnishings, and overall style to a whole new level. Your expertise and attention to detail truly helped me up my game!",
+      "owner_reply": {
+        "text": "Hi Austin, thank you for the kind review for our Interior Design services. We enjoy working with homeowners on bringing a refresh to an existing space. Bringing functionality, flow and style are some of our core design values. Enjoy your new space!",
+        "updated": "2024-12-02T19:54:13.163718Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2024-11-27T23:59:36.135370Z",
+      "relative_time": null,
+      "author_name": "Heidi L",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjUFYOtyE_OM4R6AXw-rW5zh9TeAfsfNX5f5h8sabU6JA7sPX6I=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne has been an incredible resource for both rental staging and interior design. Their team has an amazing eye for detail and knows exactly how to create spaces that feel stylish, functional, and inviting. They’ve staged several of my rental properties, helping me attract tenants quickly, and also provided interior design services for my custom home. The transformation they achieved was beyond what I could have imagined. If you’re looking for professionals who truly understand how to bring out the best in any space, Greylyn Wayne is the one to call!",
+      "owner_reply": {
+        "text": "Thank you for the lovely review, Heidi. It’s been a pleasure to work with you over the years! We appreciate your loyalty which has helped us learn your design style and adapt it into stages. See you on the next one!",
+        "updated": "2024-12-02T19:56:37.068465Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2024-11-27T23:55:11.962426Z",
+      "relative_time": null,
+      "author_name": "Neshanth Kuppuswamy",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjWK12DKQFMSF01eItCJYaGAN6gxtEdSDerveJDQKnYvdxVaijyp9g=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne was so easy to work with for my property! They have utmost professionalism and complete all projects in a timely manner. Highly recommend to anyone on the fence!!",
+      "owner_reply": {
+        "text": "Thank you for your review, Neshanth. We are happy to hear that our customer and staging services met your expectations! We strive to bring an approachable aesthetic into the homes we stage. We hope to catch you on your next Portland-metro real estate listing! ",
+        "updated": "2024-12-02T19:59:57.415158Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2024-11-27T23:45:30.115377Z",
+      "relative_time": null,
+      "author_name": "Delanie Laverty",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLp0P8EBAzjAO-Oss-RYE5le3kKt31l653ycCyc0KDxsp_V-Wk=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Working with Greylyn Wayne has been an incredible experience both personally and professionally. As someone who's had the privilege of being part of the team and using their staging services for my own property, I can confidently say they deliver exceptional results every time. Their attention to detail, creativity, and ability to transform spaces is unmatched. Seeing the process firsthand has given me even more appreciation for the passion and care they bring to every project. If you're looking to maximize your home's potential and sell quickly, I can't recommend Greylyn Wayne enough!",
+      "owner_reply": {
+        "text": "Thank you for the lovely review, Delanie! We appreciate hearing our previous employees speak so highly of us and our services. Greylyn Wayne always gets extra excited when we see one of your listings on the books! ",
+        "updated": "2024-12-02T20:02:00.596089Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2024-11-27T23:41:44.359008Z",
+      "relative_time": null,
+      "author_name": "Soham Bhalerao",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocKtvamCQsxVUYL-Ahvf15oXCvplkAth9o2Fbb51KKPOiDzOmXcW=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I recently had the pleasure of working with Greylyn Wayne for staging my home, and I cannot recommend them highly enough! From the initial consultation to the final setup, their professionalism, selection of furniture, creativity, and attention to detail were unparalleled.",
+      "owner_reply": {
+        "text": "Thank you for your kind words, Soham! At Greylyn Wayne Home Staging and Interior Design, we strive to source quality furniture and decor for our client’s listings. We start by walkthrough the home. Next we build a story based on the characteristics of the home. From there, we pull furniture, art, textiles and decor that all tell that story. We hope to catch you on your next Portland-metro listing!",
+        "updated": "2024-12-02T20:05:45.513232Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2024-11-25T19:09:29.675976Z",
+      "relative_time": null,
+      "author_name": "Ryan Kozak",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocL5D-MJ-x7PKMNKukcf8Zc8ybVfcPpwOsanUY6PJyvBbkAPjw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Such an amazing team to work with!  Everyone we spoke with was so friendly and helpful and they made the whole process easy for us.  I highly recommend this company to anyone looking for a great staging job at a reasonable price.",
+      "owner_reply": {
+        "text": "Hi Ryan, thank you for your kind review! We are thrilled to hear that our team was able to meet your staging needs. Thank you for entrusting Greylyn Wayne Home Staging with your Portland, Oregon listing!",
+        "updated": "2024-11-25T22:03:20.088578Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2024-09-19T17:32:58.371511Z",
+      "relative_time": null,
+      "author_name": "Joanne Sterling",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjUzYC3YsMf-zonicIdvB1DcruzJqJkj7MerQVj0RhvZu42ViKkl=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "I have always referred Greylyn Wayne to the agents I supervise, but recently had a delightful experience of my own with this company.  On  short notice they transformed a lovely property in Forest Heights from plain to magazine-quality! Their professional touch created an appealing, warm, inviting environment, accentuating the best features of the home while encouraging buyers to visualize occupying the space. The home sold on its first open house!  Their entire staff was a delight to work with and their fee was very fair. You will love working with this company",
+      "owner_reply": {
+        "text": "Hi Joanne, your kind review is a testimony to why we enjoy what we do. Congratulations on going pending after the open house! Home staging is pivotal to making a good impression with a potential home buyer and your story rings true to that! Thank you so much for entrusting Greylyn Wayne to stage your Forest Heights listing and for the constant support of referrals. We pride ourselves on our approachable and livable designs while executing a polished stage. We're looking forward to working with you on the next one.",
+        "updated": "2024-09-19T18:50:52.493764Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2024-08-21T01:58:42.180246Z",
+      "relative_time": null,
+      "author_name": "Joan Medlen",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjWBBZdfrtKjy0yKE9l2F-F_UuPSzNXzEJi52WROGtzsk1PzY5T-=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "Is this MY home?\nGreylyn Wayne did an amazing job showcasing the best of our home in the areas requested. After living in home you love for 26 years, it is so heart-warming to see it staged with care. With your good work, we are putting our best foot forward! Thank you!",
+      "owner_reply": {
+        "text": "Joan, we are so grateful that you entrusted Greylyn Wayne Home Staging. We are glad that we could honor your home and the time you spent there! We enjoyed staging your lovely home!",
+        "updated": "2024-08-21T02:13:06.625958Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2024-07-10T04:14:10.572408Z",
+      "relative_time": null,
+      "author_name": "Andrea Baffaro",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocKPy8nU5c00bn-Ye9suU-RbKw1UWE6Og3wdZMiNEgvqICGdbQ=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "GW did a great job staging a home for my clients! Very professional and customized approach from start to finish.",
+      "owner_reply": {
+        "text": "Thank you, Andrea! We appreciate you hiring us for your listing. With home staging options, we’re glad we could deliver for you and your client. ",
+        "updated": "2024-07-10T05:41:08.560836Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2024-07-10T01:48:45.736025Z",
+      "relative_time": null,
+      "author_name": "Shu Merritt",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjV1j8k0GrDmtD42rIq0YfTK3V1qHblPMZKsYNEdxm_CXSHuj-g=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne Staging team is very professional and efficient. Great communication and impressive results. The home was pending in 3 days. Highly recommended!",
+      "owner_reply": {
+        "text": "We appreciate you choosing to entrust Greylyn Wayne as part of your listing’s success story! It was a pleasure working with you. ",
+        "updated": "2024-07-10T02:01:41.165978Z"
+      }
+    },
+    {
+      "rating": 1,
+      "publish_time": "2024-07-09T11:51:26.928296Z",
+      "relative_time": null,
+      "author_name": "R W",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocKnWpOerdtSsaLAnT6T8KD4OvXXQQZ0vTM4csOZ5OPsEPXBhw=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "Edit to address their response: greylyn caused notable damage in a newly finished custom home and refused the bill. Attempting to force use of their contractor after agreeing to use the person that did the work. Stating they think the work is a couple hundred bucks. Bottom line, for peace of mind, go elsewhere.\n\nWe were connected to Greylyn Wayne by our realtor who staged a $1.8M home. This home was just fully remodeled and customized top to bottom. The greylyn Wayne team damaged our floors, wall, and stair casing during staging (days before hitting the market) and has refused to pay the damage even though acknowledging they caused it. Beware, as another reviewer mentioned, if anything is damaged they will be defensive, pass blame, ignore and ultimately not take responsibility.",
+      "owner_reply": {
+        "text": "At Greylyn Wayne, we strive to treat our clients and realtors with fairness and integrity, and we require the same level of professionalism in return.\n\nRegarding the damage to your property, we want to clarify a few points:\n\nContractor Policy: We prefer to hire our own contractors to repair any damage to the homes we stage. This ensures quality control and prevents unnecessary fees from third-party contractors.\n\nDamage Acknowledgment and Approval Process: We agreed to pay for damages as long as we received a bid before the job was complete. This step is crucial for us to avoid unexpected and inflated costs. While we acknowledged the damage, we did not approve the large invoice from a third party before the work was completed.\n\nWe are committed to resolving issues in a fair and transparent manner. However, we cannot accept large, unapproved invoices from third-party contractors. Our goal is always to find an equitable solution, but we will not be pressured into making hasty decisions that are not in the best interest of all parties involved.",
+        "updated": "2024-07-09T04:40:48.005244Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2024-06-20T01:33:34.892213Z",
+      "relative_time": null,
+      "author_name": "Adam Klugman",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJ3Oiz-tya33TcxFs7bsoZwKeMoMxsRdtR_W341jWOGCZrQGA=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "We hired GW as consultants when we were preparing to sell our house and their advice  guided our choices throughout the entire process. Tori not only has amazing taste, she is also very current in her understanding of the latest decorator trends in the housing market. Very impressed and grateful to have found them!",
+      "owner_reply": {
+        "text": "Thank you so much for your kind review, Adam! We enjoyed working with you.",
+        "updated": "2024-06-25T16:21:12.383547Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2024-06-06T22:59:24.897783Z",
+      "relative_time": null,
+      "author_name": "Connor H",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjV5eY_64rpATRm73qi2ocrE7b2e8ztItgqLMjVf2yiOwmSiYBYx=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "",
+      "owner_reply": {
+        "text": "Thank you so much for the 5-star review, Connor! We're delighted to know you had a positive experience with Greylyn Wayne Home Staging & Interior Design. We appreciate your support and look forward to helping with any future needs!",
+        "updated": "2025-02-25T20:02:07.239543Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2024-06-04T22:03:35.290864Z",
+      "relative_time": null,
+      "author_name": "Don Clemons",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocKBXrgQYNelOsMA2-oGFimsYYNKWee9H5yQBK-ce7aCjVAxXw=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne staging company exceeded my expectations in every aspect. From the initial consultation to the final reveal, their team demonstrated professionalism, creativity, and exceptional attention to detail.\n\nDuring the consultation, they took the time to understand my vision and goals for the space. Their expertise shone through as they provided insightful suggestions and recommendations tailored to my preferences.\n\nWhen it came to the staging process, Greylyn Wayne truly worked magic. They transformed the home into a stunning showcase that exuded style and sophistication. Each piece of furniture and decor was meticulously selected and placed to highlight the best features of the space while creating a cohesive and inviting atmosphere.\n\nWhat impressed me most was their ability to work within my budget without compromising on quality or aesthetics. They carefully curated a mix of high-end and budget-friendly pieces that elevated the space without breaking the bank.\n\nThroughout the project, communication was seamless. The team kept me updated on progress, addressed any concerns promptly, and ensured that everything was completed to my satisfaction.\n\nOn the day of the reveal, I was blown away by the transformation. The home looked like something out of a design magazine, and I couldn't believe it was the same space. It was evident that Greylyn Wayne's expertise and passion for design had truly made a difference.\n\nNot only did their staging enhance the appeal of the home, but it also helped attract potential buyers quickly. Within days of staging, I received multiple offers, and the property sold for above asking price.\n\nOverall, I can't recommend Greylyn Wayne staging company enough. Their professionalism, creativity, and exceptional service set them apart, and I wouldn't hesitate to work with them again in the future. If you're looking to elevate your space and make a lasting impression, look no further than Greylyn Wayne. They're simply the best in the business. Five stars!",
+      "owner_reply": {
+        "text": "Thank you so much for your lovely review, Don! We greatly enjoy working on your stages.",
+        "updated": "2024-06-04T22:31:15.496836Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2024-04-21T19:10:33.438710Z",
+      "relative_time": null,
+      "author_name": "Jill Dehlin",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjWMyQtIwoPsTXPgrBuiHdcmTMI4mudTy382GFQDHSxLq9_E1iVH=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "They did a fantastic job staging my recent listing - helping buyers better envision the space and also maximizing the home's appeal and layout. Perfect touches to bring vacant home to life and make it feel homey. Absolutely recommend and will use them again and recommend to my clients.",
+      "owner_reply": {
+        "text": "Thank you so much for your review, Jill! Thank you for entrusting Greylyn Wayne with your recent listing. We're looking forward to working with you more in the future!",
+        "updated": "2024-04-22T21:21:02.314915Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2023-11-14T18:18:02.117315Z",
+      "relative_time": null,
+      "author_name": "Tania Leavitt",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocI8c_fZ3poKrC0nS0gva80vZAeMcXTg8_52OwVIAVcXSfnd2g=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne Home Staging transformed my home to make it look more valuable and appealing. I was impressed by the level of professionalism each employee displayed. The price point and efficiency makes choosing them again in the future a no brainer. Fantastic company!!",
+      "owner_reply": {
+        "text": "Thank you so much for entrusting us with your home, Tania. It was a pleasure working with you!",
+        "updated": "2024-04-22T20:05:49.075013Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2023-11-05T05:01:56.947196Z",
+      "relative_time": null,
+      "author_name": "Nathan Blomquist",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjVYrg5rROWrNsdZZQLjSxlzXKzJszIl5TBrVzTOVrvisMdki8Qb5g=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "Really rad company to work with they also allowed me to use their pieces for photo shoots in my store. Their furniture added the perfect touch to my shop's aesthetic, making the products shine. It's like a one-stop-shop for house and store styling.",
+      "owner_reply": {
+        "text": "Thank you so much for the kind review, Nathan! ",
+        "updated": "2024-04-22T20:07:50.669493Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2023-11-04T23:40:30.840001Z",
+      "relative_time": null,
+      "author_name": "Armon Petrossian",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJGh4Z_sPS4Is3LKGoMcnn19OlaTG0AWt2NztJl0N3PoRxDxOw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Greylyn Wayne has helped design and furnish several properties that I own. They have all been done amazingly well! Turn key service, high quality, and at a reasonable price.",
+      "owner_reply": {
+        "text": "Thank you so much for the review, Armon! It's a pleasure working with you. Thank you for entrusting Greylyn Wayne with your properties!",
+        "updated": "2024-04-22T20:13:23.226134Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2023-11-04T23:26:58.420611Z",
+      "relative_time": null,
+      "author_name": "Levi Patino",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLuaGPmz46CbxXv-if5tiekytPGgpaMWdC0HnVQGI5F_wOQAA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I hired Greylyn Wayne for interior design and staging, and I’m thrilled with the results. Their design transformed my space, making it more appealing and functional. The attention to detail and professionalism of their team is impressive. Highly recommend their services!",
+      "owner_reply": {
+        "text": "Thank you so much for the review, Levi. We enjoyed working with you!",
+        "updated": "2024-04-22T20:02:15.453681Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2023-11-04T20:52:09.551028Z",
+      "relative_time": null,
+      "author_name": "Dallin Leavitt",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLS5v4AvjmWtTjdjg-JczRZGzp8ur3DTyLrZkToMQka1oWBjw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I needed to stage my house for my Airbnb and I had tremendous response time and they did an incredible job",
+      "owner_reply": {
+        "text": "Thank you for your review, Dallin! We appreciate you entrusting Greylyn Wayne with your Airbnb project!",
+        "updated": "2024-04-22T21:09:36.000200Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2023-11-03T20:39:36.976791Z",
+      "relative_time": null,
+      "author_name": "Robert Rounseville",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJpxy9Dhwzu1LI3Ct5NhvG_7lziQT9hgVprQzLPBUGmYVLouw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Friendly employees that showed up on time, worked quickly and professionally. I appreciated their care in protecting my home while they staged it. The end result surpassed my already high expectations! Will definitely use them again.",
+      "owner_reply": {
+        "text": "Thank you for your review, Robert! We enjoyed Staging your home. Congratulations on the sale!",
+        "updated": "2024-04-22T20:11:27.504608Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2023-05-19T05:08:24.352222Z",
+      "relative_time": null,
+      "author_name": "Lorena Carvajal",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjX5YKzCEuFuusEGzISj8gbOMbexe57G6vnPrfjsR9aLLiBLMYOk=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "",
+      "owner_reply": {
+        "text": "Thank you so much for your 5-star review, Lorena! We're delighted you had a positive experience with Greylyn Wayne Home Staging & Interior Design. Your support means the world to us!",
+        "updated": "2025-02-25T20:02:07.268395Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2023-03-15T16:08:11.298983Z",
+      "relative_time": null,
+      "author_name": "Sara Parr",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocJ9NRn2D5YEyo6xlaoz5PdZm-PSzSzw6vWJjiKKEUDAjqWTKQ=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I can't recommend Greylyn Wayne enough. We had worked with another staging company that our realtor had suggested and it just didn't fit the aesthetic for listing our home. I did some research online and found the team at Greylyn Wayne. From our first conversation I knew this was the group to go with. Their communication was fantastic, staging was absolutely perfect and fit our very traditional, stately home with some beautiful modern touches to add a fun flare. In fact, I loved working with them so much I'm going to use their services to help me procure some furniture pieces for my new home. I would recommend Greylyn Wayne to anyone looking for beautiful, quality home staging with a trustful and reliable group with outstanding communication.",
+      "owner_reply": {
+        "text": "Thank you for the kind review, Sara! We enjoyed working with you greatly. Thank you for entrusting Greylyn Wayne with your home!",
+        "updated": "2024-04-22T20:15:10.457083Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2022-12-07T20:06:01.354291Z",
+      "relative_time": null,
+      "author_name": "Barbara Neebel Meier",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjXndOoaqFN-ZQM1-5KitBlZXx-mJKwX5FHFbziZCcVrj3JuzzuyHg=s120-c-rp-mo-ba12-br100",
+      "author_url": null,
+      "text": "Loved their staging and prompt,  friendly, professional service.",
+      "owner_reply": {
+        "text": "Thank you for your kind review, Barbara! We appreciate you entrusting Greylyn Wayne with your Staging needs.",
+        "updated": "2024-04-22T21:15:52.610512Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2022-10-23T02:16:24.868801Z",
+      "relative_time": null,
+      "author_name": "Daniel Abdie",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocLXDX2Diulgl_62b4FqSlLSw2TwQDxVlQ6xlBVpZ5FOoSEU3A=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Some of the best looking furniture and amazing service from employees. I’ve furnished two houses with them and will always go back!",
+      "owner_reply": {
+        "text": "Thank you for your review, Daniel! We appreciate your continued business. ",
+        "updated": "2024-04-22T21:10:42.923781Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2022-10-23T02:12:51.917772Z",
+      "relative_time": null,
+      "author_name": "Connor Laverty",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocK5Jz2PSuiA1n_XCpJt4OXznm83mVrRvhBRZZmONmjCFiPdrQ=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "The best staging, and the nicest employees. I would not go or recommend anywhere else.",
+      "owner_reply": {
+        "text": "Thank you for your review, Connor! We appreciate your business.",
+        "updated": "2024-04-22T21:13:00.131955Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2022-07-21T18:59:31.611534Z",
+      "relative_time": null,
+      "author_name": "Greg Carlson",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocI0_YrUJIDFKH6nWTJzJMQ6dQrzZePBjgwMyS4ro-y1L-gkYw=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "Once again Greylyn Wayne exceeded our expectations. The staging of our latest flip was incredible. It really helps us in selling our projects quickly. On top of that, they are great to work with. Highly recommend them!",
+      "owner_reply": {
+        "text": "Thank you for your review, Greg! Listing a home is very personal and we appreciate you entrusting Greylyn Wayne with your flip property. ",
+        "updated": "2024-04-22T20:22:04.285382Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2022-03-20T00:41:41.701756Z",
+      "relative_time": null,
+      "author_name": "Karen Lane",
+      "author_photo": "https://lh3.googleusercontent.com/a-/ALV-UjX9fY-o2qQiQt494ZiCLPnWsMtDBl69029evWVBk1eOozDRhR206g=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "I am always happy with their staging and they produce great results for the seller every time.",
+      "owner_reply": {
+        "text": "Thank you for your review, Karen! We appreciate your continued business and always enjoy Staging your listings!",
+        "updated": "2024-04-22T21:12:28.662599Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2022-03-20T00:14:25.191668Z",
+      "relative_time": null,
+      "author_name": "Conner Wahl",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocKtBNdmrZLoIqypi6-9abHSdyNfr5NqviIovbYXnp3lrBft1Q=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "",
+      "owner_reply": {
+        "text": "Thank you so much for the perfect rating, Conner! We appreciate your support and are delighted that you had a great experience with Greylyn Wayne Home Staging & Interior Design.",
+        "updated": "2025-02-25T20:02:07.317141Z"
+      }
+    },
+    {
+      "rating": 5,
+      "publish_time": "2022-03-20T00:13:21.679163Z",
+      "relative_time": null,
+      "author_name": "Sarah Wahl",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocK7BgPt169jrWS_mAOaYPnakOX_hjVpfXyIQiRQS7F5tRcgjA=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "",
+      "owner_reply": {
+        "text": "Thank you so much, Sarah, for the wonderful 5-star rating! We're glad you appreciate our work at Greylyn Wayne Home Staging & Interior Design. If there's anything more we can do to make your experience even better, please let us know.",
+        "updated": "2025-02-25T20:02:07.321106Z"
+      }
+    },
+    {
+      "rating": 1,
+      "publish_time": "2021-08-31T20:57:01.211572Z",
+      "relative_time": null,
+      "author_name": "Ryan & Brooke Zakovics / Welch",
+      "author_photo": "https://lh3.googleusercontent.com/a/ACg8ocIRGpCOw9uYkIUBolma3WvyqYvwIZrgnoMXOPmUgUdfQGdnJQ=s120-c-rp-mo-br100",
+      "author_url": null,
+      "text": "They did a great job staging!\nBut they mingled some of our own artwork with the staging then took it. By the time we picked it up - I think it would have been more appropriate for them to drop it by with us - the frame was scratched. I reached out to them to ask them to repair it and they got defensive saying we had left it with them for quite a while (it’s a pandemic and we are parents). I asked that it be pushed up the chain and never heard back.",
+      "owner_reply": {
+        "text": "Thank you for your feedback. We handle all of our furniture and artwork with great care and always request that homes be entirely empty to prevent any mix-ups or damage. In this case, we made an exception for you and incorporated your personal artwork into the staging. We regret that there was an issue and did our best to accommodate your schedule when returning the items. We stand by the quality of our work and professionalism of our team. ",
+        "updated": "2024-09-19T17:55:10.079680Z"
+      }
     }
   ]
 }

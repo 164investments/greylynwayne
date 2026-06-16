@@ -44,7 +44,8 @@ def extract_sale(url):
                 first(r'priceInfo.{0,60}?label\\":\\"([^\\"]+)', h)
         listp = first(r'"listingPrice":"(\d+)_US_DOLLAR"', h) or \
                 first(r'listingPrice\\":\\"(\d+)_US_DOLLAR', h)
-        dom = first(r'"DaysOnMarket":"(\d+)"', h)
+        # DaysOnMarket lives in the backslash-escaped JSON region (DaysOnMarket\":\"50\")
+        dom = first(r'DaysOnMarket\\?":\\?"(\d+)', h)
         sold_ms = first(r'"soldDate":(\d{12,13})', h) or \
                   first(r'soldDate\\":(\d{12,13})', h)
 

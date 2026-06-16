@@ -16,6 +16,15 @@
       "beds": 4,
       "baths": 3.0,
       "sqft": 3773
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 94500000,
+      "price_label": "Sold Price",
+      "list_price_cents": 94900000,
+      "dom": 130,
+      "is_sold": true,
+      "sold_date": "2026-06-08"
     }
   },
   {
@@ -41,6 +50,7 @@
       "price_cents": 89900000,
       "price_label": "Price",
       "list_price_cents": 89900000,
+      "dom": 52,
       "is_sold": false
     }
   },
@@ -61,6 +71,7 @@
     "sale": {
       "price_cents": 48500000,
       "price_label": "Last Sold Price",
+      "dom": 38,
       "is_sold": false
     }
   },
@@ -87,6 +98,7 @@
       "price_cents": 72362500,
       "price_label": "Sold Price",
       "list_price_cents": 69900000,
+      "dom": 42,
       "is_sold": true,
       "sold_date": "2026-05-08"
     }
@@ -114,6 +126,7 @@
       "price_cents": 37500000,
       "price_label": "Sold Price",
       "list_price_cents": 37500000,
+      "dom": 22,
       "is_sold": true,
       "sold_date": "2026-05-27"
     }
@@ -141,6 +154,7 @@
       "price_cents": 67499000,
       "price_label": "Price",
       "list_price_cents": 67499000,
+      "dom": 39,
       "is_sold": false
     }
   },
@@ -167,6 +181,7 @@
       "price_cents": 53990000,
       "price_label": "Price",
       "list_price_cents": 53990000,
+      "dom": 46,
       "is_sold": false
     }
   },
@@ -189,6 +204,7 @@
       "price_cents": 7000000,
       "price_label": "Last Sold Price",
       "list_price_cents": 6500000,
+      "dom": 53,
       "is_sold": true,
       "sold_date": "2014-08-01"
     }
@@ -216,6 +232,7 @@
       "price_cents": 48990000,
       "price_label": "Price",
       "list_price_cents": 48990000,
+      "dom": 46,
       "is_sold": false
     }
   },
@@ -242,6 +259,7 @@
       "price_cents": 59700000,
       "price_label": "Sold Price",
       "list_price_cents": 55000000,
+      "dom": 43,
       "is_sold": true,
       "sold_date": "2026-04-27"
     }
@@ -269,6 +287,7 @@
       "price_cents": 94900000,
       "price_label": "Price",
       "list_price_cents": 94900000,
+      "dom": 41,
       "is_sold": false
     }
   },
@@ -295,6 +314,7 @@
       "price_cents": 121500000,
       "price_label": "Sold Price",
       "list_price_cents": 115000000,
+      "dom": 6,
       "is_sold": true,
       "sold_date": "2026-04-30"
     }
@@ -322,6 +342,7 @@
       "price_cents": 260000000,
       "price_label": "Sold Price",
       "list_price_cents": 269500000,
+      "dom": 54,
       "is_sold": true,
       "sold_date": "2026-05-13"
     }
@@ -349,6 +370,7 @@
       "price_cents": 190300000,
       "price_label": "Sold Price",
       "list_price_cents": 190300000,
+      "dom": 70,
       "is_sold": true,
       "sold_date": "2026-05-21"
     }
@@ -376,6 +398,7 @@
       "price_cents": 82500000,
       "price_label": "Sold Price",
       "list_price_cents": 78500000,
+      "dom": 38,
       "is_sold": true,
       "sold_date": "2026-04-24"
     }
@@ -403,6 +426,7 @@
       "price_cents": 68000000,
       "price_label": "Sold Price",
       "list_price_cents": 64995000,
+      "dom": 8,
       "is_sold": true,
       "sold_date": "2026-05-18"
     }
@@ -430,6 +454,7 @@
       "price_cents": 139500000,
       "price_label": "Sold Price",
       "list_price_cents": 142500000,
+      "dom": 70,
       "is_sold": true,
       "sold_date": "2026-04-30"
     }
@@ -451,6 +476,7 @@
     "sale": {
       "status": "Off Market",
       "price_label": "Last Sold Price",
+      "dom": 73,
       "is_sold": false
     }
   },
@@ -477,6 +503,7 @@
       "price_cents": 59500000,
       "price_label": "Sold Price",
       "list_price_cents": 59500000,
+      "dom": 30,
       "is_sold": true,
       "sold_date": "2026-05-08"
     }
@@ -504,6 +531,7 @@
       "price_cents": 62500000,
       "price_label": "Price",
       "list_price_cents": 62500000,
+      "dom": 53,
       "is_sold": false
     }
   },
@@ -530,6 +558,7 @@
       "price_cents": 549500000,
       "price_label": "Price",
       "list_price_cents": 549500000,
+      "dom": 54,
       "is_sold": false
     }
   },
@@ -556,6 +585,7 @@
       "price_cents": 49500000,
       "price_label": "Listed at Price",
       "list_price_cents": 49500000,
+      "dom": 38,
       "is_sold": false
     }
   },
@@ -582,6 +612,7 @@
       "price_cents": 64996000,
       "price_label": "Sold Price",
       "list_price_cents": 64996000,
+      "dom": 38,
       "is_sold": true,
       "sold_date": "2026-05-27"
     }
@@ -605,6 +636,7 @@
       "price_cents": 112500000,
       "price_label": "Last Sold Price",
       "list_price_cents": 112500000,
+      "dom": 105,
       "is_sold": true,
       "sold_date": "2026-05-29"
     }
@@ -632,6 +664,7 @@
       "price_cents": 18200000,
       "price_label": "Last Sold Price",
       "list_price_cents": 18500000,
+      "dom": 53,
       "is_sold": true,
       "sold_date": "2021-03-02"
     }
@@ -659,6 +692,7 @@
       "price_cents": 64500000,
       "price_label": "Sold Price",
       "list_price_cents": 59990000,
+      "dom": 30,
       "is_sold": true,
       "sold_date": "2026-04-17"
     }
@@ -716,6 +750,7 @@
       "price_cents": 79500000,
       "price_label": "Sold Price",
       "list_price_cents": 78569800,
+      "dom": 41,
       "is_sold": true,
       "sold_date": "2026-04-09"
     }
@@ -743,6 +778,7 @@
       "price_cents": 179500000,
       "price_label": "Price",
       "list_price_cents": 179500000,
+      "dom": 37,
       "is_sold": false
     }
   },
@@ -769,6 +805,7 @@
       "price_cents": 78900000,
       "price_label": "Listed at Price",
       "list_price_cents": 78900000,
+      "dom": 62,
       "is_sold": false
     }
   },
@@ -795,6 +832,7 @@
       "price_cents": 85000000,
       "price_label": "Sold Price",
       "list_price_cents": 89990000,
+      "dom": 46,
       "is_sold": true,
       "sold_date": "2026-05-06"
     }
@@ -822,6 +860,7 @@
       "price_cents": 124000000,
       "price_label": "Price",
       "list_price_cents": 124000000,
+      "dom": 52,
       "is_sold": false
     }
   },
@@ -848,6 +887,7 @@
       "price_cents": 259800000,
       "price_label": "Price",
       "list_price_cents": 259800000,
+      "dom": 31,
       "is_sold": false
     }
   },
@@ -868,6 +908,7 @@
     "sale": {
       "price_cents": 67524100,
       "price_label": "Last Sold Price",
+      "dom": 43,
       "is_sold": false
     }
   },
@@ -894,6 +935,7 @@
       "price_cents": 50000000,
       "price_label": "Sold Price",
       "list_price_cents": 49990000,
+      "dom": 53,
       "is_sold": true,
       "sold_date": "2026-06-09"
     }
@@ -921,6 +963,7 @@
       "price_cents": 98500000,
       "price_label": "Sold Price",
       "list_price_cents": 93500000,
+      "dom": 50,
       "is_sold": true,
       "sold_date": "2026-03-27"
     }
@@ -948,6 +991,7 @@
       "price_cents": 71500000,
       "price_label": "Price",
       "list_price_cents": 71500000,
+      "dom": 36,
       "is_sold": false
     }
   },
@@ -983,6 +1027,7 @@
     "sale": {
       "status": "Off Market",
       "price_label": "Last Sold Price",
+      "dom": 73,
       "is_sold": false
     }
   },
@@ -1009,6 +1054,7 @@
       "price_cents": 82000000,
       "price_label": "Sold Price",
       "list_price_cents": 85000000,
+      "dom": 37,
       "is_sold": true,
       "sold_date": "2026-04-13"
     }
@@ -1036,6 +1082,7 @@
       "price_cents": 110000000,
       "price_label": "Sold Price",
       "list_price_cents": 95000000,
+      "dom": 52,
       "is_sold": true,
       "sold_date": "2026-03-24"
     }
@@ -1063,6 +1110,7 @@
       "price_cents": 230700900,
       "price_label": "Sold Price",
       "list_price_cents": 235000000,
+      "dom": 38,
       "is_sold": true,
       "sold_date": "2026-03-30"
     }
@@ -1090,6 +1138,7 @@
       "price_cents": 71500000,
       "price_label": "Sold Price",
       "list_price_cents": 65000000,
+      "dom": 52,
       "is_sold": true,
       "sold_date": "2026-03-20"
     }
@@ -1113,6 +1162,7 @@
       "price_cents": 82500000,
       "price_label": "Last Sold Price",
       "list_price_cents": 82500000,
+      "dom": 69,
       "is_sold": true,
       "sold_date": "2025-12-04"
     }
@@ -1140,6 +1190,7 @@
       "price_cents": 94400000,
       "price_label": "Sold Price",
       "list_price_cents": 94900000,
+      "dom": 54,
       "is_sold": true,
       "sold_date": "2026-04-15"
     }
@@ -1166,6 +1217,7 @@
       "status": "Sold",
       "price_cents": 9200000,
       "price_label": "Last Sold Price",
+      "dom": 31,
       "is_sold": true,
       "sold_date": "1995-08-16"
     }
@@ -1193,6 +1245,7 @@
       "price_cents": 11700000,
       "price_label": "Last Sold Price",
       "list_price_cents": 11995000,
+      "dom": 31,
       "is_sold": true,
       "sold_date": "1999-04-16"
     }
@@ -1235,6 +1288,7 @@
       "price_cents": 52490000,
       "price_label": "Listed at Price",
       "list_price_cents": 52490000,
+      "dom": 51,
       "is_sold": false
     }
   },
@@ -1261,6 +1315,7 @@
       "price_cents": 71000000,
       "price_label": "Sold Price",
       "list_price_cents": 67500000,
+      "dom": 71,
       "is_sold": true,
       "sold_date": "2026-03-11"
     }
@@ -1284,6 +1339,7 @@
       "price_cents": 82500000,
       "price_label": "Last Sold Price",
       "list_price_cents": 82500000,
+      "dom": 69,
       "is_sold": true,
       "sold_date": "2025-12-04"
     }
@@ -1310,6 +1366,7 @@
       "status": "Sold",
       "price_cents": 76024100,
       "price_label": "Last Sold Price",
+      "dom": 52,
       "is_sold": true,
       "sold_date": "2026-05-11"
     }
@@ -1337,6 +1394,7 @@
       "price_cents": 169500000,
       "price_label": "Listed at Price",
       "list_price_cents": 169500000,
+      "dom": 62,
       "is_sold": false
     }
   },
@@ -1362,6 +1420,7 @@
       "status": "Sold",
       "price_cents": 97524100,
       "price_label": "Last Sold Price",
+      "dom": 47,
       "is_sold": true,
       "sold_date": "2026-04-16"
     }
@@ -1389,6 +1448,7 @@
       "price_cents": 54000000,
       "price_label": "Last Sold Price",
       "list_price_cents": 54000000,
+      "dom": 78,
       "is_sold": true,
       "sold_date": "2013-05-13"
     }
@@ -1416,6 +1476,7 @@
       "price_cents": 82450000,
       "price_label": "Price",
       "list_price_cents": 82450000,
+      "dom": 62,
       "is_sold": false
     }
   },
@@ -1441,6 +1502,7 @@
       "status": "Off Market",
       "price_cents": 54486000,
       "price_label": "Last Sold Price",
+      "dom": 43,
       "is_sold": false
     }
   },
@@ -1466,6 +1528,7 @@
       "status": "Sold",
       "price_cents": 51000000,
       "price_label": "Last Sold Price",
+      "dom": 43,
       "is_sold": true,
       "sold_date": "2026-05-07"
     }
@@ -1493,6 +1556,7 @@
       "price_cents": 125000000,
       "price_label": "Sold Price",
       "list_price_cents": 115000000,
+      "dom": 30,
       "is_sold": true,
       "sold_date": "2026-03-10"
     }
@@ -1520,6 +1584,7 @@
       "price_cents": 56900000,
       "price_label": "Sold Price",
       "list_price_cents": 56900000,
+      "dom": 41,
       "is_sold": true,
       "sold_date": "2026-03-20"
     }
@@ -1547,6 +1612,7 @@
       "price_cents": 69500000,
       "price_label": "Sold Price",
       "list_price_cents": 65000000,
+      "dom": 51,
       "is_sold": true,
       "sold_date": "2026-03-23"
     }
@@ -1574,6 +1640,7 @@
       "price_cents": 48250000,
       "price_label": "Sold Price",
       "list_price_cents": 47490000,
+      "dom": 68,
       "is_sold": true,
       "sold_date": "2026-04-27"
     }
@@ -1616,6 +1683,7 @@
       "price_cents": 72500000,
       "price_label": "Sold Price",
       "list_price_cents": 67500000,
+      "dom": 8,
       "is_sold": true,
       "sold_date": "2026-03-03"
     }
@@ -1643,6 +1711,7 @@
       "price_cents": 41000000,
       "price_label": "Sold Price",
       "list_price_cents": 40000000,
+      "dom": 31,
       "is_sold": true,
       "sold_date": "2026-03-20"
     }
@@ -1669,6 +1738,7 @@
       "status": "Sold",
       "price_cents": 68524100,
       "price_label": "Last Sold Price",
+      "dom": 43,
       "is_sold": true,
       "sold_date": "2026-03-26"
     }
@@ -1694,6 +1764,7 @@
       "status": "Sold",
       "price_cents": 73996000,
       "price_label": "Last Sold Price",
+      "dom": 38,
       "is_sold": true,
       "sold_date": "2026-04-28"
     }
@@ -1721,6 +1792,7 @@
       "price_cents": 66496000,
       "price_label": "Sold Price",
       "list_price_cents": 66496000,
+      "dom": 38,
       "is_sold": true,
       "sold_date": "2026-05-04"
     }
@@ -1748,6 +1820,7 @@
       "price_cents": 69996000,
       "price_label": "Sold Price",
       "list_price_cents": 69996000,
+      "dom": 52,
       "is_sold": true,
       "sold_date": "2026-03-23"
     }
@@ -1775,6 +1848,7 @@
       "price_cents": 68496000,
       "price_label": "Listed at Price",
       "list_price_cents": 68496000,
+      "dom": 52,
       "is_sold": false
     }
   },
@@ -1801,6 +1875,7 @@
       "price_cents": 275000000,
       "price_label": "Sold Price",
       "list_price_cents": 285000000,
+      "dom": 70,
       "is_sold": true,
       "sold_date": "2026-05-29"
     }
@@ -1838,6 +1913,7 @@
       "status": "Sold",
       "price_cents": 42496000,
       "price_label": "Last Sold Price",
+      "dom": 49,
       "is_sold": true,
       "sold_date": "2026-02-25"
     }
@@ -1861,6 +1937,7 @@
     "sale": {
       "status": "Off Market",
       "price_label": "Last Sold Price",
+      "dom": 34,
       "is_sold": false
     }
   },
@@ -1881,6 +1958,7 @@
     "sale": {
       "status": "Off Market",
       "price_label": "Last Sold Price",
+      "dom": 73,
       "is_sold": false
     }
   },
@@ -1921,6 +1999,7 @@
       "status": "Sold",
       "price_cents": 66024100,
       "price_label": "Last Sold Price",
+      "dom": 43,
       "is_sold": true,
       "sold_date": "2026-03-06"
     }
@@ -1948,6 +2027,7 @@
       "price_cents": 44990000,
       "price_label": "Sold Price",
       "list_price_cents": 44990000,
+      "dom": 38,
       "is_sold": true,
       "sold_date": "2026-04-23"
     }
@@ -1975,6 +2055,7 @@
       "price_cents": 108939000,
       "price_label": "Sold Price",
       "list_price_cents": 107495000,
+      "dom": 27,
       "is_sold": true,
       "sold_date": "2026-02-09"
     }
@@ -2017,6 +2098,7 @@
       "price_cents": 82900000,
       "price_label": "Sold Price",
       "list_price_cents": 81900000,
+      "dom": 42,
       "is_sold": true,
       "sold_date": "2026-03-18"
     }
@@ -2044,6 +2126,7 @@
       "price_cents": 59900000,
       "price_label": "Sold Price",
       "list_price_cents": 59900000,
+      "dom": 17,
       "is_sold": true,
       "sold_date": "2026-02-13"
     }
@@ -2071,6 +2154,7 @@
       "price_cents": 95795000,
       "price_label": "Sold Price",
       "list_price_cents": 99500000,
+      "dom": 42,
       "is_sold": true,
       "sold_date": "2026-04-02"
     }
@@ -2098,6 +2182,7 @@
       "price_cents": 52000000,
       "price_label": "Sold Price",
       "list_price_cents": 52500000,
+      "dom": 41,
       "is_sold": true,
       "sold_date": "2026-02-09"
     }
@@ -2119,6 +2204,7 @@
     "sale": {
       "status": "Off Market",
       "price_label": "Last Sold Price",
+      "dom": 73,
       "is_sold": false
     }
   },
@@ -2145,6 +2231,7 @@
       "price_cents": 82450000,
       "price_label": "Price",
       "list_price_cents": 82450000,
+      "dom": 62,
       "is_sold": false
     }
   },
@@ -2165,6 +2252,7 @@
     "sale": {
       "status": "Off Market",
       "price_label": "Last Sold Price",
+      "dom": 73,
       "is_sold": false
     }
   }

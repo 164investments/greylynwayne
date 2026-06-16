@@ -224,11 +224,22 @@ export default function StagedHomesPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {featured.map((home) => {
                 const s = saleInfo(home);
-                // Big number is the hero; unit + address are supporting.
-                const bigNum = s.soldFast ? `${s.dom}` : money(s.overAskCents);
-                const bigUnit = s.soldFast
+                // Lead with the speed story for fast sales, else the over-ask win.
+                const leadFast = s.soldFast;
+                const bigNum = leadFast ? `${s.dom}` : money(s.overAskCents);
+                const bigUnit = leadFast
                   ? `${s.dom === 1 ? "Day" : "Days"} on Market`
                   : "Over Asking";
+                const eyebrow = leadFast ? "Sold Fast" : "Sold Over Asking";
+                // Supporting line carries the complementary proof.
+                const support = [
+                  s.priceFmt ? `Sold ${s.priceFmt}` : null,
+                  leadFast && s.overAskCents != null && s.overAskCents > 0
+                    ? `${money(s.overAskCents)} over asking`
+                    : !leadFast && s.dom != null
+                      ? `${s.dom} days on market`
+                      : null,
+                ].filter(Boolean).join(" · ");
                 return (
                   <a
                     key={home.ref}
@@ -251,7 +262,10 @@ export default function StagedHomesPage() {
                     </div>
                     {/* High-contrast proof panel below the photo */}
                     <div className="p-7 text-center">
-                      <p className="font-[family-name:var(--font-playfair)] text-5xl text-teal leading-none">
+                      <p className="text-teal-dark text-[11px] font-semibold tracking-[0.25em] uppercase">
+                        {eyebrow}
+                      </p>
+                      <p className="font-[family-name:var(--font-playfair)] text-5xl text-teal leading-none mt-2">
                         {bigNum}
                       </p>
                       <p className="text-charcoal text-[11px] font-semibold tracking-[0.25em] uppercase mt-2">
@@ -261,8 +275,10 @@ export default function StagedHomesPage() {
                       <p className="text-charcoal text-sm font-medium">{home.street}</p>
                       <p className="text-charcoal-light text-xs mt-1">
                         {home.city}, {home.state}
-                        {s.priceFmt ? ` · Sold ${s.priceFmt}` : ""}
                       </p>
+                      {support ? (
+                        <p className="text-charcoal-light text-xs mt-1">{support}</p>
+                      ) : null}
                       <span className="inline-block text-teal text-[11px] tracking-[0.15em] uppercase mt-4 group-hover:text-teal-dark transition-colors">
                         View on Redfin →
                       </span>

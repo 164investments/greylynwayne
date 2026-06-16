@@ -55,6 +55,34 @@ const designServices = [
   },
 ];
 
+const galleryImages = [
+  {
+    src: "/images/sod-2021-ohana.webp",
+    alt: "Open-concept great room with vaulted wood-beam ceiling, curved sofa, and gourmet kitchen — a Greylyn Wayne NW Natural Street of Dreams interior",
+    aspect: "aspect-[3/2]",
+  },
+  {
+    src: "/images/street-of-dreams.webp",
+    alt: "Formal dining room with sculptural bubble-glass chandelier and custom display cabinetry, designed by Greylyn Wayne in Portland",
+    aspect: "aspect-[4/5]",
+  },
+  {
+    src: "/images/hero-interior.webp",
+    alt: "Designer dining room framed by built-in cabinets and statement lighting in a Portland luxury home by Greylyn Wayne",
+    aspect: "aspect-[16/10]",
+  },
+  {
+    src: "/images/home-staging-1.webp",
+    alt: "Moody industrial loft living room with exposed brick, leather sofa, and layered textures styled by Greylyn Wayne",
+    aspect: "aspect-[4/5]",
+  },
+  {
+    src: "/images/before-after.jpg",
+    alt: "Eclectic Portland studio with burnt-orange velvet sofa, blue paneled accent wall, and local Portland art by Greylyn Wayne",
+    aspect: "aspect-[3/2]",
+  },
+];
+
 const rooms = [
   "Living Room",
   "Kitchen",
@@ -112,8 +140,8 @@ export default function InteriorDesignPage() {
         eyebrow="Interior Design · Portland, Oregon"
         title="Spaces That Feel Beautiful & Livable"
         subtitle="Design you'll love coming home to — by Portland's 4x Street of Dreams team."
-        imageSrc="/images/before-after.jpg"
-        imageAlt="Interior design by Greylyn Wayne in Portland — styled living room with burnt-orange velvet sofa, blue accent wall, and local Portland art"
+        imageSrc="/images/sod-2019-bespoke-living.webp"
+        imageAlt="Interior design by Greylyn Wayne in Portland — open-concept living room with vaulted wood-beam ceiling, navy velvet sofas, and a gourmet kitchen from a NW Natural Street of Dreams home"
       />
 
       {/* Intro */}
@@ -159,6 +187,49 @@ export default function InteriorDesignPage() {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Work gallery */}
+      <section className="pb-24 lg:pb-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-12 lg:mb-16">
+            <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
+              Our Work
+            </p>
+            <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal mb-4">
+              A Look Inside Our Interiors
+            </h2>
+            <p className="text-charcoal-light leading-relaxed max-w-2xl mx-auto">
+              A glimpse of recent Portland projects — from NW Natural Street of
+              Dreams showcase homes to full-house renovations and styled city
+              spaces.
+            </p>
+          </div>
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-4">
+            {galleryImages.map((img) => (
+              <div
+                key={img.src}
+                className={`group relative mb-4 break-inside-avoid overflow-hidden ${img.aspect}`}
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <Link
+              href="/portfolio"
+              className="inline-block border border-teal text-teal px-8 py-4 text-sm tracking-wider uppercase hover:bg-teal hover:text-white transition-colors font-medium"
+            >
+              View Full Portfolio
+            </Link>
           </div>
         </div>
       </section>
