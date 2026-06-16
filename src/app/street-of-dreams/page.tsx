@@ -23,6 +23,9 @@ const homes = [
     year: "2025",
     title: "Alla Famiglia",
     location: "Lake Oswego, OR",
+    image: "/images/sod-2025-alla-famiglia.webp",
+    imageAlt:
+      "Alla Famiglia 2025 Street of Dreams home facade designed by Greylyn Wayne",
     description:
       'Meaning "for the family," this European-style estate on 1.6 acres was designed for multi-generational living. At 8,725 square feet — the largest home in recent Street of Dreams history — it houses four generations under one roof, with artisanal finishes and timeless materials throughout. Built by Red Hills Land and Design.',
   },
@@ -30,6 +33,9 @@ const homes = [
     year: "2024",
     title: "Vista",
     location: "Northwest Hills, Portland",
+    image: "/images/sod-2024-vista.webp",
+    imageAlt:
+      "Exterior of the 2024 Street of Dreams “Vista” home, modern architecture and exterior styling by Greylyn Wayne",
     description:
       "A full-scale remodel of a historic home in Portland's Northwest Hills, honoring the property's original character with custom finishes, high-end appliances, and artisanal details throughout.",
   },
@@ -37,13 +43,19 @@ const homes = [
     year: "2021",
     title: "Ohana",
     location: "Happy Valley, OR",
+    image: "/images/sod-2021-ohana.webp",
+    imageAlt:
+      "Living and kitchen of the 2021 Street of Dreams “Ohana” home by Greylyn Wayne",
     description:
-      "A 3,800-square-foot custom home with four bedrooms and four baths. Boho- and tropical-inspired, blending contemporary and mid-century modern elements for multi-generational living.",
+      "A 3,800-square-foot custom home with four bedrooms and four baths. Boho- and tropical-inspired, blending contemporary and mid-century modern elements for multi-generational living. Designed by Greylyn Wayne and furnished by What's New Furniture.",
   },
   {
     year: "2019",
     title: "Bespoke",
     location: "Portland, OR",
+    image: "/images/sod-2019-bespoke.webp",
+    imageAlt:
+      "Exterior of the 2019 NW Natural Street of Dreams “Bespoke” home by Greylyn Wayne",
     description:
       "Our debut Street of Dreams home — a 4,600-square-foot modern farmhouse with Tuscan influences, featuring barrel doors, exposed beams, and a distinctive 3,300-pound quartz kitchen island. Voted both People's and Professional's Best Interior Design.",
   },
@@ -101,10 +113,12 @@ export default function StreetOfDreamsPage() {
             Four-Time Featured Designer
           </h2>
           <p className="text-charcoal-light leading-relaxed text-lg mb-4">
-            The NW Natural Street of Dreams showcases the best in luxury home
-            design and craftsmanship, bringing together Portland&apos;s top
-            builders, architects, and interior designers to highlight
-            cutting-edge home trends.
+            The NW Natural Street of Dreams is Oregon&apos;s premier luxury home
+            showcase, uniting top builders, architects, and designers to
+            spotlight cutting-edge trends in architecture and interior design.
+            Greylyn Wayne is honored to be a featured designer, taking a lead
+            role in the creation of custom homes that blend timeless elegance
+            with modern sophistication.
           </p>
           <p className="text-charcoal-light leading-relaxed text-lg">
             Jody Wallace, our founder and lead designer, has been the lead
@@ -141,16 +155,29 @@ export default function StreetOfDreamsPage() {
               Street of Dreams Homes
             </h2>
           </div>
-          <div className="space-y-8">
-            {homes.map((home) => (
+          <div className="space-y-12 lg:space-y-16">
+            {homes.map((home, i) => (
               <div
                 key={home.year}
-                className="bg-white p-8 lg:p-12 flex flex-col md:flex-row gap-8 items-start"
+                className="bg-white grid grid-cols-1 md:grid-cols-2 items-stretch overflow-hidden"
               >
-                <div className="font-[family-name:var(--font-playfair)] text-5xl text-teal-light flex-shrink-0">
-                  {home.year}
+                <div
+                  className={`relative aspect-[3/2] md:aspect-auto md:min-h-[360px] ${
+                    i % 2 === 1 ? "md:order-2" : ""
+                  }`}
+                >
+                  <Image
+                    src={home.image}
+                    alt={home.imageAlt}
+                    fill
+                    sizes="(min-width: 768px) 50vw, 100vw"
+                    className="object-cover"
+                  />
                 </div>
-                <div>
+                <div className="p-8 lg:p-12 flex flex-col justify-center">
+                  <div className="font-[family-name:var(--font-playfair)] text-5xl text-teal-light mb-4">
+                    {home.year}
+                  </div>
                   <h3 className="font-[family-name:var(--font-playfair)] text-2xl mb-1">
                     {home.title}
                   </h3>
@@ -200,6 +227,12 @@ export default function StreetOfDreamsPage() {
                   </li>
                 ))}
               </ul>
+              <Link
+                href="/alla-famiglia"
+                className="inline-block mt-8 border border-teal text-teal px-8 py-3 text-sm tracking-wider uppercase hover:bg-teal hover:text-white transition-colors font-medium"
+              >
+                See the Full Project
+              </Link>
             </div>
             <div className="relative aspect-[4/5] overflow-hidden">
               <Image

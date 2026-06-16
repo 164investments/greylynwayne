@@ -31,7 +31,7 @@ const benefits = [
   {
     title: "Turnkey Setup",
     description:
-      "We handle everything — design concept, furniture sourcing, delivery, install, and styling. You get a fully finished space ready for guests.",
+      "We handle everything — design concept, furniture sourcing, delivery, install, styling, and even the basic supplies. You get a fully finished, truly move-in ready space your guests can enjoy from day one.",
   },
 ];
 

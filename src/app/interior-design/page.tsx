@@ -51,7 +51,7 @@ const designServices = [
   {
     title: "Short-Term Rental & Airbnb Design",
     description:
-      "Maximize bookings with stylish, functional design that creates inviting spaces and enhances the guest experience. We handle sourcing, delivery, and install.",
+      "Maximize bookings with stylish, functional design that creates inviting spaces and a standout guest experience. We handle everything — sourcing, delivery, install, and even the basic supplies — so your space is completely move-in ready from day one.",
   },
 ];
 
@@ -75,19 +75,19 @@ const designFaqs = [
       "Interior design costs vary based on the scope of your project — from a single-room refresh to a full-home redesign. We offer free consultations to understand your vision and provide a detailed proposal. Our goal is to deliver exceptional design at a price point that makes sense for your project.",
   },
   {
-    question: "What's the difference between a design consultation and full-service design?",
+    question: "How do your interior design services work?",
     answer:
-      "A design consultation is a one-time session where we assess your space, provide recommendations, and create an actionable plan you can execute yourself. Full-service design means we handle everything from concept to completion — mood boards, sourcing, procurement, installation, and final styling.",
+      "Every project is different, so we tailor our services to your space, your goals, and your budget. For some clients that means mood boards and space planning, for others it's sourcing and styling, and for others it's full-service design where we manage everything from concept to final install. Most projects land somewhere in between — we'll shape the right scope together during your first call.",
   },
   {
     question: "How long does an interior design project take?",
     answer:
-      "Timeline depends on the project scope. A single-room refresh can be completed in 4-6 weeks, while a full-home redesign may take 3-6 months. During your consultation, we'll provide a realistic timeline based on your specific project and goals.",
+      "Every project is different — timelines depend entirely on the scope and your goals. Some spaces come together in as little as a week when we can pull pieces from our showroom floor; others unfold over several months. Once we understand what you're looking for, we'll give you a realistic timeline during your consultation.",
   },
   {
     question: "Do you design Airbnb and vacation rental properties?",
     answer:
-      "Yes! We specialize in short-term rental design that maximizes bookings and guest experience. We handle everything from design concept to furniture sourcing, delivery, and installation — creating spaces that earn 5-star reviews.",
+      "Yes! We specialize in short-term rental design that maximizes bookings and guest experience. We handle everything from design concept to furniture sourcing, delivery, and installation — and we'll even stock the basic supplies, so your space is truly move-in ready and set up to earn 5-star reviews from the very first guest.",
   },
 ];
 
@@ -149,7 +149,7 @@ export default function InteriorDesignPage() {
                   href="/contact"
                   className="inline-block bg-teal text-white px-8 py-4 text-sm tracking-wider uppercase hover:bg-teal-dark transition-colors font-medium text-center"
                 >
-                  Book a Free Consultation
+                  Book a Free Call
                 </Link>
                 <Link
                   href="/portfolio"
@@ -289,17 +289,17 @@ export default function InteriorDesignPage() {
             Let&apos;s Design Your Dream Space
           </h2>
           <p className="text-charcoal-light leading-relaxed mb-4">
-            Ready to transform your Portland home? Schedule a free consultation
-            and let&apos;s bring your vision to life.
+            Ready to transform your Portland home? Schedule a free call and
+            let&apos;s bring your vision to life.
           </p>
           <p className="text-teal text-sm font-medium mb-10">
-            No obligation &middot; Free consultations for all projects
+            No obligation &middot; Your first call is always free
           </p>
           <Link
             href="/contact"
             className="inline-block bg-teal text-white px-10 py-4 text-sm tracking-wider uppercase hover:bg-teal-dark transition-colors font-medium"
           >
-            Book Your Free Consultation
+            Book Your Free Call
           </Link>
         </div>
       </section>

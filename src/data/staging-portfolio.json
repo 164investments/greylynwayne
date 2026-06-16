@@ -31,6 +31,13 @@
       "beds": 4,
       "baths": 2.5,
       "sqft": 2621
+    },
+    "sale": {
+      "status": "Active",
+      "price_cents": 89900000,
+      "price_label": "Price",
+      "list_price_cents": 89900000,
+      "is_sold": false
     }
   },
   {
@@ -46,7 +53,12 @@
     "redfin": "https://www.redfin.com/OR/Beaverton/12600-SW-Crescent-St-97005/home/186143950",
     "redfin_verified": true,
     "photo": "/images/staging/26-NS-072.jpg",
-    "beds_baths": null
+    "beds_baths": null,
+    "sale": {
+      "price_cents": 48500000,
+      "price_label": "Last Sold Price",
+      "is_sold": false
+    }
   },
   {
     "ref": "26-NS-071",
@@ -65,6 +77,14 @@
       "beds": 4,
       "baths": 2.0,
       "sqft": 1933
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 72362500,
+      "price_label": "Sold Price",
+      "list_price_cents": 69900000,
+      "is_sold": true,
+      "sold_date": "2026-05-08"
     }
   },
   {
@@ -84,6 +104,14 @@
       "beds": 1,
       "baths": 1.0,
       "sqft": 767
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 37500000,
+      "price_label": "Sold Price",
+      "list_price_cents": 37500000,
+      "is_sold": true,
+      "sold_date": "2026-05-27"
     }
   },
   {
@@ -103,6 +131,13 @@
       "beds": 4,
       "baths": 2.5,
       "sqft": 2920
+    },
+    "sale": {
+      "status": "Active",
+      "price_cents": 67499000,
+      "price_label": "Price",
+      "list_price_cents": 67499000,
+      "is_sold": false
     }
   },
   {
@@ -122,6 +157,13 @@
       "beds": 3,
       "baths": 2.5,
       "sqft": 1440
+    },
+    "sale": {
+      "status": "Active",
+      "price_cents": 53990000,
+      "price_label": "Price",
+      "list_price_cents": 53990000,
+      "is_sold": false
     }
   },
   {
@@ -137,7 +179,15 @@
     "redfin": "https://www.redfin.com/OR/Portland/N-Burr-Ave-97203/home/113844721",
     "redfin_verified": true,
     "photo": "/images/staging/26-NS-067.jpg",
-    "beds_baths": null
+    "beds_baths": null,
+    "sale": {
+      "status": "Closed",
+      "price_cents": 7000000,
+      "price_label": "Last Sold Price",
+      "list_price_cents": 6500000,
+      "is_sold": true,
+      "sold_date": "2014-08-01"
+    }
   },
   {
     "ref": "26-NS-068",
@@ -152,7 +202,14 @@
     "redfin": "https://www.redfin.com/OR/Portland/6949-N-Burr-Ave-97203/home/201393463",
     "redfin_verified": true,
     "photo": null,
-    "beds_baths": null
+    "beds_baths": null,
+    "sale": {
+      "status": "Active",
+      "price_cents": 48990000,
+      "price_label": "Price",
+      "list_price_cents": 48990000,
+      "is_sold": false
+    }
   },
   {
     "ref": "26-NS-065",
@@ -171,6 +228,14 @@
       "beds": 3,
       "baths": 3.0,
       "sqft": 1658
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 59700000,
+      "price_label": "Sold Price",
+      "list_price_cents": 55000000,
+      "is_sold": true,
+      "sold_date": "2026-04-27"
     }
   },
   {
@@ -190,6 +255,13 @@
       "beds": 4,
       "baths": 2.5,
       "sqft": 3374
+    },
+    "sale": {
+      "status": "Active",
+      "price_cents": 94900000,
+      "price_label": "Price",
+      "list_price_cents": 94900000,
+      "is_sold": false
     }
   },
   {
@@ -209,6 +281,14 @@
       "beds": 4,
       "baths": 3.0,
       "sqft": 3426
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 121500000,
+      "price_label": "Sold Price",
+      "list_price_cents": 115000000,
+      "is_sold": true,
+      "sold_date": "2026-04-30"
     }
   },
   {
@@ -228,6 +308,14 @@
       "beds": 4,
       "baths": 6.0,
       "sqft": 5288
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 260000000,
+      "price_label": "Sold Price",
+      "list_price_cents": 269500000,
+      "is_sold": true,
+      "sold_date": "2026-05-13"
     }
   },
   {
@@ -247,6 +335,14 @@
       "beds": 5,
       "baths": 4.0,
       "sqft": 5365
+    },
+    "sale": {
+      "status": "Sold",
+      "price_cents": 190300000,
+      "price_label": "Sold Price",
+      "list_price_cents": 190300000,
+      "is_sold": true,
+      "sold_date": "2026-05-21"
     }
   },
   {
@@ -266,6 +362,14 @@
       "beds": 4,
       "baths": 3.0,
       "sqft": 2420
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 82500000,
+      "price_label": "Sold Price",
+      "list_price_cents": 78500000,
+      "is_sold": true,
+      "sold_date": "2026-04-24"
     }
   },
   {
@@ -285,6 +389,14 @@
       "beds": 3,
       "baths": 2.0,
       "sqft": 2064
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 68000000,
+      "price_label": "Sold Price",
+      "list_price_cents": 64995000,
+      "is_sold": true,
+      "sold_date": "2026-05-18"
     }
   },
   {
@@ -304,6 +416,14 @@
       "beds": 4,
       "baths": 4.0,
       "sqft": 3587
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 139500000,
+      "price_label": "Sold Price",
+      "list_price_cents": 142500000,
+      "is_sold": true,
+      "sold_date": "2026-04-30"
     }
   },
   {
@@ -319,7 +439,12 @@
     "redfin": "https://www.redfin.com/OR/Portland/575-SW-Sheridan-St-97201/home/175369794",
     "redfin_verified": true,
     "photo": null,
-    "beds_baths": null
+    "beds_baths": null,
+    "sale": {
+      "status": "Off Market",
+      "price_label": "Last Sold Price",
+      "is_sold": false
+    }
   },
   {
     "ref": "26-NS-058",
@@ -338,6 +463,14 @@
       "beds": 4,
       "baths": 3.0,
       "sqft": 2021
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 59500000,
+      "price_label": "Sold Price",
+      "list_price_cents": 59500000,
+      "is_sold": true,
+      "sold_date": "2026-05-08"
     }
   },
   {
@@ -357,6 +490,13 @@
       "beds": 4,
       "baths": 2.0,
       "sqft": 2218
+    },
+    "sale": {
+      "status": "Active",
+      "price_cents": 62500000,
+      "price_label": "Price",
+      "list_price_cents": 62500000,
+      "is_sold": false
     }
   },
   {
@@ -376,6 +516,13 @@
       "beds": 6,
       "baths": 5.5,
       "sqft": 7773
+    },
+    "sale": {
+      "status": "Active",
+      "price_cents": 549500000,
+      "price_label": "Price",
+      "list_price_cents": 549500000,
+      "is_sold": false
     }
   },
   {
@@ -395,6 +542,13 @@
       "beds": 3,
       "baths": 1.0,
       "sqft": 1880
+    },
+    "sale": {
+      "status": "Pending",
+      "price_cents": 49500000,
+      "price_label": "Listed at Price",
+      "list_price_cents": 49500000,
+      "is_sold": false
     }
   },
   {
@@ -414,6 +568,14 @@
       "beds": 3,
       "baths": 4.0,
       "sqft": 1857
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 64996000,
+      "price_label": "Sold Price",
+      "list_price_cents": 64996000,
+      "is_sold": true,
+      "sold_date": "2026-05-27"
     }
   },
   {
@@ -429,7 +591,15 @@
     "redfin": "https://www.redfin.com/OR/Portland/2020-SW-Market-Street-Dr-97201/home/26347987",
     "redfin_verified": true,
     "photo": null,
-    "beds_baths": null
+    "beds_baths": null,
+    "sale": {
+      "status": "Sold",
+      "price_cents": 112500000,
+      "price_label": "Last Sold Price",
+      "list_price_cents": 112500000,
+      "is_sold": true,
+      "sold_date": "2026-05-29"
+    }
   },
   {
     "ref": "26-NS-052",
@@ -448,6 +618,14 @@
       "beds": 1,
       "baths": 1.0,
       "sqft": 521
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 18200000,
+      "price_label": "Last Sold Price",
+      "list_price_cents": 18500000,
+      "is_sold": true,
+      "sold_date": "2021-03-02"
     }
   },
   {
@@ -467,6 +645,14 @@
       "beds": 4,
       "baths": 2.0,
       "sqft": 1707
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 64500000,
+      "price_label": "Sold Price",
+      "list_price_cents": 59990000,
+      "is_sold": true,
+      "sold_date": "2026-04-17"
     }
   },
   {
@@ -516,6 +702,1462 @@
       "beds": 4,
       "baths": 2.0,
       "sqft": 2821
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 79500000,
+      "price_label": "Sold Price",
+      "list_price_cents": 78569800,
+      "is_sold": true,
+      "sold_date": "2026-04-09"
+    }
+  },
+  {
+    "ref": "26-NS-047",
+    "street": "6820 SE 29th Ave",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97202",
+    "status": "renting",
+    "installed_on": "2026-03-11",
+    "signed_total_cents": 600000,
+    "zillow": "https://www.zillow.com/homes/6820-SE-29th-Ave-Portland-OR-97202_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/6820-SE-29th-Ave-97202/home/26360884",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-047.jpg",
+    "beds_baths": {
+      "beds": 5,
+      "baths": 3.5,
+      "sqft": 4664
+    },
+    "sale": {
+      "status": "Active",
+      "price_cents": 179500000,
+      "price_label": "Price",
+      "list_price_cents": 179500000,
+      "is_sold": false
+    }
+  },
+  {
+    "ref": "26-NS-046",
+    "street": "3362 SW Fairmount Blvd",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97239",
+    "status": "renting",
+    "installed_on": "2026-03-10",
+    "signed_total_cents": 389500,
+    "zillow": "https://www.zillow.com/homes/3362-SW-Fairmount-Blvd-Portland-OR-97239_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/3362-SW-Fairmount-Blvd-97239/home/26515628",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-046.jpg",
+    "beds_baths": {
+      "beds": 3,
+      "baths": 3.0,
+      "sqft": 2653
+    },
+    "sale": {
+      "status": "Pending",
+      "price_cents": 78900000,
+      "price_label": "Listed at Price",
+      "list_price_cents": 78900000,
+      "is_sold": false
+    }
+  },
+  {
+    "ref": "26-NS-045",
+    "street": "6151 N DePauw St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97203",
+    "status": "renting",
+    "installed_on": "2026-03-09",
+    "signed_total_cents": 274950,
+    "zillow": "https://www.zillow.com/homes/6151-N-DePauw-St-Portland-OR-97203_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/6151-N-Depauw-St-97203/home/175321442",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-045.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 3.0,
+      "sqft": 2136
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 85000000,
+      "price_label": "Sold Price",
+      "list_price_cents": 89990000,
+      "is_sold": true,
+      "sold_date": "2026-05-06"
+    }
+  },
+  {
+    "ref": "26-NS-044",
+    "street": "1757 N Columbia Ridge Way",
+    "city": "Washougal",
+    "state": "WA",
+    "zip": "98671",
+    "status": "renting",
+    "installed_on": "2026-03-09",
+    "signed_total_cents": 330500,
+    "zillow": "https://www.zillow.com/homes/1757-N-Columbia-Ridge-Way-Washougal-WA-98671_rb/",
+    "redfin": "https://www.redfin.com/WA/Washougal/1757-N-Columbia-Ridge-Way-98671/home/44612783",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-044.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 3.5,
+      "sqft": 3555
+    },
+    "sale": {
+      "status": "Active",
+      "price_cents": 124000000,
+      "price_label": "Price",
+      "list_price_cents": 124000000,
+      "is_sold": false
+    }
+  },
+  {
+    "ref": "26-NS-043",
+    "street": "6233 SW Hamilton Way",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97221",
+    "status": "renting",
+    "installed_on": "2026-03-06",
+    "signed_total_cents": 419000,
+    "zillow": "https://www.zillow.com/homes/6233-SW-Hamilton-Way-Portland-OR-97221_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/6233-SW-Hamilton-Way-97221/home/49693157",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-043.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 4.5,
+      "sqft": 4104
+    },
+    "sale": {
+      "status": "Active",
+      "price_cents": 259800000,
+      "price_label": "Price",
+      "list_price_cents": 259800000,
+      "is_sold": false
+    }
+  },
+  {
+    "ref": "26-NS-042",
+    "street": "4316 NE 188TH ST (Lot 334)",
+    "city": "Vancouver WA 98686",
+    "state": null,
+    "zip": null,
+    "status": "renting",
+    "installed_on": "2026-03-05",
+    "signed_total_cents": 305000,
+    "zillow": "https://www.zillow.com/homes/4316-NE-188TH-ST-Lot-334-Vancouver-WA-98686-None-None_rb/",
+    "redfin": "https://www.redfin.com/WA/Vancouver/4316-NE-188th-St-98686/home/193465783",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-042.jpg",
+    "beds_baths": null,
+    "sale": {
+      "price_cents": 67524100,
+      "price_label": "Last Sold Price",
+      "is_sold": false
+    }
+  },
+  {
+    "ref": "26-NS-041",
+    "street": "7805 N Smith St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97203",
+    "status": "renting",
+    "installed_on": "2026-03-04",
+    "signed_total_cents": 310250,
+    "zillow": "https://www.zillow.com/homes/7805-N-Smith-St-Portland-OR-97203_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/7805-N-Smith-St-97203/home/26472178",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-041.jpg",
+    "beds_baths": {
+      "beds": 3,
+      "baths": 2.0,
+      "sqft": 1523
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 50000000,
+      "price_label": "Sold Price",
+      "list_price_cents": 49990000,
+      "is_sold": true,
+      "sold_date": "2026-06-09"
+    }
+  },
+  {
+    "ref": "26-NS-040",
+    "street": "3 Hotspur St",
+    "city": "Lake Oswego",
+    "state": "OR",
+    "zip": "97035",
+    "status": "closed",
+    "installed_on": "2026-03-03",
+    "signed_total_cents": 479000,
+    "zillow": "https://www.zillow.com/homes/3-Hotspur-St-Lake-Oswego-OR-97035_rb/",
+    "redfin": "https://www.redfin.com/OR/Lake-Oswego/3-Hotspur-St-97035/home/26075799",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-040.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 3.0,
+      "sqft": 2398
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 98500000,
+      "price_label": "Sold Price",
+      "list_price_cents": 93500000,
+      "is_sold": true,
+      "sold_date": "2026-03-27"
+    }
+  },
+  {
+    "ref": "26-NS-054",
+    "street": "16550 SE Anna Eve Dr",
+    "city": "Milwaukie",
+    "state": "OR",
+    "zip": "97267",
+    "status": "renting",
+    "installed_on": "2026-03-03",
+    "signed_total_cents": 399600,
+    "zillow": "https://www.zillow.com/homes/16550-SE-Anna-Eve-Dr-Milwaukie-OR-97267_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/16550-Anna-Eve-Dr-97267/home/25866279",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-054.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 2908
+    },
+    "sale": {
+      "status": "Active",
+      "price_cents": 71500000,
+      "price_label": "Price",
+      "list_price_cents": 71500000,
+      "is_sold": false
+    }
+  },
+  {
+    "ref": "26-NS-039",
+    "street": "3170 S Kodiak St (Lot 817)",
+    "city": "Cornelius",
+    "state": "OR",
+    "zip": "97113",
+    "status": "renting",
+    "installed_on": "2026-03-02",
+    "signed_total_cents": 305000,
+    "zillow": "https://www.zillow.com/homes/3170-S-Kodiak-St-Lot-817-Cornelius-OR-97113_rb/",
+    "redfin": "https://www.redfin.com/?q=3170%20S%20Kodiak%20St%20%28Lot%20817%29%2C%20Cornelius%2C%20OR%2097113",
+    "redfin_verified": false,
+    "photo": null,
+    "beds_baths": null
+  },
+  {
+    "ref": "26-NS-038",
+    "street": "575 SW Sheridan St #054",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97201",
+    "status": "renting",
+    "installed_on": "2026-02-26",
+    "signed_total_cents": 323000,
+    "zillow": "https://www.zillow.com/homes/575-SW-Sheridan-St-054-Portland-OR-97201_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/575-SW-Sheridan-St-97201/home/175369794",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": null,
+    "sale": {
+      "status": "Off Market",
+      "price_label": "Last Sold Price",
+      "is_sold": false
+    }
+  },
+  {
+    "ref": "26-NS-037",
+    "street": "6432 SW Burlingame Pl",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97239",
+    "status": "renting",
+    "installed_on": "2026-02-25",
+    "signed_total_cents": 333500,
+    "zillow": "https://www.zillow.com/homes/6432-SW-Burlingame-Pl-Portland-OR-97239_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/6432-SW-Burlingame-Pl-97239/home/26359020",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-037.jpg",
+    "beds_baths": {
+      "beds": 3,
+      "baths": 5.0,
+      "sqft": 4560
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 82000000,
+      "price_label": "Sold Price",
+      "list_price_cents": 85000000,
+      "is_sold": true,
+      "sold_date": "2026-04-13"
+    }
+  },
+  {
+    "ref": "26-NS-036",
+    "street": "4423 NW Aspen St",
+    "city": "Camas",
+    "state": "WA",
+    "zip": "98607",
+    "status": "closed",
+    "installed_on": "2026-02-25",
+    "signed_total_cents": 385000,
+    "zillow": "https://www.zillow.com/homes/4423-NW-Aspen-St-Camas-WA-98607_rb/",
+    "redfin": "https://www.redfin.com/WA/Camas/4423-NW-Aspen-St-98607/home/14633514",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-036.jpg",
+    "beds_baths": {
+      "beds": 5,
+      "baths": 3.0,
+      "sqft": 2880
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 110000000,
+      "price_label": "Sold Price",
+      "list_price_cents": 95000000,
+      "is_sold": true,
+      "sold_date": "2026-03-24"
+    }
+  },
+  {
+    "ref": "26-NS-034",
+    "street": "8125 SW Westgate Way",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97225",
+    "status": "destaged",
+    "installed_on": "2026-02-24",
+    "signed_total_cents": 379000,
+    "zillow": "https://www.zillow.com/homes/8125-SW-Westgate-Way-Portland-OR-97225_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/8125-SW-Westgate-Way-97225/home/26664948",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-034.jpg",
+    "beds_baths": {
+      "beds": 5,
+      "baths": 4.0,
+      "sqft": 4007
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 230700900,
+      "price_label": "Sold Price",
+      "list_price_cents": 235000000,
+      "is_sold": true,
+      "sold_date": "2026-03-30"
+    }
+  },
+  {
+    "ref": "26-NS-035",
+    "street": "4811 SW Orchard Ln",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97219",
+    "status": "closed",
+    "installed_on": "2026-02-24",
+    "signed_total_cents": 315450,
+    "zillow": "https://www.zillow.com/homes/4811-SW-Orchard-Ln-Portland-OR-97219_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/4811-SW-Orchard-Ln-97219/home/25804119",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-035.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 3.0,
+      "sqft": 1872
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 71500000,
+      "price_label": "Sold Price",
+      "list_price_cents": 65000000,
+      "is_sold": true,
+      "sold_date": "2026-03-20"
+    }
+  },
+  {
+    "ref": "26-NS-033",
+    "street": "416 NW 13th Ave #208",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97209",
+    "status": "renting",
+    "installed_on": "2026-02-23",
+    "signed_total_cents": 276000,
+    "zillow": "https://www.zillow.com/homes/416-NW-13th-Ave-208-Portland-OR-97209_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/416-NW-13th-Ave-97209/home/25780096",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": null,
+    "sale": {
+      "status": "Sold",
+      "price_cents": 82500000,
+      "price_label": "Last Sold Price",
+      "list_price_cents": 82500000,
+      "is_sold": true,
+      "sold_date": "2025-12-04"
+    }
+  },
+  {
+    "ref": "26-NS-031",
+    "street": "1320 NW Park Ridge Ln",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97229",
+    "status": "closed",
+    "installed_on": "2026-02-20",
+    "signed_total_cents": 266000,
+    "zillow": "https://www.zillow.com/homes/1320-NW-Park-Ridge-Ln-Portland-OR-97229_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/1320-NW-Park-Ridge-Ln-97229/home/26359059",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-031.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 4.0,
+      "sqft": 3674
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 94400000,
+      "price_label": "Sold Price",
+      "list_price_cents": 94900000,
+      "is_sold": true,
+      "sold_date": "2026-04-15"
+    }
+  },
+  {
+    "ref": "26-NS-030",
+    "street": "6491C SE Ramona St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97206",
+    "status": "renting",
+    "installed_on": "2026-02-19",
+    "signed_total_cents": 310500,
+    "zillow": "https://www.zillow.com/homes/6491C-SE-Ramona-St-Portland-OR-97206_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/6849-SE-Ramona-St-97206/home/26498528",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": {
+      "beds": 2,
+      "baths": 1.0,
+      "sqft": 1198
+    },
+    "sale": {
+      "status": "Sold",
+      "price_cents": 9200000,
+      "price_label": "Last Sold Price",
+      "is_sold": true,
+      "sold_date": "1995-08-16"
+    }
+  },
+  {
+    "ref": "26-NS-029",
+    "street": "6491A SE Ramona St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97206",
+    "status": "renting",
+    "installed_on": "2026-02-19",
+    "signed_total_cents": 390000,
+    "zillow": "https://www.zillow.com/homes/6491A-SE-Ramona-St-Portland-OR-97206_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/6841-SE-Ramona-St-97206/home/26553642",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": {
+      "beds": 3,
+      "baths": 1.0,
+      "sqft": 1066
+    },
+    "sale": {
+      "status": "Sold",
+      "price_cents": 11700000,
+      "price_label": "Last Sold Price",
+      "list_price_cents": 11995000,
+      "is_sold": true,
+      "sold_date": "1999-04-16"
+    }
+  },
+  {
+    "ref": "26-NS-026",
+    "street": "1221 SW 10th Ave #612",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97205",
+    "status": "renting",
+    "installed_on": "2026-02-17",
+    "signed_total_cents": 276000,
+    "zillow": "https://www.zillow.com/homes/1221-SW-10th-Ave-612-Portland-OR-97205_rb/",
+    "redfin": "https://www.redfin.com/?q=1221%20SW%2010th%20Ave%20%23612%2C%20Portland%2C%20OR%2097205",
+    "redfin_verified": false,
+    "photo": null,
+    "beds_baths": null
+  },
+  {
+    "ref": "26-NS-028",
+    "street": "3936 NE Grand Ave",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97212",
+    "status": "renting",
+    "installed_on": "2026-02-17",
+    "signed_total_cents": 211500,
+    "zillow": "https://www.zillow.com/homes/3936-NE-Grand-Ave-Portland-OR-97212_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/3936-NE-Grand-Ave-97212/home/26443017",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-028.jpg",
+    "beds_baths": {
+      "beds": 3,
+      "baths": 2.0,
+      "sqft": 1990
+    },
+    "sale": {
+      "status": "Pending",
+      "price_cents": 52490000,
+      "price_label": "Listed at Price",
+      "list_price_cents": 52490000,
+      "is_sold": false
+    }
+  },
+  {
+    "ref": "26-NS-025",
+    "street": "2349 NW Overton St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97210",
+    "status": "destaged",
+    "installed_on": "2026-02-16",
+    "signed_total_cents": 350000,
+    "zillow": "https://www.zillow.com/homes/2349-NW-Overton-St-Portland-OR-97210_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/2349-NW-Overton-St-97210/home/25823421",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-025.jpg",
+    "beds_baths": {
+      "beds": 2,
+      "baths": 3.0,
+      "sqft": 1456
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 71000000,
+      "price_label": "Sold Price",
+      "list_price_cents": 67500000,
+      "is_sold": true,
+      "sold_date": "2026-03-11"
+    }
+  },
+  {
+    "ref": "26-NS-023",
+    "street": "416 NW 13th Ave #206",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97209",
+    "status": "renting",
+    "installed_on": "2026-02-13",
+    "signed_total_cents": 355000,
+    "zillow": "https://www.zillow.com/homes/416-NW-13th-Ave-206-Portland-OR-97209_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/416-NW-13th-Ave-97209/home/25780096",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": null,
+    "sale": {
+      "status": "Sold",
+      "price_cents": 82500000,
+      "price_label": "Last Sold Price",
+      "list_price_cents": 82500000,
+      "is_sold": true,
+      "sold_date": "2025-12-04"
+    }
+  },
+  {
+    "ref": "26-NS-024",
+    "street": "5687 N 94th Ave (Lot 243)",
+    "city": "Camas",
+    "state": "WA",
+    "zip": "98607",
+    "status": "renting",
+    "installed_on": "2026-02-13",
+    "signed_total_cents": 295000,
+    "zillow": "https://www.zillow.com/homes/5687-N-94th-Ave-Lot-243-Camas-WA-98607_rb/",
+    "redfin": "https://www.redfin.com/WA/Camas/5687-N-94th-Ave-98607/home/185917793",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": {
+      "beds": 4,
+      "baths": 2.0,
+      "sqft": 2161
+    },
+    "sale": {
+      "status": "Sold",
+      "price_cents": 76024100,
+      "price_label": "Last Sold Price",
+      "is_sold": true,
+      "sold_date": "2026-05-11"
+    }
+  },
+  {
+    "ref": "26-NS-021",
+    "street": "4183 SW Greenleaf Dr",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97221",
+    "status": "renting",
+    "installed_on": "2026-02-12",
+    "signed_total_cents": 449000,
+    "zillow": "https://www.zillow.com/homes/4183-SW-Greenleaf-Dr-Portland-OR-97221_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/4183-SW-Greenleaf-Dr-97221/home/26574125",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-021.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 3.5,
+      "sqft": 4079
+    },
+    "sale": {
+      "status": "Pending",
+      "price_cents": 169500000,
+      "price_label": "Listed at Price",
+      "list_price_cents": 169500000,
+      "is_sold": false
+    }
+  },
+  {
+    "ref": "26-NS-022",
+    "street": "1338 N Kalani Loop (Lot 66)",
+    "city": "Ridgefield",
+    "state": "WA",
+    "zip": "98642",
+    "status": "destaged",
+    "installed_on": "2026-02-12",
+    "signed_total_cents": 305000,
+    "zillow": "https://www.zillow.com/homes/1338-N-Kalani-Loop-Lot-66-Ridgefield-WA-98642_rb/",
+    "redfin": "https://www.redfin.com/WA/Ridgefield/1338-N-Kalani-Loop-98642/home/191437618",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": {
+      "beds": 4,
+      "baths": 3.5,
+      "sqft": 3364
+    },
+    "sale": {
+      "status": "Sold",
+      "price_cents": 97524100,
+      "price_label": "Last Sold Price",
+      "is_sold": true,
+      "sold_date": "2026-04-16"
+    }
+  },
+  {
+    "ref": "26-NS-020",
+    "street": "1930 NW Irving St #401",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97209",
+    "status": "closed",
+    "installed_on": "2026-02-11",
+    "signed_total_cents": 320500,
+    "zillow": "https://www.zillow.com/homes/1930-NW-Irving-St-401-Portland-OR-97209_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/1930-NW-Irving-St-97209/home/26351356",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-020.jpg",
+    "beds_baths": {
+      "beds": 1,
+      "baths": 2.0,
+      "sqft": 1522
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 54000000,
+      "price_label": "Last Sold Price",
+      "list_price_cents": 54000000,
+      "is_sold": true,
+      "sold_date": "2013-05-13"
+    }
+  },
+  {
+    "ref": "26-NS-019",
+    "street": "31530 SW Village Green Ct",
+    "city": "Wilsonville",
+    "state": "OR",
+    "zip": "97070",
+    "status": "closed",
+    "installed_on": "2026-02-10",
+    "signed_total_cents": 340500,
+    "zillow": "https://www.zillow.com/homes/31530-SW-Village-Green-Ct-Wilsonville-OR-97070_rb/",
+    "redfin": "https://www.redfin.com/OR/Wilsonville/31530-SW-Village-Green-Ct-97070/home/26005457",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-019.jpg",
+    "beds_baths": {
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 2740
+    },
+    "sale": {
+      "status": "Active",
+      "price_cents": 82450000,
+      "price_label": "Price",
+      "list_price_cents": 82450000,
+      "is_sold": false
+    }
+  },
+  {
+    "ref": "26-SM-010",
+    "street": "18601 NE 44TH AVE (Lot 371)",
+    "city": "Vancouver",
+    "state": "WA",
+    "zip": "98686",
+    "status": "renting",
+    "installed_on": "2026-02-09",
+    "signed_total_cents": 220000,
+    "zillow": "https://www.zillow.com/homes/18601-NE-44TH-AVE-Lot-371-Vancouver-WA-98686_rb/",
+    "redfin": "https://www.redfin.com/WA/Vancouver/18601-NE-44th-Ave-98686/home/193465822",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": {
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 1598
+    },
+    "sale": {
+      "status": "Off Market",
+      "price_cents": 54486000,
+      "price_label": "Last Sold Price",
+      "is_sold": false
+    }
+  },
+  {
+    "ref": "26-SM-005",
+    "street": "18509 NE 44TH AVE (Lot 368)",
+    "city": "Vancouver",
+    "state": "WA",
+    "zip": "98686",
+    "status": "destaged",
+    "installed_on": "2026-02-09",
+    "signed_total_cents": 220000,
+    "zillow": "https://www.zillow.com/homes/18509-NE-44TH-AVE-Lot-368-Vancouver-WA-98686_rb/",
+    "redfin": "https://www.redfin.com/WA/Vancouver/18509-NE-44th-Ave-98686/home/193465819",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": {
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 1679
+    },
+    "sale": {
+      "status": "Sold",
+      "price_cents": 51000000,
+      "price_label": "Last Sold Price",
+      "is_sold": true,
+      "sold_date": "2026-05-07"
+    }
+  },
+  {
+    "ref": "26-NS-018",
+    "street": "7280 SW 68th Ave",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97223",
+    "status": "closed",
+    "installed_on": "2026-02-09",
+    "signed_total_cents": 339500,
+    "zillow": "https://www.zillow.com/homes/7280-SW-68th-Ave-Portland-OR-97223_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/7280-SW-68th-Ave-97223/home/26679926",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-018.jpg",
+    "beds_baths": {
+      "beds": 3,
+      "baths": 4.0,
+      "sqft": 3039
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 125000000,
+      "price_label": "Sold Price",
+      "list_price_cents": 115000000,
+      "is_sold": true,
+      "sold_date": "2026-03-10"
+    }
+  },
+  {
+    "ref": "26-NS-027",
+    "street": "6435 NE Broadway St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97213",
+    "status": "closed",
+    "installed_on": "2026-02-06",
+    "signed_total_cents": 280500,
+    "zillow": "https://www.zillow.com/homes/6435-NE-Broadway-St-Portland-OR-97213_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/6435-NE-Broadway-97213/home/26316258",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-027.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 2.0,
+      "sqft": 2280
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 56900000,
+      "price_label": "Sold Price",
+      "list_price_cents": 56900000,
+      "is_sold": true,
+      "sold_date": "2026-03-20"
+    }
+  },
+  {
+    "ref": "26-NS-032",
+    "street": "4037 NE 8th Ave",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97212",
+    "status": "destaged",
+    "installed_on": "2026-02-06",
+    "signed_total_cents": 256000,
+    "zillow": "https://www.zillow.com/homes/4037-NE-8th-Ave-Portland-OR-97212_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/4037-NE-8th-Ave-97212/home/25845076",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-032.jpg",
+    "beds_baths": {
+      "beds": 3,
+      "baths": 2.0,
+      "sqft": 1950
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 69500000,
+      "price_label": "Sold Price",
+      "list_price_cents": 65000000,
+      "is_sold": true,
+      "sold_date": "2026-03-23"
+    }
+  },
+  {
+    "ref": "26-SM-004",
+    "street": "5773 S Kelly Ave #3",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97239",
+    "status": "renting",
+    "installed_on": "2026-02-05",
+    "signed_total_cents": 60000,
+    "zillow": "https://www.zillow.com/homes/5773-S-Kelly-Ave-3-Portland-OR-97239_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/5773-S-Kelly-Ave-97239/home/199978104",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-SM-004.jpg",
+    "beds_baths": {
+      "beds": 2,
+      "baths": 3.0,
+      "sqft": 1172
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 48250000,
+      "price_label": "Sold Price",
+      "list_price_cents": 47490000,
+      "is_sold": true,
+      "sold_date": "2026-04-27"
+    }
+  },
+  {
+    "ref": "26-NS-017",
+    "street": "8388 SE Orion Ln",
+    "city": "Hillsboro",
+    "state": "OR",
+    "zip": "97123",
+    "status": "closed",
+    "installed_on": "2026-02-05",
+    "signed_total_cents": 369500,
+    "zillow": "https://www.zillow.com/homes/8388-SE-Orion-Ln-Hillsboro-OR-97123_rb/",
+    "redfin": "https://www.redfin.com/?q=8388%20SE%20Orion%20Ln%2C%20Hillsboro%2C%20OR%2097123",
+    "redfin_verified": false,
+    "photo": null,
+    "beds_baths": null
+  },
+  {
+    "ref": "26-NS-016",
+    "street": "3915 NE 16th Ave",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97212",
+    "status": "destaged",
+    "installed_on": "2026-02-04",
+    "signed_total_cents": 518000,
+    "zillow": "https://www.zillow.com/homes/3915-NE-16th-Ave-Portland-OR-97212_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/3915-NE-16th-Ave-97212/home/26550686",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-016.jpg",
+    "beds_baths": {
+      "beds": 3,
+      "baths": 1.0,
+      "sqft": 2528
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 72500000,
+      "price_label": "Sold Price",
+      "list_price_cents": 67500000,
+      "is_sold": true,
+      "sold_date": "2026-03-03"
+    }
+  },
+  {
+    "ref": "26-NS-015",
+    "street": "1410 SE 152nd Pl",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97233",
+    "status": "closed",
+    "installed_on": "2026-02-03",
+    "signed_total_cents": 350000,
+    "zillow": "https://www.zillow.com/homes/1410-SE-152nd-Pl-Portland-OR-97233_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/1410-SE-152nd-Pl-97233/home/26510754",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-015.jpg",
+    "beds_baths": {
+      "beds": 3,
+      "baths": 1.0,
+      "sqft": 1006
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 41000000,
+      "price_label": "Sold Price",
+      "list_price_cents": 40000000,
+      "is_sold": true,
+      "sold_date": "2026-03-20"
+    }
+  },
+  {
+    "ref": "26-SM-003",
+    "street": "4324 NE 188th St (Lot 336)",
+    "city": "Vancouver",
+    "state": "WA",
+    "zip": "98686",
+    "status": "closed",
+    "installed_on": "2026-02-03",
+    "signed_total_cents": 220000,
+    "zillow": "https://www.zillow.com/homes/4324-NE-188th-St-Lot-336-Vancouver-WA-98686_rb/",
+    "redfin": "https://www.redfin.com/WA/Vancouver/4324-NE-188th-St-98686/home/193465786",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": {
+      "beds": 4,
+      "baths": 3.0,
+      "sqft": 2137
+    },
+    "sale": {
+      "status": "Sold",
+      "price_cents": 68524100,
+      "price_label": "Last Sold Price",
+      "is_sold": true,
+      "sold_date": "2026-03-26"
+    }
+  },
+  {
+    "ref": "26-NS-014",
+    "street": "17269 SW Atfalati Ln",
+    "city": "Sherwood",
+    "state": "OR",
+    "zip": "97140",
+    "status": "closed",
+    "installed_on": "2026-01-22",
+    "signed_total_cents": 295000,
+    "zillow": "https://www.zillow.com/homes/17269-SW-Atfalati-Ln-Sherwood-OR-97140_rb/",
+    "redfin": "https://www.redfin.com/OR/Sherwood/17269-SW-Atfalati-Ln-97140/home/184149229",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": {
+      "beds": 4,
+      "baths": 3.0
+    },
+    "sale": {
+      "status": "Sold",
+      "price_cents": 73996000,
+      "price_label": "Last Sold Price",
+      "is_sold": true,
+      "sold_date": "2026-04-28"
+    }
+  },
+  {
+    "ref": "26-NS-013",
+    "street": "17318 SW Atfalati Ln",
+    "city": "Sherwood",
+    "state": "OR",
+    "zip": "97140",
+    "status": "destaged",
+    "installed_on": "2026-01-22",
+    "signed_total_cents": 295000,
+    "zillow": "https://www.zillow.com/homes/17318-SW-Atfalati-Ln-Sherwood-OR-97140_rb/",
+    "redfin": "https://www.redfin.com/OR/Sherwood/17318-SW-Atfalati-Ln-97140/home/184149242",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-013.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 3.0,
+      "sqft": 1857
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 66496000,
+      "price_label": "Sold Price",
+      "list_price_cents": 66496000,
+      "is_sold": true,
+      "sold_date": "2026-05-04"
+    }
+  },
+  {
+    "ref": "26-NS-012",
+    "street": "8230 SE Orion Ln (Lot 1360)",
+    "city": "Hillsboro",
+    "state": "OR",
+    "zip": "97123",
+    "status": "destaged",
+    "installed_on": "2026-01-22",
+    "signed_total_cents": 295000,
+    "zillow": "https://www.zillow.com/homes/8230-SE-Orion-Ln-Lot-1360-Hillsboro-OR-97123_rb/",
+    "redfin": "https://www.redfin.com/OR/Hillsboro/8230-SE-Orion-Ln-97123/home/193793480",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-012.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 3.0,
+      "sqft": 2351
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 69996000,
+      "price_label": "Sold Price",
+      "list_price_cents": 69996000,
+      "is_sold": true,
+      "sold_date": "2026-03-23"
+    }
+  },
+  {
+    "ref": "26-NS-010",
+    "street": "12680 SW Trask St (Lot 11)",
+    "city": "Beaverton",
+    "state": "OR",
+    "zip": "97007",
+    "status": "renting",
+    "installed_on": "2026-01-20",
+    "signed_total_cents": 429000,
+    "zillow": "https://www.zillow.com/homes/12680-SW-Trask-St-Lot-11-Beaverton-OR-97007_rb/",
+    "redfin": "https://www.redfin.com/OR/Beaverton/12680-SW-Trask-St-97007/home/199968271",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-010.jpg",
+    "beds_baths": {
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 2299
+    },
+    "sale": {
+      "status": "Pending",
+      "price_cents": 68496000,
+      "price_label": "Listed at Price",
+      "list_price_cents": 68496000,
+      "is_sold": false
+    }
+  },
+  {
+    "ref": "26-NS-008",
+    "street": "2393 S Military Rd",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97219",
+    "status": "renting",
+    "installed_on": "2026-01-20",
+    "signed_total_cents": 189500,
+    "zillow": "https://www.zillow.com/homes/2393-S-Military-Rd-Portland-OR-97219_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/2393-S-Military-Rd-97219/home/26520266",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-008.jpg",
+    "beds_baths": {
+      "beds": 5,
+      "baths": 6.0,
+      "sqft": 6320
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 275000000,
+      "price_label": "Sold Price",
+      "list_price_cents": 285000000,
+      "is_sold": true,
+      "sold_date": "2026-05-29"
+    }
+  },
+  {
+    "ref": "26-SM-007",
+    "street": "575 SW Sheridan St #146",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97201",
+    "status": "renting",
+    "installed_on": "2026-01-20",
+    "signed_total_cents": 160000,
+    "zillow": "https://www.zillow.com/homes/575-SW-Sheridan-St-146-Portland-OR-97201_rb/",
+    "redfin": "https://www.redfin.com/?q=575%20SW%20Sheridan%20St%20%23146%2C%20Portland%2C%20OR%2097201",
+    "redfin_verified": false,
+    "photo": null,
+    "beds_baths": null
+  },
+  {
+    "ref": "26-NS-009",
+    "street": "11319 SE Pleasant Valley Pkwy",
+    "city": "Happy Valley",
+    "state": "OR",
+    "zip": "97086",
+    "status": "closed",
+    "installed_on": "2026-01-20",
+    "signed_total_cents": 295000,
+    "zillow": "https://www.zillow.com/homes/11319-SE-Pleasant-Valley-Pkwy-Happy-Valley-OR-97086_rb/",
+    "redfin": "https://www.redfin.com/OR/Happy-Valley/11319-SE-Pleasant-Valley-Pkwy-97086/home/183782087",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": null,
+    "sale": {
+      "status": "Sold",
+      "price_cents": 42496000,
+      "price_label": "Last Sold Price",
+      "is_sold": true,
+      "sold_date": "2026-02-25"
+    }
+  },
+  {
+    "ref": "26-SM-002",
+    "street": "2545 SW Terwilliger Blvd #1029",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97201",
+    "status": "destaged",
+    "installed_on": "2026-01-20",
+    "signed_total_cents": 160000,
+    "zillow": "https://www.zillow.com/homes/2545-SW-Terwilliger-Blvd-1029-Portland-OR-97201_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/2545-SW-Terwilliger-Blvd-97201/home/26432231",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": {
+      "sqft": 257963
+    },
+    "sale": {
+      "status": "Off Market",
+      "price_label": "Last Sold Price",
+      "is_sold": false
+    }
+  },
+  {
+    "ref": "26-SM-006",
+    "street": "575 SW Sheridan St #050",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97201",
+    "status": "renting",
+    "installed_on": "2026-01-20",
+    "signed_total_cents": 160000,
+    "zillow": "https://www.zillow.com/homes/575-SW-Sheridan-St-050-Portland-OR-97201_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/575-SW-Sheridan-St-97201/home/175369794",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": null,
+    "sale": {
+      "status": "Off Market",
+      "price_label": "Last Sold Price",
+      "is_sold": false
+    }
+  },
+  {
+    "ref": "26-NS-007",
+    "street": "18505 NE 44th Ave",
+    "city": "Ridgefield",
+    "state": "WA",
+    "zip": "98642",
+    "status": "closed",
+    "installed_on": "2026-01-16",
+    "signed_total_cents": 295000,
+    "zillow": "https://www.zillow.com/homes/18505-NE-44th-Ave-Ridgefield-WA-98642_rb/",
+    "redfin": "https://www.redfin.com/?q=18505%20NE%2044th%20Ave%2C%20Ridgefield%2C%20WA%2098642",
+    "redfin_verified": false,
+    "photo": null,
+    "beds_baths": null
+  },
+  {
+    "ref": "26-NS-006",
+    "street": "4102 NE 187th St (Lot 289)",
+    "city": "Washington 98686",
+    "state": null,
+    "zip": null,
+    "status": "closed",
+    "installed_on": "2026-01-16",
+    "signed_total_cents": 295000,
+    "zillow": "https://www.zillow.com/homes/4102-NE-187th-St-Lot-289-Washington-98686-None-None_rb/",
+    "redfin": "https://www.redfin.com/WA/Vancouver/4102-NE-187th-St-98686/home/193465736",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": {
+      "beds": 4,
+      "baths": 3.0,
+      "sqft": 2177
+    },
+    "sale": {
+      "status": "Sold",
+      "price_cents": 66024100,
+      "price_label": "Last Sold Price",
+      "is_sold": true,
+      "sold_date": "2026-03-06"
+    }
+  },
+  {
+    "ref": "26-SM-001",
+    "street": "2622 N KilPatrick St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97217",
+    "status": "closed",
+    "installed_on": "2026-01-16",
+    "signed_total_cents": 60000,
+    "zillow": "https://www.zillow.com/homes/2622-N-KilPatrick-St-Portland-OR-97217_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/2622-N-Kilpatrick-St-97217/home/199022579",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-SM-001.jpg",
+    "beds_baths": {
+      "beds": 2,
+      "baths": 2.0,
+      "sqft": 1075
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 44990000,
+      "price_label": "Sold Price",
+      "list_price_cents": 44990000,
+      "is_sold": true,
+      "sold_date": "2026-04-23"
+    }
+  },
+  {
+    "ref": "26-NS-005",
+    "street": "1580 SE Marion St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97202",
+    "status": "closed",
+    "installed_on": "2026-01-15",
+    "signed_total_cents": 324500,
+    "zillow": "https://www.zillow.com/homes/1580-SE-Marion-St-Portland-OR-97202_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/1580-SE-Marion-St-97202/home/26555757",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-005.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 3.0,
+      "sqft": 3006
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 108939000,
+      "price_label": "Sold Price",
+      "list_price_cents": 107495000,
+      "is_sold": true,
+      "sold_date": "2026-02-09"
+    }
+  },
+  {
+    "ref": "26-NS-004",
+    "street": "41570 Metolius Ave (Lot 22)",
+    "city": "SANDY",
+    "state": "OR",
+    "zip": "97055",
+    "status": "destaged",
+    "installed_on": "2026-01-13",
+    "signed_total_cents": 295000,
+    "zillow": "https://www.zillow.com/homes/41570-Metolius-Ave-Lot-22-SANDY-OR-97055_rb/",
+    "redfin": "https://www.redfin.com/?q=41570%20Metolius%20Ave%20%28Lot%2022%29%2C%20SANDY%2C%20OR%2097055",
+    "redfin_verified": false,
+    "photo": null,
+    "beds_baths": null
+  },
+  {
+    "ref": "26-NS-003",
+    "street": "3041 Winkel Way",
+    "city": "West Linn",
+    "state": "OR",
+    "zip": "97068",
+    "status": "closed",
+    "installed_on": "2026-01-12",
+    "signed_total_cents": 439000,
+    "zillow": "https://www.zillow.com/homes/3041-Winkel-Way-West-Linn-OR-97068_rb/",
+    "redfin": "https://www.redfin.com/OR/West-Linn/3041-Winkel-Way-97068/home/26091324",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-003.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 3.0,
+      "sqft": 2430
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 82900000,
+      "price_label": "Sold Price",
+      "list_price_cents": 81900000,
+      "is_sold": true,
+      "sold_date": "2026-03-18"
+    }
+  },
+  {
+    "ref": "26-NS-002",
+    "street": "4542 NE 27th Ave",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97211",
+    "status": "closed",
+    "installed_on": "2026-01-08",
+    "signed_total_cents": 389500,
+    "zillow": "https://www.zillow.com/homes/4542-NE-27th-Ave-Portland-OR-97211_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/4542-NE-27th-Ave-97211/home/26424112",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-002.jpg",
+    "beds_baths": {
+      "beds": 3,
+      "baths": 2.0,
+      "sqft": 1527
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 59900000,
+      "price_label": "Sold Price",
+      "list_price_cents": 59900000,
+      "is_sold": true,
+      "sold_date": "2026-02-13"
+    }
+  },
+  {
+    "ref": "26-NS-011",
+    "street": "2724 Ridge Ln",
+    "city": "West Linn",
+    "state": "OR",
+    "zip": "97068",
+    "status": "destaged",
+    "installed_on": "2026-01-02",
+    "signed_total_cents": 484000,
+    "zillow": "https://www.zillow.com/homes/2724-Ridge-Ln-West-Linn-OR-97068_rb/",
+    "redfin": "https://www.redfin.com/OR/West-Linn/2724-Ridge-Ln-97068/home/25936639",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-011.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 4.0,
+      "sqft": 3350
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 95795000,
+      "price_label": "Sold Price",
+      "list_price_cents": 99500000,
+      "is_sold": true,
+      "sold_date": "2026-04-02"
+    }
+  },
+  {
+    "ref": "26-NS-001",
+    "street": "3244 NE 48th Ave",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97213",
+    "status": "closed",
+    "installed_on": "2026-01-02",
+    "signed_total_cents": 419500,
+    "zillow": "https://www.zillow.com/homes/3244-NE-48th-Ave-Portland-OR-97213_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/3244-NE-48th-Ave-97213/home/25767069",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-001.jpg",
+    "beds_baths": {
+      "beds": 2,
+      "baths": 2.0,
+      "sqft": 1360
+    },
+    "sale": {
+      "status": "Closed",
+      "price_cents": 52000000,
+      "price_label": "Sold Price",
+      "list_price_cents": 52500000,
+      "is_sold": true,
+      "sold_date": "2026-02-09"
+    }
+  },
+  {
+    "ref": "25-SM-044",
+    "street": "575 SW Sheridan St #150",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97201",
+    "status": "renting",
+    "installed_on": "2025-12-19",
+    "signed_total_cents": 160000,
+    "zillow": "https://www.zillow.com/homes/575-SW-Sheridan-St-150-Portland-OR-97201_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/575-SW-Sheridan-St-97201/home/175369794",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": null,
+    "sale": {
+      "status": "Off Market",
+      "price_label": "Last Sold Price",
+      "is_sold": false
+    }
+  },
+  {
+    "ref": "25-NS-277",
+    "street": "31530 SW Village Green Ct",
+    "city": "Wilsonville",
+    "state": "OR",
+    "zip": "97070",
+    "status": "closed",
+    "installed_on": "2025-10-01",
+    "signed_total_cents": 276000,
+    "zillow": "https://www.zillow.com/homes/31530-SW-Village-Green-Ct-Wilsonville-OR-97070_rb/",
+    "redfin": "https://www.redfin.com/OR/Wilsonville/31530-SW-Village-Green-Ct-97070/home/26005457",
+    "redfin_verified": true,
+    "photo": "/images/staging/25-NS-277.jpg",
+    "beds_baths": {
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 2740
+    },
+    "sale": {
+      "status": "Active",
+      "price_cents": 82450000,
+      "price_label": "Price",
+      "list_price_cents": 82450000,
+      "is_sold": false
+    }
+  },
+  {
+    "ref": "25-SM-023",
+    "street": "575 SW Sheridan St #146",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97201",
+    "status": "closed",
+    "installed_on": "2025-08-15",
+    "signed_total_cents": 160000,
+    "zillow": "https://www.zillow.com/homes/575-SW-Sheridan-St-146-Portland-OR-97201_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/575-SW-Sheridan-St-97201/home/175369794",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": null,
+    "sale": {
+      "status": "Off Market",
+      "price_label": "Last Sold Price",
+      "is_sold": false
     }
   }
 ]

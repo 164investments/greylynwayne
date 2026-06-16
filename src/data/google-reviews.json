@@ -1,0 +1,92 @@
+{
+  "_meta": {
+    "source": "Google Business Profile — Greylyn Wayne Home Staging & Interior Design",
+    "placeUrl": "https://www.google.com/maps/place/Greylyn+Wayne+Home+Staging+%26+Interior+Design/@45.5205172,-122.6552987,17z/data=!4m6!3m5!1s0x54950a0ba494f92b:0xca9afceb84839947",
+    "rating": 4.9,
+    "reviewCount": 163,
+    "scrapedOn": "2026-06-16",
+    "note": "Scraped via Claude-in-Chrome from the live GBP. These are REAL reviews. The grid currently on /reviews is fabricated placeholder copy and should be replaced with these. Reviews marked complete:true have full text; complete:false were truncated by Google's 'More' and need re-capture before use."
+  },
+  "reviews": [
+    {
+      "author": "Patrick Janzen",
+      "badge": "Local Guide · 12 reviews · 21 photos",
+      "date": "7 months ago",
+      "stars": 5,
+      "complete": true,
+      "text": "Always love working with Greylyn Wayne Staging! They're always so professional, and do a phenomenal job at making our staged houses look amazing. 🏡"
+    },
+    {
+      "author": "Joan Medlen",
+      "badge": "Local Guide · 22 reviews · 24 photos",
+      "date": "a year ago",
+      "stars": 5,
+      "complete": true,
+      "text": "Is this MY home? Greylyn Wayne did an amazing job showcasing the best of our home in the areas requested. After living in a home you love for 26 years, it is so heart-warming to see it staged with care. With your good work, we are putting our best foot forward! Thank you!"
+    },
+    {
+      "author": "Tony Fargason",
+      "badge": "1 review",
+      "date": "3 months ago",
+      "stars": 5,
+      "complete": true,
+      "text": "We had the good fortune to work with Tori. She furnished our entire apartment — she is incredibly skilled at making good use of small spaces. She is creative and responsive. And she is frugal. I only regret that I don't have another project to let her complete for us!!"
+    },
+    {
+      "author": "Patricia Schaub",
+      "badge": "4 reviews · 2 photos",
+      "date": "10 months ago",
+      "stars": 5,
+      "complete": true,
+      "text": "We were so pleased with Alicia's choices and recommendations of the custom design plans and execution. Our time was limited and her design and execution was spot on."
+    },
+    {
+      "author": "kayla davila-elrite",
+      "badge": "2 reviews",
+      "date": "a year ago",
+      "stars": 5,
+      "complete": false,
+      "text": "Greylyn Wayne exceeded all expectations. Their team was professional, easy to work with, and incredibly talented. They brought out the best in the space with thoughtful, stylish touches that felt both elevated and welcoming. …"
+    },
+    {
+      "author": "Jake Grant",
+      "badge": "Local Guide · 19 reviews · 2 photos",
+      "date": "8 months ago",
+      "stars": 5,
+      "complete": false,
+      "text": "I have used Greylyn Wayne for a number of stages for my listings, they have always done a great job but I was especially thrilled with my last experience with their team and wanted to share it with those considering stagers. We initially … [truncated — owner reply notes it 'helped you achieve a full price offer in less than a week']"
+    },
+    {
+      "author": "Carey Hunt",
+      "badge": "Local Guide · 19 reviews · 6 photos",
+      "date": "a year ago",
+      "stars": 5,
+      "complete": false,
+      "text": "GW is truly a top stager in Portland. They focus down to the detail, will not leave the project until it is completely dialed. Their special planning and choice of furniture, art, decor always showcases the home's architectural style and … [truncated]"
+    },
+    {
+      "author": "Joanne Sterling",
+      "badge": "Local Guide · 12 reviews · 2 photos",
+      "date": "a year ago",
+      "stars": 5,
+      "complete": false,
+      "text": "I have always referred Greylyn Wayne to the agents I supervise, but recently had a delightful experience of my own with this company. On short notice they transformed a lovely property in Forest Heights from plain to magazine-quality! … [truncated — owner reply notes the home went pending after the open house]"
+    },
+    {
+      "author": "Brayden Garver",
+      "badge": "6 reviews",
+      "date": "a year ago",
+      "stars": 5,
+      "complete": false,
+      "text": "Working with Greylyn Wayne Home Staging and Interior Design was an exceptional experience from start to finish! The staging team was professional, efficient, … [truncated]"
+    },
+    {
+      "author": "Miguel Tenorio",
+      "badge": "Local Guide · 10 reviews · 43 photos",
+      "date": "10 months ago",
+      "stars": 5,
+      "complete": false,
+      "text": "Alicia Leon is incredibly talented and has such a great eye for design. Whether you're getting a home ready to sell or just want to refresh your space, she and the Greylyn Wayne team know how to make everything look polished, stylish, and … [truncated]"
+    }
+  ]
+}

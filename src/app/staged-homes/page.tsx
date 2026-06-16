@@ -4,8 +4,11 @@ import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
 import {
   groupedByRegion,
+  featuredHomes,
   stats,
-  statusLabel,
+  pill,
+  saleInfo,
+  money,
   stagedWhen,
   type StagedHome,
 } from "@/data/staging-portfolio";
@@ -25,10 +28,28 @@ export const metadata: Metadata = {
 };
 
 const TONE: Record<string, string> = {
-  live: "bg-teal text-white",
+  over: "bg-teal text-white",          // sold over ask — the hero stat
+  fast: "bg-teal text-white",          // sold fast
   sold: "bg-charcoal text-white",
-  new: "bg-cream text-charcoal-light",
+  live: "bg-white/95 text-charcoal",   // on the market
+  new: "bg-cream text-charcoal-light", // pending / just staged
 };
+
+// One short line of sale proof under the address.
+function saleLine(home: StagedHome): string | null {
+  const s = saleInfo(home);
+  if (s.isSold) {
+    const parts: string[] = [];
+    if (s.priceFmt) parts.push(`Sold ${s.priceFmt}`);
+    if (s.overAskCents != null && s.overAskCents > 0)
+      parts.push(`${money(s.overAskCents)} over asking`);
+    else if (s.dom != null && s.dom <= 14)
+      parts.push(`${s.dom} ${s.dom === 1 ? "day" : "days"} on market`);
+    return parts.join(" · ") || null;
+  }
+  if (s.priceFmt) return `Asking ${s.priceFmt}`;
+  return null;
+}
 
 function RedfinIcon() {
   return (
@@ -39,8 +60,9 @@ function RedfinIcon() {
 }
 
 function HomeCard({ home }: { home: StagedHome }) {
-  const status = statusLabel(home.status);
+  const status = pill(home);
   const when = stagedWhen(home.installed_on);
+  const sale = saleLine(home);
   const bb = home.beds_baths;
   const specs = bb
     ? [
@@ -94,6 +116,9 @@ function HomeCard({ home }: { home: StagedHome }) {
           {home.city}, {home.state}
           {when ? <span className="text-charcoal-light/70"> · Staged {when}</span> : null}
         </p>
+        {sale ? (
+          <p className="text-teal text-sm font-medium mt-1.5">{sale}</p>
+        ) : null}
         {specs ? <p className="text-charcoal-light/70 text-xs mt-1">{specs}</p> : null}
 
         <div className="flex items-center gap-4 mt-3">
@@ -122,6 +147,7 @@ function HomeCard({ home }: { home: StagedHome }) {
 
 export default function StagedHomesPage() {
   const regions = groupedByRegion();
+  const featured = featuredHomes(6);
 
   return (
     <>
@@ -157,7 +183,15 @@ export default function StagedHomesPage() {
                 {stats.total}
               </p>
               <p className="text-charcoal-light text-xs tracking-wider uppercase mt-1">
-                Homes Featured
+                Recent Homes
+              </p>
+            </div>
+            <div>
+              <p className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-teal">
+                {stats.soldOverAsk}
+              </p>
+              <p className="text-charcoal-light text-xs tracking-wider uppercase mt-1">
+                Sold Over Asking
               </p>
             </div>
             <div>
@@ -168,17 +202,67 @@ export default function StagedHomesPage() {
                 On the Market Now
               </p>
             </div>
-            <div>
-              <p className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-teal">
-                {stats.cities}
-              </p>
-              <p className="text-charcoal-light text-xs tracking-wider uppercase mt-1">
-                Cities Served
-              </p>
-            </div>
           </div>
         </div>
       </section>
+
+      {/* Featured: standout sales (over ask / fast) */}
+      {featured.length > 0 && (
+        <section className="py-16 lg:py-20 bg-charcoal">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <p className="text-teal-light text-sm tracking-[0.3em] uppercase mb-3">
+                The Proof Is in the Sale
+              </p>
+              <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-white">
+                Recent Sold Stories
+              </h2>
+              <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+                Homes we staged that sold over asking or flew off the market.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {featured.map((home) => {
+                const s = saleInfo(home);
+                const headline = s.soldFast
+                  ? `Sold in ${s.dom} ${s.dom === 1 ? "day" : "days"}`
+                  : `${money(s.overAskCents)} over asking`;
+                return (
+                  <a
+                    key={home.ref}
+                    href={home.redfin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group block bg-charcoal-light/20"
+                  >
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      {home.photo && (
+                        <Image
+                          src={home.photo}
+                          alt={`${home.street}, ${home.city} — staged by Greylyn Wayne, ${headline}`}
+                          fill
+                          sizes="(max-width: 768px) 100vw, 33vw"
+                          className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+                      )}
+                      <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/10 to-transparent" />
+                      <div className="absolute bottom-0 left-0 right-0 p-5">
+                        <p className="font-[family-name:var(--font-playfair)] text-2xl text-white leading-none">
+                          {headline}
+                        </p>
+                        <p className="text-teal-light text-sm mt-2">
+                          {home.street}, {home.city}
+                          {s.priceFmt ? ` · Sold ${s.priceFmt}` : ""}
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Region sections */}
       {regions.map((group, idx) => (
