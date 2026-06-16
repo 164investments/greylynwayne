@@ -151,10 +151,10 @@ export default function HomeStagingPage() {
                   Request a Free Quote
                 </Link>
                 <Link
-                  href="/portfolio"
+                  href="/staged-homes"
                   className="inline-block border border-charcoal/20 text-charcoal px-8 py-4 text-sm tracking-wider uppercase hover:bg-charcoal hover:text-white transition-colors text-center"
                 >
-                  See Our Work
+                  See Homes We&apos;ve Staged
                 </Link>
               </div>
             </div>

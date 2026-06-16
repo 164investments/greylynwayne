@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import { RatingBadge } from "@/components/Proof";
 
 export const metadata: Metadata = {
   title: "About Greylyn Wayne | Portland Home Staging & Interior Design Team",
@@ -67,26 +68,37 @@ export default function AboutPage() {
         ]}
       />
 
-      {/* Hero */}
-      <section className="relative pt-20">
-        <div className="relative h-[50vh] min-h-[400px]">
-          <Image
-            src="/images/team/team-group.webp"
-            alt="The Greylyn Wayne team — Portland home staging and interior design studio"
-            fill
-            className="object-cover object-top"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
-          <div className="absolute inset-0 flex items-center">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <p className="text-white/90 text-sm tracking-[0.3em] uppercase mb-4">
-                About Us
-              </p>
-              <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl text-white max-w-2xl">
-                Our Story
-              </h1>
-            </div>
+      {/* Hero — clean header (no cropped photo) */}
+      <section className="pt-20 bg-cream">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8 py-20 lg:py-24 text-center">
+          <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
+            About Us
+          </p>
+          <h1 className="font-[family-name:var(--font-playfair)] text-5xl md:text-6xl lg:text-7xl text-charcoal mb-6">
+            Our Story
+          </h1>
+          <p className="text-charcoal-light text-lg max-w-2xl mx-auto mb-8">
+            A family-run Portland studio of designers, stagers, and
+            coordinators — the people behind every project since 2015.
+          </p>
+          <div className="flex justify-center">
+            <RatingBadge />
+          </div>
+        </div>
+      </section>
+
+      {/* Team group photo — shown whole, never cropped */}
+      <section className="bg-cream pb-16 lg:pb-24">
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="relative aspect-[3/2] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
+            <Image
+              src="/images/team/team-group.webp"
+              alt="The Greylyn Wayne team — Portland home staging and interior design studio"
+              fill
+              className="object-cover"
+              priority
+              sizes="(max-width: 1024px) 100vw, 1100px"
+            />
           </div>
         </div>
       </section>
@@ -218,6 +230,57 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Testimonials — real, named brokers */}
+      <section className="py-20 lg:py-24 bg-warm">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
+              What Partners Say
+            </p>
+            <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal">
+              Trusted by Portland&apos;s Top Brokers
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            <figure className="bg-white p-8 lg:p-10">
+              <svg className="h-7 w-7 text-teal-light mb-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11H10v10H0z" />
+              </svg>
+              <blockquote className="text-charcoal-light leading-relaxed italic mb-5">
+                &ldquo;You guys did an absolutely fabulous job. It looks amazing
+                — thank you so much!&rdquo;
+              </blockquote>
+              <figcaption className="text-sm">
+                <span className="text-charcoal font-medium">Sherry Francis</span>
+                <span className="text-charcoal-light"> — Senior Broker, ELEETE Real Estate</span>
+              </figcaption>
+            </figure>
+            <figure className="bg-white p-8 lg:p-10">
+              <svg className="h-7 w-7 text-teal-light mb-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11H10v10H0z" />
+              </svg>
+              <blockquote className="text-charcoal-light leading-relaxed italic mb-5">
+                &ldquo;I&apos;ve used many staging companies in the past, but
+                since I started using Jody, I have not gone back to the other
+                companies.&rdquo;
+              </blockquote>
+              <figcaption className="text-sm">
+                <span className="text-charcoal font-medium">Liz Carpenter</span>
+                <span className="text-charcoal-light"> — Principal Broker, West Hills RE/MAX</span>
+              </figcaption>
+            </figure>
+          </div>
+          <p className="text-center mt-10">
+            <Link
+              href="/reviews"
+              className="text-teal text-sm tracking-wider uppercase font-medium hover:text-teal-dark transition-colors"
+            >
+              Read more reviews &rarr;
+            </Link>
+          </p>
         </div>
       </section>
 

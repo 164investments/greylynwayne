@@ -35,6 +35,7 @@ This is a layer-based structure on purpose. The site is small; feature-slicing w
 |---|---|---|
 | A new standalone page | `src/app/<slug>/page.tsx` | Export `metadata` (title + description). Add to `sitemap.ts` if indexable. |
 | A new service area (city) | `src/data/service-areas.ts` | Add a `CityData` entry — it auto-generates the page, sitemap entry, schema, and FAQ. **Write genuinely unique** `description`/`highlights`/`nearby` (real neighborhoods), never spun boilerplate. |
+| Content derived from the ops DB + an external source | offline script in `scripts/` → generated `src/data/*.json` → typed wrapper `*.ts` | See §6b. The page imports the **committed JSON snapshot**, never fetches at build/runtime. Re-running the script is a manual, reviewed step. |
 | A shared UI piece (used 2+ places) | `src/components/` | Keep presentational. No data fetching, no business logic. |
 | Page-specific markup used once | Inline in that `page.tsx` | Don't pre-abstract (Rule of Three). |
 | Structured data / schema | `src/components/JsonLd.tsx` | One exported component per schema type. Reuse `LocalBusinessJsonLd`, `ServiceJsonLd`, `FAQJsonLd`, `BreadcrumbJsonLd`. |
@@ -62,6 +63,22 @@ Next.js `permanent: true` emits **HTTP 308**, which Google treats identically to
 
 `src/middleware.ts` sends `X-Robots-Tag: noindex` on the `*.vercel.app` host so the preview domain isn't indexed as a duplicate (a post-cutover upgrade to a 301→www is commented in-file).
 
+## 6b. Offline-enriched data (`scripts/` → `src/data/*.json` → `*.ts`)
+
+The **Staged Homes** portfolio (`/staged-homes`) is the first page whose content is *generated*, not hand-authored. The pattern, and the rule for anything like it:
+
+```
+scripts/enrich-staging-portfolio.py   (offline; never runs at build/deploy time)
+  → src/data/staging-portfolio.json    (committed snapshot — the build reads THIS)
+  → src/data/staging-portfolio.ts       (typed wrapper: types + region grouping + status labels)
+  → src/app/staged-homes/page.tsx        (Server Component; imports the wrapper)
+```
+
+- **Source of truth is the committed JSON.** The page never hits the network or the ops DB during build or render — keeps the site fully static and deploys deterministic. Regenerating is a deliberate, reviewed step (a human re-runs the script and commits the diff), exactly like editing `service-areas.ts` by hand.
+- **The script** pulls the curated showcase (recent real stagings, last ~12 mo) from the `greylynwayne-admin` Supabase, then enriches each with a **verified** Redfin deep-link + listing photo and a Zillow link. Photo lookup goes DuckDuckGo (`site:redfin.com {address}`) → exact-match guard (`url_matches`: house number + street name + zip must all match, or we reject — a neighbor's photo is worse than none) → impersonated Redfin page fetch → `og:image` → self-hosted in `public/images/staging/{ref}.jpg`. It is rate-limited + idempotent (skips already-verified homes) and **degrades gracefully**: any home without a verified photo still renders an editorial address card with working Redfin/Zillow links.
+- **Why self-host the photos:** hot-linking MLS CDN images breaks when a listing expires. Caveat below (§10).
+- **Don't** make the page `async`/fetch live, and don't widen this into a general scraping layer. If staging content needs to be self-served by staff, that's the CMS trigger (§9), not more scripts.
+
 ## 7. The lead endpoint (`app/api/lead/route.ts`)
 
 The only server-side logic. Both forms POST JSON here; it validates, drops honeypot hits, and emails a formatted notification via **Resend** (raw `fetch`, no SDK dependency) with `reply_to` = the customer. Config via env (`RESEND_API_KEY`, `LEAD_FROM_EMAIL`, `LEAD_TO_EMAIL`). On misconfig or send failure it returns a friendly error the form renders. Keep this the single lead path — new forms add a `formType`, not a new endpoint.
@@ -77,7 +94,7 @@ The only server-side logic. Both forms POST JSON here; it validates, drops honey
 ## 9. Right-sizing — what we deliberately are NOT doing
 
 - **No feature-slicing, no `dependency-cruiser`, no Zod-env, no test framework.** At ~20 files with one server route, layer-based + `tsc`/ESLint/build is the right amount of discipline. The forcing function to revisit: a real backend (CMS, bookings, auth) or the file count making `components/` crowded.
-- **No CMS.** Blog posts + reviews + portfolio are hardcoded arrays. Fine until Jody needs to self-edit content — then introduce a CMS/MDX layer (and update this doc).
+- **No CMS.** Blog posts + reviews + the *design* portfolio are hardcoded arrays; the *staging* portfolio is a generated JSON snapshot (§6b). Fine until Jody needs to self-edit content — then introduce a CMS/MDX layer (and update this doc).
 
 ## 10. Known debt
 
@@ -85,7 +102,9 @@ The only server-side logic. Both forms POST JSON here; it validates, drops honey
 - **`aggregateRating` = 9/5.0** (on-page testimonials). Bump to true Google Business Profile count + average when available — it's more credible and aids rich results.
 - **`alla-famiglia-house-details.pdf` is ~18 MB** — large for the repo. Compress (ghostscript `/ebook`) if it ever blocks a clone or matters for the download.
 - **Blog has no per-post pages** — all old `/post/*` URLs collapse to `/blog`. Build real post pages if blog SEO becomes a priority.
-- **Portfolio/before-after reuse a small image set** — replace with real project photography for credibility + unique image SEO.
+- **Design portfolio / before-after reuse a small image set** — replace with real project photography for credibility + unique image SEO. (The *staging* portfolio at `/staged-homes` already uses real per-home listing photos.)
+- **Staged Homes listing photos are MLS-sourced** (`© RMLS`/agent copyright) and self-hosted (§6b). Hayden opted into this tradeoff; they show GW's own staging work but the underlying photo copyright is the listing photographer's. Easy to swap/remove per-home via the JSON. If a takedown is ever requested, delete that home's `photo` field + the `public/images/staging/{ref}.jpg` file (the card falls back cleanly). The cleaner long-term fix is GW's own photography.
+- **Staged Homes data goes stale** — it's a snapshot from the date the script last ran. Status framing (On the Market / Sold) reflects that moment; the live Redfin/Zillow links are always current. Re-run `scripts/enrich-staging-portfolio.py` periodically to refresh.
 
 ## 11. Reviewer checklist (every PR)
 

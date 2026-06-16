@@ -47,5 +47,225 @@
     "redfin_verified": true,
     "photo": "/images/staging/26-NS-072.jpg",
     "beds_baths": null
+  },
+  {
+    "ref": "26-NS-071",
+    "street": "2630 Lafave St",
+    "city": "West Linn",
+    "state": "OR",
+    "zip": "97068",
+    "status": "renting",
+    "installed_on": "2026-04-09",
+    "signed_total_cents": 266000,
+    "zillow": "https://www.zillow.com/homes/2630-Lafave-St-West-Linn-OR-97068_rb/",
+    "redfin": "https://www.redfin.com/OR/West-Linn/2630-Lafave-St-97068/home/26046121",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-071.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 2.0,
+      "sqft": 1933
+    }
+  },
+  {
+    "ref": "26-NS-070",
+    "street": "4115 NE 81st Ave",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97218",
+    "status": "renting",
+    "installed_on": "2026-04-08",
+    "signed_total_cents": 256000,
+    "zillow": "https://www.zillow.com/homes/4115-NE-81st-Ave-Portland-OR-97218_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/4115-NE-81st-Ave-97218/home/26577480",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-070.jpg",
+    "beds_baths": {
+      "beds": 1,
+      "baths": 1.0,
+      "sqft": 767
+    }
+  },
+  {
+    "ref": "26-NS-069",
+    "street": "11020 NE 131st Ct",
+    "city": "Orchards",
+    "state": "WA",
+    "zip": "98682",
+    "status": "renting",
+    "installed_on": "2026-04-08",
+    "signed_total_cents": 305000,
+    "zillow": "https://www.zillow.com/homes/11020-NE-131st-Ct-Orchards-WA-98682_rb/",
+    "redfin": "https://www.redfin.com/WA/Vancouver/11020-NE-131st-Ct-98682/home/193465676",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-069.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 2920
+    }
+  },
+  {
+    "ref": "26-NS-066",
+    "street": "7305 N Willamette Blvd #1",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97203",
+    "status": "renting",
+    "installed_on": "2026-04-07",
+    "signed_total_cents": 327250,
+    "zillow": "https://www.zillow.com/homes/7305-N-Willamette-Blvd-1-Portland-OR-97203_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/7305-N-Willamette-Blvd-97203/home/201405123",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-066.jpg",
+    "beds_baths": {
+      "beds": 3,
+      "baths": 2.5,
+      "sqft": 1440
+    }
+  },
+  {
+    "ref": "26-NS-067",
+    "street": "6957 N Burr Ave #3",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97203",
+    "status": "renting",
+    "installed_on": "2026-04-07",
+    "signed_total_cents": 187425,
+    "zillow": "https://www.zillow.com/homes/6957-N-Burr-Ave-3-Portland-OR-97203_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/N-Burr-Ave-97203/home/113844721",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-067.jpg",
+    "beds_baths": null
+  },
+  {
+    "ref": "26-NS-068",
+    "street": "6949 N Burr Ave #6",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97203",
+    "status": "renting",
+    "installed_on": "2026-04-07",
+    "signed_total_cents": 187425,
+    "zillow": "https://www.zillow.com/homes/6949-N-Burr-Ave-6-Portland-OR-97203_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/6949-N-Burr-Ave-97203/home/201393463",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": null
+  },
+  {
+    "ref": "26-NS-065",
+    "street": "3011 NE 113th St",
+    "city": "Vancouver",
+    "state": "WA",
+    "zip": "98686",
+    "status": "renting",
+    "installed_on": "2026-04-06",
+    "signed_total_cents": 385000,
+    "zillow": "https://www.zillow.com/homes/3011-NE-113th-St-Vancouver-WA-98686_rb/",
+    "redfin": "https://www.redfin.com/WA/Vancouver/3011-NE-113th-St-98686/home/14609829",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-065.jpg",
+    "beds_baths": {
+      "beds": 3,
+      "baths": 3.0,
+      "sqft": 1658
+    }
+  },
+  {
+    "ref": "26-NS-064",
+    "street": "18617 NE 399th St",
+    "city": "Amboy",
+    "state": "WA",
+    "zip": "98601",
+    "status": "renting",
+    "installed_on": "2026-04-03",
+    "signed_total_cents": 360500,
+    "zillow": "https://www.zillow.com/homes/18617-NE-399th-St-Amboy-WA-98601_rb/",
+    "redfin": "https://www.redfin.com/WA/Amboy/18617-NE-399th-St-98601/home/14581805",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-064.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 2.5,
+      "sqft": 3374
+    }
+  },
+  {
+    "ref": "26-NS-063",
+    "street": "2614 NE 27th Ave",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97212",
+    "status": "renting",
+    "installed_on": "2026-04-02",
+    "signed_total_cents": 474000,
+    "zillow": "https://www.zillow.com/homes/2614-NE-27th-Ave-Portland-OR-97212_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/2614-NE-27th-Ave-97212/home/26513004",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-063.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 3.0,
+      "sqft": 3426
+    }
+  },
+  {
+    "ref": "26-NS-062",
+    "street": "13648 Goodall Rd",
+    "city": "Lake Oswego",
+    "state": "OR",
+    "zip": "97034",
+    "status": "renting",
+    "installed_on": "2026-04-01",
+    "signed_total_cents": 448500,
+    "zillow": "https://www.zillow.com/homes/13648-Goodall-Rd-Lake-Oswego-OR-97034_rb/",
+    "redfin": "https://www.redfin.com/OR/Lake-Oswego/13648-Goodall-Rd-97034/home/52541978",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-062.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 6.0,
+      "sqft": 5288
+    }
+  },
+  {
+    "ref": "26-NS-061",
+    "street": "1265 S Military Rd",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97219",
+    "status": "renting",
+    "installed_on": "2026-04-01",
+    "signed_total_cents": 276000,
+    "zillow": "https://www.zillow.com/homes/1265-S-Military-Rd-Portland-OR-97219_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/1265-S-Military-Rd-97219/home/26507488",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": {
+      "beds": 5,
+      "baths": 4.0,
+      "sqft": 5365
+    }
+  },
+  {
+    "ref": "26-NS-060",
+    "street": "5566 SE Insley St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97206",
+    "status": "renting",
+    "installed_on": "2026-03-31",
+    "signed_total_cents": 325000,
+    "zillow": "https://www.zillow.com/homes/5566-SE-Insley-St-Portland-OR-97206_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/5566-SE-Insley-St-97206/home/26334284",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-060.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 3.0,
+      "sqft": 2420
+    }
   }
 ]
