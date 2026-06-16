@@ -91,7 +91,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-gray-400 hover:text-teal-light transition-colors text-sm"
+                    className="inline-block py-1 text-gray-400 hover:text-teal-light transition-colors text-sm"
                   >
                     {item.name}
                   </Link>
@@ -110,7 +110,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-gray-400 hover:text-teal-light transition-colors text-sm"
+                    className="inline-block py-1 text-gray-400 hover:text-teal-light transition-colors text-sm"
                   >
                     {item.name}
                   </Link>

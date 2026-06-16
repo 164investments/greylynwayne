@@ -30,7 +30,7 @@ export default function SplitHero({
     <section className="pt-20">
       <div className="flex flex-col lg:flex-row lg:min-h-[640px]">
         {/* Text panel */}
-        <div className="lg:w-[45%] bg-cream flex flex-col justify-center px-6 py-14 lg:px-16 lg:py-0 order-2 lg:order-1">
+        <div className="lg:w-[45%] bg-cream flex flex-col justify-center px-6 py-11 lg:px-16 lg:py-0 order-2 lg:order-1">
           <p className="text-teal text-sm tracking-[0.3em] uppercase mb-5">
             {eyebrow}
           </p>
@@ -63,7 +63,7 @@ export default function SplitHero({
           </div>
         </div>
         {/* Real project photo */}
-        <div className="relative order-1 lg:order-2 lg:flex-1 min-h-[300px] sm:min-h-[400px] lg:min-h-0">
+        <div className="relative order-1 lg:order-2 lg:flex-1 min-h-[240px] sm:min-h-[360px] lg:min-h-0">
           <Image
             src={imageSrc}
             alt={imageAlt}

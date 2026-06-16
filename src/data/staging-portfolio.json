@@ -267,5 +267,255 @@
       "baths": 3.0,
       "sqft": 2420
     }
+  },
+  {
+    "ref": "26-NS-075",
+    "street": "1214 NE Failing St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97212",
+    "status": "renting",
+    "installed_on": "2026-03-31",
+    "signed_total_cents": 280500,
+    "zillow": "https://www.zillow.com/homes/1214-NE-Failing-St-Portland-OR-97212_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/1214-NE-Failing-St-97212/home/25778792",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-075.jpg",
+    "beds_baths": {
+      "beds": 3,
+      "baths": 2.0,
+      "sqft": 2064
+    }
+  },
+  {
+    "ref": "26-NS-059",
+    "street": "11631 S Northgate Ave",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97219",
+    "status": "renting",
+    "installed_on": "2026-03-30",
+    "signed_total_cents": 285000,
+    "zillow": "https://www.zillow.com/homes/11631-S-Northgate-Ave-Portland-OR-97219_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/11631-S-Northgate-Ave-97219/home/40947211",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-059.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 4.0,
+      "sqft": 3587
+    }
+  },
+  {
+    "ref": "26-SM-009",
+    "street": "575 SW Sheridan St #150",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97201",
+    "status": "renting",
+    "installed_on": "2026-03-26",
+    "signed_total_cents": 160000,
+    "zillow": "https://www.zillow.com/homes/575-SW-Sheridan-St-150-Portland-OR-97201_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/575-SW-Sheridan-St-97201/home/175369794",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": null
+  },
+  {
+    "ref": "26-NS-058",
+    "street": "16147 SW Palermo Ln",
+    "city": "Tigard",
+    "state": "OR",
+    "zip": "97223",
+    "status": "renting",
+    "installed_on": "2026-03-25",
+    "signed_total_cents": 350500,
+    "zillow": "https://www.zillow.com/homes/16147-SW-Palermo-Ln-Tigard-OR-97223_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/16147-SW-Palermo-Ln-97223/home/26726962",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-058.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 3.0,
+      "sqft": 2021
+    }
+  },
+  {
+    "ref": "26-NS-057",
+    "street": "7407 N Polk Ave",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97203",
+    "status": "renting",
+    "installed_on": "2026-03-24",
+    "signed_total_cents": 434500,
+    "zillow": "https://www.zillow.com/homes/7407-N-Polk-Ave-Portland-OR-97203_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/7407-N-Polk-Ave-97203/home/26402655",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-057.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 2.0,
+      "sqft": 2218
+    }
+  },
+  {
+    "ref": "26-NS-056",
+    "street": "951 Atwater Rd",
+    "city": "Lake Oswego",
+    "state": "OR",
+    "zip": "97034",
+    "status": "renting",
+    "installed_on": "2026-03-24",
+    "signed_total_cents": 266000,
+    "zillow": "https://www.zillow.com/homes/951-Atwater-Rd-Lake-Oswego-OR-97034_rb/",
+    "redfin": "https://www.redfin.com/OR/Lake-Oswego/951-Atwater-Rd-97034/home/25827780",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-056.jpg",
+    "beds_baths": {
+      "beds": 6,
+      "baths": 5.5,
+      "sqft": 7773
+    }
+  },
+  {
+    "ref": "26-NS-055",
+    "street": "1253 N Baldwin St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97217",
+    "status": "renting",
+    "installed_on": "2026-03-23",
+    "signed_total_cents": 350000,
+    "zillow": "https://www.zillow.com/homes/1253-N-Baldwin-St-Portland-OR-97217_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/1253-N-Baldwin-St-97217/home/26491612",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-055.jpg",
+    "beds_baths": {
+      "beds": 3,
+      "baths": 1.0,
+      "sqft": 1880
+    }
+  },
+  {
+    "ref": "26-SM-008",
+    "street": "17240 SW Wapato Island Dr",
+    "city": "Sherwood",
+    "state": "OR",
+    "zip": "97140",
+    "status": "renting",
+    "installed_on": "2026-03-20",
+    "signed_total_cents": 220000,
+    "zillow": "https://www.zillow.com/homes/17240-SW-Wapato-Island-Dr-Sherwood-OR-97140_rb/",
+    "redfin": "https://www.redfin.com/OR/Sherwood/17240-SW-Wapato-Island-Dr-97140/home/184149222",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-SM-008.jpg",
+    "beds_baths": {
+      "beds": 3,
+      "baths": 4.0,
+      "sqft": 1857
+    }
+  },
+  {
+    "ref": "26-NS-053",
+    "street": "2020 SW Market St Dr #102",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97201",
+    "status": "renting",
+    "installed_on": "2026-03-19",
+    "signed_total_cents": 276000,
+    "zillow": "https://www.zillow.com/homes/2020-SW-Market-St-Dr-102-Portland-OR-97201_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/2020-SW-Market-Street-Dr-97201/home/26347987",
+    "redfin_verified": true,
+    "photo": null,
+    "beds_baths": null
+  },
+  {
+    "ref": "26-NS-052",
+    "street": "7302 N New York Ave #6",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97203",
+    "status": "renting",
+    "installed_on": "2026-03-18",
+    "signed_total_cents": 256000,
+    "zillow": "https://www.zillow.com/homes/7302-N-New-York-Ave-6-Portland-OR-97203_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/7302-N-New-York-Ave-97203/home/179548727",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-052.jpg",
+    "beds_baths": {
+      "beds": 1,
+      "baths": 1.0,
+      "sqft": 521
+    }
+  },
+  {
+    "ref": "26-NS-051",
+    "street": "4211 SE Cora St",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97206",
+    "status": "renting",
+    "installed_on": "2026-03-17",
+    "signed_total_cents": 421650,
+    "zillow": "https://www.zillow.com/homes/4211-SE-Cora-St-Portland-OR-97206_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/4211-SE-Cora-St-97206/home/26409553",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-051.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 2.0,
+      "sqft": 1707
+    }
+  },
+  {
+    "ref": "26-NS-049",
+    "street": "2981 SE Meek St #110",
+    "city": "Milwaukie",
+    "state": "OR",
+    "zip": "97222",
+    "status": "renting",
+    "installed_on": "2026-03-13",
+    "signed_total_cents": 226000,
+    "zillow": "https://www.zillow.com/homes/2981-SE-Meek-St-110-Milwaukie-OR-97222_rb/",
+    "redfin": "https://www.redfin.com/?q=2981%20SE%20Meek%20St%20%23110%2C%20Milwaukie%2C%20OR%2097222",
+    "redfin_verified": false,
+    "photo": null,
+    "beds_baths": null
+  },
+  {
+    "ref": "26-NS-050",
+    "street": "2981 SE Meek St #121",
+    "city": "Milwaukie",
+    "state": "OR",
+    "zip": "97222",
+    "status": "renting",
+    "installed_on": "2026-03-13",
+    "signed_total_cents": 226000,
+    "zillow": "https://www.zillow.com/homes/2981-SE-Meek-St-121-Milwaukie-OR-97222_rb/",
+    "redfin": "https://www.redfin.com/?q=2981%20SE%20Meek%20St%20%23121%2C%20Milwaukie%2C%20OR%2097222",
+    "redfin_verified": false,
+    "photo": null,
+    "beds_baths": null
+  },
+  {
+    "ref": "26-NS-048",
+    "street": "1915 NE 56th Ave",
+    "city": "Portland",
+    "state": "OR",
+    "zip": "97213",
+    "status": "renting",
+    "installed_on": "2026-03-12",
+    "signed_total_cents": 349500,
+    "zillow": "https://www.zillow.com/homes/1915-NE-56th-Ave-Portland-OR-97213_rb/",
+    "redfin": "https://www.redfin.com/OR/Portland/1915-NE-56th-Ave-97213/home/26303550",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-048.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 2.0,
+      "sqft": 2821
+    }
   }
 ]

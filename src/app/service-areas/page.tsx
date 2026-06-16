@@ -84,7 +84,7 @@ export default function ServiceAreasPage() {
                       <li key={city.slug}>
                         <Link
                           href={`/service-areas/${city.slug}`}
-                          className="text-charcoal-light hover:text-teal text-sm flex items-center gap-2 transition-colors"
+                          className="text-charcoal-light hover:text-teal text-sm flex items-center gap-2 transition-colors py-1.5"
                         >
                           <span className="text-teal text-xs">&#9670;</span>
                           {city.name}, {city.stateShort}
