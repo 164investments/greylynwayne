@@ -9,10 +9,14 @@
     "installed_on": "2026-04-13",
     "signed_total_cents": 315500,
     "zillow": "https://www.zillow.com/homes/2828-NW-Ariel-Ter-Portland-OR-97210_rb/",
-    "redfin": "https://www.redfin.com/?q=2828%20NW%20Ariel%20Ter%2C%20Portland%2C%20OR%2097210",
-    "redfin_verified": false,
-    "photo": null,
-    "beds_baths": null
+    "redfin": "https://www.redfin.com/OR/Portland/2828-NW-Ariel-Ter-97210/home/25756847",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-074.jpg",
+    "beds_baths": {
+      "beds": 4,
+      "baths": 3.0,
+      "sqft": 3773
+    }
   },
   {
     "ref": "26-NS-073",
@@ -201,8 +205,12 @@
     "zillow": "https://www.zillow.com/homes/6949-N-Burr-Ave-6-Portland-OR-97203_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/6949-N-Burr-Ave-97203/home/201393463",
     "redfin_verified": true,
-    "photo": null,
-    "beds_baths": null,
+    "photo": "/images/staging/26-NS-068.jpg",
+    "beds_baths": {
+      "beds": 2,
+      "baths": 2.5,
+      "sqft": 1191
+    },
     "sale": {
       "status": "Active",
       "price_cents": 48990000,

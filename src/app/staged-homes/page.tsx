@@ -224,37 +224,48 @@ export default function StagedHomesPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {featured.map((home) => {
                 const s = saleInfo(home);
-                const headline = s.soldFast
-                  ? `Sold in ${s.dom} ${s.dom === 1 ? "day" : "days"}`
-                  : `${money(s.overAskCents)} over asking`;
+                // Big number is the hero; unit + address are supporting.
+                const bigNum = s.soldFast ? `${s.dom}` : money(s.overAskCents);
+                const bigUnit = s.soldFast
+                  ? `${s.dom === 1 ? "Day" : "Days"} on Market`
+                  : "Over Asking";
                 return (
                   <a
                     key={home.ref}
                     href={home.redfin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group block bg-charcoal-light/20"
+                    className="group block bg-white shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl"
                   >
+                    {/* Clean photo — no text overlay */}
                     <div className="relative aspect-[4/3] overflow-hidden">
                       {home.photo && (
                         <Image
                           src={home.photo}
-                          alt={`${home.street}, ${home.city} — staged by Greylyn Wayne, ${headline}`}
+                          alt={`${home.street}, ${home.city} — staged by Greylyn Wayne`}
                           fill
                           sizes="(max-width: 768px) 100vw, 33vw"
                           className="object-cover transition-transform duration-700 group-hover:scale-105"
                         />
                       )}
-                      <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/10 to-transparent" />
-                      <div className="absolute bottom-0 left-0 right-0 p-5">
-                        <p className="font-[family-name:var(--font-playfair)] text-2xl text-white leading-none">
-                          {headline}
-                        </p>
-                        <p className="text-teal-light text-sm mt-2">
-                          {home.street}, {home.city}
-                          {s.priceFmt ? ` · Sold ${s.priceFmt}` : ""}
-                        </p>
-                      </div>
+                    </div>
+                    {/* High-contrast proof panel below the photo */}
+                    <div className="p-7 text-center">
+                      <p className="font-[family-name:var(--font-playfair)] text-5xl text-teal leading-none">
+                        {bigNum}
+                      </p>
+                      <p className="text-charcoal text-[11px] font-semibold tracking-[0.25em] uppercase mt-2">
+                        {bigUnit}
+                      </p>
+                      <div className="w-10 h-px bg-cream mx-auto my-4" />
+                      <p className="text-charcoal text-sm font-medium">{home.street}</p>
+                      <p className="text-charcoal-light text-xs mt-1">
+                        {home.city}, {home.state}
+                        {s.priceFmt ? ` · Sold ${s.priceFmt}` : ""}
+                      </p>
+                      <span className="inline-block text-teal text-[11px] tracking-[0.15em] uppercase mt-4 group-hover:text-teal-dark transition-colors">
+                        View on Redfin →
+                      </span>
                     </div>
                   </a>
                 );
