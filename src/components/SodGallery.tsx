@@ -56,7 +56,7 @@ export default function SodGallery({ images, title }: SodGalleryProps) {
           >
             <Image
               src={src}
-              alt={`${title} — Greylyn Wayne Street of Dreams photo ${i + 1}`}
+              alt={`${title} — Greylyn Wayne, Portland — photo ${i + 1}`}
               fill
               sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
               className="object-cover transition-transform duration-500 group-hover:scale-105"

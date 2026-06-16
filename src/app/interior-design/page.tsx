@@ -7,6 +7,7 @@ import {
   FAQJsonLd,
 } from "@/components/JsonLd";
 import SplitHero from "@/components/SplitHero";
+import SodGallery from "@/components/SodGallery";
 
 export const metadata: Metadata = {
   title: "Interior Designer Portland, Oregon | Full-Service Home Design",
@@ -55,31 +56,55 @@ const designServices = [
   },
 ];
 
-const galleryImages = [
+// Per-project photo galleries. Files live in
+// /public/images/interiors/<slug>/NN.webp — 01 is the hero shown on the
+// project card, 02..count fill the gallery grid below it.
+const heroSrc = (slug: string) => `/images/interiors/${slug}/01.webp`;
+const galleryFrom = (slug: string, from: number, to: number) =>
+  Array.from({ length: to - from + 1 }, (_, i) =>
+    `/images/interiors/${slug}/${String(from + i).padStart(2, "0")}.webp`
+  );
+
+const projects = [
   {
-    src: "/images/sod-2021-ohana.webp",
-    alt: "Open-concept great room with vaulted wood-beam ceiling, curved sofa, and gourmet kitchen — a Greylyn Wayne NW Natural Street of Dreams interior",
-    aspect: "aspect-[3/2]",
+    slug: "ne56th",
+    title: "NE 56th Townhomes",
+    location: "NE 56th Avenue, Portland",
+    count: 22,
+    description:
+      "A collection of newly built Portland townhomes, fully furnished and styled by Greylyn Wayne. Open-concept main floors, light-filled bedrooms, and a crisp, modern palette designed to feel both elevated and effortlessly livable.",
   },
   {
-    src: "/images/street-of-dreams.webp",
-    alt: "Formal dining room with sculptural bubble-glass chandelier and custom display cabinetry, designed by Greylyn Wayne in Portland",
-    aspect: "aspect-[4/5]",
+    slug: "kearney",
+    title: "NW Kearney",
+    location: "2312 NW Kearney, Portland",
+    count: 16,
+    description:
+      "Two distinct residences in a restored Northwest Portland building — one bright and transitional, the other moody and modern with exposed brick and rich, layered tones. A full-service design and furnishing project, living spaces to bedrooms.",
   },
   {
-    src: "/images/hero-interior.webp",
-    alt: "Designer dining room framed by built-in cabinets and statement lighting in a Portland luxury home by Greylyn Wayne",
-    aspect: "aspect-[16/10]",
+    slug: "se12th-1032",
+    title: "1032 SE 12th",
+    location: "SE 12th Avenue, Portland",
+    count: 16,
+    description:
+      "A classic inner-Southeast Portland home, designed and furnished throughout. Statement wallpaper, layered textures, and warm wood floors give each room its own character while staying cohesive head to toe.",
   },
   {
-    src: "/images/home-staging-1.webp",
-    alt: "Moody industrial loft living room with exposed brick, leather sofa, and layered textures styled by Greylyn Wayne",
-    aspect: "aspect-[4/5]",
+    slug: "se12th-1036",
+    title: "1036 SE 12th",
+    location: "SE 12th Avenue, Portland",
+    count: 16,
+    description:
+      "A neighboring residence styled with bold blues, natural wood, and bright, airy bedrooms. Open living and dining spaces designed for comfort, gathering, and beautiful natural light.",
   },
   {
-    src: "/images/before-after.jpg",
-    alt: "Eclectic Portland studio with burnt-orange velvet sofa, blue paneled accent wall, and local Portland art by Greylyn Wayne",
-    aspect: "aspect-[3/2]",
+    slug: "adelynn",
+    title: "The Adelynn Hotel",
+    location: "NE 23rd Avenue, Portland",
+    count: 16,
+    description:
+      "A newly built boutique hotel on NE 23rd, designed suite by suite for a stylish, design-forward stay. Exposed wood beams, warm oak, and deep navy accents create light-filled spaces that feel modern, intimate, and distinctly Portland.",
   },
 ];
 
@@ -191,7 +216,7 @@ export default function InteriorDesignPage() {
         </div>
       </section>
 
-      {/* Work gallery */}
+      {/* Featured projects — organized by project, each with a photo gallery */}
       <section className="pb-24 lg:pb-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12 lg:mb-16">
@@ -199,31 +224,56 @@ export default function InteriorDesignPage() {
               Our Work
             </p>
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal mb-4">
-              A Look Inside Our Interiors
+              Featured Interior Projects
             </h2>
             <p className="text-charcoal-light leading-relaxed max-w-2xl mx-auto">
-              A glimpse of recent Portland projects — from NW Natural Street of
-              Dreams showcase homes to full-house renovations and styled city
-              spaces.
+              A look inside recent Portland projects — fully furnished homes,
+              townhomes, and short-term rentals designed and styled from the
+              floors up by our team.
             </p>
           </div>
-          <div className="columns-1 sm:columns-2 lg:columns-3 gap-4">
-            {galleryImages.map((img) => (
-              <div
-                key={img.src}
-                className={`group relative mb-4 break-inside-avoid overflow-hidden ${img.aspect}`}
-              >
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
+
+          <div className="space-y-16 lg:space-y-24">
+            {projects.map((project, i) => (
+              <div key={project.slug}>
+                <div className="bg-warm grid grid-cols-1 md:grid-cols-2 items-stretch overflow-hidden">
+                  <div
+                    className={`relative aspect-[3/2] md:aspect-auto md:min-h-[360px] ${
+                      i % 2 === 1 ? "md:order-2" : ""
+                    }`}
+                  >
+                    <Image
+                      src={heroSrc(project.slug)}
+                      alt={`${project.title} interior designed by Greylyn Wayne — ${project.location}`}
+                      fill
+                      sizes="(min-width: 768px) 50vw, 100vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-8 lg:p-12 flex flex-col justify-center">
+                    <h3 className="font-[family-name:var(--font-playfair)] text-2xl md:text-3xl text-charcoal mb-1">
+                      {project.title}
+                    </h3>
+                    <p className="text-teal text-xs tracking-wider uppercase mb-4">
+                      {project.location}
+                    </p>
+                    <p className="text-charcoal-light leading-relaxed">
+                      {project.description}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-3 sm:mt-4">
+                  <SodGallery
+                    images={galleryFrom(project.slug, 2, project.count)}
+                    title={project.title}
+                  />
+                </div>
               </div>
             ))}
           </div>
-          <div className="text-center mt-12">
+
+          <div className="text-center mt-16">
             <Link
               href="/portfolio"
               className="inline-block border border-teal text-teal px-8 py-4 text-sm tracking-wider uppercase hover:bg-teal hover:text-white transition-colors font-medium"

@@ -90,6 +90,7 @@ The only server-side logic. Both forms POST JSON here; it validates, drops honey
 - Iterate on `localhost:3000`; don't push per-tweak (Vercel build minutes — see `CLAUDE.md`).
 - Brand tokens (teal/warm/cream/charcoal, Playfair/Inter) come from `globals.css`; use the utility classes, don't hardcode hexes in components.
 - Images: always `next/image` with explicit `width`/`height`; assets in `public/images/` (webp preferred).
+- **Per-project photo galleries** live in `public/images/<set>/<slug>/NN.webp` (`NN` 1-padded, `01` = the project's hero card image) and render through the shared client component `components/SodGallery.tsx` (thumbnail grid → full-screen lightbox). Used on `street-of-dreams` (`sod/<slug>/`, the SOD homes) and `interior-design` (`interiors/<slug>/`, the furnished/STR projects — NE 56th, NW Kearney, SE 12th, Adelynn). Each page holds the project list (title/location/description/count) as a hardcoded array. Source photos are GW's own project/RMLS photography pulled from the 164 Investments "Listing Photos" Drive, curated + downscaled to ≤1800px webp offline (not scraped at build).
 
 ## 9. Right-sizing — what we deliberately are NOT doing
 
