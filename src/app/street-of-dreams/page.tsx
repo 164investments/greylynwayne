@@ -2,6 +2,15 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import SodGallery from "@/components/SodGallery";
+
+// Per-property photo galleries ported from the original Street of Dreams page.
+// Files live in /public/images/sod/<slug>/NN.webp (NN = 01..count).
+const gallery = (slug: string, count: number) =>
+  Array.from(
+    { length: count },
+    (_, i) => `/images/sod/${slug}/${String(i + 1).padStart(2, "0")}.webp`
+  );
 
 export const metadata: Metadata = {
   title:
@@ -26,6 +35,7 @@ const homes = [
     image: "/images/sod-2025-alla-famiglia.webp",
     imageAlt:
       "Alla Famiglia 2025 Street of Dreams home facade designed by Greylyn Wayne",
+    photos: gallery("alla-famiglia", 41),
     description:
       'Meaning "for the family," this European-style estate on 1.6 acres was designed for multi-generational living. At 8,725 square feet — the largest home in recent Street of Dreams history — it houses four generations under one roof, with artisanal finishes and timeless materials throughout. Built by Red Hills Land and Design.',
   },
@@ -36,6 +46,7 @@ const homes = [
     image: "/images/sod-2024-vista.webp",
     imageAlt:
       "Exterior of the 2024 Street of Dreams “Vista” home, modern architecture and exterior styling by Greylyn Wayne",
+    photos: gallery("vista", 10),
     description:
       "A full-scale remodel of a historic home in Portland's Northwest Hills, honoring the property's original character with custom finishes, high-end appliances, and artisanal details throughout.",
   },
@@ -46,6 +57,7 @@ const homes = [
     image: "/images/sod-2021-ohana.webp",
     imageAlt:
       "Living and kitchen of the 2021 Street of Dreams “Ohana” home by Greylyn Wayne",
+    photos: gallery("ohana", 17),
     description:
       "A 3,800-square-foot custom home with four bedrooms and four baths. Boho- and tropical-inspired, blending contemporary and mid-century modern elements for multi-generational living. Designed by Greylyn Wayne and furnished by What's New Furniture.",
   },
@@ -56,6 +68,7 @@ const homes = [
     image: "/images/sod-2019-bespoke.webp",
     imageAlt:
       "Exterior of the 2019 NW Natural Street of Dreams “Bespoke” home by Greylyn Wayne",
+    photos: gallery("bespoke", 17),
     description:
       "Our debut Street of Dreams home — a 4,600-square-foot modern farmhouse with Tuscan influences, featuring barrel doors, exposed beams, and a distinctive 3,300-pound quartz kitchen island. Voted both People's and Professional's Best Interior Design.",
   },
@@ -155,39 +168,47 @@ export default function StreetOfDreamsPage() {
               Street of Dreams Homes
             </h2>
           </div>
-          <div className="space-y-12 lg:space-y-16">
+          <div className="space-y-16 lg:space-y-24">
             {homes.map((home, i) => (
-              <div
-                key={home.year}
-                className="bg-white grid grid-cols-1 md:grid-cols-2 items-stretch overflow-hidden"
-              >
-                <div
-                  className={`relative aspect-[3/2] md:aspect-auto md:min-h-[360px] ${
-                    i % 2 === 1 ? "md:order-2" : ""
-                  }`}
-                >
-                  <Image
-                    src={home.image}
-                    alt={home.imageAlt}
-                    fill
-                    sizes="(min-width: 768px) 50vw, 100vw"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-8 lg:p-12 flex flex-col justify-center">
-                  <div className="font-[family-name:var(--font-playfair)] text-5xl text-teal-light mb-4">
-                    {home.year}
+              <div key={home.year}>
+                <div className="bg-white grid grid-cols-1 md:grid-cols-2 items-stretch overflow-hidden">
+                  <div
+                    className={`relative aspect-[3/2] md:aspect-auto md:min-h-[360px] ${
+                      i % 2 === 1 ? "md:order-2" : ""
+                    }`}
+                  >
+                    <Image
+                      src={home.image}
+                      alt={home.imageAlt}
+                      fill
+                      sizes="(min-width: 768px) 50vw, 100vw"
+                      className="object-cover"
+                    />
                   </div>
-                  <h3 className="font-[family-name:var(--font-playfair)] text-2xl mb-1">
-                    {home.title}
-                  </h3>
-                  <p className="text-teal text-xs tracking-wider uppercase mb-3">
-                    {home.location}
-                  </p>
-                  <p className="text-charcoal-light leading-relaxed">
-                    {home.description}
-                  </p>
+                  <div className="p-8 lg:p-12 flex flex-col justify-center">
+                    <div className="font-[family-name:var(--font-playfair)] text-5xl text-teal-light mb-4">
+                      {home.year}
+                    </div>
+                    <h3 className="font-[family-name:var(--font-playfair)] text-2xl mb-1">
+                      {home.title}
+                    </h3>
+                    <p className="text-teal text-xs tracking-wider uppercase mb-3">
+                      {home.location}
+                    </p>
+                    <p className="text-charcoal-light leading-relaxed">
+                      {home.description}
+                    </p>
+                  </div>
                 </div>
+
+                {home.photos.length > 0 && (
+                  <div className="mt-3 sm:mt-4">
+                    <SodGallery
+                      images={home.photos}
+                      title={`${home.title} (${home.year})`}
+                    />
+                  </div>
+                )}
               </div>
             ))}
           </div>

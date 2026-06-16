@@ -377,7 +377,7 @@ export default function ContactPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-teal mt-0.5">&#10003;</span>
-                    500+ Homes Staged Since 2015
+                    2,500+ Homes Staged Since 2015
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-teal mt-0.5">&#10003;</span>

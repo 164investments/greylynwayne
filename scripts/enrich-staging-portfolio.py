@@ -36,12 +36,16 @@ DIRS = {"n","s","e","w","ne","nw","se","sw","north","south","east","west"}
 SUFFIX = {"st","ave","blvd","rd","dr","ln","ct","pl","ter","way","cir","loop","pkwy","hwy","sts","aly","trl"}
 
 def norm_tokens(street):
-    # "2630 Lafave St" -> ("2630", {"lafave"})
+    # "2630 Lafave St" -> ("2630", {"lafave"}); "6491C SE Ramona St" -> ("6491", {"ramona"})
     s = re.sub(r'\([^)]*\)', '', street)          # drop "(Lot 11)"
     s = re.sub(r'#.*$', '', s)                     # drop unit
     toks = re.findall(r'[a-z0-9]+', s.lower())
-    num = toks[0] if toks and toks[0].isdigit() else None
-    names = {t for t in toks if not t.isdigit() and t not in DIRS and t not in SUFFIX}
+    num = None
+    if toks:
+        m = re.match(r'(\d+)', toks[0])           # leading digits only -> "6491c" => "6491"
+        if m:
+            num = m.group(1)
+    names = {t for t in toks if not t[0].isdigit() and t not in DIRS and t not in SUFFIX}
     return num, names
 
 def url_matches(url, our_street, our_zip):
@@ -94,6 +98,13 @@ def scrape_redfin(url):
         # reject the placeholder Redfin logo (means no real photo)
         if not photo or "redfin-icon" in photo or "logos/" in photo:
             photo = None
+        # Fallback: some listings carry a logo og:image but still have a hero photo in
+        # the page (the subject's first bigphoto/genMid). Use it. First one = subject hero.
+        if not photo:
+            m = re.search(r'https://ssl\.cdn-redfin\.com/photo/\d+/bigphoto/\d+/\d+_\d+\.jpg', h) \
+                or re.search(r'https://ssl\.cdn-redfin\.com/photo/\d+/mbpaddedwide/\d+/genMid\.\d+_\d+\.jpg', h)
+            if m:
+                photo = m.group(0)
         return {"photo": photo, "title": meta("og:title"), "desc": meta("og:description")}
     except Exception:
         return None

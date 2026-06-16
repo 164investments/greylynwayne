@@ -250,8 +250,11 @@ export default function AboutPage() {
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11H10v10H0z" />
               </svg>
               <blockquote className="text-charcoal-light leading-relaxed italic mb-5">
-                &ldquo;You guys did an absolutely fabulous job. It looks amazing
-                — thank you so much!&rdquo;
+                &ldquo;The GW team went above and beyond: they nailed the
+                scheduling, took the time to understand the property and target
+                audience, and handled everything from setup to teardown with
+                total professionalism and style. They don&apos;t just stage
+                homes—they deliver the WOW factor.&rdquo;
               </blockquote>
               <figcaption className="text-sm">
                 <span className="text-charcoal font-medium">Sherry Francis</span>
@@ -263,13 +266,16 @@ export default function AboutPage() {
                 <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11H10v10H0z" />
               </svg>
               <blockquote className="text-charcoal-light leading-relaxed italic mb-5">
-                &ldquo;I&apos;ve used many staging companies in the past, but
-                since I started using Jody, I have not gone back to the other
-                companies.&rdquo;
+                &ldquo;GW is truly a top stager in Portland. They focus down to
+                the detail, will not leave the project until it is completely
+                dialed. Their special planning and choice of furniture, art,
+                decor always showcases the home&apos;s architectural style and
+                really has helped to highlight the homes I have sold. They are
+                awesome to work with too!&rdquo;
               </blockquote>
               <figcaption className="text-sm">
-                <span className="text-charcoal font-medium">Liz Carpenter</span>
-                <span className="text-charcoal-light"> — Principal Broker, West Hills RE/MAX</span>
+                <span className="text-charcoal font-medium">Carey Hunt</span>
+                <span className="text-charcoal-light"> — Real Estate Agent</span>
               </figcaption>
             </figure>
           </div>

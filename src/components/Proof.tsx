@@ -86,7 +86,7 @@ export function HeroProof({ className = "" }: { className?: string }) {
         <span className="font-semibold text-charcoal-light">
           4&times; Street of Dreams Designer
         </span>{" "}
-        &middot; 500+ Homes Staged Since 2015
+        &middot; 2,500+ Homes Staged Since 2015
       </p>
     </div>
   );
@@ -105,7 +105,7 @@ export function ProofStrip({
 }) {
   const text = tone === "dark" ? "text-white/90" : "text-charcoal-light";
   const divider = tone === "dark" ? "text-white/30" : "text-teal";
-  const items = ["4x Street of Dreams Designer", "500+ Homes Staged Since 2015"];
+  const items = ["4x Street of Dreams Designer", "2,500+ Homes Staged Since 2015"];
   return (
     <div
       className={`flex flex-wrap items-center gap-x-4 gap-y-2 text-sm ${text} ${className}`}

@@ -174,10 +174,11 @@ export function stagedWhen(iso: string | null): string | null {
 }
 
 // Normalize dirty city values once, up front, so grouping/stats/display all agree.
-export const homes: StagedHome[] = (raw as StagedHome[]).map((h) => ({
-  ...h,
-  city: cleanCity(h.city, h.zip),
-}));
+// Only surface homes we have a real listing photo for — a card without a photo reads as
+// incomplete, so we drop it rather than show an address plate (re-added when a photo lands).
+export const homes: StagedHome[] = (raw as StagedHome[])
+  .map((h) => ({ ...h, city: cleanCity(h.city, h.zip) }))
+  .filter((h) => !!h.photo);
 
 // Sort newest-first, then group into regions (only regions that have homes).
 export function groupedByRegion(): { region: string; homes: StagedHome[] }[] {

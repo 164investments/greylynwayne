@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const reviews = [
   {
     quote:
-      "I have used Greylyn Wayne for a number of stages for my listings, they have always done a great job but I was especially thrilled with my last experience with their team. We initially had a sale fail and they were quick to remove their staging and were incredibly sensitive to my clients and I. Once the repairs were completed, they were quick to help us re-stage and launch right away. Once re-listed, we received a full price offer in less than a week. Their service and stage were both exceptional and I'll absolutely be using them in the future.",
+      "I have used Greylyn Wayne for a number of stages for my listings, they have always done a great job but I was especially thrilled with my last experience with their team and wanted to share it with those considering stagers. We initially had a sale fail and they were quick to remove their staging and were incredibly sensitive to my clients and I, who were dealing with an unexpected surprise of numerous repairs. Once they were completed, they were quick to help us re-stage and launch right away. Once re-listed, we received a full price offer less than a week. Their service and stage were both exceptional and I'll absolutely be using them in the future. Thank you Jacqueline and the Greylyn Wayne team!",
     author: "Jake Grant",
     service: "Home Staging · Real Estate Agent",
     stars: 5,
@@ -50,7 +50,7 @@ const reviews = [
   },
   {
     quote:
-      "Alicia Leon is incredibly talented and has such a great eye for design. Whether you're getting a home ready to sell or just want to refresh your space, she and the Greylyn Wayne team know how to make everything look polished, stylish, and inviting. Alicia really takes the time to understand your vision and brings it to life beautifully. If you want your space to look its absolute best, I highly recommend Alicia and the team at Greylyn Wayne!",
+      "Alicia Leon is incredibly talented and has such a great eye for design. Whether you're getting a home ready to sell or just want to refresh your space, she and the Greylyn Wayne team know how to make everything look polished, stylish, and inviting. Their home staging work helps homes stand out, and their interior design and consulting services are thoughtful and personalized. Alicia really takes the time to understand your vision and brings it to life beautifully. If you want your space to look its absolute best, I highly recommend Alicia and the team at Greylyn Wayne!",
     author: "Miguel Tenorio",
     service: "Home Staging & Interior Design",
     stars: 5,
@@ -174,11 +174,14 @@ export default function ReviewsPage() {
             <Stars count={5} />
             <blockquote className="font-[family-name:var(--font-playfair)] text-xl md:text-2xl text-charcoal leading-relaxed mb-6">
               &ldquo;I have always referred Greylyn Wayne to the agents I
-              supervise, but recently had a delightful experience of my own. On
-              short notice they transformed a lovely property from plain to
-              magazine-quality! The home sold on its first open house. Their
-              entire staff was a delight to work with and their fee was very
-              fair. You will love working with this company.&rdquo;
+              supervise, but recently had a delightful experience of my own with
+              this company. On short notice they transformed a lovely property in
+              Forest Heights from plain to magazine-quality! Their professional
+              touch created an appealing, warm, inviting environment,
+              accentuating the best features of the home while encouraging buyers
+              to visualize occupying the space. The home sold on its first open
+              house! Their entire staff was a delight to work with and their fee
+              was very fair. You will love working with this company.&rdquo;
             </blockquote>
             <figcaption className="text-sm">
               <span className="text-charcoal font-medium">Joanne Sterling</span>

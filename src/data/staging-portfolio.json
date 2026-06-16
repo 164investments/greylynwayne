@@ -359,7 +359,7 @@
     "zillow": "https://www.zillow.com/homes/1265-S-Military-Rd-Portland-OR-97219_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/1265-S-Military-Rd-97219/home/26507488",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-061.jpg",
     "beds_baths": {
       "beds": 5,
       "baths": 4.0,
@@ -629,7 +629,7 @@
     "zillow": "https://www.zillow.com/homes/2020-SW-Market-St-Dr-102-Portland-OR-97201_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/2020-SW-Market-Street-Dr-97201/home/26347987",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-053.jpg",
     "beds_baths": null,
     "sale": {
       "status": "Sold",
@@ -1155,7 +1155,7 @@
     "zillow": "https://www.zillow.com/homes/416-NW-13th-Ave-208-Portland-OR-97209_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/416-NW-13th-Ave-97209/home/25780096",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-033.jpg",
     "beds_baths": null,
     "sale": {
       "status": "Sold",
@@ -1205,8 +1205,8 @@
     "installed_on": "2026-02-19",
     "signed_total_cents": 310500,
     "zillow": "https://www.zillow.com/homes/6491C-SE-Ramona-St-Portland-OR-97206_rb/",
-    "redfin": "https://www.redfin.com/OR/Portland/6849-SE-Ramona-St-97206/home/26498528",
-    "redfin_verified": true,
+    "redfin": "https://www.redfin.com/?q=6491C%20SE%20Ramona%20St%2C%20Portland%2C%20OR%2097206",
+    "redfin_verified": false,
     "photo": null,
     "beds_baths": {
       "beds": 2,
@@ -1232,8 +1232,8 @@
     "installed_on": "2026-02-19",
     "signed_total_cents": 390000,
     "zillow": "https://www.zillow.com/homes/6491A-SE-Ramona-St-Portland-OR-97206_rb/",
-    "redfin": "https://www.redfin.com/OR/Portland/6841-SE-Ramona-St-97206/home/26553642",
-    "redfin_verified": true,
+    "redfin": "https://www.redfin.com/?q=6491A%20SE%20Ramona%20St%2C%20Portland%2C%20OR%2097206",
+    "redfin_verified": false,
     "photo": null,
     "beds_baths": {
       "beds": 3,
@@ -1260,10 +1260,14 @@
     "installed_on": "2026-02-17",
     "signed_total_cents": 276000,
     "zillow": "https://www.zillow.com/homes/1221-SW-10th-Ave-612-Portland-OR-97205_rb/",
-    "redfin": "https://www.redfin.com/?q=1221%20SW%2010th%20Ave%20%23612%2C%20Portland%2C%20OR%2097205",
-    "redfin_verified": false,
-    "photo": null,
-    "beds_baths": null
+    "redfin": "https://www.redfin.com/OR/Portland/1221-SW-10th-Ave-97205/home/179449901",
+    "redfin_verified": true,
+    "photo": "/images/staging/26-NS-026.jpg",
+    "beds_baths": {
+      "beds": 1,
+      "baths": 1.0,
+      "sqft": 857
+    }
   },
   {
     "ref": "26-NS-028",
@@ -1332,7 +1336,7 @@
     "zillow": "https://www.zillow.com/homes/416-NW-13th-Ave-206-Portland-OR-97209_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/416-NW-13th-Ave-97209/home/25780096",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-023.jpg",
     "beds_baths": null,
     "sale": {
       "status": "Sold",
@@ -1890,8 +1894,8 @@
     "installed_on": "2026-01-20",
     "signed_total_cents": 160000,
     "zillow": "https://www.zillow.com/homes/575-SW-Sheridan-St-146-Portland-OR-97201_rb/",
-    "redfin": "https://www.redfin.com/?q=575%20SW%20Sheridan%20St%20%23146%2C%20Portland%2C%20OR%2097201",
-    "redfin_verified": false,
+    "redfin": "https://www.redfin.com/OR/Portland/575-SW-Sheridan-St-97201/home/175369794",
+    "redfin_verified": true,
     "photo": null,
     "beds_baths": null
   },

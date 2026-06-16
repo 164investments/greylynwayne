@@ -33,28 +33,29 @@ const services = [
 const stats = [
   { value: "10+", label: "Years in Business" },
   { value: "4x", label: "Street of Dreams Designer" },
-  { value: "500+", label: "Homes Transformed" },
+  { value: "2,500+", label: "Homes Transformed" },
   { value: "4.9★", label: "163 Google Reviews" },
 ];
 
+// Real, verbatim 5-star Google reviews (see /reviews + src/data/google-reviews.json).
 const testimonials = [
   {
     quote:
-      "Greylyn Wayne transformed our listing into a breathtaking showcase. The staging was impeccable and the home sold in just 5 days above asking price.",
-    author: "Portland Real Estate Agent",
-    context: "Vacant Home Staging",
+      "Working with Greylyn Wayne for staging was a game changer. They knew exactly how to highlight the space without making it feel forced. The setup felt fresh, balanced, and really brought out the best parts of the home. Start to finish, it all felt easy and professional.",
+    author: "Megan Zehngut",
+    context: "Home Staging",
   },
   {
     quote:
-      "Their attention to detail is exceptional. From start to finish, the process was stress-free and the results exceeded all expectations.",
-    author: "Happy Valley Homeowner",
+      "Is this MY home? Greylyn Wayne did an amazing job showcasing the best of our home in the areas requested. After living in a home you love for 26 years, it is so heart-warming to see it staged with care.",
+    author: "Joan Medlen",
+    context: "Home Staging",
+  },
+  {
+    quote:
+      "Greylyn Wayne is the best! So easy to work with and seriously talented. The space turned out gorgeous—clean, stylish, and totally pulled together. I definitely encourage others to use this company!",
+    author: "Halle Harris",
     context: "Interior Design",
-  },
-  {
-    quote:
-      "Working with Jody and her team was an absolute pleasure. They brought our vision to life with creativity and professionalism we didn't think was possible.",
-    author: "Lake Oswego Client",
-    context: "Full Home Redesign",
   },
 ];
 
@@ -109,7 +110,7 @@ export default function Home() {
             <span className="hidden sm:inline text-teal">&middot;</span>
             <span>People&apos;s & Professional&apos;s Choice Award</span>
             <span className="hidden sm:inline text-teal">&middot;</span>
-            <span>500+ Homes Staged</span>
+            <span>2,500+ Homes Staged</span>
             <span className="hidden sm:inline text-teal">&middot;</span>
             <span>Free Consultations</span>
           </div>
