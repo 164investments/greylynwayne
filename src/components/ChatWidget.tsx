@@ -2,7 +2,11 @@
 
 import type { FormEvent } from "react";
 import { useEffect, useState } from "react";
-import { trackEvent, trackFormSubmit } from "@/lib/tracking";
+import {
+  trackEvent,
+  buildLeadTracking,
+  fireLeadConversions,
+} from "@/lib/tracking";
 
 /**
  * Capture-then-text lead widget. Optimizes for speed-to-lead on a local service
@@ -60,6 +64,11 @@ export default function ChatWidget() {
     setLoading(true);
     setError(null);
 
+    // Build tracking BEFORE the POST so server CAPI + browser fbq share one
+    // eventID. Fire the conversions BEFORE the SMS hand-off (beacon transport in
+    // fireAdsConversion survives the window.location navigation below).
+    const tracking = buildLeadTracking({ phone: phoneVal, firstName: name });
+
     // Capture first (safety net) — don't block the SMS handoff on its result.
     try {
       await fetch("/api/lead", {
@@ -71,9 +80,10 @@ export default function ChatWidget() {
           phone: phoneVal,
           message,
           company: get("company"), // honeypot
+          tracking,
         }),
       });
-      trackFormSubmit("chat");
+      fireLeadConversions("chat", tracking);
     } catch {
       // Lead capture failed; still hand off to text so the visitor isn't blocked.
     }

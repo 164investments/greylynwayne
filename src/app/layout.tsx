@@ -7,6 +7,8 @@ import StickyMobileCTA from "@/components/StickyMobileCTA";
 import ChatWidget from "@/components/ChatWidget";
 import { LocalBusinessJsonLd } from "@/components/JsonLd";
 import { GoogleTagManager, GoogleTagManagerNoScript } from "@/components/GoogleTagManager";
+import { GtagScripts } from "@/components/GtagScripts";
+import { MetaPixel } from "@/components/MetaPixel";
 import SiteTracker from "@/components/SiteTracker";
 
 const playfair = Playfair_Display({
@@ -77,6 +79,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body>
+        <GtagScripts />
+        <MetaPixel />
         <GoogleTagManager />
         <GoogleTagManagerNoScript />
         <LocalBusinessJsonLd />

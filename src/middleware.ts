@@ -20,19 +20,35 @@ import type { NextRequest } from "next/server";
 export function middleware(request: NextRequest) {
   const host = request.headers.get("host") ?? "";
 
-  if (host.endsWith(".vercel.app")) {
-    // --- POST-CUTOVER UPGRADE (enable once www.greylynwayne.com serves this app):
-    // const url = request.nextUrl.clone();
-    // url.host = "www.greylynwayne.com";
-    // url.protocol = "https";
-    // return NextResponse.redirect(url, 301);
+  const response = host.endsWith(".vercel.app")
+    ? // --- POST-CUTOVER UPGRADE (enable once www.greylynwayne.com serves this app):
+      // const url = request.nextUrl.clone();
+      // url.host = "www.greylynwayne.com"; url.protocol = "https";
+      // return NextResponse.redirect(url, 301);
+      withNoindex(NextResponse.next())
+    : NextResponse.next();
 
-    const response = NextResponse.next();
-    response.headers.set("X-Robots-Tag", "noindex");
-    return response;
+  // Persist Google click IDs (gclid/gbraid/wbraid) into a first-party cookie so
+  // the lead's tracking context can carry them — enables server-side Google Ads
+  // offline conversion uploads later, and enriches GA4. (Meta's fbclid → _fbc is
+  // handled automatically by the pixel.)
+  const params = request.nextUrl.searchParams;
+  const clickId =
+    params.get("gclid") || params.get("gbraid") || params.get("wbraid");
+  if (clickId) {
+    response.cookies.set("_gw_gclid", clickId, {
+      maxAge: 60 * 60 * 24 * 90, // 90 days (Google Ads conversion window)
+      path: "/",
+      sameSite: "lax",
+    });
   }
 
-  return NextResponse.next();
+  return response;
+}
+
+function withNoindex(response: NextResponse): NextResponse {
+  response.headers.set("X-Robots-Tag", "noindex");
+  return response;
 }
 
 export const config = {

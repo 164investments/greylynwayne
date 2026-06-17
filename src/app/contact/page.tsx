@@ -3,7 +3,7 @@
 import type { FormEvent } from "react";
 import { useState } from "react";
 import Link from "next/link";
-import { trackFormSubmit } from "@/lib/tracking";
+import { buildLeadTracking, fireLeadConversions } from "@/lib/tracking";
 import { RatingBadge } from "@/components/Proof";
 
 const serviceOptions = [
@@ -30,6 +30,15 @@ export default function ContactPage() {
       (form.elements.namedItem(name) as HTMLInputElement | null)?.value?.trim() || "";
     const service = get("service");
 
+    // Build tracking context BEFORE the POST so the server CAPI fire and the
+    // browser fbq fire share one eventID (Meta dedup) + apply enhanced-conversions.
+    const tracking = buildLeadTracking({
+      email: get("email"),
+      phone: get("phone"),
+      firstName: get("firstName"),
+      lastName: get("lastName"),
+    });
+
     setLoading(true);
     setError(null);
     try {
@@ -45,13 +54,14 @@ export default function ContactPage() {
           service,
           message: get("message"),
           company: get("company"), // honeypot
+          tracking,
         }),
       });
       const data = await res.json().catch(() => ({ ok: false }));
       if (!res.ok || !data.ok) {
         throw new Error(data.error || "Something went wrong. Please try again.");
       }
-      trackFormSubmit("contact", service || undefined);
+      fireLeadConversions("contact", tracking, service || undefined);
       setSubmitted(true);
     } catch (err) {
       setError(

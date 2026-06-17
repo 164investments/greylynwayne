@@ -3,7 +3,7 @@
 import type { FormEvent } from "react";
 import { useState } from "react";
 import Link from "next/link";
-import { trackFormSubmit } from "@/lib/tracking";
+import { buildLeadTracking, fireLeadConversions } from "@/lib/tracking";
 
 export default function FurnitureRequestPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -16,6 +16,12 @@ export default function FurnitureRequestPage() {
     const get = (name: string) =>
       (form.elements.namedItem(name) as HTMLInputElement | null)?.value?.trim() || "";
     const interest = get("interest");
+
+    const tracking = buildLeadTracking({
+      email: get("email"),
+      phone: get("phone"),
+      firstName: get("name"),
+    });
 
     setLoading(true);
     setError(null);
@@ -31,13 +37,14 @@ export default function FurnitureRequestPage() {
           interest,
           details: get("details"),
           company: get("company"), // honeypot
+          tracking,
         }),
       });
       const data = await res.json().catch(() => ({ ok: false }));
       if (!res.ok || !data.ok) {
         throw new Error(data.error || "Something went wrong. Please try again.");
       }
-      trackFormSubmit("furniture_request", interest || undefined);
+      fireLeadConversions("furniture_request", tracking, interest || undefined);
       setSubmitted(true);
     } catch (err) {
       setError(

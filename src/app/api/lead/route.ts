@@ -1,17 +1,31 @@
 import { NextResponse } from "next/server";
+import { sendMetaLeadCapi } from "@/lib/server-tracking";
 
 /**
- * Lead-capture endpoint for both the Contact form and the Furniture Request
- * form. Emails a formatted notification to the Greylyn Wayne inbox via Resend,
- * with reply-to set to the customer so Jody can reply directly from her inbox.
+ * Lead-capture endpoint for the Contact form, Furniture Request form, and chat
+ * widget. Emails a formatted notification to the Greylyn Wayne inbox via Resend
+ * (reply-to = customer) AND fires a server-side Meta CAPI Lead event sharing the
+ * browser's eventID so Meta dedups the pair (the resilient half of tracking —
+ * survives ad blockers / fast SMS hand-offs that drop the browser fbq fire).
  *
  * Env (set in Vercel):
  *   RESEND_API_KEY   — Resend API key for the account that owns the sender domain
  *   LEAD_FROM_EMAIL  — verified Resend sender, e.g. "Greylyn Wayne Website <leads@greylynwayne.com>"
  *   LEAD_TO_EMAIL    — recipient (defaults to design@greylynwayne.com)
+ *   META_PIXEL_ID    — 1596777147987027 (CAPI)
+ *   META_CAPI_TOKEN  — long-lived system-user token (CAPI)
  *
  * The form components POST JSON here and render success/error from the response.
  */
+
+/** Tracking context the browser passes so server CAPI shares its dedup eventID. */
+type LeadTrackingContext = {
+  eventId?: string;
+  fbp?: string;
+  fbc?: string;
+  gclid?: string;
+  pagePath?: string;
+};
 
 const RESEND_ENDPOINT = "https://api.resend.com/emails";
 const DEFAULT_TO = "design@greylynwayne.com";
@@ -29,6 +43,8 @@ type LeadPayload = {
   details?: string;
   // Honeypot — real users never fill this; bots do.
   company?: string;
+  // Browser tracking context (eventID for CAPI dedup, click IDs).
+  tracking?: LeadTrackingContext;
 };
 
 function esc(value: string): string {
@@ -132,6 +148,48 @@ function buildEmail(data: LeadPayload): {
   };
 }
 
+/** Read a cookie value from the raw Cookie header (CAPI fallback for _fbp/_fbc). */
+function cookieFromRequest(request: Request, name: string): string | undefined {
+  const header = request.headers.get("cookie");
+  if (!header) return undefined;
+  const m = header.match(new RegExp("(?:^|; )" + name + "=([^;]*)"));
+  return m ? decodeURIComponent(m[1]) : undefined;
+}
+
+/** Fire the server-side Meta CAPI Lead from a completed lead submission. */
+async function fireCapiLead(data: LeadPayload, request: Request): Promise<void> {
+  const t = data.tracking;
+  if (!t?.eventId) return; // No browser eventID → can't dedup; skip server fire.
+
+  // Resolve first/last name (chat sends a single `name`).
+  let firstName = data.firstName;
+  let lastName = data.lastName;
+  if (!firstName && data.name) {
+    const parts = data.name.trim().split(/\s+/);
+    firstName = parts[0];
+    lastName = parts.slice(1).join(" ") || undefined;
+  }
+
+  const fwd = request.headers.get("x-forwarded-for") || "";
+  const clientIp = fwd.split(",")[0]?.trim() || undefined;
+
+  await sendMetaLeadCapi({
+    eventId: t.eventId,
+    source: data.formType || "contact",
+    email: data.email,
+    phone: data.phone,
+    firstName,
+    lastName,
+    fbp: t.fbp || cookieFromRequest(request, "_fbp"),
+    fbc: t.fbc || cookieFromRequest(request, "_fbc"),
+    clientIp,
+    userAgent: request.headers.get("user-agent") || undefined,
+    eventSourceUrl: t.pagePath
+      ? `https://www.greylynwayne.com${t.pagePath}`
+      : undefined,
+  });
+}
+
 export async function POST(request: Request) {
   let data: LeadPayload;
   try {
@@ -206,6 +264,10 @@ export async function POST(request: Request) {
         { status: 502 },
       );
     }
+
+    // Server-side Meta CAPI Lead — shares the browser eventID for dedup. Best
+    // effort: never blocks or fails the lead (sendMetaLeadCapi swallows errors).
+    await fireCapiLead(data, request);
 
     return NextResponse.json({ ok: true });
   } catch (err) {

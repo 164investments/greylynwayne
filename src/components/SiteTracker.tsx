@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { trackEvent } from "@/lib/tracking";
+import { trackEvent, fireClickConversion } from "@/lib/tracking";
 
 /**
  * Site-wide tracking via delegated click listeners + route-change events.
@@ -36,6 +36,7 @@ export default function SiteTracker() {
         e.preventDefault();
         window.dispatchEvent(new Event("gw:open-chat"));
         trackEvent("text_cta_click", { cta_location: getLocation(chatTrigger) });
+        fireClickConversion("text"); // Primary conversion: text-first business.
         return;
       }
 
@@ -50,6 +51,7 @@ export default function SiteTracker() {
           link_url: href,
           cta_location: isMobileCTA ? "mobile_cta" : getLocation(link),
         });
+        fireClickConversion("phone"); // Primary conversion.
         return;
       }
 
