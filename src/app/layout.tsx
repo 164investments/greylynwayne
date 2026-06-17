@@ -6,7 +6,6 @@ import Footer from "@/components/Footer";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 import ChatWidget from "@/components/ChatWidget";
 import { LocalBusinessJsonLd } from "@/components/JsonLd";
-import { GoogleTagManager, GoogleTagManagerNoScript } from "@/components/GoogleTagManager";
 import { GtagScripts } from "@/components/GtagScripts";
 import { MetaPixel } from "@/components/MetaPixel";
 import SiteTracker from "@/components/SiteTracker";
@@ -79,10 +78,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body>
+        {/* GA4 + Google Ads (single Google tag) and Meta Pixel load in code.
+            GTM was removed: its only tag was a duplicate GA4 config, which breaks
+            GA4 session_engaged when GA4 is also configured here. */}
         <GtagScripts />
         <MetaPixel />
-        <GoogleTagManager />
-        <GoogleTagManagerNoScript />
         <LocalBusinessJsonLd />
         <Header />
         <main>{children}</main>
