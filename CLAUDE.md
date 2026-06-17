@@ -15,21 +15,24 @@ vercel --prod --yes         # from ~/greylynwayne; ships WORKING TREE, resolves 
 ```
 Note: `vercel --prod` also aliases greylynwayne.com (already added to the project) — harmless while DNS still points to Wix.
 
-## Environment Variables
-- `NEXT_PUBLIC_GTM_ID` — `GTM-T9FTK8JN` (Google Tag Manager, set in Vercel)
-- No other env vars — all config is static
+## Environment Variables (all set in Vercel, production + preview)
+- `NEXT_PUBLIC_GA_ID` — `G-3NTVSELKP5` (GA4)
+- `NEXT_PUBLIC_GOOGLE_ADS_ID` — `AW-16716198764` (Google Ads tag)
+- `NEXT_PUBLIC_META_PIXEL_ID` — `1596777147987027` (Meta Pixel, browser)
+- `NEXT_PUBLIC_GADS_LABEL_FORM` / `_CHAT` / `_PHONE` / `_TEXT` — Google Ads conversion labels
+- `META_PIXEL_ID` / `META_CAPI_TOKEN` — server-side Meta CAPI (never exposed to client)
+- `RESEND_API_KEY` / `LEAD_FROM_EMAIL` / `LEAD_TO_EMAIL` — lead email (see Lead capture)
+- `NEXT_PUBLIC_GTM_ID` — `GTM-T9FTK8JN` — **legacy/unused** (GTM removed from the site; GA4 is now in code). Safe to delete.
+- Set env vars via the Vercel **API** (not `vercel env add` piping) + `.trim()` every read — avoids the trailing-newline bug that silently breaks inlined `NEXT_PUBLIC_*` scripts.
 
-## Analytics & Tracking
-- **GTM**: `src/components/GoogleTagManager.tsx` — loads GTM, no consent gate
-- **Site tracking**: `src/components/SiteTracker.tsx` — client-side delegated event listener:
-  - Route changes → `page_view`
-  - Phone clicks → `phone_click` (with `cta_location`)
-  - Email clicks → `email_click`
-  - Social clicks → `social_click` (per platform)
-  - Consultation CTAs → `consultation_cta_click`
-  - High-intent page views: `/contact`, `/portfolio`, `/furniture-request`
-- **Tracking lib**: `src/lib/tracking.ts` — `trackEvent()`, `trackFormSubmit()` (fires `form_submit` + `generate_lead` to gtag + dataLayer)
-- **GA4**: `G-3NTVSELKP5` (configured via GTM, not in code)
+## Analytics & Conversion Tracking
+Built to the WNF/Stay-Portland playbook — see ARCHITECTURE.md §3a. Full setup record: memory `greylyn-wayne/tracking-setup-2026-06-16.md`.
+- **Tag loaders (in code, layout.tsx)**: `GtagScripts.tsx` = single Google tag (GA4 `G-3NTVSELKP5` + Google Ads `AW-16716198764`, enhanced conversions on). `MetaPixel.tsx` = Meta Pixel `1596777147987027` + PageView. **GTM removed** (its only tag duplicated the GA4 config).
+- **Tracking lib**: `src/lib/tracking.ts` — `buildLeadTracking()` (mints shared eventId + applies enhanced-conversions/advanced-matching), `fireLeadConversions()` (GA4 + Google Ads `send_to` + Meta `Lead`), `fireClickConversion()` (phone/text). `trackEvent()` for plain GA4 events.
+- **Server CAPI**: `src/lib/server-tracking.ts` ← `app/api/lead/route.ts` — Meta CAPI `Lead` w/ shared eventId (dedup), hashed em/ph/fn/ln, `_fbp`/`_fbc`, IP/UA.
+- **Site tracking**: `src/components/SiteTracker.tsx` — delegated listener: route→`page_view`; `phone_click` (+ Ads/Meta conversion); `text_cta_click` (+ Ads/Meta conversion); `email_click`; `social_click`; `consultation_cta_click`.
+- **Google Ads conversions** (account `151-338-1890`, all PRIMARY): Lead-Form Submit, Lead-Chat Capture, Lead-Phone Click, Lead-Text Click. GA4-imported `generate_lead` is now Secondary (backup). `middleware.ts` captures `gclid`→`_gw_gclid` cookie.
+- **Pending**: enable Enhanced Conversions for Leads in the Google Ads UI (terms acceptance, 1 click); verify domain greylynwayne.com in Meta Business Manager `399867133852218` (after DNS cutover).
 
 ## Key Paths
 - Pages: `src/app/` (home-staging, interior-design, portfolio, reviews, about, contact, + 10 more)

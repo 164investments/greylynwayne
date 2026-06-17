@@ -27,7 +27,16 @@ This is a layer-based structure on purpose. The site is small; feature-slicing w
 
 - **Server Components by default.** Every page is a Server Component except the three interactive ones, which carry `"use client"`: `Header.tsx` (mobile menu state), `StickyMobileCTA.tsx` + `SiteTracker.tsx` (scroll/route listeners), and the two form pages (`contact`, `furniture-request`) plus `lib/tracking.ts`.
 - Push `"use client"` to the leaves — don't mark a whole page client just to add one interactive widget.
-- **Secrets never reach the client.** `RESEND_API_KEY` and the lead from/to addresses are read **only** inside `app/api/lead/route.ts` (server). Anything exposed to the browser must be `NEXT_PUBLIC_*` (only `NEXT_PUBLIC_GTM_ID` qualifies today). Do not import the API route or read `process.env.RESEND_*` from any component.
+- **Secrets never reach the client.** `RESEND_API_KEY`, the lead from/to addresses, and `META_CAPI_TOKEN` / `META_PIXEL_ID` are read **only** inside `app/api/lead/route.ts` + `lib/server-tracking.ts` (server). Anything exposed to the browser must be `NEXT_PUBLIC_*` (`NEXT_PUBLIC_GA_ID`, `NEXT_PUBLIC_GOOGLE_ADS_ID`, `NEXT_PUBLIC_META_PIXEL_ID`, `NEXT_PUBLIC_GADS_LABEL_*`). Do not import the API route or read a server-only `process.env` from any component.
+
+## 3a. Conversion tracking (Google Ads + Meta)
+
+Built to the WNF/Stay-Portland playbook. Conversions fire on multiple paths so no single failure loses a lead.
+
+- **Tag loaders (in code, `layout.tsx`):** `GtagScripts.tsx` = the SINGLE Google tag — one `gtag.js` configuring GA4 (`G-3NTVSELKP5`, `send_page_view`) **and** Google Ads (`AW-16716198764`, `allow_enhanced_conversions`). `MetaPixel.tsx` = Meta Pixel `1596777147987027` base + `PageView`. **GTM was removed** — its only tag duplicated the GA4 config (two Google tags for one property breaks GA4 `session_engaged`). Don't re-add a GA4 config in GTM while GA4 lives in `gtag.js`.
+- **Lead conversions** (`lib/tracking.ts`): `buildLeadTracking(identity)` runs BEFORE the `/api/lead` POST — it applies enhanced-conversions/advanced-matching user_data and mints one `eventId` (passed in the POST body so server CAPI shares it for dedup). On success, `fireLeadConversions()` fires the GA4 event, the direct Google Ads conversion (`send_to`, `transport_type:'beacon'`), and the browser Meta `Lead` (same `eventID`). Phone/text clicks → `fireClickConversion()` (browser-only).
+- **Server-side (`lib/server-tracking.ts` ← `app/api/lead/route.ts`):** Meta CAPI `Lead` with the shared `eventId`, hashed em/ph/fn/ln, `_fbp`/`_fbc`, IP/UA — the resilient, high-EMQ half. Best-effort: never blocks or fails the email send.
+- **Conversion LABELS** are env-driven (`NEXT_PUBLIC_GADS_LABEL_*`) so the codebase carries no account-specific values; a missing label simply skips that fire (GA4-import covers it). `middleware.ts` persists `gclid`/`gbraid`/`wbraid` → `_gw_gclid` cookie.
 
 ## 4. Where things live (the decision table)
 
@@ -40,6 +49,7 @@ This is a layer-based structure on purpose. The site is small; feature-slicing w
 | Page-specific markup used once | Inline in that `page.tsx` | Don't pre-abstract (Rule of Three). |
 | Structured data / schema | `src/components/JsonLd.tsx` | One exported component per schema type. Reuse `LocalBusinessJsonLd`, `ServiceJsonLd`, `FAQJsonLd`, `BreadcrumbJsonLd`. |
 | Analytics event | `src/lib/tracking.ts` | Add a helper; fire from `SiteTracker.tsx` (delegated) or a component. Don't call `gtag` directly in pages. |
+| A new lead/conversion type | `src/lib/tracking.ts` (+ server in `lib/server-tracking.ts`) | Add a `LeadSource`, a label env var, and create the matching native Google Ads conversion action. See §3a. |
 | An old Wix URL that needs to survive | `next.config.ts` `redirects()` | 301/permanent map — see §6. |
 | A form field / new lead source | `app/api/lead/route.ts` + the form page | Keep the single `/api/lead` endpoint; branch on `formType`. |
 
