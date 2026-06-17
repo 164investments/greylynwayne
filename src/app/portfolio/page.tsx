@@ -18,10 +18,10 @@ export const metadata: Metadata = {
 };
 
 const streetOfDreams = [
-  { year: "2025", title: "Street of Dreams 2025", note: "Latest featured residence" },
-  { year: "2024", title: "Street of Dreams 2024", note: "Contemporary luxury showcase" },
-  { year: "2021", title: "Alla Famiglia", note: "8,725 sq ft — largest in recent SOD history" },
-  { year: "2019", title: "People's & Professional's Choice", note: "Best Interior Design winner" },
+  { year: "2025", title: "Alla Famiglia", note: "8,725 sq ft — largest in recent SOD history" },
+  { year: "2024", title: "Vista", note: "Historic Northwest Hills remodel" },
+  { year: "2021", title: "Ohana", note: "Boho-tropical multi-generational custom home" },
+  { year: "2019", title: "Bespoke", note: "People's & Professional's Best Interior Design" },
 ];
 
 export default function PortfolioPage() {
@@ -109,8 +109,8 @@ export default function PortfolioPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="relative aspect-[4/5] overflow-hidden order-last lg:order-first">
               <Image
-                src="/images/street-of-dreams.webp"
-                alt="Alla Famiglia dining room designed by Greylyn Wayne"
+                src="/images/sod-2025-alla-famiglia.webp"
+                alt="Alla Famiglia, the 2025 NW Natural Street of Dreams home by Greylyn Wayne"
                 fill
                 className="object-cover"
               />
@@ -123,7 +123,7 @@ export default function PortfolioPage() {
                 Alla Famiglia
               </h2>
               <p className="text-charcoal-light italic mb-6">
-                &ldquo;For the Family&rdquo; — our 2021 Street of Dreams home
+                &ldquo;For the Family&rdquo; — our 2025 Street of Dreams home
               </p>
               <p className="text-charcoal-light leading-relaxed mb-8">
                 A European-style residence designed for multi-generational
@@ -168,8 +168,8 @@ export default function PortfolioPage() {
             </div>
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src="/images/hero-interior.webp"
-                alt="Custom interior design by Greylyn Wayne in Portland, Oregon"
+                src="/images/interiors/kearney/01.webp"
+                alt="Full-service interior design by Greylyn Wayne — NW Kearney living room, Portland, Oregon"
                 fill
                 className="object-cover"
               />
