@@ -197,6 +197,32 @@ export function groupedByRegion(): { region: string; homes: StagedHome[] }[] {
     .map((region) => ({ region, homes: buckets.get(region)! }));
 }
 
+// Listings for a service-area page. Prefer homes staged IN the city; if we have none
+// there, fall back to the nearest staging region, then to the portfolio's standout sales —
+// always labeled honestly by `scope` so a regional set never implies we staged in that city.
+export type ListingScope = "city" | "region" | "portfolio";
+export type CityListings = { scope: ListingScope; homes: StagedHome[] };
+
+const byNewest = (arr: StagedHome[]) =>
+  [...arr].sort((a, b) => (b.installed_on ?? "").localeCompare(a.installed_on ?? ""));
+
+export function homesForCity(
+  name: string,
+  stagingRegion: string | null,
+  limit = 6
+): CityListings {
+  const exact = byNewest(homes.filter((h) => h.city === name));
+  if (exact.length > 0) return { scope: "city", homes: exact.slice(0, limit) };
+
+  if (stagingRegion) {
+    const reg = byNewest(homes.filter((h) => regionFor(h.city) === stagingRegion));
+    if (reg.length > 0) return { scope: "region", homes: reg.slice(0, limit) };
+  }
+
+  const feat = featuredHomes(limit);
+  return { scope: "portfolio", homes: feat.length ? feat : byNewest(homes).slice(0, limit) };
+}
+
 const _sold = homes.map(saleInfo).filter((s) => s.isSold);
 export const stats = {
   total: homes.length,

@@ -10,14 +10,20 @@ import SplitHero from "@/components/SplitHero";
 import SodGallery from "@/components/SodGallery";
 
 export const metadata: Metadata = {
-  title: "Interior Designer Portland, Oregon | Full-Service Home Design",
+  // Absolute title escapes the layout's "%s | Greylyn Wayne — Portland, OR"
+  // template — keeps it under ~60 chars, front-loads the winnable "Portland
+  // interior designers" term + proof (was a 93-char, double-"Portland" title).
+  title: {
+    absolute:
+      "Portland Interior Designers | 4x Street of Dreams | Greylyn Wayne",
+  },
   description:
-    "Expert interior design services in Portland, OR by Greylyn Wayne. Full-service design, consultations, spatial planning, color consultation & custom furniture sourcing. Free consultation — (971) 930-0220.",
+    "Portland's 4x Street of Dreams interior design team, rated 4.9★ by 163 clients. Full-service residential design — one room to whole home. Free consultation.",
   alternates: { canonical: "https://www.greylynwayne.com/interior-design" },
   openGraph: {
-    title: "Interior Designer Portland, Oregon | Greylyn Wayne",
+    title: "Portland Interior Designers | 4x Street of Dreams | Greylyn Wayne",
     description:
-      "Full-service interior design in Portland. From concept to completion — spatial planning, color consultation, furniture sourcing & more. Free consultation.",
+      "Portland's 4x Street of Dreams interior design team, rated 4.9★ by 163 clients. Full-service residential design — from a single room to a whole home. Free consultation.",
     url: "https://www.greylynwayne.com/interior-design",
     images: [{ url: "/images/og-image.png" }],
   },
@@ -108,6 +114,25 @@ const projects = [
   },
 ];
 
+// Internal links to the city pages that get interior-design search demand —
+// passes this money page's authority down with exact "interior design in
+// {city}" anchor text (the term those pages target but currently receive from
+// nowhere on the site).
+const metroLinks = [
+  { name: "Portland", slug: "portland" },
+  { name: "Lake Oswego", slug: "lake-oswego" },
+  { name: "West Linn", slug: "west-linn" },
+  { name: "Beaverton", slug: "beaverton" },
+  { name: "Tigard", slug: "tigard" },
+  { name: "Tualatin", slug: "tualatin" },
+  { name: "Hillsboro", slug: "hillsboro" },
+  { name: "Happy Valley", slug: "happy-valley" },
+  { name: "Bend", slug: "bend" },
+  { name: "Vancouver", slug: "vancouver" },
+  { name: "Camas", slug: "camas" },
+  { name: "Bethany", slug: "bethany" },
+];
+
 const rooms = [
   "Living Room",
   "Kitchen",
@@ -163,7 +188,7 @@ export default function InteriorDesignPage() {
       {/* Hero — split editorial */}
       <SplitHero
         eyebrow="Interior Design · Portland, Oregon"
-        title="Spaces That Feel Beautiful & Livable"
+        title="Portland Interior Design That Feels Beautiful & Livable"
         subtitle="Design you'll love coming home to — by Portland's 4x Street of Dreams team."
         imageSrc="/images/sod-2019-bespoke-living.webp"
         imageAlt="Interior design by Greylyn Wayne in Portland — open-concept living room with vaulted wood-beam ceiling, navy velvet sofas, and a gourmet kitchen from a NW Natural Street of Dreams home"
@@ -175,7 +200,7 @@ export default function InteriorDesignPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src="/images/home-staging-2.jpg"
+                src="/images/portland-interior-design-white-kitchen.webp"
                 alt="Modern Portland kitchen designed by Greylyn Wayne — white cabinetry, open shelving, herringbone backsplash, gold accents"
                 fill
                 className="object-cover"
@@ -186,16 +211,17 @@ export default function InteriorDesignPage() {
                 Portland Interior Design That Tells Your Story
               </h2>
               <p className="text-charcoal-light leading-relaxed mb-6">
-                Whether refreshing a single room or undergoing a full remodel,
-                our expert interior designers curate spaces that feel both
-                beautiful and livable. We believe every home has a story to tell
-                — our job is to bring that story to life through thoughtful
-                design.
+                Whether you&apos;re refreshing a single room or reimagining a
+                whole home, our Portland interior designers curate spaces that
+                feel both beautiful and livable. As a four-time NW Natural
+                Street of Dreams featured designer, we bring a luxury design
+                sensibility to residential projects across the Portland metro —
+                and to select commercial spaces like The Adelynn Hotel.
               </p>
               <p className="text-charcoal-light leading-relaxed mb-8">
-                Our design process includes space planning, mood boards,
-                furniture selection, and decor curation, ensuring every detail
-                fits your lifestyle and vision.
+                Our full-service design process includes space planning, mood
+                boards, furniture selection, and decor curation, ensuring every
+                detail fits your lifestyle and vision.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -399,6 +425,40 @@ export default function InteriorDesignPage() {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Interior design across the metro — internal links to city pages */}
+      <section className="py-24 lg:py-32">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8 text-center">
+          <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
+            Where We Work
+          </p>
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal mb-4">
+            Interior Design Across the Portland Metro
+          </h2>
+          <p className="text-charcoal-light max-w-2xl mx-auto mb-10">
+            Based in SE Portland, our interior designers work with homeowners
+            throughout the metro and beyond — from Lake Oswego and West Linn to
+            Bend and the Washington side of the river.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {metroLinks.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/service-areas/${c.slug}`}
+                className="px-5 py-2.5 border border-teal/30 text-sm text-charcoal-light hover:border-teal hover:text-teal transition-colors"
+              >
+                Interior design in {c.name}
+              </Link>
+            ))}
+            <Link
+              href="/service-areas"
+              className="px-5 py-2.5 border border-teal text-sm text-teal hover:bg-teal hover:text-white transition-colors"
+            >
+              View All Areas &rarr;
+            </Link>
           </div>
         </div>
       </section>

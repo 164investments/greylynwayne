@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { BreadcrumbJsonLd, ServiceJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, ServiceJsonLd, FAQJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Short-Term Rental & Airbnb Design | Portland, Oregon",
@@ -35,6 +35,35 @@ const benefits = [
   },
 ];
 
+const rentalFaqs = [
+  {
+    question:
+      "How much does short-term rental design cost in Portland?",
+    answer:
+      "Cost depends on the size of the property, how many rooms we're furnishing, and whether you need a full turnkey setup or a design refresh. We provide a custom quote after a free consultation. Most owners view it as an investment that pays back through higher nightly rates, stronger occupancy, and better reviews.",
+  },
+  {
+    question: "Do you furnish the rental, or just create the design?",
+    answer:
+      "We do both. Our turnkey package covers the full scope — design concept, furniture and decor sourcing, delivery, installation, styling, and the essentials guests expect. If you only need a design plan or a styling refresh on an existing space, we can scope to that instead.",
+  },
+  {
+    question: "How long does a turnkey rental setup take?",
+    answer:
+      "Most single-unit projects move from consultation to a guest-ready space in a few weeks, depending on furniture lead times and the size of the property. We coordinate around your launch date so the listing can go live on schedule.",
+  },
+  {
+    question: "Can good design really increase my nightly rate and bookings?",
+    answer:
+      "Yes. Short-term rentals compete first on photos and then on experience. A thoughtfully designed, photogenic space ranks better in search, earns more clicks, justifies a higher nightly rate, and produces the 5-star reviews that compound into repeat bookings.",
+  },
+  {
+    question: "Do you work with multiple properties or portfolios?",
+    answer:
+      "Absolutely. Whether you have one Airbnb or a portfolio of vacation rentals, we can design a consistent, on-brand look across your properties — useful for owners and managers scaling a recognizable guest experience.",
+  },
+];
+
 export default function ShortTermRentalPage() {
   return (
     <>
@@ -53,12 +82,13 @@ export default function ShortTermRentalPage() {
         description="Professional Airbnb and vacation rental interior design services in Portland, Oregon. Turnkey design, furniture sourcing, and installation to maximize bookings and guest experience."
         url="/short-term-rental-design"
       />
+      <FAQJsonLd faqs={rentalFaqs} />
 
       {/* Hero */}
       <section className="relative pt-20">
         <div className="relative h-[60vh] min-h-[400px]">
           <Image
-            src="/images/before-after.jpg"
+            src="/images/portland-home-staging-character-bedroom.webp"
             alt="Short-term rental design by Greylyn Wayne — stylish Portland vacation rental with character"
             fill
             className="object-cover"
@@ -150,6 +180,77 @@ export default function ShortTermRentalPage() {
                 </div>
                 <h3 className="text-white font-semibold mb-2">{item.title}</h3>
                 <p className="text-teal-bg text-sm leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What We Design */}
+      <section className="py-24 lg:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
+              What We Design
+            </p>
+            <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal">
+              Every Space Your Guests Will Remember
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Living & Common Areas",
+                description:
+                  "The hero shot of your listing. We design inviting, photogenic living spaces that earn the click and set the tone for the whole stay.",
+              },
+              {
+                title: "Bedrooms & Baths",
+                description:
+                  "Hotel-quality comfort that drives reviews — quality bedding, layered lighting, and spa-like bathrooms guests rave about.",
+              },
+              {
+                title: "Kitchens & Workspaces",
+                description:
+                  "Functional, fully-stocked kitchens and remote-work-friendly nooks that win over longer stays and business travelers.",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="border border-gray-200 p-8 lg:p-10 hover:border-teal transition-colors"
+              >
+                <h3 className="font-[family-name:var(--font-playfair)] text-xl mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-charcoal-light text-sm leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 lg:py-32 bg-warm">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
+              Questions
+            </p>
+            <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal">
+              Short-Term Rental Design FAQ
+            </h2>
+          </div>
+          <div className="space-y-8">
+            {rentalFaqs.map((faq, i) => (
+              <div key={i} className="border-b border-gray-200 pb-8">
+                <h3 className="font-[family-name:var(--font-playfair)] text-lg mb-3">
+                  {faq.question}
+                </h3>
+                <p className="text-charcoal-light text-sm leading-relaxed">
+                  {faq.answer}
+                </p>
               </div>
             ))}
           </div>

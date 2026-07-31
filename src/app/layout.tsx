@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
+import { EB_Garamond, Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -10,14 +10,17 @@ import { GtagScripts } from "@/components/GtagScripts";
 import { MetaPixel } from "@/components/MetaPixel";
 import SiteTracker from "@/components/SiteTracker";
 
-const playfair = Playfair_Display({
+// Brand type (Brand Guidelines, Summer 2025): EB Garamond (display + body),
+// Montserrat (uppercase labels/subheads). EB Garamond keeps the legacy
+// `--font-playfair` variable name so the 165 existing heading references resolve.
+const ebGaramond = EB_Garamond({
   variable: "--font-playfair",
   subsets: ["latin"],
   display: "swap",
 });
 
-const inter = Inter({
-  variable: "--font-inter",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
   display: "swap",
 });
@@ -52,7 +55,7 @@ export const metadata: Metadata = {
       "Portland's award-winning home staging & interior design company. 4x Street of Dreams featured designer. Free consultation — (971) 930-0220.",
     url: "https://www.greylynwayne.com",
     siteName: "Greylyn Wayne",
-    images: [{ url: "/images/og-image.png", width: 2500, height: 1330 }],
+    images: [{ url: "/images/og-image.png", width: 2500, height: 1312 }],
     locale: "en_US",
     type: "website",
   },
@@ -66,8 +69,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.greylynwayne.com",
   },
-  // No `verification` block: greylynwayne.com is already verified in Google
-  // Search Console via DNS (sc-domain property), so a meta tag is unnecessary.
+  // Google Search Console is verified via DNS (sc-domain property), so no
+  // Google meta tag is needed. Meta/Facebook domain verification uses a meta tag.
+  verification: {
+    other: {
+      "facebook-domain-verification": "zx10cw79ay7dcwb0tui2ehmgbmlh3t",
+    },
+  },
 };
 
 export default function RootLayout({
@@ -76,7 +84,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+    <html lang="en" className={`${ebGaramond.variable} ${montserrat.variable}`}>
       <body>
         {/* GA4 + Google Ads (single Google tag) and Meta Pixel load in code.
             GTM was removed: its only tag was a duplicate GA4 config, which breaks

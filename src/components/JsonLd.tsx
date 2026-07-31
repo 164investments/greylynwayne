@@ -131,6 +131,113 @@ export function LocalBusinessJsonLd() {
   );
 }
 
+export function ArticleJsonLd({
+  post,
+}: {
+  post: {
+    slug: string;
+    title: string;
+    metaDescription: string;
+    date: string;
+    updated?: string;
+    heroImage: string;
+  };
+}) {
+  const url = `https://www.greylynwayne.com/blog/${post.slug}`;
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.metaDescription,
+    image: `https://www.greylynwayne.com${post.heroImage}`,
+    datePublished: post.date,
+    dateModified: post.updated || post.date,
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    url,
+    author: {
+      "@type": "Organization",
+      name: "Greylyn Wayne",
+      url: "https://www.greylynwayne.com",
+    },
+    publisher: {
+      "@type": "Organization",
+      "@id": "https://www.greylynwayne.com/#organization",
+      name: "Greylyn Wayne",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.greylynwayne.com/images/logo-teal.png",
+      },
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
+export function JobPostingJsonLd() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "JobPosting",
+    title: "Principal Staging Designer",
+    description:
+      "Lead Greylyn Wayne staging projects from walkthrough through completion, setting the design vision, directing the crew, and taking ownership of each home's final presentation.",
+    identifier: {
+      "@type": "PropertyValue",
+      name: "Greylyn Wayne",
+      value: "principal-staging-designer-2026",
+    },
+    datePosted: "2026-07-10",
+    employmentType: "FULL_TIME",
+    hiringOrganization: {
+      "@type": "Organization",
+      "@id": "https://www.greylynwayne.com/#organization",
+      name: "Greylyn Wayne",
+      sameAs: "https://www.greylynwayne.com",
+      logo: "https://www.greylynwayne.com/images/logo-teal.png",
+    },
+    jobLocation: {
+      "@type": "Place",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "1011 SE Oak St",
+        addressLocality: "Portland",
+        addressRegion: "OR",
+        postalCode: "97214",
+        addressCountry: "US",
+      },
+    },
+    baseSalary: {
+      "@type": "MonetaryAmount",
+      currency: "USD",
+      value: {
+        "@type": "QuantitativeValue",
+        minValue: 23,
+        maxValue: 28,
+        unitText: "HOUR",
+      },
+    },
+    educationRequirements: "High school diploma",
+    experienceRequirements:
+      "One to three years of home staging experience preferred; small-team leadership experience preferred.",
+    qualifications:
+      "Valid driver's license and reliable transportation required.",
+    jobBenefits:
+      "Use of a company vehicle during shifts and an employee discount after 90 days.",
+    url: "https://www.greylynwayne.com/careers#principal-staging-designer",
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  );
+}
+
 export function BreadcrumbJsonLd({
   items,
 }: {
@@ -201,10 +308,22 @@ export function ServiceJsonLd({
       "@id": "https://www.greylynwayne.com/#organization",
       name: "Greylyn Wayne",
     },
-    areaServed: {
-      "@type": "State",
-      name: "Oregon",
-    },
+    // Include Portland (city) alongside the state so page-level Service schema
+    // matches the localized "portland interior designer" queries these pages
+    // actually rank for — a bare State:Oregon under-signals the locality.
+    areaServed: [
+      {
+        "@type": "City",
+        name: "Portland",
+        containedInPlace: { "@type": "State", name: "Oregon" },
+      },
+      { "@type": "City", name: "Lake Oswego" },
+      { "@type": "City", name: "West Linn" },
+      { "@type": "City", name: "Beaverton" },
+      { "@type": "City", name: "Happy Valley" },
+      { "@type": "City", name: "Vancouver", containedInPlace: { "@type": "State", name: "Washington" } },
+      { "@type": "State", name: "Oregon" },
+    ],
   };
 
   return (

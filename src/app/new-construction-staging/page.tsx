@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { BreadcrumbJsonLd, ServiceJsonLd } from "@/components/JsonLd";
+import { BreadcrumbJsonLd, ServiceJsonLd, FAQJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title:
@@ -36,6 +36,34 @@ const services = [
   },
 ];
 
+const builderFaqs = [
+  {
+    question: "How does model home staging help sell a new development?",
+    answer:
+      "A staged model gives buyers something an empty shell can't — an emotional sense of how the home lives. It anchors the floor plan to a lifestyle, makes square footage feel intentional, and produces the photography that drives online traffic to the rest of the community. For builders, a well-staged model typically pays for itself by shortening time-to-sale across the development.",
+  },
+  {
+    question: "Do you stage multiple model homes or entire communities?",
+    answer:
+      "Yes. We run full staging programs for new developments, designing cohesive but distinct presentations across multiple models so each floor plan and price point shows its best while the community reads as one polished brand.",
+  },
+  {
+    question: "When in the build timeline should we bring you in?",
+    answer:
+      "The earlier the better. Looping us in before finishes are locked lets us coordinate fixture packages, palettes, and flooring with the staging vision so everything works together. That said, we regularly stage completed builds on a fast timeline when a model needs to open quickly.",
+  },
+  {
+    question: "Do you work with our existing finishes, or select them?",
+    answer:
+      "Both. We can stage around the selections your team has already made, or collaborate on fixtures, finishes, and color packages tuned to your target buyer. Many builders use us for both finish selection and the final staging so the result is fully cohesive.",
+  },
+  {
+    question: "What areas do you serve for builder and developer staging?",
+    answer:
+      "We serve builders and developers throughout the Portland metro area and across Oregon, including Lake Oswego, West Linn, Beaverton, Bend, and surrounding communities. Reach out with your development's location and we'll confirm coverage and timing.",
+  },
+];
+
 export default function NewConstructionPage() {
   return (
     <>
@@ -51,13 +79,14 @@ export default function NewConstructionPage() {
         description="Professional model home staging and new construction design services for builders and developers in Portland, Oregon. Showcase the full potential of new builds."
         url="/new-construction-staging"
       />
+      <FAQJsonLd faqs={builderFaqs} />
 
       {/* Hero */}
       <section className="relative pt-20">
         <div className="relative h-[60vh] min-h-[400px]">
           <Image
-            src="/images/hero-staging.webp"
-            alt="New construction model home staged by Greylyn Wayne — modern kitchen in Portland, Oregon"
+            src="/images/portland-staged-kitchen-hero.webp"
+            alt="New construction model home kitchen staged by Greylyn Wayne — white cabinetry, large island with bar stools, glass-front cabinets, and brass pendant lighting in Portland, Oregon"
             fill
             className="object-cover"
             priority
@@ -105,8 +134,8 @@ export default function NewConstructionPage() {
             </div>
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src="/images/home-staging-2.jpg"
-                alt="Model home kitchen staged by Greylyn Wayne"
+                src="/images/portland-home-staging-living-room.webp"
+                alt="Model home living room staged by Greylyn Wayne — sectional sofa, layered textures, and curated decor in a Portland new construction home"
                 fill
                 className="object-cover"
               />
@@ -134,6 +163,80 @@ export default function NewConstructionPage() {
                 </h3>
                 <p className="text-charcoal-light text-sm leading-relaxed">
                   {service.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Process */}
+      <section className="py-24 lg:py-32 bg-teal">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-teal-bg text-sm tracking-[0.3em] uppercase mb-4">
+              How We Work With Builders
+            </p>
+            <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-white">
+              From Blueprint to Buyer-Ready
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {[
+              {
+                step: "01",
+                title: "Consult",
+                desc: "We tour your build or development and align on target buyer, price point, timeline, and budget.",
+              },
+              {
+                step: "02",
+                title: "Design Plan",
+                desc: "We craft a staging plan tuned to each floor plan and the lifestyle your buyers aspire to.",
+              },
+              {
+                step: "03",
+                title: "Stage & Install",
+                desc: "We deliver and style every space — typically a day or two per model — for a photo-ready presentation.",
+              },
+              {
+                step: "04",
+                title: "Drive Sales",
+                desc: "Your model opens polished and market-ready, drawing traffic and accelerating sales across the community.",
+              },
+            ].map((item) => (
+              <div key={item.step} className="text-center">
+                <div className="font-[family-name:var(--font-playfair)] text-5xl text-white/20 mb-4">
+                  {item.step}
+                </div>
+                <h3 className="text-white font-semibold mb-2">{item.title}</h3>
+                <p className="text-teal-bg text-sm leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 lg:py-32">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
+              Questions
+            </p>
+            <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal">
+              New Construction Staging FAQ
+            </h2>
+          </div>
+          <div className="space-y-8">
+            {builderFaqs.map((faq, i) => (
+              <div key={i} className="border-b border-gray-200 pb-8">
+                <h3 className="font-[family-name:var(--font-playfair)] text-lg mb-3">
+                  {faq.question}
+                </h3>
+                <p className="text-charcoal-light text-sm leading-relaxed">
+                  {faq.answer}
                 </p>
               </div>
             ))}

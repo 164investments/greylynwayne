@@ -46,7 +46,7 @@ export default function BeforeAndAfterPage() {
             <div>
               <div className="relative aspect-[4/3] overflow-hidden mb-4">
                 <Image
-                  src="/images/home-staging-1.webp"
+                  src="/images/portland-home-staging-loft-living-room.webp"
                   alt="Home staging transformation by Greylyn Wayne — industrial loft living room in Portland"
                   fill
                   className="object-cover"
@@ -63,7 +63,7 @@ export default function BeforeAndAfterPage() {
             <div>
               <div className="relative aspect-[4/3] overflow-hidden mb-4">
                 <Image
-                  src="/images/home-staging-2.jpg"
+                  src="/images/portland-interior-design-white-kitchen.webp"
                   alt="Kitchen staging by Greylyn Wayne — modern white kitchen with styling"
                   fill
                   className="object-cover"
@@ -97,7 +97,7 @@ export default function BeforeAndAfterPage() {
             <div>
               <div className="relative aspect-[4/3] overflow-hidden mb-4">
                 <Image
-                  src="/images/before-after.jpg"
+                  src="/images/portland-home-staging-character-bedroom.webp"
                   alt="Portland home staging by Greylyn Wayne — colorful bedroom with character"
                   fill
                   className="object-cover"

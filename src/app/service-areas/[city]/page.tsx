@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { cities, getCityBySlug } from "@/data/service-areas";
+import {
+  cities,
+  getCityBySlug,
+  cityHero,
+  cityInteriorContent,
+} from "@/data/service-areas";
 import { BreadcrumbJsonLd, FAQJsonLd } from "@/components/JsonLd";
 import SplitHero from "@/components/SplitHero";
+import StagedHomeCard from "@/components/StagedHomeCard";
+import { homesForCity } from "@/data/staging-portfolio";
 
 export function generateStaticParams() {
   return cities.map((city) => ({ city: city.slug }));
@@ -18,11 +25,13 @@ export async function generateMetadata({
   const city = getCityBySlug(slug);
   if (!city) return {};
 
-  const title = `Home Staging & Interior Design in ${city.name}, ${city.stateShort}`;
-  const description = `Professional home staging and interior design services in ${city.name}, ${city.state}. Greylyn Wayne helps ${city.name} homeowners and agents sell faster and for more — (971) 930-0220.`;
+  // Absolute title escapes the layout template's "— Portland, OR" tail, which
+  // otherwise stamps every non-Portland city page with a conflicting locality.
+  const title = `Home Staging & Interior Design in ${city.name}, ${city.stateShort} | Greylyn Wayne`;
+  const description = `Home staging and full-service interior design in ${city.name}, ${city.state}. 4.9★ from 163 clients, 4x Street of Dreams — staging that sells and design you'll live in. (971) 930-0220.`;
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: {
       canonical: `https://www.greylynwayne.com/service-areas/${city.slug}`,
@@ -31,6 +40,7 @@ export async function generateMetadata({
       title,
       description,
       url: `https://www.greylynwayne.com/service-areas/${city.slug}`,
+      images: [{ url: "/images/og-image.png", width: 2500, height: 1312 }],
     },
   };
 }
@@ -113,20 +123,22 @@ export default async function CityPage({
   const city = getCityBySlug(slug);
   if (!city) notFound();
 
-  const faqs = [
-    {
-      question: `How much does home staging cost in ${city.name}?`,
-      answer: `Home staging costs in ${city.name} vary based on property size, number of rooms, and staging duration. Most ${city.name} staging projects range from $2,500 to $8,000+. Contact us for a free, no-obligation quote specific to your property — (971) 930-0220.`,
-    },
-    {
-      question: `Do you offer interior design services in ${city.name}?`,
-      answer: `Yes! Greylyn Wayne provides full-service interior design in ${city.name} and the surrounding ${city.region} area. From single-room refreshes to whole-home transformations, our design team works with ${city.name} homeowners to create beautiful, functional spaces.`,
-    },
-    {
-      question: `How quickly can you stage a home in ${city.name}?`,
-      answer: `We can typically stage a ${city.name} property within 5–7 business days of your consultation. Rush staging is available for tight timelines. Our Portland-based warehouse and experienced team allow us to serve ${city.name} efficiently.`,
-    },
-  ];
+  const interior = cityInteriorContent[city.slug];
+  // Merge city-specific interior-design FAQs into the page + FAQ schema so the
+  // interior Service schema is backed by real matching content.
+  const faqs = interior ? [...city.faqs, ...interior.faqs] : city.faqs;
+  const hero = cityHero(city);
+  const listings = homesForCity(city.name, city.stagingRegion);
+
+  // Honest framing: "city" = staged here; "region"/"portfolio" = nearby/representative work.
+  const listingHeading =
+    listings.scope === "city"
+      ? `Recently Staged in ${city.name}`
+      : `Recent Projects Near ${city.name}`;
+  const listingSubtitle =
+    listings.scope === "city"
+      ? `Real homes we've staged in ${city.name} — each links to its live status on Redfin and Zillow.`
+      : `Greylyn Wayne is a Portland-based studio serving ${city.name} and the greater ${city.region}. Here's a selection of homes we've recently staged across the area.`;
 
   return (
     <>
@@ -149,8 +161,8 @@ export default async function CityPage({
           </>
         }
         subtitle={city.description}
-        imageSrc="/images/hero-home.webp"
-        imageAlt={`Professionally staged living room by Greylyn Wayne — serving ${city.name}, ${city.stateShort}`}
+        imageSrc={hero.src}
+        imageAlt={hero.alt}
         titleClassName="text-3xl md:text-4xl lg:text-5xl"
       />
 
@@ -163,11 +175,7 @@ export default async function CityPage({
                 Why Stage Your {city.name} Home?
               </h2>
               <p className="text-charcoal-light leading-relaxed mb-8">
-                Staged homes sell faster and for more money — that&apos;s true
-                nationwide, and it&apos;s especially true in{" "}
-                {city.name}&apos;s competitive market. Professional staging
-                helps buyers see your property&apos;s full potential from the
-                first photo they see online.
+                {city.marketNote}
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center p-6 bg-white">
@@ -222,6 +230,85 @@ export default async function CityPage({
         </div>
       </section>
 
+      {/* Neighborhoods we serve */}
+      <section className="py-20 lg:py-28">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8 text-center">
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal mb-4">
+            Neighborhoods We Serve in {city.name}
+          </h2>
+          <p className="text-charcoal-light max-w-2xl mx-auto mb-10">
+            From first photo to final showing, we stage homes across {city.name}
+            &apos;s neighborhoods — matching each property to the buyers who shop
+            there.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {city.neighborhoods.map((n) => (
+              <span
+                key={n}
+                className="px-5 py-2.5 bg-cream text-sm text-charcoal-light"
+              >
+                {n}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Recently staged homes (real listings — local, or labeled nearby work) */}
+      {listings.homes.length > 0 && (
+        <section className="py-24 lg:py-32 bg-warm">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <p className="text-teal text-sm tracking-[0.3em] uppercase mb-3">
+                Our Work
+              </p>
+              <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal mb-4">
+                {listingHeading}
+              </h2>
+              <p className="text-charcoal-light max-w-2xl mx-auto">
+                {listingSubtitle}
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+              {listings.homes.map((home) => (
+                <StagedHomeCard key={home.ref} home={home} />
+              ))}
+            </div>
+            <div className="text-center mt-14">
+              <Link
+                href="/staged-homes"
+                className="inline-block border border-teal text-teal px-8 py-3.5 text-sm tracking-wider uppercase hover:bg-teal hover:text-white transition-colors font-medium"
+              >
+                View Our Full Staging Portfolio &rarr;
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Interior design in this city — dedicated content backing the ID Service schema */}
+      {interior && (
+        <section className="py-24 lg:py-32">
+          <div className="mx-auto max-w-3xl px-6 lg:px-8">
+            <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
+              Beyond Staging
+            </p>
+            <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal mb-6">
+              Interior Design in {city.name}
+            </h2>
+            <p className="text-charcoal-light leading-relaxed mb-8">
+              {interior.note}
+            </p>
+            <Link
+              href="/interior-design"
+              className="inline-block bg-teal text-white px-8 py-4 text-sm tracking-wider uppercase hover:bg-teal-dark transition-colors font-medium"
+            >
+              Explore Interior Design &rarr;
+            </Link>
+          </div>
+        </section>
+      )}
+
       {/* Services */}
       <section className="py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -264,7 +351,7 @@ export default async function CityPage({
                 complete room transformations.
               </p>
               <span className="text-teal text-sm tracking-wider uppercase font-medium">
-                Learn More &rarr;
+                Interior Design in {city.name} &rarr;
               </span>
             </Link>
             <Link
@@ -372,11 +459,12 @@ export default async function CityPage({
       <section className="py-24 lg:py-32 bg-charcoal text-center">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-white mb-6">
-            Ready to Stage Your {city.name} Home?
+            Ready to Transform Your {city.name} Home?
           </h2>
           <p className="text-gray-400 leading-relaxed mb-10">
-            Get a free consultation and see how professional staging can help
-            you sell faster and for more in {city.name}.
+            Get a free consultation and see how professional staging and
+            interior design can help you sell faster — or fall back in love with
+            the home you&apos;re keeping — in {city.name}.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button

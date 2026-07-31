@@ -1,14 +1,20 @@
 "use client";
 
 import type { FormEvent } from "react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import { buildLeadTracking, fireLeadConversions } from "@/lib/tracking";
+import Turnstile, {
+  turnstileEnabled,
+  type TurnstileHandle,
+} from "@/components/Turnstile";
 
 export default function FurnitureRequestPage() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [token, setToken] = useState("");
+  const turnstileRef = useRef<TurnstileHandle>(null);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -16,6 +22,16 @@ export default function FurnitureRequestPage() {
     const get = (name: string) =>
       (form.elements.namedItem(name) as HTMLInputElement | null)?.value?.trim() || "";
     const interest = get("interest");
+    const company = get("company");
+    if (company) {
+      setSubmitted(true);
+      return;
+    }
+
+    if (turnstileEnabled && !token) {
+      setError("Please wait a moment for the security check to finish, then try again.");
+      return;
+    }
 
     const tracking = buildLeadTracking({
       email: get("email"),
@@ -36,7 +52,8 @@ export default function FurnitureRequestPage() {
           phone: get("phone"),
           interest,
           details: get("details"),
-          company: get("company"), // honeypot
+          company, // honeypot
+          turnstileToken: token,
           tracking,
         }),
       });
@@ -47,6 +64,9 @@ export default function FurnitureRequestPage() {
       fireLeadConversions("furniture_request", tracking, interest || undefined);
       setSubmitted(true);
     } catch (err) {
+      // Token is single-use — reset the widget so a retry gets a fresh one.
+      turnstileRef.current?.reset();
+      setToken("");
       setError(
         err instanceof Error
           ? err.message
@@ -176,6 +196,11 @@ export default function FurnitureRequestPage() {
                   className="w-full border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:border-teal transition-colors resize-vertical placeholder:text-gray-400"
                 />
               </div>
+              <Turnstile
+                ref={turnstileRef}
+                onVerify={setToken}
+                onExpire={() => setToken("")}
+              />
               {error && (
                 <p
                   role="alert"

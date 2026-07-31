@@ -18,6 +18,7 @@ export default function SplitHero({
   imageSrc,
   imageAlt,
   titleClassName = "text-4xl md:text-5xl lg:text-6xl",
+  mobileImageClass = "min-h-[240px] sm:min-h-[360px]",
 }: {
   eyebrow: string;
   title: ReactNode;
@@ -25,6 +26,7 @@ export default function SplitHero({
   imageSrc: string;
   imageAlt: string;
   titleClassName?: string;
+  mobileImageClass?: string;
 }) {
   return (
     <section className="pt-20">
@@ -63,7 +65,7 @@ export default function SplitHero({
           </div>
         </div>
         {/* Real project photo */}
-        <div className="relative order-1 lg:order-2 lg:flex-1 min-h-[240px] sm:min-h-[360px] lg:min-h-0">
+        <div className={`relative order-1 lg:order-2 lg:flex-1 ${mobileImageClass} lg:min-h-0`}>
           <Image
             src={imageSrc}
             alt={imageAlt}

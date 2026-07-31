@@ -7,6 +7,8 @@ import {
   FAQJsonLd,
 } from "@/components/JsonLd";
 import SplitHero from "@/components/SplitHero";
+import StagedHomeCard from "@/components/StagedHomeCard";
+import { featuredHomes } from "@/data/staging-portfolio";
 
 export const metadata: Metadata = {
   title: "Home Staging Portland, Oregon | Sell Faster & For Top Dollar",
@@ -98,6 +100,7 @@ const stagingFaqs = [
 ];
 
 export default function HomeStagingPage() {
+  const featured = featuredHomes(3);
   return (
     <>
       <BreadcrumbJsonLd
@@ -160,7 +163,7 @@ export default function HomeStagingPage() {
             </div>
             <div className="relative aspect-[4/3] overflow-hidden">
               <Image
-                src="/images/home-staging-1.webp"
+                src="/images/portland-home-staging-loft-living-room.webp"
                 alt="Staged industrial loft living room in Portland, Oregon by Greylyn Wayne"
                 fill
                 className="object-cover"
@@ -195,6 +198,40 @@ export default function HomeStagingPage() {
           </div>
         </div>
       </section>
+
+      {/* Recently staged — real proof */}
+      {featured.length > 0 && (
+        <section className="py-24 lg:py-32">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
+                Proof on the Market
+              </p>
+              <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal mb-4">
+                Recently Staged Homes
+              </h2>
+              <p className="text-charcoal-light leading-relaxed max-w-2xl mx-auto">
+                Real Portland-area listings we&apos;ve staged — each one links to
+                its live status on Redfin and Zillow, so you can see exactly how
+                our work shows on the market.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {featured.map((home) => (
+                <StagedHomeCard key={home.ref} home={home} />
+              ))}
+            </div>
+            <div className="text-center mt-12">
+              <Link
+                href="/staged-homes"
+                className="inline-block border border-charcoal/20 text-charcoal px-8 py-4 text-sm tracking-wider uppercase hover:bg-charcoal hover:text-white transition-colors font-medium"
+              >
+                View All Staged Homes
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Services */}
       <section className="py-24 lg:py-32">

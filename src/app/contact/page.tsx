@@ -1,10 +1,14 @@
 "use client";
 
 import type { FormEvent } from "react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Link from "next/link";
 import { buildLeadTracking, fireLeadConversions } from "@/lib/tracking";
 import { RatingBadge } from "@/components/Proof";
+import Turnstile, {
+  turnstileEnabled,
+  type TurnstileHandle,
+} from "@/components/Turnstile";
 
 const serviceOptions = [
   "Home Staging — Vacant Property",
@@ -22,6 +26,8 @@ export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [token, setToken] = useState("");
+  const turnstileRef = useRef<TurnstileHandle>(null);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -29,6 +35,16 @@ export default function ContactPage() {
     const get = (name: string) =>
       (form.elements.namedItem(name) as HTMLInputElement | null)?.value?.trim() || "";
     const service = get("service");
+    const company = get("company");
+    if (company) {
+      setSubmitted(true);
+      return;
+    }
+
+    if (turnstileEnabled && !token) {
+      setError("Please wait a moment for the security check to finish, then try again.");
+      return;
+    }
 
     // Build tracking context BEFORE the POST so the server CAPI fire and the
     // browser fbq fire share one eventID (Meta dedup) + apply enhanced-conversions.
@@ -53,7 +69,8 @@ export default function ContactPage() {
           phone: get("phone"),
           service,
           message: get("message"),
-          company: get("company"), // honeypot
+          company, // honeypot
+          turnstileToken: token,
           tracking,
         }),
       });
@@ -64,6 +81,9 @@ export default function ContactPage() {
       fireLeadConversions("contact", tracking, service || undefined);
       setSubmitted(true);
     } catch (err) {
+      // Token is single-use — reset the widget so a retry gets a fresh one.
+      turnstileRef.current?.reset();
+      setToken("");
       setError(
         err instanceof Error
           ? err.message
@@ -301,6 +321,11 @@ export default function ContactPage() {
                       className="w-full border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:border-teal transition-colors resize-vertical placeholder:text-gray-400"
                     />
                   </div>
+                  <Turnstile
+                    ref={turnstileRef}
+                    onVerify={setToken}
+                    onExpire={() => setToken("")}
+                  />
                   {error && (
                     <p
                       role="alert"

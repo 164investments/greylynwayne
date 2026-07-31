@@ -1,60 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { BreadcrumbJsonLd } from "@/components/JsonLd";
+import { blogPosts } from "@/data/blog-posts";
 
 export const metadata: Metadata = {
-  title: "Home Staging & Interior Design Blog | Tips & Inspiration",
+  title: "Home Staging & Interior Design Blog | Greylyn Wayne Portland",
   description:
-    "Read expert tips on home staging, interior design trends, and how to maximize your home's value. Insights from Greylyn Wayne's Portland design team.",
+    "Expert home staging and interior design advice from Portland's most-reviewed staging team — staging costs, ROI, design trends, and room-by-room guides.",
   alternates: { canonical: "https://www.greylynwayne.com/blog" },
 };
 
-const posts = [
-  {
-    title: "How to Create a Cozy Home This Season",
-    date: "March 23, 2025",
-    excerpt:
-      "Simple design tips to make your Portland home feel warm and inviting during the cooler months — from layered textiles to ambient lighting.",
-    category: "Interior Design",
-  },
-  {
-    title: "The Design Consultation Process",
-    date: "March 23, 2025",
-    excerpt:
-      "What to expect during your first design consultation with Greylyn Wayne, and how to prepare for the most productive session possible.",
-    category: "Interior Design",
-  },
-  {
-    title: "Interior Design Trends for 2024",
-    date: "December 21, 2023",
-    excerpt:
-      "The top interior design trends shaping Portland homes — from warm minimalism and curved furniture to bold color palettes and natural materials.",
-    category: "Trends",
-  },
-  {
-    title: "We Know How to Enhance Your Lived-in Listing",
-    date: "November 26, 2023",
-    excerpt:
-      "Occupied home staging tips for homeowners who are living in their property while it's on the market. How to balance daily life with buyer appeal.",
-    category: "Home Staging",
-  },
-  {
-    title: "Cozy Design Prep for Small Spaces",
-    date: "December 8, 2023",
-    excerpt:
-      "Maximize the potential of compact rooms with smart design choices. Tips for making small Portland apartments and condos feel spacious and stylish.",
-    category: "Interior Design",
-  },
-  {
-    title: "Staging Benefits and Team Updates",
-    date: "October 3, 2023",
-    excerpt:
-      "A look at the latest data on how professional staging impacts sale price and time on market, plus updates from the Greylyn Wayne team.",
-    category: "Home Staging",
-  },
-];
-
 export default function BlogPage() {
+  const [featured, ...rest] = blogPosts;
+
   return (
     <>
       <BreadcrumbJsonLd
@@ -66,59 +25,76 @@ export default function BlogPage() {
 
       {/* Hero */}
       <section className="pt-20">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-24 lg:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 pt-20 pb-12">
           <div className="text-center">
             <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
               Insights & Inspiration
             </p>
             <h1 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl text-charcoal mb-6">
-              Blog
+              The Greylyn Wayne Journal
             </h1>
             <p className="text-charcoal-light text-lg max-w-2xl mx-auto">
-              Expert tips on home staging, interior design trends, and
-              maximizing your home&apos;s appeal — from our Portland design
-              team.
+              Practical advice on home staging, interior design, and selling for
+              more — from the team behind 2,500+ staged Portland-area homes.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Posts grid */}
+      {/* Featured */}
+      {featured && (
+        <section className="mx-auto max-w-7xl px-6 lg:px-8 pb-16">
+          <Link href={`/blog/${featured.slug}`} className="group grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="relative aspect-[16/10] w-full overflow-hidden rounded-sm bg-cream">
+              <Image src={featured.heroImage} alt={featured.heroAlt} fill priority className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(max-width: 1024px) 100vw, 600px" />
+            </div>
+            <div>
+              <p className="text-teal text-xs tracking-[0.2em] uppercase mb-3">
+                Featured · {featured.category}
+              </p>
+              <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal mb-4 group-hover:text-teal transition-colors">
+                {featured.title}
+              </h2>
+              <p className="text-charcoal-light leading-relaxed mb-5">{featured.excerpt}</p>
+              <span className="text-teal text-sm tracking-wider uppercase font-medium">
+                Read the guide →
+              </span>
+            </div>
+          </Link>
+        </section>
+      )}
+
+      {/* Grid */}
       <section className="pb-24 lg:pb-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.map((post) => (
-              <article key={post.title} className="border border-gray-200 p-8">
-                <p className="text-teal text-xs tracking-[0.2em] uppercase mb-2">
-                  {post.category}
-                </p>
-                <h2 className="font-[family-name:var(--font-playfair)] text-xl mb-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+            {rest.map((post) => (
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="group block">
+                <div className="relative aspect-[3/2] w-full overflow-hidden rounded-sm bg-cream mb-4">
+                  <Image src={post.heroImage} alt={post.heroAlt} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(max-width: 768px) 100vw, 380px" />
+                </div>
+                <p className="text-teal text-xs tracking-[0.2em] uppercase mb-2">{post.category}</p>
+                <h2 className="font-[family-name:var(--font-playfair)] text-xl text-charcoal mb-2 group-hover:text-teal transition-colors leading-snug">
                   {post.title}
                 </h2>
-                <p className="text-charcoal-light text-sm leading-relaxed mb-4">
-                  {post.excerpt}
-                </p>
-                <p className="text-charcoal-light text-xs">{post.date}</p>
-              </article>
+                <p className="text-charcoal-light text-sm leading-relaxed">{post.excerpt}</p>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-24 lg:py-32 bg-warm text-center">
+      <section className="py-20 bg-warm text-center">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
           <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal mb-6">
             Ready to Transform Your Space?
           </h2>
           <p className="text-charcoal-light leading-relaxed mb-10">
-            Whether you&apos;re inspired by our blog or just getting started,
-            we&apos;d love to help with your next project.
+            Whether you&apos;re preparing to sell or redesigning for the way you
+            live, we&apos;d love to help. The consultation is free.
           </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-teal text-white px-10 py-4 text-sm tracking-wider uppercase hover:bg-teal-dark transition-colors font-medium"
-          >
+          <Link href="/contact" className="inline-block bg-teal text-white px-10 py-4 text-sm tracking-wider uppercase hover:bg-teal-dark transition-colors font-medium">
             Get Your Free Consultation
           </Link>
         </div>

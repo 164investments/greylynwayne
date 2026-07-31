@@ -5,7 +5,7 @@
 
 ## 1. What this app is
 
-A marketing/lead-generation website for Greylyn Wayne (home staging + interior design, Portland OR). Next.js 16 App Router on Vercel. It is **content-first and almost entirely static** — 18 hand-built pages + 33 data-driven city pages, all prerendered at build time. The only dynamic surface is one API route that emails form submissions. There is no database, no auth, and no user-generated content. Treat it as a fast static site with a single serverless lead endpoint bolted on, not a web app.
+A marketing/lead-generation website for Greylyn Wayne (home staging + interior design, Portland OR). Next.js 16 App Router on Vercel. It is **content-first and almost entirely static** — 18 hand-built pages + 33 data-driven city pages, all prerendered at build time. The only dynamic surface is one API route that persists form submissions to a Supabase `website_leads` table **and** emails them. There is no auth and no user-generated content, and the DB is write-only from the site (leads in; nothing read back at runtime). Treat it as a fast static site with a single serverless lead endpoint bolted on, not a web app.
 
 ## 2. Layering rule (one-way dependencies)
 
@@ -27,14 +27,14 @@ This is a layer-based structure on purpose. The site is small; feature-slicing w
 
 - **Server Components by default.** Every page is a Server Component except the three interactive ones, which carry `"use client"`: `Header.tsx` (mobile menu state), `StickyMobileCTA.tsx` + `SiteTracker.tsx` (scroll/route listeners), and the two form pages (`contact`, `furniture-request`) plus `lib/tracking.ts`.
 - Push `"use client"` to the leaves — don't mark a whole page client just to add one interactive widget.
-- **Secrets never reach the client.** `RESEND_API_KEY`, the lead from/to addresses, and `META_CAPI_TOKEN` / `META_PIXEL_ID` are read **only** inside `app/api/lead/route.ts` + `lib/server-tracking.ts` (server). Anything exposed to the browser must be `NEXT_PUBLIC_*` (`NEXT_PUBLIC_GA_ID`, `NEXT_PUBLIC_GOOGLE_ADS_ID`, `NEXT_PUBLIC_META_PIXEL_ID`, `NEXT_PUBLIC_GADS_LABEL_*`). Do not import the API route or read a server-only `process.env` from any component.
+- **Secrets never reach the client.** `RESEND_API_KEY`, the lead from/to addresses, `SUPABASE_URL` / `SUPABASE_SERVICE_ROLE_KEY`, and `META_CAPI_TOKEN` / `META_PIXEL_ID` are read **only** inside `app/api/lead/route.ts` + `lib/server-tracking.ts` (server). The Supabase service-role key is server-only — never expose it as `NEXT_PUBLIC_*`. Anything exposed to the browser must be `NEXT_PUBLIC_*` (`NEXT_PUBLIC_GA_ID`, `NEXT_PUBLIC_GOOGLE_ADS_ID`, `NEXT_PUBLIC_META_PIXEL_ID`, `NEXT_PUBLIC_GADS_LABEL_*`). Do not import the API route or read a server-only `process.env` from any component.
 
 ## 3a. Conversion tracking (Google Ads + Meta)
 
 Built to the WNF/Stay-Portland playbook. Conversions fire on multiple paths so no single failure loses a lead.
 
-- **Tag loaders (in code, `layout.tsx`):** `GtagScripts.tsx` = the SINGLE Google tag — one `gtag.js` configuring GA4 (`G-3NTVSELKP5`, `send_page_view`) **and** Google Ads (`AW-16716198764`, `allow_enhanced_conversions`). `MetaPixel.tsx` = Meta Pixel `1596777147987027` base + `PageView`. **GTM was removed** — its only tag duplicated the GA4 config (two Google tags for one property breaks GA4 `session_engaged`). Don't re-add a GA4 config in GTM while GA4 lives in `gtag.js`.
-- **Lead conversions** (`lib/tracking.ts`): `buildLeadTracking(identity)` runs BEFORE the `/api/lead` POST — it applies enhanced-conversions/advanced-matching user_data and mints one `eventId` (passed in the POST body so server CAPI shares it for dedup). On success, `fireLeadConversions()` fires the GA4 event, the direct Google Ads conversion (`send_to`, `transport_type:'beacon'`), and the browser Meta `Lead` (same `eventID`). Phone/text clicks → `fireClickConversion()` (browser-only).
+- **Tag loaders (in code, `layout.tsx`):** `GtagScripts.tsx` = the SINGLE Google tag — one `gtag.js` configuring GA4 (`G-3NTVSELKP5`, `send_page_view:false`; `SiteTracker` owns pageviews) **and** Google Ads (`AW-16716198764`, `allow_enhanced_conversions`). `MetaPixel.tsx` = Meta Pixel `1596777147987027` base + `PageView`. **GTM was removed** — its only tag duplicated the GA4 config (two Google tags for one property breaks GA4 `session_engaged`). Don't re-add a GA4 config in GTM while GA4 lives in `gtag.js`.
+- **Lead conversions** (`lib/tracking.ts`): `buildLeadTracking(identity)` runs BEFORE the `/api/lead` POST — it applies enhanced-conversions/advanced-matching user_data and mints one `eventId` (passed in the POST body so server CAPI shares it for dedup). On success, `fireLeadConversions()` fires the GA4 event, the direct Google Ads conversion (`send_to`, `transport_type:'beacon'`), and the browser Meta `Lead` (same `eventID`). Phone clicks and raw `sms:` links → `fireClickConversion()` (browser-only). Widget-opening "Text Us" buttons are GA4-only; the paid conversion fires after chat capture succeeds.
 - **Server-side (`lib/server-tracking.ts` ← `app/api/lead/route.ts`):** Meta CAPI `Lead` with the shared `eventId`, hashed em/ph/fn/ln, `_fbp`/`_fbc`, IP/UA — the resilient, high-EMQ half. Best-effort: never blocks or fails the email send.
 - **Conversion LABELS** are env-driven (`NEXT_PUBLIC_GADS_LABEL_*`) so the codebase carries no account-specific values; a missing label simply skips that fire (GA4-import covers it). `middleware.ts` persists `gclid`/`gbraid`/`wbraid` → `_gw_gclid` cookie.
 
@@ -43,8 +43,9 @@ Built to the WNF/Stay-Portland playbook. Conversions fire on multiple paths so n
 | You're adding… | Put it in | Notes |
 |---|---|---|
 | A new standalone page | `src/app/<slug>/page.tsx` | Export `metadata` (title + description). Add to `sitemap.ts` if indexable. |
-| A new service area (city) | `src/data/service-areas.ts` | Add a `CityData` entry — it auto-generates the page, sitemap entry, schema, and FAQ. **Write genuinely unique** `description`/`highlights`/`nearby` (real neighborhoods), never spun boilerplate. |
+| A new service area (city) | `src/data/service-areas.ts` | Add a `CityData` entry — it auto-generates the page, sitemap entry, schema, and FAQ. **Write genuinely unique** content: `description` + `marketNote` (distinct prose), `neighborhoods`, `highlights`, `nearby`, and **per-city `faqs`** (vary the questions, not just answers) — never spun boilerplate. Set `heroImage`/`heroAlt` (GW's own optimized imagery, varied by market character) — but if a real per-city location photo exists at `public/images/service-areas/{slug}.webp`, register it in `cityHeroPhotos` (slug→alt) and `cityHero()` prefers it over `heroImage`. Also set `stagingRegion` (which staging-portfolio region feeds the listings fallback; `null` = far region → portfolio fallback). The page pulls real staged listings via `homesForCity()` and labels them honestly (`scope`: in-city vs. nearby/representative). **Also add a matching `cityInteriorContent[slug]` entry** (`note` + 2 interior-design `faqs`) — the city template renders a dedicated "Interior Design in {city}" section and merges the interior FAQs into the page + FAQ schema, so the interior-design Service schema is backed by real, unique content (not just a staging page wearing an ID schema). **Never fabricate numeric stats** — uniqueness comes from real neighborhoods + the real listing/sale data. |
 | Content derived from the ops DB + an external source | offline script in `scripts/` → generated `src/data/*.json` → typed wrapper `*.ts` | See §6b. The page imports the **committed JSON snapshot**, never fetches at build/runtime. Re-running the script is a manual, reviewed step. |
+| A new blog article | `src/data/blog/<slug>.json` + register in `src/data/blog-posts.ts` | See §6c. Authored JSON (typed by `blog/_schema.ts`), rendered by `app/blog/[slug]/page.tsx`. Adds itself to the index, sitemap, and `BlogPosting`+`FAQ`+`Breadcrumb` schema automatically. **Never fabricate stats** (no invented ROI/percentages/study citations); internal-link to money pages + siblings; if it replaces an old Wix `/post/<slug>`, add the 301 in `next.config.ts`. |
 | A shared UI piece (used 2+ places) | `src/components/` | Keep presentational. No data fetching, no business logic. |
 | Page-specific markup used once | Inline in that `page.tsx` | Don't pre-abstract (Rule of Three). |
 | Structured data / schema | `src/components/JsonLd.tsx` | One exported component per schema type. Reuse `LocalBusinessJsonLd`, `ServiceJsonLd`, `FAQJsonLd`, `BreadcrumbJsonLd`. |
@@ -80,18 +81,48 @@ The **Staged Homes** portfolio (`/staged-homes`) is the first page whose content
 ```
 scripts/enrich-staging-portfolio.py   (offline; never runs at build/deploy time)
   → src/data/staging-portfolio.json    (committed snapshot — the build reads THIS)
-  → src/data/staging-portfolio.ts       (typed wrapper: types + region grouping + status labels)
+  → src/data/staging-portfolio.ts       (typed wrapper: types + region grouping + status labels + homesForCity())
   → src/app/staged-homes/page.tsx        (Server Component; imports the wrapper)
+  → src/app/service-areas/[city]/page.tsx (city pages reuse the same data via homesForCity())
 ```
+
+The staged-home **card markup is shared**: `src/components/StagedHomeCard.tsx` renders one listing (photo or address-plate fallback + sale pill + Redfin/Zillow links) and is used by BOTH `/staged-homes` and each `/service-areas/[city]` page. `homesForCity(name, stagingRegion)` returns `{ scope, homes }` — staged-in-city when we have them, else the nearest staging region, else the portfolio's standout sales — so a city page always shows real proof and the heading is labeled to match the `scope` (never implying we staged in a city we haven't).
 
 - **Source of truth is the committed JSON.** The page never hits the network or the ops DB during build or render — keeps the site fully static and deploys deterministic. Regenerating is a deliberate, reviewed step (a human re-runs the script and commits the diff), exactly like editing `service-areas.ts` by hand.
 - **The script** pulls the curated showcase (recent real stagings, last ~12 mo) from the `greylynwayne-admin` Supabase, then enriches each with a **verified** Redfin deep-link + listing photo and a Zillow link. Photo lookup goes DuckDuckGo (`site:redfin.com {address}`) → exact-match guard (`url_matches`: house number + street name + zip must all match, or we reject — a neighbor's photo is worse than none) → impersonated Redfin page fetch → `og:image` → self-hosted in `public/images/staging/{ref}.jpg`. It is rate-limited + idempotent (skips already-verified homes) and **degrades gracefully**: any home without a verified photo still renders an editorial address card with working Redfin/Zillow links.
 - **Why self-host the photos:** hot-linking MLS CDN images breaks when a listing expires. Caveat below (§10).
 - **Don't** make the page `async`/fetch live, and don't widen this into a general scraping layer. If staging content needs to be self-served by staff, that's the CMS trigger (§9), not more scripts.
 
+## 6c. Blog content system (`src/data/blog/` → `app/blog/[slug]`)
+
+The blog is a data-driven content layer for top-of-funnel SEO (informational queries the money/city pages can't target — "cost to stage a home", "interior design trends 2026", "home staging tips"). Local staging competitors don't blog; the play is owning Portland-informational + low-difficulty long-tail.
+
+```
+src/data/blog/_schema.ts            types: BlogPost + Block union + FAQ
+src/data/blog/<slug>.json           one authored article per file (typed by _schema)
+src/data/blog-posts.ts              registers each JSON in order; exports blogPosts[] + getPost()
+  → src/app/blog/page.tsx           index (featured + grid), maps blogPosts
+  → src/app/blog/[slug]/page.tsx    article renderer + generateStaticParams + generateMetadata
+  → src/app/sitemap.ts              appends /blog/<slug> for every post
+  → src/components/JsonLd.tsx        ArticleJsonLd (BlogPosting) — alongside FAQ + Breadcrumb
+```
+
+- **Body is a typed `Block[]`** (`p`/`h2`/`h3`/`ul`/`ol`/`image`/`callout`/`quote`) — schema-friendly, no MDX/markdown pipeline. Paragraph/list/callout text supports **markdown-lite**: `**bold**` and `[label](/internal-path)` links, parsed by the renderer in `[slug]/page.tsx`. Keep it minimal; don't grow it into a full markdown engine.
+- **Adding a post** = drop a `<slug>.json` + add one import line to `blog-posts.ts`. It then auto-appears in the index, sitemap, and gets `BlogPosting` + `FAQPage` + `BreadcrumbList` JSON-LD. Images must already exist under `public/images/`.
+- **Rules:** never fabricate stats/ROI/study citations (CRO zombie-stat rule); every post internal-links to money pages (`/home-staging`, `/interior-design`, `/contact`) + ≥1 sibling post; `related[]` drives the "Keep Reading" footer. The page appends its own CTA + renders the FAQs, so post bodies should NOT duplicate a big CTA or a "FAQ" heading.
+- **Migration tie-in:** old Wix `/post/<slug>` articles 301 to the closest new post in `next.config.ts` (specific maps before the `/post/:slug*` catch-all). `params` is a **Promise** (Next 16) — `await` it in both `generateMetadata` and the page.
+
 ## 7. The lead endpoint (`app/api/lead/route.ts`)
 
-The only server-side logic. Both forms POST JSON here; it validates, drops honeypot hits, and emails a formatted notification via **Resend** (raw `fetch`, no SDK dependency) with `reply_to` = the customer. Config via env (`RESEND_API_KEY`, `LEAD_FROM_EMAIL`, `LEAD_TO_EMAIL`). On misconfig or send failure it returns a friendly error the form renders. Keep this the single lead path — new forms add a `formType`, not a new endpoint.
+The only server-side logic. Both forms (and the chat widget) POST JSON here; it validates, runs the **abuse defenses below**, then (a) **persists the lead to Supabase** and (b) emails a formatted notification via **Resend** (raw `fetch`, no SDK dependency) with `reply_to` = the customer. Config via env (`RESEND_API_KEY`, `LEAD_FROM_EMAIL`, `LEAD_TO_EMAIL`). On misconfig or send failure it returns a friendly error the form renders. Keep this the single lead path — new forms add a `formType`, not a new endpoint.
+
+**Durable lead record (`persistLead()`):** every accepted lead is written to the `website_leads` table in the `greylynwayne-admin` Supabase project (`hhtmipyjhogvbycnfjji`) via raw PostgREST `fetch` with the server-only `SUPABASE_SERVICE_ROLE_KEY` (no SDK dependency). Columns capture name/email/phone/service/message + attribution (`page_path`, `gclid`, `event_id`, `fbp`, `fbc`, `user_agent`, `ip`) + a full `raw` jsonb safety net. The table is **RLS-on with no policies** → only the service-role key can touch it. **Fully decoupled from email**: `persistLead` runs first and never throws — a DB failure never blocks the Resend send, and a send failure never loses the DB record. This is the only first-party datastore the site has; visitors are still GA4/Meta-only (no visitor table). Schema lives in `greylynwayne-admin/supabase/migrations/` (`*_website_leads.sql`), applied via `supabase db push`.
+
+**Anti-spam (layered — order matters, all in the route):**
+1. **Honeypot** — hidden `company` field; if filled, silently return `{ok:true}` (no email) so the bot thinks it won. Fields also escaped via `esc()` before going into the notification email (no HTML injection into the inbox).
+2. **Content filter** (`isSpammyContent`) — link-stuffed (≥5 URLs) or BBCode (`[url=]`) bodies get the same silent-accept. Thresholds are deliberately generous so a real client/realtor pasting a link or two is never dropped.
+3. **Rate limit** (`lib/rate-limit.ts`, `checkRateLimit`) — per client IP, **5 well-formed submissions / 10 min**, applied only AFTER honeypot + content + validation pass (so only real email-sending attempts count). Over the limit → `429` + `Retry-After`. In-memory + per-serverless-instance by design (no external dependency); swap the lib body for Upstash Redis behind the same signature if abuse ever outgrows it.
+4. **Cloudflare Turnstile** (`components/Turnstile.tsx` client widget + `verifyTurnstile()` server check) — the real bot wall. Invisible managed CAPTCHA on the contact + furniture-request forms; the browser gets a token, the server verifies it with Cloudflare's siteverify **before** sending the email. Site key = public `NEXT_PUBLIC_TURNSTILE_SITE_KEY`; secret = server-only `TURNSTILE_SECRET_KEY`. **Fail-open by design**: if the secret env isn't set, or Cloudflare is unreachable (network error / non-200), verification is skipped so a hiccup never blocks a real lead — only an explicit "invalid" verdict returns `403`. **Chat is exempt** (no widget — it's phone-first and fails open to SMS; honeypot + rate limit still cover it). Token is single-use, so the forms reset the widget on any failed submit. Cloudflare widget "Greylyn Wayne Lead Forms" lives under account `bb4b10946203d44f10399e80c4f94a84` (hayden.laverty@gmail.com); domains greylynwayne.com / www / vercel.app (localhost auto-allowed).
 
 ## 8. Conventions & gates
 

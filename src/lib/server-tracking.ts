@@ -93,6 +93,7 @@ export async function sendMetaLeadCapi(input: CapiLeadInput): Promise<boolean> {
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
+        signal: AbortSignal.timeout(3000),
         body: JSON.stringify(payload),
       },
     );

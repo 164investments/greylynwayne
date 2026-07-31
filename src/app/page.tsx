@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FAQJsonLd } from "@/components/JsonLd";
 import SplitHero from "@/components/SplitHero";
+import HeroStacked from "@/components/HeroStacked";
 
 const services = [
   {
@@ -9,15 +10,15 @@ const services = [
     description:
       "Professionally staged homes sell faster and at higher prices. Our expert staging highlights your property's best features to attract qualified buyers.",
     href: "/home-staging",
-    image: "/images/home-staging-1.webp",
-    alt: "Professional home staging by Greylyn Wayne in Portland, Oregon — industrial loft living room with curated furnishings",
+    image: "/images/portland-home-staging-living-room.webp",
+    alt: "Professional home staging by Greylyn Wayne in Portland, Oregon — staged living room with gray sectional, marble coffee table, and curated art",
   },
   {
     title: "Interior Design",
     description:
       "Transform your home with personalized, high-end interior design. Whether refreshing a single room or a full remodel, we curate spaces that feel beautiful and livable.",
     href: "/interior-design",
-    image: "/images/home-staging-2.jpg",
+    image: "/images/portland-interior-design-white-kitchen.webp",
     alt: "Interior design by Greylyn Wayne — modern white kitchen with open shelving and natural wood accents in Portland home",
   },
   {
@@ -35,6 +36,43 @@ const stats = [
   { value: "4x", label: "Street of Dreams Designer" },
   { value: "2,500+", label: "Homes Transformed" },
   { value: "4.9★", label: "163 Google Reviews" },
+];
+
+// Credential badges shown directly under the hero. Icon + short label, in a
+// hairline-divided grid so the proof points read as designed credentials.
+const credentials = [
+  {
+    label: "4× Street of Dreams Designer",
+    icon: (
+      <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.4} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0" />
+      </svg>
+    ),
+  },
+  {
+    label: "People's & Professional's Choice Award",
+    icon: (
+      <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.4} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+      </svg>
+    ),
+  },
+  {
+    label: "2,500+ Homes Staged",
+    icon: (
+      <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.4} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+      </svg>
+    ),
+  },
+  {
+    label: "Free Consultations",
+    icon: (
+      <svg className="h-7 w-7" fill="none" viewBox="0 0 24 24" strokeWidth={1.4} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+      </svg>
+    ),
+  },
 ];
 
 // Real, verbatim 5-star Google reviews (see /reviews + src/data/google-reviews.json).
@@ -88,54 +126,78 @@ export default function Home() {
     <>
       <FAQJsonLd faqs={homeFaqs} />
 
-      {/* Hero — split editorial */}
-      <SplitHero
-        eyebrow="Portland, Oregon · Est. 2015"
-        title={
-          <>
-            Home Staging &<br />
-            Interior Design
-          </>
-        }
-        subtitle="We transform spaces into stunning showcases that sell faster, live better, and feel like home."
-        imageSrc="/images/hero-interior.webp"
-        imageAlt="Luxury interior design by Greylyn Wayne — Alla Famiglia Street of Dreams dining room in Portland, Oregon"
-      />
+      {/* Hero — stacked (clean photo on top, teal text band below) on mobile,
+          matching the brand's established Wix pattern; split editorial on desktop.
+          No text is layered over the photo. */}
+      <div className="lg:hidden">
+        <HeroStacked
+          eyebrow="Portland, Oregon · Est. 2015"
+          title={
+            <>
+              Home Staging &<br />
+              Interior Design
+            </>
+          }
+          subtitle="We transform spaces into stunning showcases that sell faster, live better, and feel like home."
+          imageSrc="/images/hero-home-top.webp"
+          imageAlt="Bright, modern Portland kitchen styled by Greylyn Wayne — island, rattan pendants, and natural wood floors"
+        />
+      </div>
+      <div className="hidden lg:block">
+        <SplitHero
+          eyebrow="Portland, Oregon · Est. 2015"
+          title={
+            <>
+              Home Staging &<br />
+              Interior Design
+            </>
+          }
+          subtitle="We transform spaces into stunning showcases that sell faster, live better, and feel like home."
+          imageSrc="/images/hero-interior.webp"
+          imageAlt="Luxury interior design by Greylyn Wayne — Alla Famiglia Street of Dreams dining room in Portland, Oregon"
+        />
+      </div>
 
-      {/* Trust bar */}
-      <section className="py-6 bg-warm border-b border-gray-100">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-xs text-charcoal-light tracking-wider uppercase">
-            <span>4x Street of Dreams Designer</span>
-            <span className="hidden sm:inline text-teal">&middot;</span>
-            <span>People&apos;s & Professional&apos;s Choice Award</span>
-            <span className="hidden sm:inline text-teal">&middot;</span>
-            <span>2,500+ Homes Staged</span>
-            <span className="hidden sm:inline text-teal">&middot;</span>
-            <span>Free Consultations</span>
+      {/* Credentials — designed badge grid (icons + hairline dividers) */}
+      <section className="bg-warm py-10 sm:py-14">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-teal-bg border border-teal-bg">
+            {credentials.map((c) => (
+              <div
+                key={c.label}
+                className="bg-warm flex flex-col items-center text-center gap-3 px-4 py-8"
+              >
+                <span className="text-teal" aria-hidden="true">
+                  {c.icon}
+                </span>
+                <span className="text-charcoal text-[13px] font-medium tracking-[0.12em] uppercase leading-snug">
+                  {c.label}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Services */}
-      <section className="py-24 lg:py-32 bg-warm">
+      <section className="py-16 sm:py-24 lg:py-32 bg-warm">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 sm:mb-12">
             <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
               What We Do
             </p>
-            <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl text-charcoal">
+            <h2 className="font-[family-name:var(--font-playfair)] text-4xl lg:text-5xl text-charcoal">
               Our Services
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
             {services.map((service) => (
               <Link
                 key={service.title}
                 href={service.href}
-                className="group"
+                className="group flex flex-col bg-white border border-gray-100 shadow-[0_1px_3px_rgba(62,66,66,0.05)] hover:shadow-[0_16px_40px_rgba(62,66,66,0.14)] hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="relative aspect-[4/3] overflow-hidden mb-6">
+                <div className="relative aspect-[16/10] overflow-hidden">
                   <Image
                     src={service.image}
                     alt={service.alt}
@@ -143,15 +205,20 @@ export default function Home() {
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <h3 className="font-[family-name:var(--font-playfair)] text-2xl mb-3 group-hover:text-teal transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-charcoal-light text-sm leading-relaxed">
-                  {service.description}
-                </p>
-                <span className="inline-block mt-4 text-teal text-sm tracking-wider uppercase font-medium">
-                  Learn More &rarr;
-                </span>
+                <div className="flex flex-col flex-1 p-6 lg:p-7">
+                  <h3 className="font-[family-name:var(--font-playfair)] text-2xl mb-3 group-hover:text-teal transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-charcoal-light text-base leading-relaxed">
+                    {service.description}
+                  </p>
+                  <span className="inline-flex items-center gap-2 mt-auto pt-5 text-teal text-sm tracking-wider uppercase font-medium">
+                    Learn More
+                    <span className="transition-transform duration-300 group-hover:translate-x-1">
+                      &rarr;
+                    </span>
+                  </span>
+                </div>
               </Link>
             ))}
           </div>
@@ -159,13 +226,13 @@ export default function Home() {
       </section>
 
       {/* About preview */}
-      <section className="py-24 lg:py-32">
+      <section className="py-16 sm:py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="relative aspect-[4/5] overflow-hidden">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <div className="relative aspect-[3/2] overflow-hidden">
               <Image
-                src="/images/home-staging-1.webp"
-                alt="Greylyn Wayne staged industrial loft living room in Portland — leather sofas, exposed brick, curated decor"
+                src="/images/team/team-group.webp"
+                alt="The Greylyn Wayne team — Portland's family-run home staging and interior design studio led by Jody Wallace"
                 fill
                 className="object-cover"
               />
@@ -174,7 +241,7 @@ export default function Home() {
               <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
                 About Us
               </p>
-              <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl text-charcoal mb-6">
+              <h2 className="font-[family-name:var(--font-playfair)] text-4xl lg:text-5xl text-charcoal mb-6">
                 Portland&apos;s Family-Run Design Studio
               </h2>
               <p className="text-charcoal-light leading-relaxed mb-6">
@@ -201,9 +268,9 @@ export default function Home() {
       </section>
 
       {/* Stats */}
-      <section className="py-20 bg-teal">
+      <section className="py-12 sm:py-16 lg:py-20 bg-teal">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6 md:gap-8">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl text-white mb-2">
@@ -219,13 +286,13 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 lg:py-32 bg-warm">
+      <section className="py-16 sm:py-24 lg:py-32 bg-warm">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 sm:mb-12">
             <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
               Testimonials
             </p>
-            <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl text-charcoal">
+            <h2 className="font-[family-name:var(--font-playfair)] text-4xl lg:text-5xl text-charcoal">
               What Our Clients Say
             </h2>
           </div>
@@ -255,7 +322,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="relative py-24 lg:py-32">
+      <section className="relative py-16 sm:py-24 lg:py-32">
         <div className="absolute inset-0">
           <Image
             src="/images/hero-staging.webp"
@@ -266,7 +333,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-charcoal/70" />
         </div>
         <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 text-center">
-          <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl lg:text-5xl text-white mb-6">
+          <h2 className="font-[family-name:var(--font-playfair)] text-4xl lg:text-5xl text-white mb-6">
             Ready to Transform Your Space?
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-4">
@@ -299,23 +366,23 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 lg:py-32">
+      <section className="py-16 sm:py-24 lg:py-32">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 sm:mb-12">
             <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
               Common Questions
             </p>
-            <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal">
+            <h2 className="font-[family-name:var(--font-playfair)] text-4xl lg:text-5xl text-charcoal">
               Frequently Asked Questions
             </h2>
           </div>
           <div className="space-y-8">
             {homeFaqs.map((faq, i) => (
               <div key={i} className="border-b border-gray-200 pb-8">
-                <h3 className="font-[family-name:var(--font-playfair)] text-lg mb-3">
+                <h3 className="font-[family-name:var(--font-playfair)] text-xl mb-3">
                   {faq.question}
                 </h3>
-                <p className="text-charcoal-light text-sm leading-relaxed">
+                <p className="text-charcoal-light text-base leading-relaxed">
                   {faq.answer}
                 </p>
               </div>
@@ -325,13 +392,13 @@ export default function Home() {
       </section>
 
       {/* Service areas — SEO-rich */}
-      <section className="py-24 lg:py-32 bg-warm">
+      <section className="py-16 sm:py-24 lg:py-32 bg-warm">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 sm:mb-12">
             <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
               Where We Work
             </p>
-            <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal mb-4">
+            <h2 className="font-[family-name:var(--font-playfair)] text-4xl lg:text-5xl text-charcoal mb-4">
               Home Staging & Interior Design Across Oregon
             </h2>
             <p className="text-charcoal-light max-w-2xl mx-auto">

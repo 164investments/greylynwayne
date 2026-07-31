@@ -36,7 +36,6 @@ export default function SiteTracker() {
         e.preventDefault();
         window.dispatchEvent(new Event("gw:open-chat"));
         trackEvent("text_cta_click", { cta_location: getLocation(chatTrigger) });
-        fireClickConversion("text"); // Primary conversion: text-first business.
         return;
       }
 
@@ -47,11 +46,30 @@ export default function SiteTracker() {
 
       // Phone clicks
       if (href.startsWith("tel:")) {
+        e.preventDefault();
         trackEvent("phone_click", {
           link_url: href,
           cta_location: isMobileCTA ? "mobile_cta" : getLocation(link),
         });
         fireClickConversion("phone"); // Primary conversion.
+        window.setTimeout(() => {
+          window.location.href = href;
+        }, 200);
+        return;
+      }
+
+      // Raw SMS links only. Widget-opening "Text Us" buttons are GA4-only here;
+      // the paid lead conversion fires after the chat capture succeeds.
+      if (href.startsWith("sms:")) {
+        e.preventDefault();
+        trackEvent("text_cta_click", {
+          link_url: href,
+          cta_location: isMobileCTA ? "mobile_cta" : getLocation(link),
+        });
+        fireClickConversion("text");
+        window.setTimeout(() => {
+          window.location.href = href;
+        }, 200);
         return;
       }
 

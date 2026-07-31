@@ -1,16 +1,24 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-teal: #6b8f90;
-  --color-teal-dark: #4a6e6f;
-  --color-teal-light: #8da4a0;
-  --color-teal-bg: #e8eeed;
-  --color-warm: #faf8f5;
-  --color-cream: #f0ebe4;
-  --color-charcoal: #2a2a2a;
-  --color-charcoal-light: #4a4a4a;
-  --font-serif: "Playfair Display", Georgia, serif;
-  --font-sans: "Inter", system-ui, sans-serif;
+  /* Greylyn Wayne brand palette — official 6 colors (Brand Guidelines, Summer 2025).
+     GW Teal #6E9294 · GW Grey #6B7070 · GW Grey Shade #3E4242
+     GW Almost White #F5F6F4 · GW Grey Tint #E0E3E3 · GW Teal Tint #D2D9D8
+     Token names are kept stable so existing utilities (text-teal, bg-warm, …) need no edits. */
+  --color-teal: #6e9294;          /* GW Teal — primary */
+  --color-teal-dark: #3e4242;     /* GW Grey Shade — dark hover/accent */
+  --color-teal-light: #d2d9d8;    /* GW Teal Tint */
+  --color-teal-bg: #e0e3e3;       /* GW Grey Tint — light section panel */
+  --color-warm: #f5f6f4;          /* GW Almost White */
+  --color-cream: #d2d9d8;         /* GW Teal Tint (brand has no cream/beige) */
+  --color-charcoal: #3e4242;      /* GW Grey Shade — body/heading text */
+  --color-charcoal-light: #6b7070;/* GW Grey — secondary text */
+
+  /* Type — EB Garamond (display + body) + Montserrat (uppercase labels/subheads).
+     EB Garamond is loaded into the --font-playfair slot so the 165 existing
+     `var(--font-playfair)` heading references render EB Garamond with no edits. */
+  --font-serif: var(--font-playfair), "EB Garamond", Georgia, serif;
+  --font-sans: var(--font-montserrat), "Montserrat", system-ui, sans-serif;
 }
 
 html {
@@ -18,14 +26,31 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
+  /* Brand body copy is EB Garamond */
+  font-family: var(--font-serif);
   color: var(--color-charcoal);
   background: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Brand "Heading 2" role: every uppercase label/eyebrow/nav/button is Montserrat,
+   tracked. Display headings (EB Garamond, carry the playfair font class) are excluded. */
+.uppercase:not([class*="playfair"]) {
+  font-family: var(--font-sans);
+  letter-spacing: 0.1em;
+}
+
 ::selection {
-  background: var(--color-teal-light);
+  background: var(--color-teal);
   color: white;
+}
+
+/* Chat whisper (proactive nudge) entrance — respects reduced-motion */
+@keyframes gwWhisperIn {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-\[gwWhisperIn_\.35s_ease-out\] { animation: none !important; }
 }

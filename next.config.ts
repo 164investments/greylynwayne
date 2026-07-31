@@ -39,9 +39,20 @@ const nextConfig: NextConfig = {
       // 1:1 slug rebase is safe.
       { source: "/location/home-staging-:city", destination: "/service-areas/:city", permanent: true },
 
-      // --- Blog: new site has no per-post pages, so all old posts → /blog ---
+      // --- Blog ---
+      // Old Wix blog index → new blog. Old /post/<slug> articles map to the
+      // closest new (rewritten, expanded) article where one exists; the rest
+      // fall through to the /blog index. Specific maps MUST precede the
+      // catch-all (Next applies the first matching redirect).
       { source: "/home-staging-interior-design-blog", destination: "/blog", permanent: true },
       { source: "/home-staging-interior-design-blog/:path*", destination: "/blog", permanent: true },
+      { source: "/post/we-know-how-to-enhance-your-lived-in-listing", destination: "/blog/staging-an-occupied-home", permanent: true },
+      { source: "/post/interior-design-trends-for-2024", destination: "/blog/interior-design-trends-2026", permanent: true },
+      { source: "/post/cozy-design-prep-for-small-spaces", destination: "/blog/small-space-design-ideas", permanent: true },
+      { source: "/post/staging-benefits-and-team-updates", destination: "/blog/is-home-staging-worth-it", permanent: true },
+      { source: "/post/the-design-consultation-process", destination: "/blog/how-to-stage-your-house-to-sell", permanent: true },
+      { source: "/post/how-to-create-a-cozy-home-this-season", destination: "/blog/small-space-design-ideas", permanent: true },
+      // Remaining old posts (e.g. greylyn-wayne-x-redfin) → blog index.
       { source: "/post/:slug*", destination: "/blog", permanent: true },
 
       // --- Legacy Wix asset: Alla Famiglia house-details PDF ---

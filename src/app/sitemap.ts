@@ -1,9 +1,13 @@
 import type { MetadataRoute } from "next";
 import { cities } from "@/data/service-areas";
+import { blogPosts } from "@/data/blog-posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.greylynwayne.com";
-  const now = new Date();
+  // Fixed content-revision date, NOT new Date() — stamping "now" on every build
+  // is a fake freshness signal Google learns to ignore. Bump this when the
+  // static/city page content is meaningfully revised. (Blog uses per-post dates.)
+  const now = new Date("2026-07-04T12:00:00");
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
@@ -34,5 +38,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...cityPages];
+  const blogPostPages: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+    url: `${baseUrl}/blog/${post.slug}`,
+    lastModified: new Date((post.updated || post.date) + "T12:00:00"),
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...cityPages, ...blogPostPages];
 }

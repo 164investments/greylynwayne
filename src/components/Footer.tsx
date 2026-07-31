@@ -141,7 +141,19 @@ export default function Footer() {
                   design@greylynwayne.com
                 </a>
               </li>
-              <li>Portland, Oregon</li>
+              <li>
+                <a
+                  href="https://maps.google.com/?q=1011+SE+Oak+St,+Portland,+OR+97214"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-teal-light transition-colors"
+                >
+                  1011 SE Oak St
+                  <br />
+                  Portland, OR 97214
+                </a>
+              </li>
+              <li className="pt-1">Mon–Sat · 8am–8pm</li>
             </ul>
             <div className="flex gap-4 mt-6">
               {socials.map((social) => (

@@ -11,7 +11,7 @@
  *                   sharing one eventID so Meta dedups the pair.
  *  - Enhanced Conversions / Advanced Matching: we have the lead's identity at
  *    submit time, so user_data is attached to both platforms.
- *  - transport_type:'beacon' so fires survive the SMS / navigation that follows.
+ *  - transport_type:'beacon' so Ads fires survive the SMS / navigation that follows.
  *
  * Conversion LABELS come from env (set after the native Google Ads conversion
  * actions are created). If a label is absent the Ads fire is skipped gracefully
@@ -27,7 +27,7 @@ declare global {
 }
 
 // Initialize dataLayer + gtag stub at module level so events queue before the
-// async gtag.js / GTM scripts load (prevents the useEffect-before-script race).
+// async gtag.js script loads (prevents the useEffect-before-script race).
 if (typeof window !== "undefined") {
   window.dataLayer = window.dataLayer || [];
   if (!window.gtag) {
@@ -89,16 +89,6 @@ export function trackEvent(
   else window.gtag("event", event);
 }
 
-/** Push an object-style event to the GTM dataLayer (for GTM-managed tags). */
-export function trackGTMEvent(
-  event: string,
-  data?: Record<string, string | number | boolean>,
-) {
-  if (typeof window === "undefined") return;
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({ event, ...data });
-}
-
 function readCookie(name: string): string | undefined {
   if (typeof document === "undefined") return undefined;
   const match = document.cookie.match(
@@ -114,6 +104,37 @@ function newEventId(): string {
   return `gw-${Date.now()}-${Math.floor(Math.random() * 1e9)}`;
 }
 
+function normalizePhoneE164(phone: string | undefined): string | undefined {
+  if (!phone) return undefined;
+  const trimmed = phone.trim();
+  if (!trimmed) return undefined;
+
+  const digits = trimmed.replace(/[^\d]/g, "");
+  if (digits.length === 10) return `+1${digits}`;
+  if (digits.length === 11 && digits.startsWith("1")) return `+${digits}`;
+  if (trimmed.startsWith("+") && digits.length >= 11 && digits.length <= 15) {
+    return `+${digits}`;
+  }
+  return undefined;
+}
+
+function normalizePhoneDigitsWithCountry(phone: string | undefined): string | undefined {
+  const e164 = normalizePhoneE164(phone);
+  return e164?.replace(/[^\d]/g, "");
+}
+
+function splitFullName(name: string | undefined): {
+  firstName?: string;
+  lastName?: string;
+} {
+  const parts = name?.trim().split(/\s+/).filter(Boolean) || [];
+  if (parts.length === 0) return {};
+  return {
+    firstName: parts[0],
+    lastName: parts.length > 1 ? parts.slice(1).join(" ") : undefined,
+  };
+}
+
 /* ------------------------------------------------------------------ */
 /* Enhanced Conversions / Advanced Matching                            */
 /* ------------------------------------------------------------------ */
@@ -127,31 +148,25 @@ function newEventId(): string {
 function applyIdentity(identity: LeadIdentity) {
   if (typeof window === "undefined") return;
   const email = identity.email?.trim().toLowerCase() || undefined;
-  const phone = identity.phone?.replace(/[^\d+]/g, "") || undefined;
+  const googlePhone = normalizePhoneE164(identity.phone);
+  const metaPhone = normalizePhoneDigitsWithCountry(identity.phone);
   const firstName = identity.firstName?.trim().toLowerCase() || undefined;
   const lastName = identity.lastName?.trim().toLowerCase() || undefined;
 
-  if (window.gtag && (email || phone)) {
+  if (window.gtag && (email || googlePhone)) {
     window.gtag("set", "user_data", {
       ...(email ? { email } : {}),
-      ...(phone ? { phone_number: phone } : {}),
-      ...(firstName || lastName
-        ? {
-            address: {
-              ...(firstName ? { first_name: firstName } : {}),
-              ...(lastName ? { last_name: lastName } : {}),
-              country: "us",
-            },
-          }
-        : {}),
+      ...(googlePhone ? { phone_number: googlePhone } : {}),
+      // Do not send partial address data. Google requires first name, last name,
+      // postal code, and country for address matching; these forms do not collect ZIP.
     });
   }
 
   const pixelId = process.env.NEXT_PUBLIC_META_PIXEL_ID?.trim();
-  if (window.fbq && pixelId && (email || phone)) {
+  if (window.fbq && pixelId && (email || metaPhone)) {
     window.fbq("init", pixelId, {
       ...(email ? { em: email } : {}),
-      ...(phone ? { ph: phone } : {}),
+      ...(metaPhone ? { ph: metaPhone } : {}),
       ...(firstName ? { fn: firstName } : {}),
       ...(lastName ? { ln: lastName } : {}),
     });
@@ -169,14 +184,20 @@ function applyIdentity(identity: LeadIdentity) {
  * gtag/fbq for enhanced conversions.
  */
 export function buildLeadTracking(identity: LeadIdentity): LeadTracking {
-  applyIdentity(identity);
+  const normalizedIdentity = {
+    ...identity,
+    ...(identity.firstName && !identity.lastName
+      ? splitFullName(identity.firstName)
+      : {}),
+  };
+  applyIdentity(normalizedIdentity);
   return {
     eventId: newEventId(),
     fbp: readCookie("_fbp"),
     fbc: readCookie("_fbc"),
     gclid: readCookie("_gw_gclid") || readCookie("gclid"),
     pagePath: typeof window !== "undefined" ? window.location.pathname : "",
-    identity,
+    identity: normalizedIdentity,
   };
 }
 
@@ -195,9 +216,7 @@ export function fireLeadConversions(
   };
   if (service) params.service_type = service;
 
-  // GA4 (standalone gtag.js) + GTM dataLayer backup.
   trackEvent("generate_lead", params);
-  trackGTMEvent("generate_lead", params);
 
   fireAdsConversion(source, tracking.eventId);
   fireMetaLead(source, tracking.eventId, service);
