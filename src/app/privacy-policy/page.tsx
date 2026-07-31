@@ -16,7 +16,7 @@ export default function PrivacyPolicyPage() {
 
         <div className="prose prose-sm max-w-none text-charcoal-light leading-relaxed space-y-8">
           <p>
-            <strong>Last updated:</strong> February 2026
+            <strong>Last updated:</strong> July 2026
           </p>
 
           <div>
@@ -26,8 +26,14 @@ export default function PrivacyPolicyPage() {
             <p>
               When you contact us through our website, we collect the information
               you provide, including your name, email address, phone number, and
-              project details. We use this information solely to respond to your
-              inquiry and provide our home staging and interior design services.
+              project details. When you become a client, we also keep records of
+              the services we provided and the payments associated with them.
+            </p>
+            <p className="mt-3">
+              We also collect limited technical information automatically when
+              you visit, including your IP address, browser type, the pages you
+              view, and identifiers stored in cookies. Some of this is used for
+              advertising measurement, described below.
             </p>
           </div>
 
@@ -41,6 +47,10 @@ export default function PrivacyPolicyPage() {
               <li>Provide our home staging and interior design services</li>
               <li>Communicate with you about your project</li>
               <li>Improve our website and services</li>
+              <li>
+                Measure how well our advertising works and reach people with
+                similar interests
+              </li>
             </ul>
           </div>
 
@@ -49,11 +59,23 @@ export default function PrivacyPolicyPage() {
               Information Sharing
             </h2>
             <p>
-              We do not sell, trade, or otherwise transfer your personal
-              information to third parties. We may share information with trusted
-              service providers who assist us in operating our website or
-              conducting our business, as long as those parties agree to keep
-              this information confidential.
+              We do not sell or trade your personal information. We may share
+              information with trusted service providers who assist us in
+              operating our website or conducting our business, as long as those
+              parties agree to keep this information confidential.
+            </p>
+            <p className="mt-3">
+              We also share limited information with our advertising and
+              analytics partners, currently Google and Meta, so we can measure
+              the results of our advertising and reach people likely to need our
+              services. Before this information leaves our systems, contact
+              details such as your email address and phone number are converted
+              into an irreversible scrambled form (a cryptographic hash). Those
+              partners use it only to match against their own records and to
+              report results back to us. We may include the value of completed
+              work in this information so we can understand which advertising
+              leads to real projects. We do not share your project details,
+              messages, or payment card information with advertising partners.
             </p>
           </div>
 
@@ -62,10 +84,49 @@ export default function PrivacyPolicyPage() {
               Cookies & Analytics
             </h2>
             <p>
-              Our website may use cookies and analytics tools to understand how
+              Our website uses cookies and analytics tools to understand how
               visitors interact with our site. This helps us improve the user
-              experience. You can choose to disable cookies through your browser
-              settings.
+              experience. We currently use Google Analytics and Google Ads, and
+              the Meta Pixel. These tools may set cookies that record how you
+              arrived at our site and which pages you viewed. You can choose to
+              disable cookies through your browser settings.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="font-[family-name:var(--font-playfair)] text-xl text-charcoal mb-3">
+              Your Advertising Choices
+            </h2>
+            <p>
+              You can opt out of personalized advertising at any time. To have us
+              remove your information from any advertising audience we maintain,
+              email{" "}
+              <a
+                href="mailto:design@greylynwayne.com"
+                className="text-teal hover:text-teal-dark transition-colors"
+              >
+                design@greylynwayne.com
+              </a>{" "}
+              and we will remove it. You can also manage this directly with the
+              platforms through{" "}
+              <a
+                href="https://adssettings.google.com"
+                className="text-teal hover:text-teal-dark transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google Ad Settings
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://www.facebook.com/adpreferences"
+                className="text-teal hover:text-teal-dark transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Meta Ad Preferences
+              </a>
+              .
             </p>
           </div>
 
