@@ -58,7 +58,7 @@ Built to the WNF/Stay-Portland playbook. Conversions fire on multiple paths so n
 
 - **Canonical host is `https://www.greylynwayne.com`** — set once in `layout.tsx` `metadataBase` + per-page `alternates.canonical`. The authority (DR 26, 263 referring domains) and all GSC history sit on this host. Never let www and apex both serve 200 — Vercel handles apex→www + http→https at the domain layer.
 - Every page exports `metadata` with a CTR-focused title + description (local hook + use-case + keyword; no price).
-- `sitemap.ts` lists every indexable URL; `robots.ts` allows all but `/api/`. **PPC/ad landing pages, if added, must set `robots:{index:false,follow:true}` AND be excluded from `sitemap.ts`** (avoid cannibalization).
+- `sitemap.ts` lists every indexable URL. `public/robots.txt` is the robots file (static, so it can emit `Content-Signal` and point at `/llms.txt`). Do not re-add `src/app/robots.ts` — a typed `MetadataRoute.Robots` cannot emit those lines and conflicts with the static file. `public/llms.txt` is the agent overview; the root layout advertises it with `rel=alternate` and the footer has a visible "For AI agents" link. **PPC/ad landing pages, if added, must set `robots:{index:false,follow:true}` AND be excluded from `sitemap.ts`** (avoid cannibalization).
 - Pages that should never be indexed (404, the QR link hub) set `robots:{index:false}` in their `metadata`.
 - AI-visibility files live in `public/llm.txt`, `public/llm-full.txt`, `public/.well-known/llm.txt`.
 

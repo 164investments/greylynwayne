@@ -177,12 +177,20 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Greylyn Wayne. All rights
             reserved.
           </p>
-          <Link
-            href="/privacy-policy"
-            className="text-gray-500 hover:text-gray-400 text-xs transition-colors"
-          >
-            Privacy Policy
-          </Link>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/privacy-policy"
+              className="text-gray-500 hover:text-gray-400 text-xs transition-colors"
+            >
+              Privacy Policy
+            </Link>
+            <a
+              href="/llms.txt"
+              className="text-gray-500 hover:text-gray-400 text-xs transition-colors"
+            >
+              For AI agents
+            </a>
+          </div>
         </div>
       </div>
     </footer>
