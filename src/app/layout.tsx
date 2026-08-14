@@ -49,8 +49,7 @@ export const metadata: Metadata = {
     "interior design near me Portland",
   ],
   openGraph: {
-    title:
-      "Greylyn Wayne | Home Staging & Interior Design — Portland, Oregon",
+    title: "Greylyn Wayne | Home Staging & Interior Design — Portland, Oregon",
     description:
       "Portland's award-winning home staging & interior design company. 4x Street of Dreams featured designer. Free consultation — (971) 930-0220.",
     url: "https://www.greylynwayne.com",
@@ -85,6 +84,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${ebGaramond.variable} ${montserrat.variable}`}>
+      <head>
+        <link
+          rel="alternate"
+          type="text/plain"
+          href="/llms.txt"
+          title="llms.txt"
+        />
+      </head>
       <body>
         {/* GA4 + Google Ads (single Google tag) and Meta Pixel load in code.
             GTM was removed: its only tag was a duplicate GA4 config, which breaks
