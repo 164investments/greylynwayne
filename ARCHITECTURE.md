@@ -79,17 +79,29 @@ Next.js `permanent: true` emits **HTTP 308**, which Google treats identically to
 The **Staged Homes** portfolio (`/staged-homes`) is the first page whose content is *generated*, not hand-authored. The pattern, and the rule for anything like it:
 
 ```
-scripts/enrich-staging-portfolio.py   (offline; never runs at build/deploy time)
+scripts/build-listing-index.py        (offline; ops DB + Redfin gis-csv — addresses, URLs, sale status)
+scripts/enrich-photos.py              (offline; slow-drip detail-page pass — listing photo + verified ask)
   → src/data/staging-portfolio.json    (committed snapshot — the build reads THIS)
   → src/data/staging-portfolio.ts       (typed wrapper: types + region grouping + status labels + homesForCity())
   → src/app/staged-homes/page.tsx        (Server Component; imports the wrapper)
   → src/app/service-areas/[city]/page.tsx (city pages reuse the same data via homesForCity())
 ```
 
+**The two-pass split exists because Redfin rate-limits two different doors very differently.** The original
+`scripts/enrich-staging-portfolio.py` + `scripts/enrich-sale-data.py` pair resolved each address through
+DuckDuckGo and then scraped its detail page; in 2026-09 Redfin's WAF began walling the IP after roughly six
+detail-page loads (a `202`/`429` with a ~2KB body), which made even an 88-home pass take hours. Both scripts
+are kept for reference but **`enrich-sale-data.py` must not be run** — it wrote `h["sale"] = None` on every
+blocked fetch, so a throttled run silently blanks good sale data. `refresh-sale-data.py` is its safe
+replacement for the rare case a per-home re-read is actually needed.
+
 The staged-home **card markup is shared**: `src/components/StagedHomeCard.tsx` renders one listing (photo or address-plate fallback + sale pill + Redfin/Zillow links) and is used by BOTH `/staged-homes` and each `/service-areas/[city]` page. `homesForCity(name, stagingRegion)` returns `{ scope, homes }` — staged-in-city when we have them, else the nearest staging region, else the portfolio's standout sales — so a city page always shows real proof and the heading is labeled to match the `scope` (never implying we staged in a city we haven't).
 
 - **Source of truth is the committed JSON.** The page never hits the network or the ops DB during build or render — keeps the site fully static and deploys deterministic. Regenerating is a deliberate, reviewed step (a human re-runs the script and commits the diff), exactly like editing `service-areas.ts` by hand.
-- **The script** pulls the curated showcase (recent real stagings, last ~12 mo) from the `greylynwayne-admin` Supabase, then enriches each with a **verified** Redfin deep-link + listing photo and a Zillow link. Photo lookup goes DuckDuckGo (`site:redfin.com {address}`) → exact-match guard (`url_matches`: house number + street name + zip must all match, or we reject — a neighbor's photo is worse than none) → impersonated Redfin page fetch → `og:image` → self-hosted in `public/images/staging/{ref}.jpg`. It is rate-limited + idempotent (skips already-verified homes) and **degrades gracefully**: any home without a verified photo still renders an editorial address card with working Redfin/Zillow links.
+- **Pass 1 — `build-listing-index.py`** pulls recent real stagings (last ~13 mo) from the `greylynwayne-admin` Supabase, geocodes each address through the Census geocoder for a point, then asks Redfin's **`gis-csv`** API for a small `poly` box around it. That one unauthenticated call returns the canonical Redfin URL, city, zip, sold price, sold date and beds/baths/sqft — no DuckDuckGo, no detail page. Guards that matter: the geocode must land inside `REGION_BOXES` (a bare `407 NW 46th St, WA` geocodes to **Seattle**), the returned row must pass `same_house` (house number + street-name tokens + direction, with the Portland S↔SW rename allowed), and **any response at or near 350 rows is re-asked split by price band** — `gis-csv` truncates at 350 silently, so a capped inner-Portland box just quietly omits the house you wanted.
+- **Pass 2 — `enrich-photos.py`** is the only thing that touches a detail page, for the two fields `gis-csv` lacks: the `og:image` listing photo and `listingPrice`. It paces slowly, backs off on the WAF wall, writes after every home and is safe to kill and resume.
+- **`sale.ask_verified` is the rule for over-ask claims.** "Sold $X over asking" needs the sold price *and* the final ask; `gis-csv` carries only the sold price, so pairing it with a list price captured months earlier would silently ignore any price cut. Only pass 2 sets `ask_verified`, because it reads both off one page in one request, and the wrapper renders an over-ask figure only when it is set.
+- **Degrades gracefully**: a home without a verified photo still renders an editorial address card with working Redfin/Zillow links (though the page currently filters those out — see `homes` in the wrapper).
 - **Why self-host the photos:** hot-linking MLS CDN images breaks when a listing expires. Caveat below (§10).
 - **Don't** make the page `async`/fetch live, and don't widen this into a general scraping layer. If staging content needs to be self-served by staff, that's the CMS trigger (§9), not more scripts.
 

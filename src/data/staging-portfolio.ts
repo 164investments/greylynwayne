@@ -19,9 +19,11 @@ export type StagedHome = {
     price_cents?: number;       // sold price (if sold) or current asking
     price_label?: string;       // "Sold Price" | "Price" | "List Price"
     list_price_cents?: number;  // original list price
+    ask_verified?: boolean;     // list price + sold price came off ONE page read
     dom?: number;               // days on market
     is_sold?: boolean;
     sold_date?: string;         // ISO yyyy-mm-dd
+    source?: string;            // "gis-csv" | undefined (detail page)
   } | null;
 };
 
@@ -55,7 +57,11 @@ export function saleInfo(h: StagedHome): SaleInfo {
     !!s.is_sold &&
     (s.sold_date ? s.sold_date >= "2025-01-01" : s.price_label === "Sold Price");
   const price = s.price_cents ?? null;
-  const list = s.list_price_cents ?? null;
+  // An over-ask number is only honest when the sold price and the ask were read off the
+  // same page in the same request. The bulk listing feed carries the sold price alone, so
+  // pairing it with an ask captured months earlier would quietly ignore any price cut and
+  // overstate the result. No ask_verified, no over-ask claim — the card just says "Sold $X".
+  const list = s.ask_verified ? s.list_price_cents ?? null : null;
   const overAskCents = isSold && price != null && list != null ? price - list : null;
   const overAskPct =
     overAskCents != null && list ? Math.round((overAskCents / list) * 1000) / 10 : null;
