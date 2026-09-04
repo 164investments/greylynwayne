@@ -35,9 +35,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 1,
-      "source": "gis-csv"
-    }
+      "dom": 74,
+      "source": "gis-csv",
+      "list_price_cents": 77500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-206.jpg"
   },
   {
     "ref": "26-NS-205",
@@ -86,9 +90,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 3,
-      "source": "gis-csv"
-    }
+      "dom": 63,
+      "source": "gis-csv",
+      "list_price_cents": 37990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-203.jpg"
   },
   {
     "ref": "26-SM-019",
@@ -126,9 +134,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 6,
-      "source": "gis-csv"
-    }
+      "dom": 60,
+      "source": "gis-csv",
+      "list_price_cents": 52500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-202.jpg"
   },
   {
     "ref": "26-NS-201",
@@ -155,9 +167,12 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "March-6-2025",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 67,
+      "source": "gis-csv",
+      "list_price_cents": 157500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03"
   },
   {
     "ref": "26-NS-200",
@@ -184,9 +199,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 7,
-      "source": "gis-csv"
-    }
+      "dom": 31,
+      "source": "gis-csv",
+      "list_price_cents": 49900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-200.jpg"
   },
   {
     "ref": "26-NS-199",
@@ -213,9 +232,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 7,
-      "source": "gis-csv"
-    }
+      "dom": 31,
+      "source": "gis-csv",
+      "list_price_cents": 49900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-199.jpg"
   },
   {
     "ref": "26-NS-198",
@@ -242,9 +265,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 7,
-      "source": "gis-csv"
-    }
+      "dom": 31,
+      "source": "gis-csv",
+      "list_price_cents": 49900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-198.jpg"
   },
   {
     "ref": "26-NS-197",
@@ -271,9 +298,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 4,
-      "source": "gis-csv"
-    }
+      "dom": 71,
+      "source": "gis-csv",
+      "list_price_cents": 53500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-197.jpg"
   },
   {
     "ref": "26-NS-195",
@@ -355,9 +386,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 8,
-      "source": "gis-csv"
-    }
+      "dom": 105,
+      "source": "gis-csv",
+      "list_price_cents": 37900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-191.jpg"
   },
   {
     "ref": "26-NS-190",
@@ -384,9 +419,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 11,
-      "source": "gis-csv"
-    }
+      "dom": 25,
+      "source": "gis-csv",
+      "list_price_cents": 83000000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-190.jpg"
   },
   {
     "ref": "26-NS-189",
@@ -424,9 +463,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 4,
-      "source": "gis-csv"
-    }
+      "dom": 74,
+      "source": "gis-csv",
+      "list_price_cents": 66850000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-187.jpg"
   },
   {
     "ref": "26-NS-188",
@@ -486,9 +529,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 3,
-      "source": "gis-csv"
-    }
+      "dom": 48,
+      "source": "gis-csv",
+      "list_price_cents": 55000000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-185.jpg"
   },
   {
     "ref": "26-NS-184",
@@ -515,9 +562,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 7,
-      "source": "gis-csv"
-    }
+      "dom": 47,
+      "source": "gis-csv",
+      "list_price_cents": 61500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-184.jpg"
   },
   {
     "ref": "26-NS-183",
@@ -555,9 +606,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 20,
-      "source": "gis-csv"
-    }
+      "dom": 58,
+      "source": "gis-csv",
+      "list_price_cents": 123900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-182.jpg"
   },
   {
     "ref": "26-NS-181",
@@ -617,9 +672,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 34,
-      "source": "gis-csv"
-    }
+      "dom": 61,
+      "source": "gis-csv",
+      "list_price_cents": 62490000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-179.jpg"
   },
   {
     "ref": "26-NS-178",
@@ -646,9 +705,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 29,
-      "source": "gis-csv"
-    }
+      "dom": 47,
+      "source": "gis-csv",
+      "list_price_cents": 75000000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-178.jpg"
   },
   {
     "ref": "26-NS-176",
@@ -675,9 +738,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 27,
-      "source": "gis-csv"
-    }
+      "dom": 39,
+      "source": "gis-csv",
+      "list_price_cents": 64900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-176.jpg"
   },
   {
     "ref": "26-NS-177",
@@ -715,9 +782,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "August-28-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 66,
+      "source": "gis-csv",
+      "list_price_cents": 57500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-175.jpg"
   },
   {
     "ref": "26-NS-174",
@@ -744,9 +815,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 29,
-      "source": "gis-csv"
-    }
+      "dom": 90,
+      "source": "gis-csv",
+      "list_price_cents": 269990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-174.jpg"
   },
   {
     "ref": "26-NS-173",
@@ -773,9 +848,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 15,
-      "source": "gis-csv"
-    }
+      "dom": 59,
+      "source": "gis-csv",
+      "list_price_cents": 46990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-173.jpg"
   },
   {
     "ref": "26-NS-172",
@@ -813,9 +892,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 10,
-      "source": "gis-csv"
-    }
+      "dom": 105,
+      "source": "gis-csv",
+      "list_price_cents": 87500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-SM-016.jpg"
   },
   {
     "ref": "26-NS-171",
@@ -842,9 +925,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 7,
-      "source": "gis-csv"
-    }
+      "dom": 81,
+      "source": "gis-csv",
+      "list_price_cents": 149500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-171.jpg"
   },
   {
     "ref": "26-NS-170",
@@ -871,9 +958,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 30,
-      "source": "gis-csv"
-    }
+      "dom": 74,
+      "source": "gis-csv",
+      "list_price_cents": 119500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-170.jpg"
   },
   {
     "ref": "26-NS-169",
@@ -900,9 +991,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 42,
-      "source": "gis-csv"
-    }
+      "dom": 74,
+      "source": "gis-csv",
+      "list_price_cents": 67500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-169.jpg"
   },
   {
     "ref": "26-NS-168",
@@ -929,9 +1024,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 42,
-      "source": "gis-csv"
-    }
+      "dom": 57,
+      "source": "gis-csv",
+      "list_price_cents": 51990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-168.jpg"
   },
   {
     "ref": "26-NS-167",
@@ -958,9 +1057,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "August-14-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 39,
+      "source": "gis-csv",
+      "list_price_cents": 44900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-167.jpg"
   },
   {
     "ref": "26-NS-166",
@@ -1020,9 +1123,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 44,
-      "source": "gis-csv"
-    }
+      "dom": 105,
+      "source": "gis-csv",
+      "list_price_cents": 68900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-164.jpg"
   },
   {
     "ref": "26-NS-163",
@@ -1049,9 +1156,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "August-31-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 40,
+      "source": "gis-csv",
+      "list_price_cents": 71900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-163.jpg"
   },
   {
     "ref": "26-NS-162",
@@ -1078,9 +1189,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 45,
-      "source": "gis-csv"
-    }
+      "dom": 90,
+      "source": "gis-csv",
+      "list_price_cents": 159500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-162.jpg"
   },
   {
     "ref": "26-NS-161",
@@ -1118,9 +1233,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 25,
-      "source": "gis-csv"
-    }
+      "dom": 47,
+      "source": "gis-csv",
+      "list_price_cents": 61490000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-160.jpg"
   },
   {
     "ref": "26-NS-158",
@@ -1147,9 +1266,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 6,
-      "source": "gis-csv"
-    }
+      "dom": 32,
+      "source": "gis-csv",
+      "list_price_cents": 54998800,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-158.jpg"
   },
   {
     "ref": "26-NS-159",
@@ -1176,9 +1299,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 11,
-      "source": "gis-csv"
-    }
+      "dom": 32,
+      "source": "gis-csv",
+      "list_price_cents": 41900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-159.jpg"
   },
   {
     "ref": "26-NS-157",
@@ -1205,9 +1332,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 51,
-      "source": "gis-csv"
-    }
+      "dom": 61,
+      "source": "gis-csv",
+      "list_price_cents": 54990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-157.jpg"
   },
   {
     "ref": "26-NS-156",
@@ -1234,9 +1365,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-31-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 31,
+      "source": "gis-csv",
+      "list_price_cents": 52990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-156.jpg"
   },
   {
     "ref": "26-NS-155",
@@ -1263,9 +1398,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "August-13-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 46,
+      "source": "gis-csv",
+      "list_price_cents": 50700000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-155.jpg"
   },
   {
     "ref": "26-NS-153",
@@ -1303,9 +1442,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-31-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 58,
+      "source": "gis-csv",
+      "list_price_cents": 88500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-154.jpg"
   },
   {
     "ref": "26-NS-152",
@@ -1332,9 +1475,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-31-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 59,
+      "source": "gis-csv",
+      "list_price_cents": 43900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-152.jpg"
   },
   {
     "ref": "26-NS-151",
@@ -1372,9 +1519,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-31-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 74,
+      "source": "gis-csv",
+      "list_price_cents": 29900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-150.jpg"
   },
   {
     "ref": "26-NS-148",
@@ -1401,9 +1552,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "August-12-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 31,
+      "source": "gis-csv",
+      "list_price_cents": 52490000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-148.jpg"
   },
   {
     "ref": "26-NS-149",
@@ -1430,9 +1585,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "August-12-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 31,
+      "source": "gis-csv",
+      "list_price_cents": 52490000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-149.jpg"
   },
   {
     "ref": "26-NS-147",
@@ -1459,9 +1618,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 63,
-      "source": "gis-csv"
-    }
+      "dom": 89,
+      "source": "gis-csv",
+      "list_price_cents": 27950000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-147.jpg"
   },
   {
     "ref": "26-NS-146",
@@ -1488,9 +1651,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "August-5-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 18,
+      "source": "gis-csv",
+      "list_price_cents": 125000000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-146.jpg"
   },
   {
     "ref": "26-NS-145",
@@ -1517,9 +1684,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "August-18-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 80,
+      "source": "gis-csv",
+      "list_price_cents": 87900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-145.jpg"
   },
   {
     "ref": "26-NS-144",
@@ -1546,9 +1717,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "August-13-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 47,
+      "source": "gis-csv",
+      "list_price_cents": 65000000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-144.jpg"
   },
   {
     "ref": "26-NS-143",
@@ -1586,9 +1761,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "August-11-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 53,
+      "source": "gis-csv",
+      "list_price_cents": 48990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-142.jpg"
   },
   {
     "ref": "26-NS-141",
@@ -1616,8 +1795,12 @@
       "is_sold": false,
       "sold_date": null,
       "dom": 48,
-      "source": "gis-csv"
-    }
+      "source": "gis-csv",
+      "list_price_cents": 37500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-141.jpg"
   },
   {
     "ref": "26-NS-140",
@@ -1677,9 +1860,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 65,
-      "source": "gis-csv"
-    }
+      "dom": 46,
+      "source": "gis-csv",
+      "list_price_cents": 85900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-138.jpg"
   },
   {
     "ref": "26-NS-136",
@@ -1706,9 +1893,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-23-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 72,
+      "source": "gis-csv",
+      "list_price_cents": 72850000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-136.jpg"
   },
   {
     "ref": "26-NS-134",
@@ -1735,9 +1926,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 74,
-      "source": "gis-csv"
-    }
+      "dom": 55,
+      "source": "gis-csv",
+      "list_price_cents": 124900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-134.jpg"
   },
   {
     "ref": "26-NS-135",
@@ -1775,9 +1970,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 77,
-      "source": "gis-csv"
-    }
+      "dom": 67,
+      "source": "gis-csv",
+      "list_price_cents": 119500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-133.jpg"
   },
   {
     "ref": "26-NS-132",
@@ -1804,9 +2003,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 77,
-      "source": "gis-csv"
-    }
+      "dom": 46,
+      "source": "gis-csv",
+      "list_price_cents": 49990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-132.jpg"
   },
   {
     "ref": "26-NS-131",
@@ -1833,9 +2036,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-22-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 51,
+      "source": "gis-csv",
+      "list_price_cents": 54990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-131.jpg"
   },
   {
     "ref": "26-NS-130",
@@ -1862,9 +2069,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-30-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 16,
+      "source": "gis-csv",
+      "list_price_cents": 83500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-130.jpg"
   },
   {
     "ref": "26-NS-128",
@@ -1891,9 +2102,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 75,
-      "source": "gis-csv"
-    }
+      "dom": 72,
+      "source": "gis-csv",
+      "list_price_cents": 59900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-128.jpg"
   },
   {
     "ref": "26-NS-129",
@@ -1920,9 +2135,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 70,
-      "source": "gis-csv"
-    }
+      "dom": 48,
+      "source": "gis-csv",
+      "list_price_cents": 49900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-129.jpg"
   },
   {
     "ref": "26-NS-126",
@@ -1949,9 +2168,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 68,
-      "source": "gis-csv"
-    }
+      "dom": 135,
+      "source": "gis-csv",
+      "list_price_cents": 43500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-126.jpg"
   },
   {
     "ref": "26-NS-127",
@@ -1978,9 +2201,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-24-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 62,
+      "source": "gis-csv",
+      "list_price_cents": 89869800,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-127.jpg"
   },
   {
     "ref": "26-NS-125",
@@ -2007,9 +2234,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-29-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 58,
+      "source": "gis-csv",
+      "list_price_cents": 53900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-125.jpg"
   },
   {
     "ref": "26-NS-123",
@@ -2036,9 +2267,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-15-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 70,
+      "source": "gis-csv",
+      "list_price_cents": 47500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-123.jpg"
   },
   {
     "ref": "26-NS-124",
@@ -2065,9 +2300,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-2-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 16,
+      "source": "gis-csv",
+      "list_price_cents": 93000000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-124.jpg"
   },
   {
     "ref": "26-NS-122",
@@ -2094,9 +2333,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-31-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 53,
+      "source": "gis-csv",
+      "list_price_cents": 82500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-122.jpg"
   },
   {
     "ref": "26-NS-121",
@@ -2123,9 +2366,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-8-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 90,
+      "source": "gis-csv",
+      "list_price_cents": 185000000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-121.jpg"
   },
   {
     "ref": "26-NS-119",
@@ -2152,9 +2399,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 76,
-      "source": "gis-csv"
-    }
+      "dom": 54,
+      "source": "gis-csv",
+      "list_price_cents": 67900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-119.jpg"
   },
   {
     "ref": "26-NS-120",
@@ -2181,9 +2432,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-7-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 74,
+      "source": "gis-csv",
+      "list_price_cents": 51600000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-120.jpg"
   },
   {
     "ref": "26-NS-118",
@@ -2210,9 +2465,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-9-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 83,
+      "source": "gis-csv",
+      "list_price_cents": 49869800,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-118.jpg"
   },
   {
     "ref": "26-NS-116",
@@ -2239,9 +2498,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 86,
-      "source": "gis-csv"
-    }
+      "dom": 97,
+      "source": "gis-csv",
+      "list_price_cents": 235000000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-116.jpg"
   },
   {
     "ref": "26-NS-117",
@@ -2268,9 +2531,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "August-12-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 99,
+      "source": "gis-csv",
+      "list_price_cents": 39900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-117.jpg"
   },
   {
     "ref": "26-NS-115",
@@ -2297,9 +2564,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "August-4-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 68,
+      "source": "gis-csv",
+      "list_price_cents": 75000000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-115.jpg"
   },
   {
     "ref": "26-NS-114",
@@ -2326,9 +2597,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-31-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 61,
+      "source": "gis-csv",
+      "list_price_cents": 39500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-114.jpg"
   },
   {
     "ref": "26-NS-113",
@@ -2355,9 +2630,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 97,
-      "source": "gis-csv"
-    }
+      "dom": 59,
+      "source": "gis-csv",
+      "list_price_cents": 53900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-113.jpg"
   },
   {
     "ref": "26-NS-112",
@@ -2384,9 +2663,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 85,
-      "source": "gis-csv"
-    }
+      "dom": 105,
+      "source": "gis-csv",
+      "list_price_cents": 134500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-112.jpg"
   },
   {
     "ref": "26-NS-111",
@@ -2413,9 +2696,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "August-12-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 81,
+      "source": "gis-csv",
+      "list_price_cents": 129500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-111.jpg"
   },
   {
     "ref": "26-NS-110",
@@ -2442,9 +2729,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "June-26-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 90,
+      "source": "gis-csv",
+      "list_price_cents": 430000000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-110.jpg"
   },
   {
     "ref": "26-NS-109",
@@ -2471,9 +2762,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 95,
-      "source": "gis-csv"
-    }
+      "dom": 81,
+      "source": "gis-csv",
+      "list_price_cents": 62500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-109.jpg"
   },
   {
     "ref": "26-NS-108",
@@ -2500,9 +2795,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-15-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 81,
+      "source": "gis-csv",
+      "list_price_cents": 86500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-108.jpg"
   },
   {
     "ref": "26-NS-107",
@@ -2529,9 +2828,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-21-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 97,
+      "source": "gis-csv",
+      "list_price_cents": 359000000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-107.jpg"
   },
   {
     "ref": "26-NS-105",
@@ -2569,9 +2872,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "August-27-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 44,
+      "source": "gis-csv",
+      "list_price_cents": 74800000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-106.jpg"
   },
   {
     "ref": "26-NS-103",
@@ -2598,9 +2905,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "June-18-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 6,
+      "source": "gis-csv",
+      "list_price_cents": 110000000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-103.jpg"
   },
   {
     "ref": "26-NS-104",
@@ -2627,9 +2938,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "June-26-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 70,
+      "source": "gis-csv",
+      "list_price_cents": 49990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-104.jpg"
   },
   {
     "ref": "26-NS-101",
@@ -2656,9 +2971,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 98,
-      "source": "gis-csv"
-    }
+      "dom": 105,
+      "source": "gis-csv",
+      "list_price_cents": 159900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-101.jpg"
   },
   {
     "ref": "26-NS-102",
@@ -2685,9 +3004,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "June-26-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 58,
+      "source": "gis-csv",
+      "list_price_cents": 57990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-102.jpg"
   },
   {
     "ref": "26-NS-099",
@@ -2714,9 +3037,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 17,
-      "source": "gis-csv"
-    }
+      "dom": 89,
+      "source": "gis-csv",
+      "list_price_cents": 82500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-099.jpg"
   },
   {
     "ref": "26-NS-100",
@@ -2743,9 +3070,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "June-10-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 126,
+      "source": "gis-csv",
+      "list_price_cents": 29500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-100.jpg"
   },
   {
     "ref": "26-NS-098",
@@ -2772,9 +3103,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "May-22-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 69,
+      "source": "gis-csv",
+      "list_price_cents": 129900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-098.jpg"
   },
   {
     "ref": "26-NS-097",
@@ -2801,9 +3136,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 7,
-      "source": "gis-csv"
-    }
+      "dom": 90,
+      "source": "gis-csv",
+      "list_price_cents": 35900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-097.jpg"
   },
   {
     "ref": "26-NS-096",
@@ -2830,9 +3169,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "June-18-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 52,
+      "source": "gis-csv",
+      "list_price_cents": 79990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-096.jpg"
   },
   {
     "ref": "26-SM-014",
@@ -2859,9 +3202,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 131,
-      "source": "gis-csv"
-    }
+      "dom": 46,
+      "source": "gis-csv",
+      "list_price_cents": 47990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-SM-014.jpg"
   },
   {
     "ref": "26-NS-095",
@@ -2888,9 +3235,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-10-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 90,
+      "source": "gis-csv",
+      "list_price_cents": 126500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-095.jpg"
   },
   {
     "ref": "26-NS-094",
@@ -2917,9 +3268,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 65,
-      "source": "gis-csv"
-    }
+      "dom": 90,
+      "source": "gis-csv",
+      "list_price_cents": 219500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-094.jpg"
   },
   {
     "ref": "26-NS-092",
@@ -2957,9 +3312,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "August-31-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 66,
+      "source": "gis-csv",
+      "list_price_cents": 41990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-093.jpg"
   },
   {
     "ref": "26-NS-090",
@@ -2997,9 +3356,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 56,
-      "source": "gis-csv"
-    }
+      "dom": 71,
+      "source": "gis-csv",
+      "list_price_cents": 89900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-091.jpg"
   },
   {
     "ref": "26-NS-089",
@@ -3037,9 +3400,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "June-2-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 53,
+      "source": "gis-csv",
+      "list_price_cents": 54500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-088.jpg"
   },
   {
     "ref": "26-NS-087",
@@ -3066,9 +3433,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "June-2-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 80,
+      "source": "gis-csv",
+      "list_price_cents": 56950000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-087.jpg"
   },
   {
     "ref": "26-NS-086",
@@ -3095,9 +3466,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 50,
-      "source": "gis-csv"
-    }
+      "dom": 89,
+      "source": "gis-csv",
+      "list_price_cents": 34500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-086.jpg"
   },
   {
     "ref": "26-NS-085",
@@ -3124,9 +3499,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 125,
-      "source": "gis-csv"
-    }
+      "dom": 69,
+      "source": "gis-csv",
+      "list_price_cents": 104990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-085.jpg"
   },
   {
     "ref": "26-NS-084",
@@ -3164,9 +3543,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "May-27-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 65,
+      "source": "gis-csv",
+      "list_price_cents": 72500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-083.jpg"
   },
   {
     "ref": "26-NS-082",
@@ -3193,9 +3576,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "May-28-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 161,
+      "source": "gis-csv",
+      "list_price_cents": 67490000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-082.jpg"
   },
   {
     "ref": "26-NS-081",
@@ -3222,9 +3609,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-1-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 53,
+      "source": "gis-csv",
+      "list_price_cents": 49999900,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-081.jpg"
   },
   {
     "ref": "26-NS-080",
@@ -3251,9 +3642,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "June-16-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 80,
+      "source": "gis-csv",
+      "list_price_cents": 92500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-080.jpg"
   },
   {
     "ref": "26-SM-013",
@@ -3313,9 +3708,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "June-12-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 66,
+      "source": "gis-csv",
+      "list_price_cents": 259500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-078.jpg"
   },
   {
     "ref": "26-NS-079",
@@ -3342,9 +3741,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "May-20-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 67,
+      "source": "gis-csv",
+      "list_price_cents": 62500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-079.jpg"
   },
   {
     "ref": "26-NS-076",
@@ -3371,9 +3774,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "May-11-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 58,
+      "source": "gis-csv",
+      "list_price_cents": 49990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-076.jpg"
   },
   {
     "ref": "26-NS-077",
@@ -3400,9 +3807,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 28,
-      "source": "gis-csv"
-    }
+      "dom": 123,
+      "source": "gis-csv",
+      "list_price_cents": 44900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-077.jpg"
   },
   {
     "ref": "26-NS-074",
@@ -3429,9 +3840,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "June-8-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 67,
+      "source": "gis-csv",
+      "list_price_cents": 94900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-074.jpg"
   },
   {
     "ref": "26-NS-075",
@@ -3458,9 +3873,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "May-18-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 6,
+      "source": "gis-csv",
+      "list_price_cents": 64995000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-075.jpg"
   },
   {
     "ref": "26-NS-073",
@@ -3487,9 +3906,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "August-4-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 74,
+      "source": "gis-csv",
+      "list_price_cents": 89900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-073.jpg"
   },
   {
     "ref": "26-SM-010",
@@ -3527,9 +3950,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 26,
-      "source": "gis-csv"
-    }
+      "dom": 46,
+      "source": "gis-csv",
+      "list_price_cents": 34000000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-072.jpg"
   },
   {
     "ref": "26-NS-071",
@@ -3556,9 +3983,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "May-8-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 66,
+      "source": "gis-csv",
+      "list_price_cents": 69900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-071.jpg"
   },
   {
     "ref": "26-NS-069",
@@ -3596,9 +4027,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "May-27-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 39,
+      "source": "gis-csv",
+      "list_price_cents": 37500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-070.jpg"
   },
   {
     "ref": "26-NS-066",
@@ -3625,9 +4060,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 128,
-      "source": "gis-csv"
-    }
+      "dom": 46,
+      "source": "gis-csv",
+      "list_price_cents": 53990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-066.jpg"
   },
   {
     "ref": "26-NS-067",
@@ -3654,9 +4093,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-23-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 46,
+      "source": "gis-csv",
+      "list_price_cents": 47990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-067.jpg"
   },
   {
     "ref": "26-NS-068",
@@ -3683,9 +4126,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 140,
-      "source": "gis-csv"
-    }
+      "dom": 46,
+      "source": "gis-csv",
+      "list_price_cents": 48990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-068.jpg"
   },
   {
     "ref": "26-NS-065",
@@ -3712,9 +4159,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "April-27-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 74,
+      "source": "gis-csv",
+      "list_price_cents": 55000000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-065.jpg"
   },
   {
     "ref": "26-NS-064",
@@ -3741,9 +4192,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "June-30-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 102,
+      "source": "gis-csv",
+      "list_price_cents": 94900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-064.jpg"
   },
   {
     "ref": "26-NS-063",
@@ -3770,9 +4225,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "April-30-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 11,
+      "source": "gis-csv",
+      "list_price_cents": 115000000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-063.jpg"
   },
   {
     "ref": "26-NS-061",
@@ -3810,9 +4269,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "May-13-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 90,
+      "source": "gis-csv",
+      "list_price_cents": 269500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-062.jpg"
   },
   {
     "ref": "26-NS-060",
@@ -3839,9 +4302,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "April-24-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 38,
+      "source": "gis-csv",
+      "list_price_cents": 78500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-060.jpg"
   },
   {
     "ref": "26-NS-059",
@@ -3890,9 +4357,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "May-8-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 58,
+      "source": "gis-csv",
+      "list_price_cents": 59500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-058.jpg"
   },
   {
     "ref": "26-NS-057",
@@ -3919,9 +4390,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "July-31-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 60,
+      "source": "gis-csv",
+      "list_price_cents": 62500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-057.jpg"
   },
   {
     "ref": "26-NS-056",
@@ -3948,9 +4423,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 146,
-      "source": "gis-csv"
-    }
+      "dom": 90,
+      "source": "gis-csv",
+      "list_price_cents": 549500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-056.jpg"
   },
   {
     "ref": "26-NS-055",
@@ -3977,9 +4456,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "June-23-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 31,
+      "source": "gis-csv",
+      "list_price_cents": 49500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-055.jpg"
   },
   {
     "ref": "26-NS-054",
@@ -4006,9 +4489,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 95,
-      "source": "gis-csv"
-    }
+      "dom": 45,
+      "source": "gis-csv",
+      "list_price_cents": 69900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-054.jpg"
   },
   {
     "ref": "26-SM-008",
@@ -4046,9 +4533,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 208,
-      "source": "gis-csv"
-    }
+      "dom": 102,
+      "source": "gis-csv",
+      "list_price_cents": 89844400,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-053.jpg"
   },
   {
     "ref": "26-NS-052",
@@ -4075,9 +4566,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 175,
-      "source": "gis-csv"
-    }
+      "dom": 60,
+      "source": "gis-csv",
+      "list_price_cents": 16500000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-052.jpg"
   },
   {
     "ref": "26-NS-051",
@@ -4104,9 +4599,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "April-17-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 77,
+      "source": "gis-csv",
+      "list_price_cents": 59990000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-051.jpg"
   },
   {
     "ref": "26-NS-050",
@@ -4155,9 +4654,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "April-9-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 46,
+      "source": "gis-csv",
+      "list_price_cents": 78569800,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-048.jpg"
   },
   {
     "ref": "26-NS-047",
@@ -4184,9 +4687,13 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 342,
-      "source": "gis-csv"
-    }
+      "dom": 70,
+      "source": "gis-csv",
+      "list_price_cents": 175000000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-047.jpg"
   },
   {
     "ref": "26-NS-046",
@@ -4213,9 +4720,13 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "June-30-2026",
-      "dom": null,
-      "source": "gis-csv"
-    }
+      "dom": 105,
+      "source": "gis-csv",
+      "list_price_cents": 78900000,
+      "ask_verified": true
+    },
+    "photo_checked_on": "2026-09-03",
+    "photo": "/images/staging/26-NS-046.jpg"
   },
   {
     "ref": "26-NS-044",
