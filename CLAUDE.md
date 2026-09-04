@@ -8,12 +8,22 @@
 - Repo: **164investments/greylynwayne** (GitHub)
 
 ## Deploy
-⚠️ **GitHub→Vercel auto-deploy is BROKEN** (last auto-deploy 2026-03-10). Pushing to `main` lands on GitHub but does NOT build on Vercel. **Deploy manually:**
+⚠️ **GitHub→Vercel auto-deploy still does not fire** (verified again 2026-09-03: merge `cb11cbe` produced no build after 2 min). But the git link itself is **fine** — the repo moved `cascadelogic` → `164investments` and Vercel stores the old org name against the correct `repoId` `1167109930`, so "relink it" is not the fix.
+
+⛔ **`vercel --prod` is blocked by a guard** (added after 2026-07-23, when a working-tree deploy silently reverted live features). Do not defeat it with `VERCEL_ALLOW_PROD=1` — it is right that shipping the working tree is the wrong move.
+
+**Deploy: merge to `main`, then trigger a build OF THAT COMMIT from git.**
 ```bash
-npm run build               # always verify first
-vercel --prod --yes         # from ~/greylynwayne; ships WORKING TREE, resolves under the simplyvrm Vercel scope
+npm run build                                  # always verify first
+gh pr create … && gh pr merge <n> --squash     # main is the production branch
+# then force the build Vercel missed (builds the real commit, not your working tree):
+#   POST /v13/deployments?teamId=…&forceNew=1
+#   {"name":"greylynwayne","target":"production",
+#    "gitSource":{"type":"github","repoId":1167109930,"ref":"main"}}
 ```
-Note: `vercel --prod` also aliases greylynwayne.com (already added to the project) — harmless while DNS still points to Wix.
+Recipe + polling + gotchas: memory `shared/vercel-git-source-deploy-api.md`. The response's
+`meta.githubCommitSha` proves which commit is building — check it. Ready in ~1 min; the
+deployment's `alias` list covers `greylynwayne.com` and `www.greylynwayne.com`.
 
 ## Environment Variables (all set in Vercel, production + preview)
 - `NEXT_PUBLIC_GA_ID` — `G-3NTVSELKP5` (GA4)

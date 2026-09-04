@@ -11,7 +11,7 @@
     "zillow": "https://www.zillow.com/homes/3075-40th-St-Washougal-WA_98671_rb/",
     "redfin": "https://www.redfin.com/WA/Washougal/3075-40th-St-98671/home/14580166",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-206.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 3.0,
@@ -23,8 +23,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 1,
-      "source": "gis-csv"
+      "dom": 74,
+      "source": "gis-csv",
+      "list_price_cents": 77500000,
+      "ask_verified": true
     }
   },
   {
@@ -39,7 +41,7 @@
     "zillow": "https://www.zillow.com/homes/12747-NE-Holladay-St-Portland-OR_97230_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/12747-NE-Holladay-St-97230/home/26533225",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-203.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 1.0,
@@ -51,8 +53,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 3,
-      "source": "gis-csv"
+      "dom": 63,
+      "source": "gis-csv",
+      "list_price_cents": 37990000,
+      "ask_verified": true
     }
   },
   {
@@ -67,7 +71,7 @@
     "zillow": "https://www.zillow.com/homes/9040-N-Oswego-Ave-Portland-OR_97203_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/9040-N-Oswego-Ave-97203/home/26570275",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-202.jpg",
     "beds_baths": {
       "beds": 2.0,
       "baths": 1.0,
@@ -79,8 +83,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 6,
-      "source": "gis-csv"
+      "dom": 60,
+      "source": "gis-csv",
+      "list_price_cents": 52500000,
+      "ask_verified": true
     }
   },
   {
@@ -119,7 +125,7 @@
     "zillow": "https://www.zillow.com/homes/4124-SE-Franklin-St-Cottage-5-Portland-OR_97202_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/4124-SE-Franklin-St-97202/home/26410634",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-200.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -131,8 +137,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 7,
-      "source": "gis-csv"
+      "dom": 31,
+      "source": "gis-csv",
+      "list_price_cents": 49900000,
+      "ask_verified": true
     }
   },
   {
@@ -147,7 +155,7 @@
     "zillow": "https://www.zillow.com/homes/4124-SE-Franklin-St-Cottage-2-Portland-OR_97202_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/4124-SE-Franklin-St-97202/home/26410634",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-199.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -159,8 +167,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 7,
-      "source": "gis-csv"
+      "dom": 31,
+      "source": "gis-csv",
+      "list_price_cents": 49900000,
+      "ask_verified": true
     }
   },
   {
@@ -175,7 +185,7 @@
     "zillow": "https://www.zillow.com/homes/4124-SE-Franklin-St-Cottage-1-Portland-OR_97202_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/4124-SE-Franklin-St-97202/home/26410634",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-198.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -187,8 +197,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 7,
-      "source": "gis-csv"
+      "dom": 31,
+      "source": "gis-csv",
+      "list_price_cents": 49900000,
+      "ask_verified": true
     }
   },
   {
@@ -203,7 +215,7 @@
     "zillow": "https://www.zillow.com/homes/407-NW-46th-St-Vancouver-WA_98663_rb/",
     "redfin": "https://www.redfin.com/WA/Vancouver/407-NW-46th-St-98663/home/14614938",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-197.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -215,8 +227,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 4,
-      "source": "gis-csv"
+      "dom": 71,
+      "source": "gis-csv",
+      "list_price_cents": 53500000,
+      "ask_verified": true
     }
   },
   {
@@ -231,7 +245,7 @@
     "zillow": "https://www.zillow.com/homes/2335-NW-Raleigh-St-Unit-105-Portland-OR_97210_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/2335-NW-Raleigh-St-97210/unit-105/home/205217180",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-191.jpg",
     "beds_baths": {
       "beds": 1.0,
       "baths": 1.0,
@@ -243,8 +257,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 8,
-      "source": "gis-csv"
+      "dom": 105,
+      "source": "gis-csv",
+      "list_price_cents": 37900000,
+      "ask_verified": true
     }
   },
   {
@@ -259,7 +275,7 @@
     "zillow": "https://www.zillow.com/homes/4040-NE-Cesar-E-Chavez-Blvd-Portland-OR_97212_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/4040-NE-Cesar-E-Chavez-Blvd-97212/home/26466961",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-190.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -271,8 +287,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 11,
-      "source": "gis-csv"
+      "dom": 25,
+      "source": "gis-csv",
+      "list_price_cents": 83000000,
+      "ask_verified": true
     }
   },
   {
@@ -287,7 +305,7 @@
     "zillow": "https://www.zillow.com/homes/7239-SW-31st-Ave-Portland-OR_97219_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/7239-SW-31st-Ave-97219/home/26539211",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-187.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 3.0,
@@ -299,8 +317,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 4,
-      "source": "gis-csv"
+      "dom": 74,
+      "source": "gis-csv",
+      "list_price_cents": 66850000,
+      "ask_verified": true
     }
   },
   {
@@ -315,7 +335,7 @@
     "zillow": "https://www.zillow.com/homes/21639-SW-Aldridge-Ter-Sherwood-OR_97140_rb/",
     "redfin": "https://www.redfin.com/OR/Sherwood/21639-SW-Aldridge-Ter-97140/home/26559521",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-185.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 3.0,
@@ -327,8 +347,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 3,
-      "source": "gis-csv"
+      "dom": 48,
+      "source": "gis-csv",
+      "list_price_cents": 55000000,
+      "ask_verified": true
     }
   },
   {
@@ -343,7 +365,7 @@
     "zillow": "https://www.zillow.com/homes/20932-SW-Winema-Dr-Tualatin-OR_97062_rb/",
     "redfin": "https://www.redfin.com/OR/Tualatin/20932-SW-Winema-Dr-97062/home/26562118",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-184.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 3.0,
@@ -355,8 +377,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 7,
-      "source": "gis-csv"
+      "dom": 47,
+      "source": "gis-csv",
+      "list_price_cents": 61500000,
+      "ask_verified": true
     }
   },
   {
@@ -371,7 +395,7 @@
     "zillow": "https://www.zillow.com/homes/2710-SW-Maple-Ln-Portland-OR_97225_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/2710-SW-Maple-Ln-97225/home/26664171",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-182.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 3.0,
@@ -383,8 +407,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 20,
-      "source": "gis-csv"
+      "dom": 58,
+      "source": "gis-csv",
+      "list_price_cents": 123900000,
+      "ask_verified": true
     }
   },
   {
@@ -399,7 +425,7 @@
     "zillow": "https://www.zillow.com/homes/5651-SE-King-Rd-Milwaukie-OR_97222_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/5651-SE-King-Rd-97222/home/25981306",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-179.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 3.0,
@@ -411,8 +437,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 34,
-      "source": "gis-csv"
+      "dom": 61,
+      "source": "gis-csv",
+      "list_price_cents": 62490000,
+      "ask_verified": true
     }
   },
   {
@@ -427,7 +455,7 @@
     "zillow": "https://www.zillow.com/homes/22934-SW-Cowlitz-Dr-Tualatin-OR_97062_rb/",
     "redfin": "https://www.redfin.com/OR/Tualatin/22934-SW-Cowlitz-Dr-97062/home/26670739",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-178.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 3.0,
@@ -439,8 +467,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 29,
-      "source": "gis-csv"
+      "dom": 47,
+      "source": "gis-csv",
+      "list_price_cents": 75000000,
+      "ask_verified": true
     }
   },
   {
@@ -455,7 +485,7 @@
     "zillow": "https://www.zillow.com/homes/6535-SW-Miles-Ct-Portland-OR_97223_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/6535-SW-Miles-Ct-97223/home/26628804",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-176.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 2.0,
@@ -467,8 +497,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 27,
-      "source": "gis-csv"
+      "dom": 39,
+      "source": "gis-csv",
+      "list_price_cents": 64900000,
+      "ask_verified": true
     }
   },
   {
@@ -483,7 +515,7 @@
     "zillow": "https://www.zillow.com/homes/1935-Hillhouse-Dr-West%20Linn-OR_97068_rb/",
     "redfin": "https://www.redfin.com/OR/West-Linn/1935-Hillhouse-Dr-97068/home/25981313",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-175.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -495,8 +527,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-08-28",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 66,
+      "source": "gis-csv",
+      "list_price_cents": 57500000,
+      "ask_verified": true
     }
   },
   {
@@ -511,7 +545,7 @@
     "zillow": "https://www.zillow.com/homes/17950-Kelok-Rd-Lake%20Oswego-OR_97034_rb/",
     "redfin": "https://www.redfin.com/OR/Lake-Oswego/17950-Kelok-Rd-97034/home/26053522",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-174.jpg",
     "beds_baths": {
       "beds": 5.0,
       "baths": 6.0,
@@ -523,8 +557,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 29,
-      "source": "gis-csv"
+      "dom": 90,
+      "source": "gis-csv",
+      "list_price_cents": 269990000,
+      "ask_verified": true
     }
   },
   {
@@ -539,7 +575,7 @@
     "zillow": "https://www.zillow.com/homes/2630-12th-Ave-Forest%20Grove-OR_97116_rb/",
     "redfin": "https://www.redfin.com/OR/Forest-Grove/2630-12th-Ave-97116/home/26676711",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-173.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -551,8 +587,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 15,
-      "source": "gis-csv"
+      "dom": 59,
+      "source": "gis-csv",
+      "list_price_cents": 46990000,
+      "ask_verified": true
     }
   },
   {
@@ -567,7 +605,7 @@
     "zillow": "https://www.zillow.com/homes/1869-NW-28th-Ave-Portland-OR_97210_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/1869-NW-28th-Ave-97210/home/184102908",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-SM-016.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 3.0,
@@ -579,8 +617,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 10,
-      "source": "gis-csv"
+      "dom": 105,
+      "source": "gis-csv",
+      "list_price_cents": 87500000,
+      "ask_verified": true
     }
   },
   {
@@ -595,7 +635,7 @@
     "zillow": "https://www.zillow.com/homes/33-Nansen-Summit-Lake%20Oswego-OR_97035_rb/",
     "redfin": "https://www.redfin.com/OR/Lake-Oswego/33-Nansen-Smt-97035/home/26606184",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-171.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 4.0,
@@ -607,8 +647,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 7,
-      "source": "gis-csv"
+      "dom": 81,
+      "source": "gis-csv",
+      "list_price_cents": 149500000,
+      "ask_verified": true
     }
   },
   {
@@ -623,7 +665,7 @@
     "zillow": "https://www.zillow.com/homes/500-NW-Maywood-Dr-Portland-OR_97210_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/500-NW-Maywood-Dr-97210/home/26479339",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-170.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 4.0,
@@ -635,8 +677,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 30,
-      "source": "gis-csv"
+      "dom": 74,
+      "source": "gis-csv",
+      "list_price_cents": 119500000,
+      "ask_verified": true
     }
   },
   {
@@ -651,7 +695,7 @@
     "zillow": "https://www.zillow.com/homes/11445-SW-Woodlee-Heights-Ct-Portland-OR_97219_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/11445-SW-Woodlee-Heights-Ct-97219/home/26514686",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-169.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 3.0,
@@ -663,8 +707,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 42,
-      "source": "gis-csv"
+      "dom": 74,
+      "source": "gis-csv",
+      "list_price_cents": 67500000,
+      "ask_verified": true
     }
   },
   {
@@ -679,7 +725,7 @@
     "zillow": "https://www.zillow.com/homes/1769-SE-Brookwood-Ave-Hillsboro-OR_97123_rb/",
     "redfin": "https://www.redfin.com/OR/Hillsboro/1769-SE-Brookwood-Ave-97129/home/25761244",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-168.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 3.0,
@@ -691,8 +737,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 42,
-      "source": "gis-csv"
+      "dom": 57,
+      "source": "gis-csv",
+      "list_price_cents": 51990000,
+      "ask_verified": true
     }
   },
   {
@@ -707,7 +755,7 @@
     "zillow": "https://www.zillow.com/homes/7030-SW-78th-Ave-Portland-OR_97223_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/7030-SW-78th-Ave-97223/home/26693469",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-167.jpg",
     "beds_baths": {
       "beds": 2.0,
       "baths": 1.0,
@@ -719,8 +767,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-08-14",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 39,
+      "source": "gis-csv",
+      "list_price_cents": 44900000,
+      "ask_verified": true
     }
   },
   {
@@ -735,7 +785,7 @@
     "zillow": "https://www.zillow.com/homes/2790-SW-Montgomery-Dr-Portland-OR_97201_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/2790-SW-Montgomery-Dr-97201/home/25805442",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-164.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 3.0,
@@ -747,8 +797,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 44,
-      "source": "gis-csv"
+      "dom": 105,
+      "source": "gis-csv",
+      "list_price_cents": 68900000,
+      "ask_verified": true
     }
   },
   {
@@ -763,7 +815,7 @@
     "zillow": "https://www.zillow.com/homes/965-NE-34th-Pl-Canby-OR_97013_rb/",
     "redfin": "https://www.redfin.com/OR/Canby/965-NE-34th-Pl-97013/home/25982384",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-163.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 3.0,
@@ -775,8 +827,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-08-31",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 40,
+      "source": "gis-csv",
+      "list_price_cents": 71900000,
+      "ask_verified": true
     }
   },
   {
@@ -791,7 +845,7 @@
     "zillow": "https://www.zillow.com/homes/144-Leonard-St-Lake%20Oswego-OR_97034_rb/",
     "redfin": "https://www.redfin.com/OR/Lake-Oswego/144-Leonard-St-97034/home/25945142",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-162.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 4.0,
@@ -803,8 +857,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 45,
-      "source": "gis-csv"
+      "dom": 90,
+      "source": "gis-csv",
+      "list_price_cents": 159500000,
+      "ask_verified": true
     }
   },
   {
@@ -819,7 +875,7 @@
     "zillow": "https://www.zillow.com/homes/8655-SW-Comanche-Way-Tualatin-OR_97062_rb/",
     "redfin": "https://www.redfin.com/OR/Tualatin/8655-SW-Comanche-Way-97062/home/25759992",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-160.jpg",
     "beds_baths": {
       "beds": 5.0,
       "baths": 3.0,
@@ -831,8 +887,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 25,
-      "source": "gis-csv"
+      "dom": 47,
+      "source": "gis-csv",
+      "list_price_cents": 61490000,
+      "ask_verified": true
     }
   },
   {
@@ -847,7 +905,7 @@
     "zillow": "https://www.zillow.com/homes/6407-NE-32nd-Pl-Portland-OR_97211_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/6407-NE-32nd-Pl-97211/home/203506920",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-158.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 3.0,
@@ -859,8 +917,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 6,
-      "source": "gis-csv"
+      "dom": 32,
+      "source": "gis-csv",
+      "list_price_cents": 54998800,
+      "ask_verified": true
     }
   },
   {
@@ -875,7 +935,7 @@
     "zillow": "https://www.zillow.com/homes/6411-NE-32nd-Pl-Portland-OR_97211_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/6411-NE-32nd-Pl-97211/home/26313237",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-159.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 1.0,
@@ -887,8 +947,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 11,
-      "source": "gis-csv"
+      "dom": 32,
+      "source": "gis-csv",
+      "list_price_cents": 41900000,
+      "ask_verified": true
     }
   },
   {
@@ -903,7 +965,7 @@
     "zillow": "https://www.zillow.com/homes/5812-SE-Westfork-Ave-Portland-OR_97206_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/5812-SE-Westfork-St-97206/home/25987538",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-157.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -915,8 +977,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 51,
-      "source": "gis-csv"
+      "dom": 61,
+      "source": "gis-csv",
+      "list_price_cents": 54990000,
+      "ask_verified": true
     }
   },
   {
@@ -931,7 +995,7 @@
     "zillow": "https://www.zillow.com/homes/4137-SE-Ivon-St-Portland-OR_97202_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/4137-SE-Ivon-St-97202/home/26474039",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-156.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -943,8 +1007,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-31",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 31,
+      "source": "gis-csv",
+      "list_price_cents": 52990000,
+      "ask_verified": true
     }
   },
   {
@@ -959,7 +1025,7 @@
     "zillow": "https://www.zillow.com/homes/3440-NE-51st-Ave-Portland-OR_97213_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/3440-NE-51st-Ave-97213/home/26402332",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-155.jpg",
     "beds_baths": {
       "beds": 2.0,
       "baths": 2.0,
@@ -971,8 +1037,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-08-13",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 46,
+      "source": "gis-csv",
+      "list_price_cents": 50700000,
+      "ask_verified": true
     }
   },
   {
@@ -987,7 +1055,7 @@
     "zillow": "https://www.zillow.com/homes/9245-SW-74th-Ave-Tigard-OR_97223_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/9245-SW-74th-Ave-97223/home/25882252",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-154.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 3.0,
@@ -999,8 +1067,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-31",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 58,
+      "source": "gis-csv",
+      "list_price_cents": 88500000,
+      "ask_verified": true
     }
   },
   {
@@ -1015,7 +1085,7 @@
     "zillow": "https://www.zillow.com/homes/1435-NW-1st-St-Gresham-OR_97030_rb/",
     "redfin": "https://www.redfin.com/OR/Gresham/1435-NW-1st-St-97030/home/25806996",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-152.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 3.0,
@@ -1027,8 +1097,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-31",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 59,
+      "source": "gis-csv",
+      "list_price_cents": 43900000,
+      "ask_verified": true
     }
   },
   {
@@ -1043,7 +1115,7 @@
     "zillow": "https://www.zillow.com/homes/7910-SW-31st-Ave-%23404-Portland-OR_97219_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/7910-SW-31st-Ave-97219/unit-404/home/25763096",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-150.jpg",
     "beds_baths": {
       "beds": 1.0,
       "baths": 1.0,
@@ -1055,8 +1127,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-31",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 74,
+      "source": "gis-csv",
+      "list_price_cents": 29900000,
+      "ask_verified": true
     }
   },
   {
@@ -1071,7 +1145,7 @@
     "zillow": "https://www.zillow.com/homes/3395-SE-43rd-Ave-Unit-A-Portland-OR_97202_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/3395-SE-43rd-Ave-97202/unit-A/home/202551494",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-148.jpg",
     "beds_baths": {
       "beds": 2.0,
       "baths": 3.0,
@@ -1083,8 +1157,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-08-12",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 31,
+      "source": "gis-csv",
+      "list_price_cents": 52490000,
+      "ask_verified": true
     }
   },
   {
@@ -1099,7 +1175,7 @@
     "zillow": "https://www.zillow.com/homes/3395-SE-43rd-Ave-Unit-B-Portland-OR_97202_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/3395-SE-43rd-Ave-97202/unit-A/home/202551494",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-149.jpg",
     "beds_baths": {
       "beds": 2.0,
       "baths": 3.0,
@@ -1111,8 +1187,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-08-12",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 31,
+      "source": "gis-csv",
+      "list_price_cents": 52490000,
+      "ask_verified": true
     }
   },
   {
@@ -1127,7 +1205,7 @@
     "zillow": "https://www.zillow.com/homes/1314-NW-Irving-Street-%23606-Portland-OR_97209_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/1314-NW-Irving-St-97209/unit-606/home/26586224",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-147.jpg",
     "beds_baths": {
       "beds": 1.0,
       "baths": 1.0,
@@ -1139,8 +1217,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 63,
-      "source": "gis-csv"
+      "dom": 89,
+      "source": "gis-csv",
+      "list_price_cents": 27950000,
+      "ask_verified": true
     }
   },
   {
@@ -1155,7 +1235,7 @@
     "zillow": "https://www.zillow.com/homes/2028-SE-Ladd-Ave-Portland-OR_97214_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/2028-SE-Ladd-Ave-97214/home/26501401",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-146.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 3.0,
@@ -1167,8 +1247,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-08-05",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 18,
+      "source": "gis-csv",
+      "list_price_cents": 125000000,
+      "ask_verified": true
     }
   },
   {
@@ -1183,7 +1265,7 @@
     "zillow": "https://www.zillow.com/homes/944-NW-Hoquiam-Ct-Camas-WA_98607_rb/",
     "redfin": "https://www.redfin.com/WA/Camas/944-NW-Hoquiam-Ct-98607/home/14630742",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-145.jpg",
     "beds_baths": {
       "beds": 5.0,
       "baths": 3.0,
@@ -1195,8 +1277,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-08-18",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 80,
+      "source": "gis-csv",
+      "list_price_cents": 87900000,
+      "ask_verified": true
     }
   },
   {
@@ -1211,7 +1295,7 @@
     "zillow": "https://www.zillow.com/homes/5428-SW-Joshua-St-Tualatin-OR_97062_rb/",
     "redfin": "https://www.redfin.com/OR/Tualatin/5428-SW-Joshua-St-97062/home/26011282",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-144.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -1223,8 +1307,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-08-13",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 47,
+      "source": "gis-csv",
+      "list_price_cents": 65000000,
+      "ask_verified": true
     }
   },
   {
@@ -1239,7 +1325,7 @@
     "zillow": "https://www.zillow.com/homes/3666-NE-90th-Ave-Portland-OR_97220_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/3666-NE-90th-Ave-97220/home/26481263",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-142.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 2.0,
@@ -1251,8 +1337,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-08-11",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 53,
+      "source": "gis-csv",
+      "list_price_cents": 48990000,
+      "ask_verified": true
     }
   },
   {
@@ -1267,7 +1355,7 @@
     "zillow": "https://www.zillow.com/homes/21226-NE-Osburn-Loop-Fairview-OR_97024_rb/",
     "redfin": "https://www.redfin.com/OR/Fairview/21226-Osburn-Loop-97024/home/26579026",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-141.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 3.0,
@@ -1280,7 +1368,9 @@
       "is_sold": false,
       "sold_date": null,
       "dom": 48,
-      "source": "gis-csv"
+      "source": "gis-csv",
+      "list_price_cents": 37500000,
+      "ask_verified": true
     }
   },
   {
@@ -1295,7 +1385,7 @@
     "zillow": "https://www.zillow.com/homes/9375-SW-Royal-Woodlands-Dr-Beaverton-OR_97005_rb/",
     "redfin": "https://www.redfin.com/OR/Beaverton/9375-SW-Royal-Woodlands-Dr-97005/home/26618406",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-138.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 3.0,
@@ -1307,8 +1397,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 65,
-      "source": "gis-csv"
+      "dom": 46,
+      "source": "gis-csv",
+      "list_price_cents": 85900000,
+      "ask_verified": true
     }
   },
   {
@@ -1323,7 +1415,7 @@
     "zillow": "https://www.zillow.com/homes/6343-N-Michigan-Ave-Portland-OR_97217_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/6343-N-Michigan-Ave-97217/home/25757505",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-136.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -1335,8 +1427,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-23",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 72,
+      "source": "gis-csv",
+      "list_price_cents": 72850000,
+      "ask_verified": true
     }
   },
   {
@@ -1351,7 +1445,7 @@
     "zillow": "https://www.zillow.com/homes/13980-SE-Claremont-St-Happy%20Valley-OR_97086_rb/",
     "redfin": "https://www.redfin.com/OR/Happy-Valley/13980-SE-Claremont-St-97086/home/26068033",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-134.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 4.0,
@@ -1363,8 +1457,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 74,
-      "source": "gis-csv"
+      "dom": 55,
+      "source": "gis-csv",
+      "list_price_cents": 124900000,
+      "ask_verified": true
     }
   },
   {
@@ -1379,7 +1475,7 @@
     "zillow": "https://www.zillow.com/homes/4322-SW-Terlyn-Ct-Portland-OR_97221_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/4322-SW-Terlyn-Ct-97221/home/25746007",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-133.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 5.0,
@@ -1391,8 +1487,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 77,
-      "source": "gis-csv"
+      "dom": 67,
+      "source": "gis-csv",
+      "list_price_cents": 119500000,
+      "ask_verified": true
     }
   },
   {
@@ -1407,7 +1505,7 @@
     "zillow": "https://www.zillow.com/homes/22153-S-Dans-Ave-Beavercreek-OR_97004_rb/",
     "redfin": "https://www.redfin.com/OR/Beavercreek/22153-S-Dans-Ave-97004/home/25983583",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-132.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 1.0,
@@ -1419,8 +1517,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 77,
-      "source": "gis-csv"
+      "dom": 46,
+      "source": "gis-csv",
+      "list_price_cents": 49990000,
+      "ask_verified": true
     }
   },
   {
@@ -1435,7 +1535,7 @@
     "zillow": "https://www.zillow.com/homes/3011-NE-156th-Ave-Portland-OR_97230_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/3011-NE-156th-Ave-97230/home/25855998",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-131.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 2.0,
@@ -1447,8 +1547,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-22",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 51,
+      "source": "gis-csv",
+      "list_price_cents": 54990000,
+      "ask_verified": true
     }
   },
   {
@@ -1463,7 +1565,7 @@
     "zillow": "https://www.zillow.com/homes/2848-NE-30th-Ave-Portland-OR_97212_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/2848-NE-30th-Ave-97212/home/26336724",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-130.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 2.0,
@@ -1475,8 +1577,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-30",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 16,
+      "source": "gis-csv",
+      "list_price_cents": 83500000,
+      "ask_verified": true
     }
   },
   {
@@ -1491,7 +1595,7 @@
     "zillow": "https://www.zillow.com/homes/3807-NE-Grand-Ave-Portland-OR_97212_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/3807-NE-Grand-Ave-97212/home/26533367",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-128.jpg",
     "beds_baths": {
       "beds": 2.0,
       "baths": 1.0,
@@ -1503,8 +1607,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 75,
-      "source": "gis-csv"
+      "dom": 72,
+      "source": "gis-csv",
+      "list_price_cents": 59900000,
+      "ask_verified": true
     }
   },
   {
@@ -1519,7 +1625,7 @@
     "zillow": "https://www.zillow.com/homes/3327-SE-59th-Ave-Portland-OR_97206_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/3327-SE-59th-Ave-97206/home/26472295",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-129.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 1.0,
@@ -1531,8 +1637,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 70,
-      "source": "gis-csv"
+      "dom": 48,
+      "source": "gis-csv",
+      "list_price_cents": 49900000,
+      "ask_verified": true
     }
   },
   {
@@ -1547,7 +1655,7 @@
     "zillow": "https://www.zillow.com/homes/1500-SW-11th-Ave-%232302-Portland-OR_97201_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/1500-SW-11th-Ave-97201/unit-401/home/26375502",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-126.jpg",
     "beds_baths": {
       "beds": 2.0,
       "baths": 2.0,
@@ -1559,8 +1667,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 68,
-      "source": "gis-csv"
+      "dom": 135,
+      "source": "gis-csv",
+      "list_price_cents": 43500000,
+      "ask_verified": true
     }
   },
   {
@@ -1575,7 +1685,7 @@
     "zillow": "https://www.zillow.com/homes/15737-NW-Claremont-Dr-Portland-OR_97229_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/15737-NW-Claremont-Dr-97229/home/26680435",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-127.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -1587,8 +1697,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-24",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 62,
+      "source": "gis-csv",
+      "list_price_cents": 89869800,
+      "ask_verified": true
     }
   },
   {
@@ -1603,7 +1715,7 @@
     "zillow": "https://www.zillow.com/homes/10346-SE-23rd-Ave-Milwaukie-OR_97222_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/10346-SE-23rd-Ave-97222/home/25998061",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-125.jpg",
     "beds_baths": {
       "beds": 2.0,
       "baths": 2.0,
@@ -1615,8 +1727,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-29",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 58,
+      "source": "gis-csv",
+      "list_price_cents": 53900000,
+      "ask_verified": true
     }
   },
   {
@@ -1631,7 +1745,7 @@
     "zillow": "https://www.zillow.com/homes/2637-NE-138th-Pl-Portland-OR_97230_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/2637-NE-138th-Pl-97230/home/26588083",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-123.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -1643,8 +1757,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-15",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 70,
+      "source": "gis-csv",
+      "list_price_cents": 47500000,
+      "ask_verified": true
     }
   },
   {
@@ -1659,7 +1775,7 @@
     "zillow": "https://www.zillow.com/homes/4333-NE-29th-Ave-Portland-OR_97211_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/4333-NE-29th-Ave-97211/home/25775654",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-124.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 2.0,
@@ -1671,8 +1787,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-02",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 16,
+      "source": "gis-csv",
+      "list_price_cents": 93000000,
+      "ask_verified": true
     }
   },
   {
@@ -1687,7 +1805,7 @@
     "zillow": "https://www.zillow.com/homes/1221-SE-Rex-St-Portland-OR_97202_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/1221-SE-Rex-St-97202/home/26401375",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-122.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 3.0,
@@ -1699,8 +1817,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-31",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 53,
+      "source": "gis-csv",
+      "list_price_cents": 82500000,
+      "ask_verified": true
     }
   },
   {
@@ -1715,7 +1835,7 @@
     "zillow": "https://www.zillow.com/homes/14711-Uplands-Dr-Lake%20Oswego-OR_97034_rb/",
     "redfin": "https://www.redfin.com/OR/Lake-Oswego/14711-Uplands-Dr-97034/home/25977886",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-121.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 5.0,
@@ -1727,8 +1847,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-08",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 90,
+      "source": "gis-csv",
+      "list_price_cents": 185000000,
+      "ask_verified": true
     }
   },
   {
@@ -1743,7 +1865,7 @@
     "zillow": "https://www.zillow.com/homes/11020-NW-Crystal-Creek-Ln-Portland-OR_97229_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/11020-NW-Crystal-Creek-Ln-97229/home/26726493",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-119.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 3.0,
@@ -1755,8 +1877,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 76,
-      "source": "gis-csv"
+      "dom": 54,
+      "source": "gis-csv",
+      "list_price_cents": 67900000,
+      "ask_verified": true
     }
   },
   {
@@ -1771,7 +1895,7 @@
     "zillow": "https://www.zillow.com/homes/1316-SW-Taylors-Ferry-Ct-Portland-OR_97219_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/1316-SW-Taylors-Ferry-Ct-97219/home/26501406",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-120.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -1783,8 +1907,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-07",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 74,
+      "source": "gis-csv",
+      "list_price_cents": 51600000,
+      "ask_verified": true
     }
   },
   {
@@ -1799,7 +1925,7 @@
     "zillow": "https://www.zillow.com/homes/248-NW-Ash-St-McMinnville-OR_97128_rb/",
     "redfin": "https://www.redfin.com/OR/McMinnville/248-NW-Ash-St-97128/home/26755166",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-118.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 3.0,
@@ -1811,8 +1937,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-09",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 83,
+      "source": "gis-csv",
+      "list_price_cents": 49869800,
+      "ask_verified": true
     }
   },
   {
@@ -1827,7 +1955,7 @@
     "zillow": "https://www.zillow.com/homes/2030-S-Military-Rd-Portland-OR_97219_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/2030-S-Military-Rd-97219/home/26458608",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-116.jpg",
     "beds_baths": {
       "beds": 5.0,
       "baths": 6.0,
@@ -1839,8 +1967,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 86,
-      "source": "gis-csv"
+      "dom": 97,
+      "source": "gis-csv",
+      "list_price_cents": 235000000,
+      "ask_verified": true
     }
   },
   {
@@ -1855,7 +1985,7 @@
     "zillow": "https://www.zillow.com/homes/10209-NW-Village-Heights-Dr-Portland-OR_97229_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/10209-NW-Village-Heights-Dr-97229/home/26509759",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-117.jpg",
     "beds_baths": {
       "beds": 2.0,
       "baths": 2.0,
@@ -1867,8 +1997,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-08-12",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 99,
+      "source": "gis-csv",
+      "list_price_cents": 39900000,
+      "ask_verified": true
     }
   },
   {
@@ -1883,7 +2015,7 @@
     "zillow": "https://www.zillow.com/homes/1530-NW-118th-Ct-Portland-OR_97229_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/1530-NW-118th-Ct-97229/home/26563811",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-115.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 3.0,
@@ -1895,8 +2027,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-08-04",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 68,
+      "source": "gis-csv",
+      "list_price_cents": 75000000,
+      "ask_verified": true
     }
   },
   {
@@ -1911,7 +2045,7 @@
     "zillow": "https://www.zillow.com/homes/16720-SW-124th-Ave-King%20City-OR_97224_rb/",
     "redfin": "https://www.redfin.com/OR/King-City/16720-SW-124th-Ave-97224/home/26694077",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-114.jpg",
     "beds_baths": {
       "beds": 2.0,
       "baths": 1.0,
@@ -1923,8 +2057,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-31",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 61,
+      "source": "gis-csv",
+      "list_price_cents": 39500000,
+      "ask_verified": true
     }
   },
   {
@@ -1939,7 +2075,7 @@
     "zillow": "https://www.zillow.com/homes/860-NW-Battaglia-Ave-Gresham-OR_97030_rb/",
     "redfin": "https://www.redfin.com/OR/Gresham/860-NW-Battaglia-Ave-97030/home/26364342",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-113.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 3.0,
@@ -1951,8 +2087,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 97,
-      "source": "gis-csv"
+      "dom": 59,
+      "source": "gis-csv",
+      "list_price_cents": 53900000,
+      "ask_verified": true
     }
   },
   {
@@ -1967,7 +2105,7 @@
     "zillow": "https://www.zillow.com/homes/4633-SW-Hillside-Dr-Portland-OR_97221_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/4633-SW-Hillside-Dr-97221/home/26432881",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-112.jpg",
     "beds_baths": {
       "beds": 5.0,
       "baths": 4.0,
@@ -1979,8 +2117,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 85,
-      "source": "gis-csv"
+      "dom": 105,
+      "source": "gis-csv",
+      "list_price_cents": 134500000,
+      "ask_verified": true
     }
   },
   {
@@ -1995,7 +2135,7 @@
     "zillow": "https://www.zillow.com/homes/15846-Allison-Pl-Lake%20Oswego-OR_97035_rb/",
     "redfin": "https://www.redfin.com/OR/Lake-Oswego/15846-Allison-Pl-97035/home/25764645",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-111.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 4.0,
@@ -2007,8 +2147,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-08-12",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 81,
+      "source": "gis-csv",
+      "list_price_cents": 129500000,
+      "ask_verified": true
     }
   },
   {
@@ -2023,7 +2165,7 @@
     "zillow": "https://www.zillow.com/homes/616-Cabana-Ln-Lake%20Oswego-OR_97034_rb/",
     "redfin": "https://www.redfin.com/OR/Lake-Oswego/616-Cabana-Ln-97034/home/25846538",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-110.jpg",
     "beds_baths": {
       "beds": 5.0,
       "baths": 4.0,
@@ -2035,8 +2177,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-06-26",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 90,
+      "source": "gis-csv",
+      "list_price_cents": 430000000,
+      "ask_verified": true
     }
   },
   {
@@ -2051,7 +2195,7 @@
     "zillow": "https://www.zillow.com/homes/3484-Devonshire-Lake%20Oswego-OR_97035_rb/",
     "redfin": "https://www.redfin.com/OR/Lake-Oswego/3484-Devonshire-Dr-97035/home/26004783",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-109.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -2063,8 +2207,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 95,
-      "source": "gis-csv"
+      "dom": 81,
+      "source": "gis-csv",
+      "list_price_cents": 62500000,
+      "ask_verified": true
     }
   },
   {
@@ -2079,7 +2225,7 @@
     "zillow": "https://www.zillow.com/homes/3339-Tempest-Dr-Lake%20Oswego-OR_97035_rb/",
     "redfin": "https://www.redfin.com/OR/Lake-Oswego/3339-Tempest-Dr-97035/home/26006169",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-108.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 4.0,
@@ -2091,8 +2237,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-15",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 81,
+      "source": "gis-csv",
+      "list_price_cents": 86500000,
+      "ask_verified": true
     }
   },
   {
@@ -2107,7 +2255,7 @@
     "zillow": "https://www.zillow.com/homes/11859-S-Riverwood-Rd-Portland-OR_97219_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/11859-S-Riverwood-Rd-97219/home/26577258",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-107.jpg",
     "beds_baths": {
       "beds": 5.0,
       "baths": 6.0,
@@ -2119,8 +2267,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-21",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 97,
+      "source": "gis-csv",
+      "list_price_cents": 359000000,
+      "ask_verified": true
     }
   },
   {
@@ -2135,7 +2285,7 @@
     "zillow": "https://www.zillow.com/homes/4526-NE-Oregon-St-Portland-OR_97213_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/4526-NE-Oregon-St-97213/home/26463110",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-106.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 3.0,
@@ -2147,8 +2297,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-08-27",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 44,
+      "source": "gis-csv",
+      "list_price_cents": 74800000,
+      "ask_verified": true
     }
   },
   {
@@ -2163,7 +2315,7 @@
     "zillow": "https://www.zillow.com/homes/3831-NE-21st-Ave-Portland-OR_97212_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/3831-NE-21st-Ave-97212/home/25745036",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-103.jpg",
     "beds_baths": {
       "beds": 5.0,
       "baths": 4.0,
@@ -2175,8 +2327,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-06-18",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 6,
+      "source": "gis-csv",
+      "list_price_cents": 110000000,
+      "ask_verified": true
     }
   },
   {
@@ -2191,7 +2345,7 @@
     "zillow": "https://www.zillow.com/homes/2021-NE-144th-Ave-Portland-OR_97230_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/2021-NE-144th-Ave-97230/home/26517896",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-104.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -2203,8 +2357,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-06-26",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 70,
+      "source": "gis-csv",
+      "list_price_cents": 49990000,
+      "ask_verified": true
     }
   },
   {
@@ -2219,7 +2375,7 @@
     "zillow": "https://www.zillow.com/homes/4035-SW-Westdale-Dr-Portland-OR_97221_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/4035-SW-Westdale-Dr-97221/home/26364584",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-101.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 3.0,
@@ -2231,8 +2387,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 98,
-      "source": "gis-csv"
+      "dom": 105,
+      "source": "gis-csv",
+      "list_price_cents": 159900000,
+      "ask_verified": true
     }
   },
   {
@@ -2247,7 +2405,7 @@
     "zillow": "https://www.zillow.com/homes/11765-SW-Springwood-Dr-Tigard-OR_97223_rb/",
     "redfin": "https://www.redfin.com/OR/Tigard/11765-SW-Springwood-Dr-97223/unit-D/home/26609001",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-102.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -2259,8 +2417,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-06-26",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 58,
+      "source": "gis-csv",
+      "list_price_cents": 57990000,
+      "ask_verified": true
     }
   },
   {
@@ -2275,7 +2435,7 @@
     "zillow": "https://www.zillow.com/homes/311-NW-12th-Ave-Unit-505-Portland-OR_97209_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/311-NW-12th-Ave-97209/unit-402/home/25754997",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-099.jpg",
     "beds_baths": {
       "beds": 2.0,
       "baths": 3.0,
@@ -2287,8 +2447,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 17,
-      "source": "gis-csv"
+      "dom": 89,
+      "source": "gis-csv",
+      "list_price_cents": 82500000,
+      "ask_verified": true
     }
   },
   {
@@ -2303,7 +2465,7 @@
     "zillow": "https://www.zillow.com/homes/2046-NW-Flanders-St-%233-Portland-OR_97209_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/2046-NW-Flanders-St-97209/unit-3/home/25758195",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-100.jpg",
     "beds_baths": {
       "beds": 2.0,
       "baths": 1.0,
@@ -2315,8 +2477,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-06-10",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 126,
+      "source": "gis-csv",
+      "list_price_cents": 29500000,
+      "ask_verified": true
     }
   },
   {
@@ -2331,7 +2495,7 @@
     "zillow": "https://www.zillow.com/homes/4300-NW-188th-St-Ridgefield-WA_98642_rb/",
     "redfin": "https://www.redfin.com/WA/Ridgefield/4300-NW-188th-St-98642/home/14645736",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-098.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 4.0,
@@ -2343,8 +2507,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-05-22",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 69,
+      "source": "gis-csv",
+      "list_price_cents": 129900000,
+      "ask_verified": true
     }
   },
   {
@@ -2359,7 +2525,7 @@
     "zillow": "https://www.zillow.com/homes/16250-Pacific-Hwy-UNIT-76-Lake%20Oswego-OR_97034_rb/",
     "redfin": "https://www.redfin.com/OR/Lake-Oswego/16250-Pacific-Hwy-97034/unit-45/home/25742688",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-097.jpg",
     "beds_baths": {
       "beds": 2.0,
       "baths": 2.0,
@@ -2371,8 +2537,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 7,
-      "source": "gis-csv"
+      "dom": 90,
+      "source": "gis-csv",
+      "list_price_cents": 35900000,
+      "ask_verified": true
     }
   },
   {
@@ -2387,7 +2555,7 @@
     "zillow": "https://www.zillow.com/homes/3336-SE-Washington-St-Portland-OR_97214_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/3336-SE-Washington-St-97214/home/26401642",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-096.jpg",
     "beds_baths": {
       "beds": 5.0,
       "baths": 4.0,
@@ -2399,8 +2567,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-06-18",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 52,
+      "source": "gis-csv",
+      "list_price_cents": 79990000,
+      "ask_verified": true
     }
   },
   {
@@ -2415,7 +2585,7 @@
     "zillow": "https://www.zillow.com/homes/6945-N-Burr-Ave-%232-Portland-OR_97203_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/6945-N-Burr-Ave-97203/home/201570676",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-SM-014.jpg",
     "beds_baths": {
       "beds": 2.0,
       "baths": 3.0,
@@ -2427,8 +2597,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 131,
-      "source": "gis-csv"
+      "dom": 46,
+      "source": "gis-csv",
+      "list_price_cents": 47990000,
+      "ask_verified": true
     }
   },
   {
@@ -2443,7 +2615,7 @@
     "zillow": "https://www.zillow.com/homes/2055-Ridge-Pointe-Dr-Lake%20Oswego-OR_97034_rb/",
     "redfin": "https://www.redfin.com/OR/Lake-Oswego/2055-Ridge-Pointe-Dr-97034/home/26047711",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-095.jpg",
     "beds_baths": {
       "beds": 5.0,
       "baths": 3.0,
@@ -2455,8 +2627,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-10",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 90,
+      "source": "gis-csv",
+      "list_price_cents": 126500000,
+      "ask_verified": true
     }
   },
   {
@@ -2471,7 +2645,7 @@
     "zillow": "https://www.zillow.com/homes/13236-Amber-Pl-Lake%20Oswego-OR_97034_rb/",
     "redfin": "https://www.redfin.com/OR/Lake-Oswego/13236-Amber-Pl-97034/home/144303399",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-094.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 4.0,
@@ -2483,8 +2657,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 65,
-      "source": "gis-csv"
+      "dom": 90,
+      "source": "gis-csv",
+      "list_price_cents": 219500000,
+      "ask_verified": true
     }
   },
   {
@@ -2499,7 +2675,7 @@
     "zillow": "https://www.zillow.com/homes/5575-Summerlinn-Way-West%20Linn-OR_97068_rb/",
     "redfin": "https://www.redfin.com/OR/West-Linn/5575-Summerlinn-Way-97068/home/25769189",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-093.jpg",
     "beds_baths": {
       "beds": 2.0,
       "baths": 2.0,
@@ -2511,8 +2687,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-08-31",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 66,
+      "source": "gis-csv",
+      "list_price_cents": 41990000,
+      "ask_verified": true
     }
   },
   {
@@ -2527,7 +2705,7 @@
     "zillow": "https://www.zillow.com/homes/112-W-35th-St-Vancouver-WA_98660_rb/",
     "redfin": "https://www.redfin.com/WA/Vancouver/112-W-35th-St-98660/home/14640624",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-091.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 3.0,
@@ -2539,8 +2717,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 56,
-      "source": "gis-csv"
+      "dom": 71,
+      "source": "gis-csv",
+      "list_price_cents": 89900000,
+      "ask_verified": true
     }
   },
   {
@@ -2555,7 +2735,7 @@
     "zillow": "https://www.zillow.com/homes/8818-SE-11th-Ave-Portland-OR_97202_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/8818-SE-11th-Ave-97202/home/25837713",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-088.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 3.0,
@@ -2567,8 +2747,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-06-02",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 53,
+      "source": "gis-csv",
+      "list_price_cents": 54500000,
+      "ask_verified": true
     }
   },
   {
@@ -2583,7 +2765,7 @@
     "zillow": "https://www.zillow.com/homes/19501-SE-9th-Cir-Camas-WA_98607_rb/",
     "redfin": "https://www.redfin.com/WA/Camas/19501-SE-9th-Cir-98607/home/14595923",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-087.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -2595,8 +2777,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-06-02",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 80,
+      "source": "gis-csv",
+      "list_price_cents": 56950000,
+      "ask_verified": true
     }
   },
   {
@@ -2611,7 +2795,7 @@
     "zillow": "https://www.zillow.com/homes/416-NW-13th-Ave-%23313-Portland-OR_97209_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/416-NW-13th-Ave-97209/unit-115/home/26450042",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-086.jpg",
     "beds_baths": {
       "beds": 1.0,
       "baths": 1.0,
@@ -2623,8 +2807,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 50,
-      "source": "gis-csv"
+      "dom": 89,
+      "source": "gis-csv",
+      "list_price_cents": 34500000,
+      "ask_verified": true
     }
   },
   {
@@ -2639,7 +2825,7 @@
     "zillow": "https://www.zillow.com/homes/16211-NE-25th-Ave-Ridgefield-WA_98642_rb/",
     "redfin": "https://www.redfin.com/WA/Ridgefield/16211-NE-25th-Ave-98642/home/14566598",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-085.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 4.0,
@@ -2651,8 +2837,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 125,
-      "source": "gis-csv"
+      "dom": 69,
+      "source": "gis-csv",
+      "list_price_cents": 104990000,
+      "ask_verified": true
     }
   },
   {
@@ -2667,7 +2855,7 @@
     "zillow": "https://www.zillow.com/homes/12432-SE-Mountain-Sun-Dr-Clackamas-OR_97015_rb/",
     "redfin": "https://www.redfin.com/OR/Clackamas/12432-SE-Mountain-Sun-Dr-97015/home/25799728",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-083.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 3.0,
@@ -2679,8 +2867,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-05-27",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 65,
+      "source": "gis-csv",
+      "list_price_cents": 72500000,
+      "ask_verified": true
     }
   },
   {
@@ -2695,7 +2885,7 @@
     "zillow": "https://www.zillow.com/homes/5616-SW-Idaho-St-Portland-OR_97221_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/5616-SW-Idaho-St-97221/home/26426871",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-082.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 2.0,
@@ -2707,8 +2897,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-05-28",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 161,
+      "source": "gis-csv",
+      "list_price_cents": 67490000,
+      "ask_verified": true
     }
   },
   {
@@ -2723,7 +2915,7 @@
     "zillow": "https://www.zillow.com/homes/536-NE-Going-St-Portland-OR_97211_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/536-NE-Going-St-97211/home/26414953",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-081.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -2735,8 +2927,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-01",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 53,
+      "source": "gis-csv",
+      "list_price_cents": 49999900,
+      "ask_verified": true
     }
   },
   {
@@ -2751,7 +2945,7 @@
     "zillow": "https://www.zillow.com/homes/1034-NW-Hoquiam-Ct-Camas-WA_98607_rb/",
     "redfin": "https://www.redfin.com/WA/Camas/1034-NW-Hoquiam-Ct-98607/home/14680723",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-080.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 3.0,
@@ -2763,8 +2957,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-06-16",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 80,
+      "source": "gis-csv",
+      "list_price_cents": 92500000,
+      "ask_verified": true
     }
   },
   {
@@ -2779,7 +2975,7 @@
     "zillow": "https://www.zillow.com/homes/19420-SW-Elma-St-West%20Linn-OR_97068_rb/",
     "redfin": "https://www.redfin.com/OR/West-Linn/19420-S-Elma-St-97068/home/143110475",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-078.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 5.0,
@@ -2791,8 +2987,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-06-12",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 66,
+      "source": "gis-csv",
+      "list_price_cents": 259500000,
+      "ask_verified": true
     }
   },
   {
@@ -2807,7 +3005,7 @@
     "zillow": "https://www.zillow.com/homes/1020-NE-71st-Ave-Portland-OR_97213_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/1020-NE-71st-Ave-97213/home/26488691",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-079.jpg",
     "beds_baths": {
       "beds": 4.0,
       "baths": 2.0,
@@ -2819,8 +3017,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-05-20",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 67,
+      "source": "gis-csv",
+      "list_price_cents": 62500000,
+      "ask_verified": true
     }
   },
   {
@@ -2835,7 +3035,7 @@
     "zillow": "https://www.zillow.com/homes/4525-SE-Fieldcrest-St-Milwaukie-OR_97222_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/4525-SE-Fieldcrest-Dr-97222/home/25836507",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-076.jpg",
     "beds_baths": {
       "beds": 3.0,
       "baths": 2.0,
@@ -2847,8 +3047,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-05-11",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 58,
+      "source": "gis-csv",
+      "list_price_cents": 49990000,
+      "ask_verified": true
     }
   },
   {
@@ -2863,7 +3065,7 @@
     "zillow": "https://www.zillow.com/homes/1025-NW-Couch-St-%231010-Portland-OR_97209_rb/",
     "redfin": "https://www.redfin.com/OR/Portland/1025-NW-Couch-St-97209/unit-717/home/26602436",
     "redfin_verified": true,
-    "photo": null,
+    "photo": "/images/staging/26-NS-077.jpg",
     "beds_baths": {
       "beds": 1.0,
       "baths": 2.0,
@@ -2875,8 +3077,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 28,
-      "source": "gis-csv"
+      "dom": 123,
+      "source": "gis-csv",
+      "list_price_cents": 44900000,
+      "ask_verified": true
     }
   },
   {
@@ -2933,7 +3137,7 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-05-18",
-      "dom": 8,
+      "dom": 6,
       "source": "gis-csv",
       "list_price_cents": 64995000,
       "ask_verified": true
@@ -2993,8 +3197,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 26,
-      "source": "gis-csv"
+      "dom": 46,
+      "source": "gis-csv",
+      "list_price_cents": 34000000,
+      "ask_verified": true
     }
   },
   {
@@ -3051,7 +3257,7 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-05-27",
-      "dom": 22,
+      "dom": 39,
       "source": "gis-csv",
       "list_price_cents": 37500000,
       "ask_verified": true
@@ -3109,7 +3315,7 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 128,
+      "dom": 46,
       "source": "gis-csv",
       "list_price_cents": 53990000,
       "ask_verified": true
@@ -3139,8 +3345,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-23",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 46,
+      "source": "gis-csv",
+      "list_price_cents": 47990000,
+      "ask_verified": true
     }
   },
   {
@@ -3167,7 +3375,7 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 140,
+      "dom": 46,
       "source": "gis-csv",
       "list_price_cents": 48990000,
       "ask_verified": true
@@ -3197,7 +3405,7 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-04-27",
-      "dom": 43,
+      "dom": 74,
       "source": "gis-csv",
       "list_price_cents": 55000000,
       "ask_verified": true
@@ -3227,8 +3435,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-06-30",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 102,
+      "source": "gis-csv",
+      "list_price_cents": 94900000,
+      "ask_verified": true
     }
   },
   {
@@ -3255,7 +3465,7 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-04-30",
-      "dom": 6,
+      "dom": 11,
       "source": "gis-csv",
       "list_price_cents": 115000000,
       "ask_verified": true
@@ -3285,7 +3495,7 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-05-13",
-      "dom": 54,
+      "dom": 90,
       "source": "gis-csv",
       "list_price_cents": 269500000,
       "ask_verified": true
@@ -3403,7 +3613,7 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-05-08",
-      "dom": 30,
+      "dom": 58,
       "source": "gis-csv",
       "list_price_cents": 59500000,
       "ask_verified": true
@@ -3433,8 +3643,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-07-31",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 60,
+      "source": "gis-csv",
+      "list_price_cents": 62500000,
+      "ask_verified": true
     }
   },
   {
@@ -3461,7 +3673,7 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 146,
+      "dom": 90,
       "source": "gis-csv",
       "list_price_cents": 549500000,
       "ask_verified": true
@@ -3491,8 +3703,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-06-23",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 31,
+      "source": "gis-csv",
+      "list_price_cents": 49500000,
+      "ask_verified": true
     }
   },
   {
@@ -3519,8 +3733,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 95,
-      "source": "gis-csv"
+      "dom": 45,
+      "source": "gis-csv",
+      "list_price_cents": 69900000,
+      "ask_verified": true
     }
   },
   {
@@ -3576,8 +3792,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 208,
-      "source": "gis-csv"
+      "dom": 102,
+      "source": "gis-csv",
+      "list_price_cents": 89844400,
+      "ask_verified": true
     }
   },
   {
@@ -3604,8 +3822,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 175,
-      "source": "gis-csv"
+      "dom": 60,
+      "source": "gis-csv",
+      "list_price_cents": 16500000,
+      "ask_verified": true
     }
   },
   {
@@ -3632,7 +3852,7 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-04-17",
-      "dom": 30,
+      "dom": 77,
       "source": "gis-csv",
       "list_price_cents": 59990000,
       "ask_verified": true
@@ -3662,7 +3882,7 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-04-09",
-      "dom": 41,
+      "dom": 46,
       "source": "gis-csv",
       "list_price_cents": 78569800,
       "ask_verified": true
@@ -3692,8 +3912,10 @@
       "price_label": "Price",
       "is_sold": false,
       "sold_date": null,
-      "dom": 342,
-      "source": "gis-csv"
+      "dom": 70,
+      "source": "gis-csv",
+      "list_price_cents": 175000000,
+      "ask_verified": true
     }
   },
   {
@@ -3720,8 +3942,10 @@
       "price_label": "Sold Price",
       "is_sold": true,
       "sold_date": "2026-06-30",
-      "dom": null,
-      "source": "gis-csv"
+      "dom": 105,
+      "source": "gis-csv",
+      "list_price_cents": 78900000,
+      "ask_verified": true
     }
   },
   {
