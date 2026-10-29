@@ -1,6 +1,6 @@
 # Greylyn Wayne — Architecture
 
-> Structural source of truth: **where code goes and why.** `CLAUDE.md` = how we work (stack, deploy, env); `README.md` = how to run it.
+> Structural source of truth: **where code goes and why.** `AGENTS.md` = how we work (stack, deploy, env; `CLAUDE.md` imports it); `README.md` = how to run it.
 > If you change structure, update this file **in the same PR**. A stale doc is how spaghetti starts.
 
 ## 1. What this app is
@@ -140,7 +140,7 @@ The only server-side logic. Both forms (and the chat widget) POST JSON here; it 
 
 - **TypeScript strict**; no new `any`/`@ts-ignore` without a justifying comment.
 - **Always `npm run build` before pushing** — it typechecks + prerenders all 58 pages and is the real gate (no test suite yet). Push to `main` auto-deploys on Vercel.
-- Iterate on `localhost:3000`; don't push per-tweak (Vercel build minutes — see `CLAUDE.md`).
+- Iterate on `localhost:3000`; don't push per-tweak (Vercel build minutes — see `AGENTS.md`).
 - Brand tokens (teal/warm/cream/charcoal, Playfair/Inter) come from `globals.css`; use the utility classes, don't hardcode hexes in components.
 - Images: always `next/image` with explicit `width`/`height`; assets in `public/images/` (webp preferred).
 - **Per-project photo galleries** live in `public/images/<set>/<slug>/NN.webp` (`NN` 1-padded, `01` = the project's hero card image) and render through the shared client component `components/SodGallery.tsx` (thumbnail grid → full-screen lightbox). Used on `street-of-dreams` (`sod/<slug>/`, the SOD homes) and `interior-design` (`interiors/<slug>/`, the furnished/STR projects — NE 56th, NW Kearney, SE 12th, Adelynn). Each page holds the project list (title/location/description/count) as a hardcoded array. Source photos are GW's own project/RMLS photography pulled from the 164 Investments "Listing Photos" Drive, curated + downscaled to ≤1800px webp offline (not scraped at build).
