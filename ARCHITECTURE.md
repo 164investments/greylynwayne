@@ -139,7 +139,7 @@ The only server-side logic. Both forms (and the chat widget) POST JSON here; it 
 ## 8. Conventions & gates
 
 - **TypeScript strict**; no new `any`/`@ts-ignore` without a justifying comment.
-- **Always `npm run build` before pushing** — it typechecks + prerenders all 58 pages and is the real gate (no test suite yet). A merge to `main` doesn't deploy by itself: after the merge, start the production build through the Vercel API (`AGENTS.md`, "Release lane").
+- **Always `npm run build` before pushing** — it typechecks + prerenders all 58 pages and is the real gate (no test suite or CI yet). Merging to `main` deploys production (`AGENTS.md`, "Release lane").
 - Iterate on `localhost:3000`; push once, when the change is finished, not per tweak.
 - Brand tokens (teal/warm/cream/charcoal, Playfair/Inter) come from `globals.css`; use the utility classes, don't hardcode hexes in components.
 - Images: always `next/image` with explicit `width`/`height`; assets in `public/images/` (webp preferred).
