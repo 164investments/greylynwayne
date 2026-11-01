@@ -11,7 +11,7 @@ The marketing and lead site for Greylyn Wayne, Jody Wallace's home staging and i
 ## Release lane
 
 - **Production:** `main` is production: Vercel project `greylynwayne` (team `simplyvrm`), serving `www.greylynwayne.com` and `greylynwayne.com`.
-- **Deploys don't start on their own.** GitHub pushes don't trigger Vercel builds, and relinking the repository doesn't fix it. After a merge, start a production build of `main` from git through the Vercel API: `POST /v13/deployments?teamId=…&forceNew=1` with `{"name":"greylynwayne","target":"production","gitSource":{"type":"github","repoId":1167109930,"ref":"main"}}`. Check that the response's `meta.githubCommitSha` is your merge commit.
+- **Merging to `main` deploys production.** The Vercel project `greylynwayne` is linked to `164investments/greylynwayne`. If a merge's production build doesn't appear within a few minutes, start one from git through the Vercel API: `POST /v13/deployments?teamId=…&forceNew=1` with `{"name":"greylynwayne","target":"production","gitSource":{"type":"github","repoId":1167109930,"ref":"main"}}`. Check that the response's `meta.githubCommitSha` is your merge commit.
 - Never deploy a working tree with `vercel --prod`, and never get around its guard with `VERCEL_ALLOW_PROD=1`.
 - **Other lanes:** none.
 - **Feature work:** a `feat/*` or `fix/*` branch from `origin/main` in its own worktree, and a ready pull request with auto-merge on (`gh pr merge --auto --squash`). This repository has no CI and no required check, so run the fast check before you push.
