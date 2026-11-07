@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { cities } from "@/data/service-areas";
 import { blogPosts } from "@/data/blog-posts";
+import { roomPages } from "@/data/rooms";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.greylynwayne.com";
@@ -46,5 +47,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...cityPages, ...blogPostPages];
+  const roomDesignPages: MetadataRoute.Sitemap = roomPages.map((room) => ({
+    url: `${baseUrl}/interior-design/${room.slug}`,
+    lastModified: new Date("2026-11-06T12:00:00"),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...cityPages, ...blogPostPages, ...roomDesignPages];
 }

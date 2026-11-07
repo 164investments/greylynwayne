@@ -64,7 +64,13 @@ export function GoogleG({ className = "h-[17px] w-[17px]" }: { className?: strin
  * Hero social proof — a recognizable Google review badge over a quiet credential
  * line. Designed for a light background (e.g. the split-hero cream panel).
  */
-export function HeroProof({ className = "" }: { className?: string }) {
+export function HeroProof({
+  className = "",
+  showCredentials = true,
+}: {
+  className?: string;
+  showCredentials?: boolean;
+}) {
   return (
     <div className={className}>
       <Link
@@ -78,16 +84,18 @@ export function HeroProof({ className = "" }: { className?: string }) {
         <span className="text-[#e0a82e]">
           <RatingStars className="h-[15px] w-[15px]" />
         </span>
-        <span className="text-sm font-bold text-charcoal">{RATING}</span>
+        <span className={`${showCredentials ? "text-sm" : "text-base"} font-bold text-charcoal`}>{RATING}</span>
         <span className="w-px h-4 bg-[#e0d9cc]" aria-hidden="true" />
-        <span className="text-sm text-charcoal-light">{REVIEW_COUNT} Google reviews</span>
+        <span className={`${showCredentials ? "text-sm" : "text-base"} text-charcoal-light`}>{REVIEW_COUNT} Google reviews</span>
       </Link>
-      <p className="mt-3.5 text-xs tracking-wider uppercase text-charcoal-light/75">
-        <span className="font-semibold text-charcoal-light">
-          4&times; Street of Dreams Designer
-        </span>{" "}
-        &middot; 2,500+ Homes Staged Since 2015
-      </p>
+      {showCredentials && (
+        <p className="mt-3.5 text-xs tracking-wider uppercase text-charcoal-light/75">
+          <span className="font-semibold text-charcoal-light">
+            4&times; Street of Dreams Designer
+          </span>{" "}
+          &middot; 2,500+ Homes Staged Since 2015
+        </p>
+      )}
     </div>
   );
 }

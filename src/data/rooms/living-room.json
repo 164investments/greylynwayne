@@ -1,0 +1,181 @@
+{
+  "slug": "living-room",
+  "room": "Living Room",
+  "title": "Living Room Design in Portland",
+  "metaTitle": "Living Room Design in Portland | Greylyn Wayne",
+  "metaDescription": "Portland living room design from a 4x Street of Dreams team: furniture layout, color, lighting, rugs and art, plus fireplace code basics. Free discovery call.",
+  "targetKeyword": "living room design portland",
+  "answer": "We plan the layout, color, lighting, rugs and art, then source and style it all.",
+  "hero": {
+    "src": "/images/sod/alla-famiglia/10.webp",
+    "alt": "Alla Famiglia great room by Greylyn Wayne: coffered ceiling, glass window wall, white fireplace, lit built-in shelves and a sofa grouping on an oak floor"
+  },
+  "picks": {
+    "heading": "Which living room layout fits your room?",
+    "items": [
+      {
+        "name": "Facing the fireplace",
+        "bestFor": "Rooms with one clear focal point",
+        "watchFor": "TV and fireplace fighting for one wall"
+      },
+      {
+        "name": "Sectional",
+        "bestFor": "Families and movie nights",
+        "watchFor": "Hard to rearrange later"
+      },
+      {
+        "name": "Two sofas facing",
+        "bestFor": "Conversation and entertaining",
+        "watchFor": "Needs width for a path around"
+      },
+      {
+        "name": "Sofa and two chairs",
+        "bestFor": "Smaller rooms and flexible seating",
+        "watchFor": "Chairs that block the main path"
+      },
+      {
+        "name": "Floating in an open plan",
+        "bestFor": "Open plans that need a room edge",
+        "watchFor": "A rug too small to anchor it"
+      }
+    ]
+  },
+  "numbers": {
+    "heading": "Living room minimums: walkways and fireplaces",
+    "rows": [
+      {
+        "label": "Walkway through the room (ADA accessible route)",
+        "value": "36″ or more"
+      },
+      {
+        "label": "Hearth extension, in front of the opening",
+        "value": "16″ or more"
+      },
+      {
+        "label": "Hearth extension, past each side",
+        "value": "8″ or more"
+      },
+      {
+        "label": "Hearth extension, opening 6 sq ft or larger",
+        "value": "20″ in front, 12″ each side"
+      },
+      {
+        "label": "Wood mantel or trim, from the opening",
+        "value": "6″ or more"
+      }
+    ],
+    "sources": [
+      {
+        "label": "2010 ADA Standards, §403.5.1",
+        "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/"
+      },
+      {
+        "label": "Oregon Residential Specialty Code 2023, Section R1001 (accepted through March 2027)",
+        "url": "https://up.codes/viewer/oregon/irc-2021/chapter/10/chimneys-and-fireplaces"
+      }
+    ]
+  },
+  "art": {
+    "src": "/images/rooms/living-room-illustration.webp",
+    "alt": "",
+    "caption": ""
+  },
+  "photos": [
+    {
+      "src": "/images/sod/bespoke/01.webp",
+      "alt": "Bespoke living room: tall stone fireplace with a TV above, oak shelves on both sides and a navy sofa with white pillows",
+      "caption": "Bespoke · 2019 Street of Dreams · Portland",
+      "href": "/street-of-dreams#sod-2019"
+    },
+    {
+      "src": "/images/interiors/se12th-1032/01.webp",
+      "alt": "1032 SE 12th living room: leafy statement wallpaper above white wainscoting, green velvet sofa and cognac leather chairs",
+      "caption": "1032 SE 12th · Portland",
+      "href": "/interior-design"
+    },
+    {
+      "src": "/images/interiors/kearney/01.webp",
+      "alt": "NW Kearney living room: teal sofa with orange pillows, glass coffee table and a wood bay window seat",
+      "caption": "NW Kearney · Portland",
+      "href": "/interior-design"
+    },
+    {
+      "src": "/images/interiors/se12th-1036/01.webp",
+      "alt": "1036 SE 12th living room: bright blue sofa under a wall of windows, round coffee table and orange accent chairs",
+      "caption": "1036 SE 12th · Portland",
+      "href": "/interior-design"
+    },
+    {
+      "src": "/images/sod/ohana/02.webp",
+      "alt": "Ohana great room: curved cream sofa and round black coffee table open to a kitchen under wood ceiling beams",
+      "caption": "Ohana · 2021 Street of Dreams · Happy Valley",
+      "href": "/street-of-dreams#sod-2021"
+    },
+    {
+      "src": "/images/sod/alla-famiglia/27.webp",
+      "alt": "Alla Famiglia family room: plaid sectional facing a wall TV and media console, open to a second kitchen with an island",
+      "caption": "Alla Famiglia family room · 2025 Street of Dreams · Lake Oswego",
+      "href": "/alla-famiglia"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can you design my living room without a remodel?",
+      "answer": "Yes. Most living room work is furniture, color, lighting, rugs, art and styling. We plan the layout, source the pieces, then install and style them. If you are changing a fireplace or adding built-ins, your contractor does that work."
+    },
+    {
+      "question": "How much does living room design cost?",
+      "answer": "It depends on the scope, from a single consultation to full-service design. We quote after the discovery call. Our guide to [what an interior designer costs in Portland](/blog/interior-designer-cost-portland) explains how designers usually charge."
+    },
+    {
+      "question": "How far does a fireplace hearth need to extend?",
+      "answer": "For a masonry fireplace, Oregon's 2023 residential code requires a hearth extension at least 16″ in front of the opening and 8″ past each side, or 20″ and 12″ when the opening is 6 sq ft or larger. Factory-built units follow their listing."
+    },
+    {
+      "question": "Can you work with furniture I already own?",
+      "answer": "Yes. We can plan around the pieces you love and source what's missing. A few phone photos of the room and your furniture are a good start for the discovery call."
+    }
+  ],
+  "factChecks": [
+    {
+      "claim": "Accessible route clear width 36″",
+      "quote": "the clear width of walking surfaces shall be 36 inches (915 mm) minimum",
+      "url": "https://www.ada.gov/law-and-regs/design-standards/2010-stds/"
+    },
+    {
+      "claim": "Hearth extension 16″ in front, 8″ each side",
+      "quote": "Hearth extensions shall extend not less than 16 inches (406 mm) in front of and not less than 8 inches (203 mm) beyond each side of the fireplace opening.",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/10/chimneys-and-fireplaces"
+    },
+    {
+      "claim": "Opening 6 sq ft or larger: 20″ in front, 12″ each side",
+      "quote": "Where the fireplace opening is 6 square feet (0.6 m 2 ) or larger, the hearth extension shall extend not less than 20 inches (508 mm) in front of and not less than 12 inches (305 mm) beyond each side of the fireplace opening.",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/10/chimneys-and-fireplaces"
+    },
+    {
+      "claim": "Hearth extension thickness 2″",
+      "quote": "The minimum thickness of hearth extensions shall be 2 inches (51 mm).",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/10/chimneys-and-fireplaces"
+    },
+    {
+      "claim": "Combustible mantel or trim 6″ from opening",
+      "quote": "Exposed combustible mantels or trim is permitted to be placed directly on the masonry fireplace front surrounding the fireplace opening providing such combustible materials are not placed within 6 inches (152 mm) of a fireplace opening.",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/10/chimneys-and-fireplaces"
+    },
+    {
+      "claim": "Within 12″, projection 1/8″ per 1″",
+      "quote": "Combustible material within 12 inches (306 mm) of the fireplace opening shall not project more than 1 / 8 inch (3 mm) for each 1-inch (25 mm) distance from such an opening.",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/10/chimneys-and-fireplaces"
+    },
+    {
+      "claim": "Factory-built fireplaces follow their listing",
+      "quote": "Hearth extensions of approved factory-built fireplaces shall be installed in accordance with the listing of the fireplace",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/10/chimneys-and-fireplaces"
+    },
+    {
+      "claim": "2023 ORSC still usable during the 2026 ORSC phase-in (mandatory April 1, 2027)",
+      "quote": "effective Oct. 1, 2026, with a six-month phase-in period and mandatory April 1, 2027",
+      "url": "https://www.oregon.gov/bcd/laws-rules/Documents/20261001-2026orsc-adoption-pr.pdf"
+    }
+  ]
+}

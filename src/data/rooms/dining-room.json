@@ -1,0 +1,175 @@
+{
+  "slug": "dining-room",
+  "room": "Dining Room",
+  "title": "Dining Room Design in Portland",
+  "metaTitle": "Dining Room Design in Portland | Greylyn Wayne",
+  "metaDescription": "Portland dining room design from a 4x Street of Dreams team: table size, layout, lighting and seating, plus NKBA seating clearances. Free discovery call.",
+  "targetKeyword": "dining room design portland",
+  "answer": "We size the table and plan the lighting, seating and decor, then style the room.",
+  "hero": {
+    "src": "/images/sod/alla-famiglia/13.webp",
+    "alt": "Alla Famiglia dining room by Greylyn Wayne: globe chandelier over a dark table with upholstered chairs, white brick wall and lit glass cabinets"
+  },
+  "picks": {
+    "heading": "Which table shape fits your room?",
+    "items": [
+      {
+        "name": "Rectangle",
+        "bestFor": "Long rooms and bigger groups",
+        "watchFor": "Narrow rooms with tight walkways"
+      },
+      {
+        "name": "Round",
+        "bestFor": "Square rooms and easy conversation",
+        "watchFor": "Big rounds where no one reaches the middle"
+      },
+      {
+        "name": "Square",
+        "bestFor": "Small square rooms, groups of four",
+        "watchFor": "No easy seat for a fifth guest"
+      },
+      {
+        "name": "Banquette",
+        "bestFor": "Corners, nooks and small rooms",
+        "watchFor": "Sliding in and out of the middle"
+      },
+      {
+        "name": "Extending table",
+        "bestFor": "Small rooms that host holidays",
+        "watchFor": "Room to open it to full length"
+      }
+    ]
+  },
+  "numbers": {
+    "heading": "Dining clearances",
+    "rows": [
+      {
+        "label": "Table edge to wall, no one walking behind",
+        "value": "32″ or more"
+      },
+      {
+        "label": "To edge past a seated diner",
+        "value": "36″ or more"
+      },
+      {
+        "label": "To walk past a seated diner",
+        "value": "44″ or more"
+      },
+      {
+        "label": "To pass a wheelchair behind diners",
+        "value": "60″ or more"
+      },
+      {
+        "label": "Table width per diner, 30″-high table",
+        "value": "24″"
+      },
+      {
+        "label": "Knee space depth, 30″-high table",
+        "value": "18″"
+      }
+    ],
+    "sources": [
+      {
+        "label": "NKBA Kitchen Planning Guidelines (seating guidelines 8 and 9)",
+        "url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf"
+      }
+    ]
+  },
+  "art": {
+    "src": "/images/rooms/dining-table-clearance-illustration.webp",
+    "alt": "Pen-and-ink sketch: a tape measure spans the walkway from a dining table leg to the wall, past a pulled-out chair.",
+    "caption": "Illustrated: measuring from the table to the wall"
+  },
+  "photos": [
+    {
+      "src": "/images/sod/bespoke/06.webp",
+      "alt": "Bespoke dining room: iron lantern chandelier over a table with white upholstered chairs, glass doors on both sides",
+      "caption": "Bespoke · 2019 Street of Dreams · Portland",
+      "href": "/street-of-dreams#sod-2019"
+    },
+    {
+      "src": "/images/sod/alla-famiglia/26.webp",
+      "alt": "Alla Famiglia dining nook: cream banquette wrapped around a round black pedestal table under a glass pendant",
+      "caption": "Alla Famiglia · 2025 Street of Dreams · Lake Oswego",
+      "href": "/alla-famiglia"
+    },
+    {
+      "src": "/images/sod/vista/09.webp",
+      "alt": "Vista dining room: deep green paneled walls, globe pendant, a large garden painting and a wood table",
+      "caption": "Vista · 2024 Street of Dreams · Portland",
+      "href": "/street-of-dreams#sod-2024"
+    },
+    {
+      "src": "/images/interiors/kearney/07.webp",
+      "alt": "NW Kearney dining room: long wood table with black chairs under a brass globe chandelier, bay windows behind",
+      "caption": "NW Kearney · Portland",
+      "href": "/interior-design"
+    },
+    {
+      "src": "/images/interiors/se12th-1032/03.webp",
+      "alt": "1032 SE 12th dining room: wood table with black chairs beside a built-in hutch, wallpapered living room beyond",
+      "caption": "1032 SE 12th · Portland",
+      "href": "/interior-design"
+    },
+    {
+      "src": "/images/interiors/adelynn/08.webp",
+      "alt": "Adelynn Hotel suite dining area: long wood table with a bench and woven chairs under two black and gold pendants",
+      "caption": "The Adelynn Hotel suite dining area · Portland",
+      "href": "/interior-design"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How much space do I need around a dining table?",
+      "answer": "The NKBA's seating guidelines call for at least 32″ from the table edge to a wall where no one walks behind, 36″ to edge past a seated diner and 44″ to walk past. We measure your room and size the table to fit."
+    },
+    {
+      "question": "How many people fit at my table?",
+      "answer": "Plan about 24″ of table width for each diner, per the NKBA's guidelines for 30″-high tables. Measure the long sides and divide by 24, then add the ends if they're wide enough to sit at."
+    },
+    {
+      "question": "How much does dining room design cost?",
+      "answer": "It depends on the scope, from a single consultation to full-service design. We quote after the discovery call. Our guide to [what an interior designer costs in Portland](/blog/interior-designer-cost-portland) explains how designers usually charge."
+    },
+    {
+      "question": "Is a banquette a good idea?",
+      "answer": "A banquette tucks a table into a corner or nook and seats more people along a wall. The trade-off is sliding in and out. We design it as part of the room; a carpenter or your builder builds it."
+    },
+    {
+      "question": "Can you design a dining area in an open plan?",
+      "answer": "Yes. We use the table, lighting and rug to mark out the eating area, and keep walkways clear of chairs pulled back from the table."
+    }
+  ],
+  "factChecks": [
+    {
+      "claim": "32″ table edge to wall, no traffic",
+      "quote": "allow 32″ (813 mm) of clearance from the counter/table edge to any wall or other obstruction behind the seating area.",
+      "url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf"
+    },
+    {
+      "claim": "36″ to edge past a seated diner",
+      "quote": "If traffic passes behind the seated diner, allow at least 36″ (914 mm) to edge past.",
+      "url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf"
+    },
+    {
+      "claim": "44″ to walk past a seated diner",
+      "quote": "If traffic passes behind the seated diner, allow at least 44″ (1118 mm) to walk past.",
+      "url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf"
+    },
+    {
+      "claim": "60″ for a wheelchair behind diners (Access Standard)",
+      "quote": "If traffic passes behind the seated diner, plan a minimum of 60″ (1524 mm) to allow passage for a person in a wheelchair.",
+      "url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf"
+    },
+    {
+      "claim": "30″-high tables: 24″ wide × 18″ deep knee space per diner",
+      "quote": "Allow a 24″ wide × 18″ deep (610 mm × 457 mm) knee space for each seated diner.",
+      "url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf"
+    },
+    {
+      "claim": "The 24″ × 18″ rule applies to 30″-high tables",
+      "quote": "a. 30″ (762 mm) high tables/",
+      "url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf"
+    }
+  ]
+}

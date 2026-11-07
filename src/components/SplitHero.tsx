@@ -19,23 +19,28 @@ export default function SplitHero({
   imageAlt,
   titleClassName = "text-4xl md:text-5xl lg:text-6xl",
   mobileImageClass = "min-h-[240px] sm:min-h-[360px]",
+  compact = false,
 }: {
-  eyebrow: string;
+  eyebrow?: string;
   title: ReactNode;
   subtitle: string;
   imageSrc: string;
   imageAlt: string;
   titleClassName?: string;
   mobileImageClass?: string;
+  /** Room pages: no credentials line; on phones the action sits right under the answer, Call is a text link. */
+  compact?: boolean;
 }) {
   return (
     <section className="pt-20">
       <div className="flex flex-col lg:flex-row lg:min-h-[640px]">
         {/* Text panel */}
-        <div className="lg:w-[45%] bg-cream flex flex-col justify-center px-6 py-11 lg:px-16 lg:py-0 order-2 lg:order-1">
-          <p className="text-teal text-sm tracking-[0.3em] uppercase mb-5">
-            {eyebrow}
-          </p>
+        <div className={`lg:w-[45%] bg-cream flex flex-col justify-center px-6 lg:px-16 lg:py-0 order-2 lg:order-1 ${compact ? "py-6 sm:py-11" : "py-11"}`}>
+          {eyebrow && (
+            <p className="text-teal text-sm tracking-[0.3em] uppercase mb-5">
+              {eyebrow}
+            </p>
+          )}
           <h1
             className={`font-[family-name:var(--font-playfair)] text-charcoal leading-[1.06] mb-5 ${titleClassName}`}
           >
@@ -44,8 +49,8 @@ export default function SplitHero({
           <p className="text-charcoal-light text-lg leading-relaxed mb-7 max-w-md">
             {subtitle}
           </p>
-          <HeroProof />
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+          {!compact && <HeroProof />}
+          <div className={`flex flex-col sm:flex-row gap-4 ${compact ? "" : "mt-8"}`}>
             <button
               type="button"
               data-open-chat
@@ -58,11 +63,17 @@ export default function SplitHero({
             </button>
             <a
               href="tel:9719300220"
-              className="inline-flex items-center justify-center gap-2 border border-teal text-teal px-8 py-4 text-sm tracking-wider uppercase hover:bg-teal hover:text-white transition-colors duration-200 text-center font-medium"
+              className={`${compact ? "hidden sm:inline-flex" : "inline-flex"} items-center justify-center gap-2 border border-teal text-teal px-8 py-4 text-sm tracking-wider uppercase hover:bg-teal hover:text-white transition-colors duration-200 text-center font-medium`}
             >
               Call (971) 930-0220
             </a>
+            {compact && (
+              <a href="tel:9719300220" className="sm:hidden text-center text-charcoal-light underline decoration-teal underline-offset-4">
+                or call (971) 930-0220
+              </a>
+            )}
           </div>
+          {compact && <HeroProof className="mt-6" showCredentials={false} />}
         </div>
         {/* Real project photo */}
         <div className={`relative order-1 lg:order-2 lg:flex-1 ${mobileImageClass} lg:min-h-0`}>

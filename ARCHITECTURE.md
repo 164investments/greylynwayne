@@ -46,6 +46,7 @@ Built to the WNF/Stay-Portland playbook. Conversions fire on multiple paths so n
 | A new service area (city) | `src/data/service-areas.ts` | Add a `CityData` entry — it auto-generates the page, sitemap entry, schema, and FAQ. **Write genuinely unique** content: `description` + `marketNote` (distinct prose), `neighborhoods`, `highlights`, `nearby`, and **per-city `faqs`** (vary the questions, not just answers) — never spun boilerplate. Set `heroImage`/`heroAlt` (GW's own optimized imagery, varied by market character) — but if a real per-city location photo exists at `public/images/service-areas/{slug}.webp`, register it in `cityHeroPhotos` (slug→alt) and `cityHero()` prefers it over `heroImage`. Also set `stagingRegion` (which staging-portfolio region feeds the listings fallback; `null` = far region → portfolio fallback). The page pulls real staged listings via `homesForCity()` and labels them honestly (`scope`: in-city vs. nearby/representative). **Also add a matching `cityInteriorContent[slug]` entry** (`note` + 2 interior-design `faqs`) — the city template renders a dedicated "Interior Design in {city}" section and merges the interior FAQs into the page + FAQ schema, so the interior-design Service schema is backed by real, unique content (not just a staging page wearing an ID schema). **Never fabricate numeric stats** — uniqueness comes from real neighborhoods + the real listing/sale data. |
 | Content derived from the ops DB + an external source | offline script in `scripts/` → generated `src/data/*.json` → typed wrapper `*.ts` | See §6b. The page imports the **committed JSON snapshot**, never fetches at build/runtime. Re-running the script is a manual, reviewed step. |
 | A new blog article | `src/data/blog/<slug>.json` + register in `src/data/blog-posts.ts` | See §6c. Authored JSON (typed by `blog/_schema.ts`), rendered by `app/blog/[slug]/page.tsx`. Adds itself to the index, sitemap, and `BlogPosting`+`FAQ`+`Breadcrumb` schema automatically. **Never fabricate stats** (no invented ROI/percentages/study citations); internal-link to money pages + siblings; if it replaces an old Wix `/post/<slug>`, add the 301 in `next.config.ts`. |
+| A new room design page | `src/data/rooms/<slug>.json` + register in `src/data/rooms.ts` | See §6d. Rendered by `app/interior-design/[room]/page.tsx`; links itself from the "Rooms We Design" list, the other room pages and the sitemap. Hero and project photos must be real Greylyn Wayne photos; every number in the table needs a verbatim source quote in `factChecks`. |
 | A shared UI piece (used 2+ places) | `src/components/` | Keep presentational. No data fetching, no business logic. |
 | Page-specific markup used once | Inline in that `page.tsx` | Don't pre-abstract (Rule of Three). |
 | Structured data / schema | `src/components/JsonLd.tsx` | One exported component per schema type. Reuse `LocalBusinessJsonLd`, `ServiceJsonLd`, `FAQJsonLd`, `BreadcrumbJsonLd`. |
@@ -119,10 +120,28 @@ src/data/blog-posts.ts              registers each JSON in order; exports blogPo
   → src/components/JsonLd.tsx        ArticleJsonLd (BlogPosting) — alongside FAQ + Breadcrumb
 ```
 
-- **Body is a typed `Block[]`** (`p`/`h2`/`h3`/`ul`/`ol`/`image`/`callout`/`quote`) — schema-friendly, no MDX/markdown pipeline. Paragraph/list/callout text supports **markdown-lite**: `**bold**` and `[label](/internal-path)` links, parsed by the renderer in `[slug]/page.tsx`. Keep it minimal; don't grow it into a full markdown engine.
+- **Body is a typed `Block[]`** (`p`/`h2`/`h3`/`ul`/`ol`/`image`/`callout`/`quote`) — schema-friendly, no MDX/markdown pipeline. Paragraph/list/callout text supports **markdown-lite**: `**bold**` and `[label](/internal-path)` links, parsed by `src/lib/inline.tsx` (shared with the room pages). Keep it minimal; don't grow it into a full markdown engine.
 - **Adding a post** = drop a `<slug>.json` + add one import line to `blog-posts.ts`. It then auto-appears in the index, sitemap, and gets `BlogPosting` + `FAQPage` + `BreadcrumbList` JSON-LD. Images must already exist under `public/images/`.
 - **Rules:** never fabricate stats/ROI/study citations (CRO zombie-stat rule); every post internal-links to money pages (`/home-staging`, `/interior-design`, `/contact`) + ≥1 sibling post; `related[]` drives the "Keep Reading" footer. The page appends its own CTA + renders the FAQs, so post bodies should NOT duplicate a big CTA or a "FAQ" heading.
 - **Migration tie-in:** old Wix `/post/<slug>` articles 301 to the closest new post in `next.config.ts` (specific maps before the `/post/:slug*` catch-all). `params` is a **Promise** (Next 16) — `await` it in both `generateMetadata` and the page.
+
+## 6d. Room design pages (`src/data/rooms/` → `app/interior-design/[room]`)
+
+One page per room in the "Rooms We Design" list (kitchen first), each a skimmable guide that targets "<room> design portland" searches.
+
+```
+src/data/rooms/_schema.ts           types: RoomPage (picks, numbers + sources, art, photos, faqs, factChecks)
+src/data/rooms/<slug>.json          one authored room per file
+src/data/rooms.ts                   registers each JSON; exports roomPages, getRoomBySlug, designRooms (all 10 names, slug once built)
+  → src/app/interior-design/[room]/page.tsx   renderer + generateStaticParams (dynamicParams = false)
+  → src/app/interior-design/page.tsx          "Rooms We Design" chips link built rooms
+  → src/app/sitemap.ts                        appends /interior-design/<slug>
+src/components/RoomPlan.tsx         SVG floor-plan line drawings for kitchen layout picks
+src/lib/inline.tsx                  [label](/path) + **bold** renderer shared with the blog
+```
+
+- **Honesty rules:** the hero and "From Our Projects" photos are real Greylyn Wayne photos, captioned with what Greylyn Wayne did there. The one generated image per room is a pen-and-ink illustration (`public/images/rooms/<slug>-illustration.webp`), always captioned "Illustrated: …". Greylyn Wayne designs; copy never claims construction.
+- **Numbers:** each `numbers.rows` value must come from the cited primary source, with the verbatim sentence in `factChecks`. Check every quote against the fetched source before publishing.
 
 ## 7. The lead endpoint (`app/api/lead/route.ts`)
 

@@ -1,0 +1,203 @@
+{
+  "slug": "bedroom",
+  "room": "Bedroom",
+  "title": "Bedroom Design in Portland",
+  "metaTitle": "Bedroom Design in Portland | Greylyn Wayne Interior Design",
+  "metaDescription": "Portland bedroom design from a 4x Street of Dreams team: layout, bedding, lighting, color and window treatments, plus Oregon bedroom code minimums. Free call.",
+  "targetKeyword": "bedroom design portland",
+  "answer": "We plan the layout, bedding, lighting and window treatments, then style the room.",
+  "hero": {
+    "src": "/images/sod/alla-famiglia/14.webp",
+    "alt": "Alla Famiglia bedroom: four-poster canopy bed, arched black window onto trees, a round chandelier and a rust sofa"
+  },
+  "picks": {
+    "heading": "Which bed setup fits your bedroom?",
+    "items": [
+      {
+        "name": "Centered on the longest wall",
+        "bestFor": "Primary suites with room on both sides",
+        "watchFor": "A squeezed walkway at the foot"
+      },
+      {
+        "name": "Facing the view",
+        "bestFor": "Rooms with a window worth waking to",
+        "watchFor": "Morning glare without good shades"
+      },
+      {
+        "name": "Under a window",
+        "bestFor": "Narrow rooms with one usable wall",
+        "watchFor": "Drafts and a short headboard"
+      },
+      {
+        "name": "Four-poster or canopy",
+        "bestFor": "High ceilings and larger rooms",
+        "watchFor": "Crowding a low or small room"
+      },
+      {
+        "name": "Two twins",
+        "bestFor": "Guest rooms and shared kids' rooms",
+        "watchFor": "Room for a nightstand between"
+      },
+      {
+        "name": "Tucked in a corner",
+        "bestFor": "Small guest rooms and kids' rooms",
+        "watchFor": "Making the bed against the wall"
+      }
+    ]
+  },
+  "numbers": {
+    "heading": "Is it legally a bedroom? Oregon code",
+    "rows": [
+      {
+        "label": "Escape window, clear opening",
+        "value": "5.7 sq ft or more"
+      },
+      {
+        "label": "Escape window at grade floor, clear opening",
+        "value": "5 sq ft or more"
+      },
+      {
+        "label": "Escape window, clear opening height",
+        "value": "24″ or more"
+      },
+      {
+        "label": "Escape window, clear opening width",
+        "value": "20″ or more"
+      },
+      {
+        "label": "Escape window, bottom of opening above the floor",
+        "value": "44″ or less"
+      },
+      {
+        "label": "Room floor area",
+        "value": "70 sq ft or more"
+      },
+      {
+        "label": "Narrowest room dimension",
+        "value": "7′ or more"
+      },
+      {
+        "label": "Ceiling height",
+        "value": "7′ or more"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Oregon Residential Specialty Code 2023, Sections R304, R305 and R310 (accepted through March 2027)",
+        "url": "https://codes.iccsafe.org/content/ORRC2023P1/chapter-3-building-planning"
+      }
+    ]
+  },
+  "art": {
+    "src": "/images/rooms/bedroom-escape-window-sill-illustration.webp",
+    "alt": "Pen-and-ink sketch: a tape measure stands from the floor to the sill of a bedroom window, beside the bed.",
+    "caption": "Illustrated: measuring the escape window's sill height"
+  },
+  "photos": [
+    {
+      "src": "/images/sod/alla-famiglia/34.webp",
+      "alt": "Alla Famiglia bedroom: carved spindle-post bed against dark botanical wallpaper, white nightstands and built-in shelves",
+      "caption": "Alla Famiglia · 2025 Street of Dreams · Lake Oswego",
+      "href": "/alla-famiglia"
+    },
+    {
+      "src": "/images/sod/bespoke/08.webp",
+      "alt": "Bespoke bedroom: white canopy bed with a bench at its foot, pendant lights and sliding doors to the yard",
+      "caption": "Bespoke · 2019 Street of Dreams · Portland",
+      "href": "/street-of-dreams#sod-2019"
+    },
+    {
+      "src": "/images/sod/ohana/05.webp",
+      "alt": "Ohana bedroom: dark green paneled wall, white bedding, a woven pendant and a bath through the doorway",
+      "caption": "Ohana · 2021 Street of Dreams · Happy Valley",
+      "href": "/street-of-dreams#sod-2021"
+    },
+    {
+      "src": "/images/sod/vista/07.webp",
+      "alt": "Vista bedroom: wood-paneled wainscot, white upholstered bed and brass lamps on black nightstands",
+      "caption": "Vista · 2024 Street of Dreams · Portland",
+      "href": "/street-of-dreams#sod-2024"
+    },
+    {
+      "src": "/images/interiors/se12th-1032/12.webp",
+      "alt": "1032 SE 12th bedroom: navy upholstered bed against leaf-print wallpaper, linen curtains and a potted tree",
+      "caption": "1032 SE 12th · Portland",
+      "href": "/interior-design"
+    },
+    {
+      "src": "/images/interiors/kearney/05.webp",
+      "alt": "NW Kearney bedroom: brass bed on a patterned rug, a sliding barn door and white walls with dark trim",
+      "caption": "NW Kearney · Portland",
+      "href": "/interior-design"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do you design primary suites and guest rooms?",
+      "answer": "Yes. We plan the furniture layout and choose the bed, bedding, lighting, color, window treatments and art, then source, install and style the room. Jody Wallace has led the interior design of four Street of Dreams homes."
+    },
+    {
+      "question": "How much does bedroom design cost?",
+      "answer": "It depends on the scope, from a single consultation to full-service design. We quote after the discovery call. Our guide to [what an interior designer costs in Portland](/blog/interior-designer-cost-portland) explains how designers usually charge."
+    },
+    {
+      "question": "What does code require for a bedroom window?",
+      "answer": "Oregon's residential code requires every sleeping room to have an operable emergency escape opening: at least 5.7 sq ft clear (5 sq ft at grade floor), 24″ high and 20″ wide, with the bottom no more than 44″ above the floor. Your contractor confirms it; we plan furniture around it."
+    },
+    {
+      "question": "Can you redo a bedroom without a remodel?",
+      "answer": "Usually. A bedroom changes a lot with furniture, bedding, lighting, window treatments and art, and we can work with pieces you already own."
+    },
+    {
+      "question": "What should I have ready for the discovery call?",
+      "answer": "A few phone photos of the room, rough measurements and window locations if you have them, and who uses the room. That's enough to talk through what's possible."
+    }
+  ],
+  "factChecks": [
+    {
+      "claim": "Every sleeping room needs an emergency escape opening (2023 ORSC R310.1 as amended by Oregon BCD)",
+      "quote": "every sleeping room shall have not less than one operable emergency escape and rescue opening",
+      "url": "https://www.oregon.gov/bcd/codes-stand/Documents/23orsc-R310-amend.pdf"
+    },
+    {
+      "claim": "Escape opening at least 5.7 sq ft",
+      "quote": "Emergency escape and rescue openings shall have a net clear opening of not less than 5.7 square feet",
+      "url": "https://codes.iccsafe.org/content/ORRC2023P1/chapter-3-building-planning"
+    },
+    {
+      "claim": "Grade-floor escape opening at least 5 sq ft",
+      "quote": "The minimum net clear opening for grade-floor emergency escape and rescue openings shall be 5 square feet",
+      "url": "https://codes.iccsafe.org/content/ORRC2023P1/chapter-3-building-planning"
+    },
+    {
+      "claim": "Clear opening height at least 24″",
+      "quote": "The minimum net clear opening height dimension shall be 24 inches (610 mm).",
+      "url": "https://codes.iccsafe.org/content/ORRC2023P1/chapter-3-building-planning"
+    },
+    {
+      "claim": "Clear opening width at least 20″",
+      "quote": "The minimum net clear opening width dimension shall be 20 inches (508 mm).",
+      "url": "https://codes.iccsafe.org/content/ORRC2023P1/chapter-3-building-planning"
+    },
+    {
+      "claim": "Bottom of opening no more than 44″ above floor",
+      "quote": "Emergency escape and rescue openings shall have the bottom of the clear opening not greater than 44 inches (1118 mm) above the finished floor.",
+      "url": "https://codes.iccsafe.org/content/ORRC2023P1/chapter-3-building-planning"
+    },
+    {
+      "claim": "Habitable room floor area at least 70 sq ft",
+      "quote": "Habitable rooms shall have a floor area of not less than 70 square feet",
+      "url": "https://codes.iccsafe.org/content/ORRC2023P1/chapter-3-building-planning"
+    },
+    {
+      "claim": "Habitable room at least 7′ in any horizontal dimension",
+      "quote": "Habitable rooms shall be not less than 7 feet (2134 mm) in any horizontal dimension.",
+      "url": "https://codes.iccsafe.org/content/ORRC2023P1/chapter-3-building-planning"
+    },
+    {
+      "claim": "Habitable space ceiling height at least 7′",
+      "quote": "portions of basements containing these spaces shall have a ceiling height of not less than 7 feet (2134 mm).",
+      "url": "https://codes.iccsafe.org/content/ORRC2023P1/chapter-3-building-planning"
+    }
+  ]
+}

@@ -8,6 +8,7 @@ import {
 } from "@/components/JsonLd";
 import SplitHero from "@/components/SplitHero";
 import { metroLinks } from "@/data/service-areas";
+import { designRooms } from "@/data/rooms";
 import SodGallery from "@/components/SodGallery";
 
 export const metadata: Metadata = {
@@ -113,19 +114,6 @@ const projects = [
     description:
       "A newly built boutique hotel on NE 23rd, designed suite by suite for a stylish, design-forward stay. Exposed wood beams, warm oak, and deep navy accents create light-filled spaces that feel modern, intimate, and distinctly Portland.",
   },
-];
-
-const rooms = [
-  "Living Room",
-  "Kitchen",
-  "Bedroom",
-  "Bathroom",
-  "Dining Room",
-  "Home Office",
-  "Outdoor Living",
-  "Nursery & Kids",
-  "Basement",
-  "Entryway",
 ];
 
 const designFaqs = [
@@ -328,14 +316,24 @@ export default function InteriorDesignPage() {
             Rooms We Design
           </h2>
           <div className="flex flex-wrap justify-center gap-4">
-            {rooms.map((room) => (
-              <span
-                key={room}
-                className="border border-teal/30 text-charcoal px-6 py-3 text-sm tracking-wider"
-              >
-                {room}
-              </span>
-            ))}
+            {designRooms.map((room) =>
+              room.slug ? (
+                <Link
+                  key={room.name}
+                  href={`/interior-design/${room.slug}`}
+                  className="border border-teal text-teal px-6 py-3 text-sm tracking-wider hover:bg-teal hover:text-white transition-colors"
+                >
+                  {room.name} Design &rarr;
+                </Link>
+              ) : (
+                <span
+                  key={room.name}
+                  className="border border-teal/30 text-charcoal px-6 py-3 text-sm tracking-wider"
+                >
+                  {room.name}
+                </span>
+              ),
+            )}
           </div>
         </div>
       </section>
