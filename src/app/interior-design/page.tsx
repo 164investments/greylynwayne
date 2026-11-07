@@ -7,6 +7,7 @@ import {
   FAQJsonLd,
 } from "@/components/JsonLd";
 import SplitHero from "@/components/SplitHero";
+import { metroLinks } from "@/data/service-areas";
 import SodGallery from "@/components/SodGallery";
 
 export const metadata: Metadata = {
@@ -112,25 +113,6 @@ const projects = [
     description:
       "A newly built boutique hotel on NE 23rd, designed suite by suite for a stylish, design-forward stay. Exposed wood beams, warm oak, and deep navy accents create light-filled spaces that feel modern, intimate, and distinctly Portland.",
   },
-];
-
-// Internal links to the city pages that get interior-design search demand —
-// passes this money page's authority down with exact "interior design in
-// {city}" anchor text (the term those pages target but currently receive from
-// nowhere on the site).
-const metroLinks = [
-  { name: "Portland", slug: "portland" },
-  { name: "Lake Oswego", slug: "lake-oswego" },
-  { name: "West Linn", slug: "west-linn" },
-  { name: "Beaverton", slug: "beaverton" },
-  { name: "Tigard", slug: "tigard" },
-  { name: "Tualatin", slug: "tualatin" },
-  { name: "Hillsboro", slug: "hillsboro" },
-  { name: "Happy Valley", slug: "happy-valley" },
-  { name: "Bend", slug: "bend" },
-  { name: "Vancouver", slug: "vancouver" },
-  { name: "Camas", slug: "camas" },
-  { name: "Bethany", slug: "bethany" },
 ];
 
 const rooms = [

@@ -2237,3 +2237,20 @@ export const cityInteriorContent: Record<string, { note: string; faqs: CityFAQ[]
     ],
   },
 };
+
+// City pages the money pages (/interior-design, /home-staging) link to with
+// exact "{service} in {city}" anchor text, passing their authority down.
+export const metroLinks = [
+  { name: "Portland", slug: "portland" },
+  { name: "Lake Oswego", slug: "lake-oswego" },
+  { name: "West Linn", slug: "west-linn" },
+  { name: "Beaverton", slug: "beaverton" },
+  { name: "Tigard", slug: "tigard" },
+  { name: "Tualatin", slug: "tualatin" },
+  { name: "Hillsboro", slug: "hillsboro" },
+  { name: "Happy Valley", slug: "happy-valley" },
+  { name: "Bend", slug: "bend" },
+  { name: "Vancouver", slug: "vancouver" },
+  { name: "Camas", slug: "camas" },
+  { name: "Bethany", slug: "bethany" },
+];

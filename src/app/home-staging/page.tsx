@@ -9,6 +9,8 @@ import {
 import SplitHero from "@/components/SplitHero";
 import StagedHomeCard from "@/components/StagedHomeCard";
 import { featuredHomes } from "@/data/staging-portfolio";
+import { metroLinks } from "@/data/service-areas";
+import { blogPosts } from "@/data/blog-posts";
 
 export const metadata: Metadata = {
   title: "Home Staging Portland, Oregon | Sell Faster & For Top Dollar",
@@ -47,28 +49,66 @@ const benefits = [
   },
 ];
 
+// bestFor/link restate the description as a skimmable label (no new claims).
 const services = [
   {
     title: "Occupied Home Staging",
+    bestFor: "You're living in the home while it's listed",
     description:
       "We work with your existing furnishings and supplement with our curated inventory to create a cohesive, buyer-friendly presentation that helps your lived-in home shine.",
+    link: { href: "/blog/staging-an-occupied-home", label: "How to stage a home you're still living in" },
   },
   {
     title: "Vacant Home Staging",
+    bestFor: "The home is already empty",
     description:
       "Full-service staging with our designer furniture and decor, transforming empty rooms into warm, inviting spaces buyers can envision as home.",
+    link: { href: "/blog/home-staging-checklist", label: "The room-by-room staging checklist" },
   },
   {
     title: "New Construction & Model Homes",
+    bestFor: "Builders and developers",
     description:
       "Partner with builders and developers to showcase model homes that highlight the full potential of new builds and drive sales for entire communities.",
+    link: { href: "/new-construction-staging", label: "New construction staging" },
   },
   {
     title: "Luxury & Estate Staging",
+    bestFor: "Luxury and estate listings",
     description:
       "High-end staging tailored for luxury properties, featuring premium furnishings and thoughtful design details that match the caliber of the home.",
+    link: { href: "/street-of-dreams", label: "Our Street of Dreams homes" },
   },
 ];
+
+// Quick answers, each restated from the FAQ, process and CTA copy below.
+const atAGlance = [
+  { label: "Consultation", value: "Free, with same-week availability" },
+  { label: "Quote", value: "Custom, based on home size, rooms staged, and occupied or vacant" },
+  { label: "Install", value: "Typically completed in one day" },
+  { label: "Staging period", value: "First 30 days on market, with extensions available" },
+  { label: "Who we work with", value: "Homeowners, real estate agents and builders" },
+  { label: "Service area", value: "All of the Portland metro" },
+];
+
+const jumpLinks = [
+  { href: "#services", label: "Services" },
+  { href: "#process", label: "Process" },
+  { href: "#faq", label: "FAQ" },
+  { href: "#areas", label: "Areas we serve" },
+];
+
+const guideSlugs = [
+  "cost-to-stage-a-home-portland",
+  "is-home-staging-worth-it",
+  "home-staging-checklist",
+  "staging-an-occupied-home",
+  "how-to-stage-your-house-to-sell",
+  "home-staging-tips",
+];
+const guides = guideSlugs
+  .map((slug) => blogPosts.find((p) => p.slug === slug))
+  .filter((p) => p !== undefined);
 
 const stagingFaqs = [
   {
@@ -173,6 +213,39 @@ export default function HomeStagingPage() {
         </div>
       </section>
 
+      {/* At a glance — skimmable quick answers */}
+      <section className="pb-24 lg:pb-32">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8">
+          <div className="border border-teal/30 p-8 lg:p-12">
+            <h2 className="font-[family-name:var(--font-playfair)] text-2xl md:text-3xl text-charcoal mb-8">
+              Home Staging in Portland at a Glance
+            </h2>
+            <dl className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6">
+              {atAGlance.map((item) => (
+                <div key={item.label}>
+                  <dt className="text-teal text-xs tracking-wider uppercase mb-1">
+                    {item.label}
+                  </dt>
+                  <dd className="text-charcoal-light text-sm leading-relaxed">
+                    {item.value}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+            <nav
+              aria-label="On this page"
+              className="mt-8 pt-6 border-t border-gray-200 flex flex-wrap gap-x-6 gap-y-2 text-sm"
+            >
+              {jumpLinks.map((l) => (
+                <a key={l.href} href={l.href} className="text-teal hover:text-teal-dark underline-offset-4 hover:underline">
+                  {l.label}
+                </a>
+              ))}
+            </nav>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits */}
       <section className="py-24 lg:py-32 bg-warm">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -234,14 +307,14 @@ export default function HomeStagingPage() {
       )}
 
       {/* Services */}
-      <section className="py-24 lg:py-32">
+      <section id="services" className="py-24 lg:py-32 scroll-mt-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
               Staging Services
             </p>
             <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal">
-              Staging Solutions for Every Portland Property
+              Home Staging Services for Every Portland Property
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -250,12 +323,21 @@ export default function HomeStagingPage() {
                 key={service.title}
                 className="border border-gray-200 p-8 lg:p-10 hover:border-teal transition-colors"
               >
-                <h3 className="font-[family-name:var(--font-playfair)] text-xl mb-3">
+                <h3 className="font-[family-name:var(--font-playfair)] text-xl mb-2">
                   {service.title}
                 </h3>
-                <p className="text-charcoal-light text-sm leading-relaxed">
+                <p className="text-teal text-xs tracking-wider uppercase mb-3">
+                  Best for: {service.bestFor}
+                </p>
+                <p className="text-charcoal-light text-sm leading-relaxed mb-4">
                   {service.description}
                 </p>
+                <Link
+                  href={service.link.href}
+                  className="text-sm text-teal hover:text-teal-dark underline-offset-4 hover:underline"
+                >
+                  {service.link.label} &rarr;
+                </Link>
               </div>
             ))}
           </div>
@@ -263,7 +345,7 @@ export default function HomeStagingPage() {
       </section>
 
       {/* Process */}
-      <section className="py-24 lg:py-32 bg-teal">
+      <section id="process" className="py-24 lg:py-32 bg-teal scroll-mt-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-teal-bg text-sm tracking-[0.3em] uppercase mb-4">
@@ -311,7 +393,7 @@ export default function HomeStagingPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 lg:py-32">
+      <section id="faq" className="py-24 lg:py-32 scroll-mt-28">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <div className="text-center mb-16">
             <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
@@ -332,6 +414,58 @@ export default function HomeStagingPage() {
                 </p>
               </div>
             ))}
+          </div>
+          {guides.length > 0 && (
+            <div className="mt-16">
+              <h2 className="font-[family-name:var(--font-playfair)] text-2xl text-charcoal mb-6">
+                Home Staging Guides
+              </h2>
+              <ul className="space-y-3">
+                {guides.map((post) => (
+                  <li key={post.slug}>
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="text-teal hover:text-teal-dark underline-offset-4 hover:underline"
+                    >
+                      {post.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      </section>
+
+      {/* Metro links — "Home staging in {city}" anchors to the city pages */}
+      <section id="areas" className="pb-24 lg:pb-32 scroll-mt-28">
+        <div className="mx-auto max-w-5xl px-6 lg:px-8 text-center">
+          <p className="text-teal text-sm tracking-[0.3em] uppercase mb-4">
+            Where We Work
+          </p>
+          <h2 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl text-charcoal mb-4">
+            Home Staging Across the Portland Metro
+          </h2>
+          <p className="text-charcoal-light max-w-2xl mx-auto mb-10">
+            We stage homes for homeowners, real estate agents and builders
+            throughout the Portland metro area and Oregon.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {metroLinks.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/service-areas/${c.slug}`}
+                className="px-5 py-2.5 border border-teal/30 text-sm text-charcoal-light hover:border-teal hover:text-teal transition-colors"
+              >
+                Home staging in {c.name}
+              </Link>
+            ))}
+            <Link
+              href="/service-areas"
+              className="px-5 py-2.5 border border-teal text-sm text-teal hover:bg-teal hover:text-white transition-colors"
+            >
+              View All Areas &rarr;
+            </Link>
           </div>
         </div>
       </section>
