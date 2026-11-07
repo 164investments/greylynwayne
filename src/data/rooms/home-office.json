@@ -1,0 +1,160 @@
+{
+  "slug": "home-office",
+  "room": "Home Office",
+  "title": "Home Office Design in Portland",
+  "metaTitle": "Home Office Design in Portland | Greylyn Wayne",
+  "metaDescription": "Portland home office design from a 4x Street of Dreams team: desk layout, lighting, storage and seating, plus OSHA's screen and desk setup numbers. Free call.",
+  "targetKeyword": "home office design portland",
+  "answer": "We plan the desk, lighting and storage so the room works all day and on camera.",
+  "hero": {
+    "src": "/images/sod/alla-famiglia/20.webp",
+    "alt": "Alla Famiglia study: dark wood desk, green leather Chesterfield sofa, a stone fireplace and a wood ceiling"
+  },
+  "picks": {
+    "heading": "Where should the desk go?",
+    "items": [
+      {
+        "name": "Facing into the room",
+        "bestFor": "Video calls with a styled backdrop",
+        "watchFor": "A window behind you glaring the screen"
+      },
+      {
+        "name": "Side-on to a window",
+        "bestFor": "Daylight without screen glare",
+        "watchFor": "Afternoon sun across the desk"
+      },
+      {
+        "name": "Facing a wall",
+        "bestFor": "Small rooms and focused work",
+        "watchFor": "Your back to the door"
+      },
+      {
+        "name": "Floating in a den",
+        "bestFor": "Shared rooms and libraries",
+        "watchFor": "Cords crossing the floor"
+      },
+      {
+        "name": "Closet or nook office",
+        "bestFor": "Small homes and guest rooms",
+        "watchFor": "Little light and air"
+      }
+    ]
+  },
+  "numbers": {
+    "heading": "Desk and screen setup, from OSHA",
+    "rows": [
+      {
+        "label": "Eyes to screen",
+        "value": "20″–40″"
+      },
+      {
+        "label": "Top of the screen",
+        "value": "At or slightly below eye level"
+      },
+      {
+        "label": "Center of the screen",
+        "value": "15°–20° below eye level"
+      },
+      {
+        "label": "Screen off to one side",
+        "value": "35° or less"
+      },
+      {
+        "label": "Leg room under the desk",
+        "value": "20″–28″ high"
+      },
+      {
+        "label": "Desktop thickness",
+        "value": "2″ or less"
+      },
+      {
+        "label": "Chair recline",
+        "value": "15° or more from vertical"
+      }
+    ],
+    "sources": [
+      {
+        "label": "OSHA Computer Workstations eTool",
+        "url": "https://www.osha.gov/etools/computer-workstations/components/monitors"
+      }
+    ]
+  },
+  "art": {
+    "src": "/images/rooms/home-office-illustration.webp",
+    "alt": "",
+    "caption": ""
+  },
+  "photos": [
+    {
+      "src": "/images/sod/bespoke/09.webp",
+      "alt": "Bespoke office: a desk with a carved front before black-framed shelves of books and pottery, seen through glass doors",
+      "caption": "Bespoke · 2019 Street of Dreams · Portland",
+      "href": "/street-of-dreams#sod-2019"
+    },
+    {
+      "src": "/images/sod/ohana/11.webp",
+      "alt": "Ohana workspace: wood desk with two carved chairs, a woven pendant and a wall of blue patterned panels and pinned photos",
+      "caption": "Ohana · 2021 Street of Dreams · Happy Valley",
+      "href": "/street-of-dreams#sod-2021"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do you design home offices and studies?",
+      "answer": "Yes. We plan the desk position, lighting, seating, storage and finishes, then source, install and style the room. If you want built-in shelving or new wiring, your contractor builds it to the design."
+    },
+    {
+      "question": "How much does home office design cost?",
+      "answer": "It depends on the scope, from a single consultation to full-service design. We quote after the discovery call. Our guide to [what an interior designer costs in Portland](/blog/interior-designer-cost-portland) explains how designers usually charge."
+    },
+    {
+      "question": "How far should my screen be from my eyes?",
+      "answer": "OSHA's workstation guidance prefers 20 to 40 inches from eye to screen, with the top of the screen at or slightly below eye level. We plan desk depth and placement around that."
+    },
+    {
+      "question": "Where should the desk go?",
+      "answer": "Often side-on to a window, so daylight doesn't glare on the screen or backlight you on calls. We pick the spot from your room, your work and where the outlets are."
+    },
+    {
+      "question": "What should I have ready for the discovery call?",
+      "answer": "A few phone photos of the room, rough measurements if you have them, and how you work: screens, calls, storage and who else uses the room."
+    }
+  ],
+  "factChecks": [
+    {
+      "claim": "Eye to screen 20–40 inches",
+      "quote": "Generally, the preferred viewing distance is between 20 and 40 inches (50 and 100 cm) from the eye to the front surface of the computer screen",
+      "url": "https://www.osha.gov/etools/computer-workstations/components/monitors"
+    },
+    {
+      "claim": "Top of screen at or slightly below eye level",
+      "quote": "The top of the monitor should be at or slightly below eye level.",
+      "url": "https://www.osha.gov/etools/computer-workstations/components/monitors"
+    },
+    {
+      "claim": "Center of screen 15–20° below eye level",
+      "quote": "The center of the computer monitor should normally be located 15 to 20 degrees below horizontal eye level",
+      "url": "https://www.osha.gov/etools/computer-workstations/components/monitors"
+    },
+    {
+      "claim": "Screen no more than 35° to one side",
+      "quote": "Monitors should not be farther than 35 degrees to the left or right.",
+      "url": "https://www.osha.gov/etools/computer-workstations/components/monitors"
+    },
+    {
+      "claim": "Leg clearance 20–28 inches high",
+      "quote": "Clearance for the legs, under the desktop, should generally be between 20-28 inches (50-72 cm) high.",
+      "url": "https://www.osha.gov/etools/computer-workstations/components/desks"
+    },
+    {
+      "claim": "Work surface 2 inches thick or less",
+      "quote": "The work surface should generally be no more than 2 inches thick.",
+      "url": "https://www.osha.gov/etools/computer-workstations/components/keyboards"
+    },
+    {
+      "claim": "Chair reclines at least 15° from vertical",
+      "quote": "An adjustment that allows the user to recline at least 15 degrees from the vertical.",
+      "url": "https://www.osha.gov/etools/computer-workstations/components/chairs"
+    }
+  ]
+}

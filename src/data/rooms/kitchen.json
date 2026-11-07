@@ -1,0 +1,181 @@
+{
+  "slug": "kitchen",
+  "room": "Kitchen",
+  "title": "Kitchen Design in Portland",
+  "metaTitle": "Kitchen Design in Portland | Greylyn Wayne Interior Design",
+  "metaDescription": "Portland kitchen design from a 4x Street of Dreams team: layout, cabinetry, counters, lighting and styling. Layout picks and the clearances that matter. Free discovery call.",
+  "targetKeyword": "kitchen design portland",
+  "answer": "We design the layout, finishes, lighting and styling. Your contractor builds it.",
+  "hero": {
+    "src": "/images/sod/bespoke/03.webp",
+    "alt": "Bespoke kitchen by Greylyn Wayne: white cabinets, copper range hood, quartz island with stools and an oak cart"
+  },
+  "picks": {
+    "heading": "Which kitchen layout fits your home?",
+    "items": [
+      {
+        "name": "Galley",
+        "plan": "galley",
+        "bestFor": "One cook in a narrow room",
+        "watchFor": "People cutting through the aisle"
+      },
+      {
+        "name": "L-shape",
+        "plan": "l-shape",
+        "bestFor": "Corner rooms and open plans",
+        "watchFor": "Long legs that stretch your steps"
+      },
+      {
+        "name": "U-shape",
+        "plan": "u-shape",
+        "bestFor": "The most counter and storage",
+        "watchFor": "A tight middle and dark corners"
+      },
+      {
+        "name": "Island",
+        "plan": "island",
+        "bestFor": "Open plans with room for stools",
+        "watchFor": "An island too big for its aisles"
+      },
+      {
+        "name": "Peninsula",
+        "plan": "peninsula",
+        "bestFor": "Seating where an island won't fit",
+        "watchFor": "A single way in"
+      },
+      {
+        "name": "One-wall",
+        "plan": "one-wall",
+        "bestFor": "Studios, condos and ADUs",
+        "watchFor": "The least prep space"
+      }
+    ]
+  },
+  "numbers": {
+    "heading": "Kitchen clearances",
+    "rows": [
+      {
+        "label": "Work aisle, one cook",
+        "value": "42″ or more"
+      },
+      {
+        "label": "Work aisle, two cooks",
+        "value": "48″ or more"
+      },
+      {
+        "label": "Walkway",
+        "value": "36″ or more"
+      },
+      {
+        "label": "Behind stools, to walk past",
+        "value": "44″ or more"
+      },
+      {
+        "label": "Width per stool",
+        "value": "24″"
+      },
+      {
+        "label": "Counter beside the sink",
+        "value": "24″ one side, 18″ the other"
+      },
+      {
+        "label": "Counter beside the cooktop",
+        "value": "12″ one side, 15″ the other"
+      },
+      {
+        "label": "Work triangle: sink, cooktop, fridge",
+        "value": "26′ or less total; each side 4′–9′"
+      }
+    ],
+    "sources": [
+      {
+        "label": "NKBA Kitchen Planning Guidelines",
+        "url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf"
+      }
+    ]
+  },
+  "art": {
+    "src": "/images/rooms/kitchen-illustration.webp",
+    "alt": "",
+    "caption": ""
+  },
+  "photos": [
+    {
+      "src": "/images/sod/alla-famiglia/06.webp",
+      "alt": "Alla Famiglia kitchen: oak island with five stools under woven pendants, white cabinets and a window wall",
+      "caption": "Alla Famiglia · 2025 Street of Dreams · Lake Oswego",
+      "href": "/alla-famiglia"
+    },
+    {
+      "src": "/images/sod/vista/10.webp",
+      "alt": "Vista kitchen: oak island with white stools, brass faucet and a black-framed window over the range",
+      "caption": "Vista · 2024 Street of Dreams · Portland",
+      "href": "/street-of-dreams#sod-2024"
+    },
+    {
+      "src": "/images/interiors/kearney/02.webp",
+      "alt": "NW Kearney kitchen: grey waterfall island with stools, exposed beam and brick, patterned tile floor",
+      "caption": "NW Kearney · Portland",
+      "href": "/interior-design"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do you design kitchens for remodels and new builds?",
+      "answer": "Yes. We plan the layout and choose cabinetry, counters, lighting, color and seating. A licensed contractor or your builder does the construction. Jody Wallace has led the interior design of four Street of Dreams homes alongside their builders."
+    },
+    {
+      "question": "How much does kitchen design cost?",
+      "answer": "It depends on the scope, from a single consultation to full-service design. We quote after the discovery call. Our guide to [what an interior designer costs in Portland](/blog/interior-designer-cost-portland) explains how designers usually charge."
+    },
+    {
+      "question": "How much room do I need for an island?",
+      "answer": "Plan at least a 42″ work aisle on the working sides (48″ if two people cook), a 36″ walkway elsewhere, and 24″ of counter width for each stool. Those are the NKBA's planning guidelines; we check them against your actual room."
+    },
+    {
+      "question": "Can you help without a full remodel?",
+      "answer": "Often. A design consultation can focus on color, lighting, hardware and styling around the cabinets you already have."
+    },
+    {
+      "question": "What should I have ready for the discovery call?",
+      "answer": "A few phone photos of the kitchen, rough room measurements if you have them, and how you cook and gather. That's enough to talk through what's possible."
+    }
+  ],
+  "factChecks": [
+    {
+      "claim": "Work aisle 42″ one cook, 48″ two cooks",
+      "quote": "at least 42″ (1067 mm) for one cook and at least 48″ (1219 mm) for multiple cooks",
+      "url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf"
+    },
+    {
+      "claim": "Walkway 36″",
+      "quote": "The width of a walkway should be at least 36″ (914 mm)",
+      "url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf"
+    },
+    {
+      "claim": "44″ behind seated diners to walk past",
+      "quote": "allow at least 44″ (1118 mm) to walk past",
+      "url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf"
+    },
+    {
+      "claim": "24″ wide per seated diner at a 36″ counter",
+      "quote": "Allow a 24″ wide × 15″ deep (610 mm × 381 mm) knee space for each seated diner",
+      "url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf"
+    },
+    {
+      "claim": "Sink landing 24″ and 18″",
+      "quote": "Include at least a 24″ (610 mm) wide landing area* to one side of the sink and at least an 18″ (457 mm) wide landing area on the other side",
+      "url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf"
+    },
+    {
+      "claim": "Cooktop landing 12″ and 15″",
+      "quote": "Include a minimum of 12″ (305 mm) of landing area on one side of a cooking surface and 15″ (381 mm) on the other side",
+      "url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf"
+    },
+    {
+      "claim": "Work triangle ≤26′, legs 4′–9′",
+      "quote": "the sum of the three traveled distances should total no more than 26′ (7.9 m), with no single leg of the triangle measuring less than 4′ (1.2 m) or more than 9′ (2.7 m)",
+      "url": "https://media.nkba.org/uploads/2022/05/Kitchen-Planning-Guidelines.pdf"
+    }
+  ]
+}

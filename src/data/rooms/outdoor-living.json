@@ -1,0 +1,178 @@
+{
+  "slug": "outdoor-living",
+  "room": "Outdoor Living",
+  "title": "Outdoor Living Design in Portland",
+  "metaTitle": "Outdoor Living Design in Portland | Greylyn Wayne",
+  "metaDescription": "Portland outdoor living design for patios, decks and courtyards: layout, furniture, fabrics, lighting and styling, plus Oregon deck rules. Free discovery call.",
+  "targetKeyword": "outdoor living design portland",
+  "answer": "We plan, furnish, light and style outdoor rooms. Your contractor builds them.",
+  "hero": {
+    "src": "/images/sod/alla-famiglia/02.webp",
+    "alt": "Alla Famiglia covered outdoor room: deep sofas and stump tables, an outdoor kitchen with grill and pizza oven, the pool and slide beyond"
+  },
+  "picks": {
+    "heading": "Which outdoor room fits how you live?",
+    "items": [
+      {
+        "name": "Covered patio",
+        "bestFor": "Using it through Portland's rainy months",
+        "watchFor": "Darker rooms inside behind a deep roof"
+      },
+      {
+        "name": "Open deck",
+        "bestFor": "Sun, views and sloped lots",
+        "watchFor": "Guards and stairs once it's raised"
+      },
+      {
+        "name": "Outdoor kitchen",
+        "bestFor": "Hosts who cook outside often",
+        "watchFor": "Smoke drifting toward seating and doors"
+      },
+      {
+        "name": "Fire feature seating",
+        "bestFor": "Cool evenings and shoulder seasons",
+        "watchFor": "Clearance from walls, roofs and furniture"
+      },
+      {
+        "name": "Courtyard",
+        "bestFor": "Privacy close to the house",
+        "watchFor": "Too little sun in a tight space"
+      }
+    ]
+  },
+  "numbers": {
+    "heading": "Oregon deck rules that shape the layout",
+    "rows": [
+      {
+        "label": "Guard required where the surface is",
+        "value": "More than 30″ above grade, within 36″ of the edge"
+      },
+      {
+        "label": "Guard height, deck or porch",
+        "value": "36″"
+      },
+      {
+        "label": "Gaps in a guard",
+        "value": "A 4″ ball must not pass"
+      },
+      {
+        "label": "Landing outside an exterior door",
+        "value": "36″ deep"
+      },
+      {
+        "label": "Deck stairs",
+        "value": "Risers 8″ or less, treads 9″ or more"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Oregon Residential Specialty Code 2023, Chapter 3 (accepted through March 2027)",
+        "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+      }
+    ]
+  },
+  "art": {
+    "src": "/images/rooms/deck-guard-height-illustration.webp",
+    "alt": "Pen-and-ink sketch: a tape measure stands on a deck, measuring from the boards to the top of the guard railing.",
+    "caption": "Illustrated: measuring deck guard height, boards to rail"
+  },
+  "photos": [
+    {
+      "src": "/images/sod/alla-famiglia/37.webp",
+      "alt": "Alla Famiglia courtyard: hanging daybed swing with white cushions beside a concrete fire table, copper lanterns on the wall",
+      "caption": "Alla Famiglia courtyard · 2025 Street of Dreams · Lake Oswego",
+      "href": "/alla-famiglia"
+    },
+    {
+      "src": "/images/sod/bespoke/17.webp",
+      "alt": "Bespoke patio: woven lounge chairs and a round textured table on a blue rug beside a linear fireplace",
+      "caption": "Bespoke · 2019 Street of Dreams · Portland",
+      "href": "/street-of-dreams#sod-2019"
+    },
+    {
+      "src": "/images/sod/ohana/16.webp",
+      "alt": "Ohana covered patio: coral-cushioned sectional, white rug, stools and a fireplace set into the wall",
+      "caption": "Ohana · 2021 Street of Dreams · Happy Valley",
+      "href": "/street-of-dreams#sod-2021"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do you design outdoor spaces as well as interiors?",
+      "answer": "Yes. We plan the layout and choose furniture, outdoor fabrics, rugs, lighting and planters for patios, decks and courtyards, then style the space. Your contractor, builder or landscaper builds the structure."
+    },
+    {
+      "question": "How much does outdoor living design cost?",
+      "answer": "It depends on the scope, from a single consultation to full-service design. We quote after the discovery call. Our guide to [what an interior designer costs in Portland](/blog/interior-designer-cost-portland) explains how designers usually charge."
+    },
+    {
+      "question": "How far should a wood fire pit be from the house?",
+      "answer": "The Oregon Fire Code says recreational fires shall not be conducted within 25 feet of a structure or combustible material. Gas fireplaces and fire tables follow their own installation rules. Check with your contractor and local fire department before we plan seating around one."
+    },
+    {
+      "question": "When does a deck need a railing?",
+      "answer": "Oregon's 2023 residential code requires guards where a walking surface is more than 30 inches above the grade below, and they must be at least 36 inches tall. Your contractor confirms the details with the permit; we plan the furniture around them."
+    },
+    {
+      "question": "What outdoor furniture holds up to Portland rain?",
+      "answer": "Pieces made for outdoor use, cushions that dry quickly, and a covered spot or storage for the wettest months. We choose fabrics and finishes for how exposed your space actually is."
+    }
+  ],
+  "factChecks": [
+    {
+      "claim": "Guard required more than 30″ above grade within 36″ of the edge",
+      "quote": "that are located more than 30 inches (762 mm) measured vertically to the floor or grade below at any point within 36 inches (914 mm) horizontally to the edge of the open side",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Guard height 36″",
+      "quote": "shall be not less than 36 inches (914 mm) in height as measured vertically above the adjacent walking surface or the line connecting the nosings",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Stair guard height 34″",
+      "quote": "Guards on the open sides of stairs shall have a height of not less than 34 inches (864 mm) measured vertically from a line connecting the nosings",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Guard openings: 4″ sphere",
+      "quote": "Required guards shall not have openings from the walking surface to the required guard height that allow passage of a sphere 4 inches (102 mm) in diameter",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Stair guard openings: 5″ sphere",
+      "quote": "Guards on the open side of stairs shall not have openings that allow passage of a sphere 5 inches ( 127 mm) in diameter",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Exterior door landing 36″ deep",
+      "quote": "Landings shall have a dimension of not less than 36 inches (914 mm) measured in the direction of travel.",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Exterior landing slope 2 percent",
+      "quote": "The slope at exterior landings shall not exceed 1 / 4 unit vertical in 12 units horizontal (2 percent).",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Risers 8″ max (Oregon)",
+      "quote": "The riser height shall be not more than 8 inches ( 203 mm).",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Treads 9″ min (Oregon)",
+      "quote": "The tread depth shall be not less than 9 inches ( 229 mm).",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "FAQ: recreational fires 25 feet from a structure",
+      "quote": "Recreational fires shall not be conducted within 25 feet (7620 mm) of a structure or combustible material.",
+      "url": "https://up.codes/viewer/oregon/or-fire-code-2022/chapter/3/general-requirements"
+    },
+    {
+      "claim": "2023 ORSC still usable during the 2026 ORSC phase-in (mandatory April 1, 2027)",
+      "quote": "effective Oct. 1, 2026, with a six-month phase-in period and mandatory April 1, 2027",
+      "url": "https://www.oregon.gov/bcd/laws-rules/Documents/20261001-2026orsc-adoption-pr.pdf"
+    }
+  ]
+}

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import { Fragment } from "react";
 import { blogPosts, getPost } from "@/data/blog-posts";
 import type { Block } from "@/data/blog/_schema";
+import { renderInline } from "@/lib/inline";
 import {
   ArticleJsonLd,
   BreadcrumbJsonLd,
@@ -35,53 +35,6 @@ export async function generateMetadata({
       images: [{ url: "/images/og-image.png", width: 2500, height: 1312 }],
     },
   };
-}
-
-// --- markdown-lite: **bold** and [label](/path) -> React nodes ---
-function renderInline(text: string, keyPrefix: string) {
-  // Split on links first, then bold within each segment.
-  const linkRe = /\[([^\]]+)\]\(([^)]+)\)/g;
-  const nodes: React.ReactNode[] = [];
-  let last = 0;
-  let m: RegExpExecArray | null;
-  let i = 0;
-  while ((m = linkRe.exec(text)) !== null) {
-    if (m.index > last)
-      nodes.push(
-        <Fragment key={`${keyPrefix}-t${i}`}>{renderBold(text.slice(last, m.index), `${keyPrefix}-b${i}`)}</Fragment>,
-      );
-    const href = m[2];
-    const internal = href.startsWith("/");
-    nodes.push(
-      internal ? (
-        <Link key={`${keyPrefix}-l${i}`} href={href} className="text-teal underline underline-offset-2 hover:text-teal-dark">
-          {m[1]}
-        </Link>
-      ) : (
-        <a key={`${keyPrefix}-l${i}`} href={href} className="text-teal underline underline-offset-2 hover:text-teal-dark" rel="noopener">
-          {m[1]}
-        </a>
-      ),
-    );
-    last = m.index + m[0].length;
-    i++;
-  }
-  if (last < text.length)
-    nodes.push(<Fragment key={`${keyPrefix}-t${i}`}>{renderBold(text.slice(last), `${keyPrefix}-b${i}`)}</Fragment>);
-  return nodes;
-}
-
-function renderBold(text: string, keyPrefix: string) {
-  const parts = text.split(/(\*\*[^*]+\*\*)/g);
-  return parts.map((part, idx) =>
-    part.startsWith("**") && part.endsWith("**") ? (
-      <strong key={`${keyPrefix}-${idx}`} className="font-semibold text-charcoal">
-        {part.slice(2, -2)}
-      </strong>
-    ) : (
-      <Fragment key={`${keyPrefix}-${idx}`}>{part}</Fragment>
-    ),
-  );
 }
 
 function BlockView({ block, i }: { block: Block; i: number }) {
