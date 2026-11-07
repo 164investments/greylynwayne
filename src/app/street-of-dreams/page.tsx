@@ -27,10 +27,13 @@ export const metadata: Metadata = {
   },
 };
 
+// project/highlight restate each description as table labels (no new claims).
 const homes = [
   {
     year: "2025",
     title: "Alla Famiglia",
+    project: "8,725 sq ft European-style estate on 1.6 acres",
+    highlight: "Built by Red Hills Land and Design",
     location: "Lake Oswego, OR",
     image: "/images/sod-2025-alla-famiglia.webp",
     imageAlt:
@@ -42,6 +45,8 @@ const homes = [
   {
     year: "2024",
     title: "Vista",
+    project: "Full-scale remodel of a historic home",
+    highlight: "Original character kept, with custom finishes",
     location: "Northwest Hills, Portland",
     image: "/images/sod-2024-vista.webp",
     imageAlt:
@@ -53,6 +58,8 @@ const homes = [
   {
     year: "2021",
     title: "Ohana",
+    project: "3,800 sq ft custom home, 4 bed / 4 bath",
+    highlight: "Furnished by What's New Furniture",
     location: "Happy Valley, OR",
     image: "/images/sod-2021-ohana.webp",
     imageAlt:
@@ -64,6 +71,8 @@ const homes = [
   {
     year: "2019",
     title: "Bespoke",
+    project: "4,600 sq ft modern farmhouse",
+    highlight: "People's & Professional's Best Interior Design",
     location: "Portland, OR",
     image: "/images/sod-2019-bespoke.webp",
     imageAlt:
@@ -141,6 +150,56 @@ export default function StreetOfDreamsPage() {
             </span>{" "}
             for the Street of Dreams in 2019, 2021, 2024, and 2025.
           </p>
+          <p className="text-charcoal-light leading-relaxed mt-4">
+            Planning a visit? This year&apos;s show dates, tickets and homes are
+            on the{" "}
+            <a
+              href="https://www.streetofdreamspdx.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-teal underline underline-offset-4 hover:text-teal-dark"
+            >
+              official Street of Dreams site
+            </a>
+            .
+          </p>
+        </div>
+
+        {/* At-a-glance table — skimmable labels for each home */}
+        <div className="mx-auto max-w-5xl px-6 lg:px-8 mt-16">
+          <h2 className="font-[family-name:var(--font-playfair)] text-2xl md:text-3xl text-charcoal mb-6 text-center">
+            Our Portland Street of Dreams Homes at a Glance
+          </h2>
+          {/* Below sm, rows stack as labeled blocks so no column scrolls off screen. */}
+          <table className="w-full text-left text-sm block sm:table">
+            <thead className="hidden sm:table-header-group">
+              <tr className="border-b border-teal/40 text-teal text-xs tracking-wider uppercase">
+                <th scope="col" className="py-3 pr-4 font-normal">Year</th>
+                <th scope="col" className="py-3 pr-4 font-normal">Home</th>
+                <th scope="col" className="py-3 pr-4 font-normal">Location</th>
+                <th scope="col" className="py-3 pr-4 font-normal">Project</th>
+                <th scope="col" className="py-3 font-normal">Highlight</th>
+              </tr>
+            </thead>
+            <tbody className="block sm:table-row-group text-charcoal-light">
+              {homes.map((home) => (
+                <tr key={home.year} className="block sm:table-row border-b border-gray-200 align-top py-4 sm:py-0">
+                  <td className="inline sm:table-cell sm:py-4 pr-2 sm:pr-4 text-charcoal">{home.year}</td>
+                  <td className="inline sm:table-cell sm:py-4 sm:pr-4">
+                    <a
+                      href={`#sod-${home.year}`}
+                      className="text-teal hover:text-teal-dark underline-offset-4 hover:underline"
+                    >
+                      {home.title}
+                    </a>
+                  </td>
+                  <td className="block sm:table-cell pt-2 sm:py-4 sm:pr-4"><span className="sm:hidden text-teal text-xs tracking-wider uppercase mr-2">Location</span>{home.location}</td>
+                  <td className="block sm:table-cell pt-1 sm:py-4 sm:pr-4"><span className="sm:hidden text-teal text-xs tracking-wider uppercase mr-2">Project</span>{home.project}</td>
+                  <td className="block sm:table-cell pt-1 sm:py-4"><span className="sm:hidden text-teal text-xs tracking-wider uppercase mr-2">Highlight</span>{home.highlight}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </section>
 
@@ -170,7 +229,7 @@ export default function StreetOfDreamsPage() {
           </div>
           <div className="space-y-16 lg:space-y-24">
             {homes.map((home, i) => (
-              <div key={home.year}>
+              <div key={home.year} id={`sod-${home.year}`} className="scroll-mt-28">
                 <div className="bg-white grid grid-cols-1 md:grid-cols-2 items-stretch overflow-hidden">
                   <div
                     className={`relative aspect-[3/2] md:aspect-auto md:min-h-[360px] ${

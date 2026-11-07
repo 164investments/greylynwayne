@@ -8,14 +8,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // is a fake freshness signal Google learns to ignore. Bump this when the
   // static/city page content is meaningfully revised. (Blog uses per-post dates.)
   const now = new Date("2026-07-04T12:00:00");
+  const layerRevision = new Date("2026-11-06T12:00:00"); // /home-staging + /street-of-dreams skimmable layer
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
-    { url: `${baseUrl}/home-staging`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${baseUrl}/home-staging`, lastModified: layerRevision, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/interior-design`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${baseUrl}/new-construction-staging`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/short-term-rental-design`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/street-of-dreams`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/street-of-dreams`, lastModified: layerRevision, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/alla-famiglia`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/portfolio`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/staged-homes`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
