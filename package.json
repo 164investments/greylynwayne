@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "typecheck": "next typegen && tsc -v | grep 'Version 7' && tsc --noEmit"
+    "typecheck": "next typegen && tsrs --version && tsrs --noEmit"
   },
   "dependencies": {
     "next": "16.4.1",
@@ -24,6 +24,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.1",
     "tailwindcss": "^4",
+    "tsrs": "0.18.0-ts7.1.0-dev.20260929",
     "typescript": "npm:@typescript/typescript6@^6.0.2"
   }
 }
