@@ -16,38 +16,32 @@
       {
         "name": "Galley",
         "plan": "galley",
-        "bestFor": "One cook in a narrow room",
-        "watchFor": "People cutting through the aisle"
+        "bestFor": "One cook in a narrow room"
       },
       {
         "name": "L-shape",
         "plan": "l-shape",
-        "bestFor": "Corner rooms and open plans",
-        "watchFor": "Long legs that stretch your steps"
+        "bestFor": "Corner rooms and open plans"
       },
       {
         "name": "U-shape",
         "plan": "u-shape",
-        "bestFor": "The most counter and storage",
-        "watchFor": "A tight middle and dark corners"
+        "bestFor": "The most counter and storage"
       },
       {
         "name": "Island",
         "plan": "island",
-        "bestFor": "Open plans with room for stools",
-        "watchFor": "An island too big for its aisles"
+        "bestFor": "Open plans with room for stools"
       },
       {
         "name": "Peninsula",
         "plan": "peninsula",
-        "bestFor": "Seating where an island won't fit",
-        "watchFor": "A single way in"
+        "bestFor": "Seating where an island won't fit"
       },
       {
         "name": "One-wall",
         "plan": "one-wall",
-        "bestFor": "Studios, condos and ADUs",
-        "watchFor": "The least prep space"
+        "bestFor": "Studios, condos and ADUs"
       }
     ]
   },

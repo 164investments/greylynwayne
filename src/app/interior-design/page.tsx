@@ -66,7 +66,8 @@ const designServices = [
 
 // Per-project photo galleries. Files live in
 // /public/images/interiors/<slug>/NN.webp — 01 is the hero shown on the
-// project card, 02..count fill the gallery grid below it.
+// project card, 02..count fill the gallery grid below it, minus `omit`
+// (repeat angles of the same room, trimmed 2026-11-09; files kept).
 const heroSrc = (slug: string) => `/images/interiors/${slug}/01.webp`;
 const galleryFrom = (slug: string, from: number, to: number) =>
   Array.from({ length: to - from + 1 }, (_, i) =>
@@ -79,6 +80,7 @@ const projects = [
     title: "NE 56th Townhomes",
     location: "NE 56th Avenue, Portland",
     count: 22,
+    omit: [6, 9, 14, 15, 16, 21],
     description:
       "A collection of newly built Portland townhomes, fully furnished and styled by Greylyn Wayne. Open-concept main floors, light-filled bedrooms, and a crisp, modern palette designed to feel both elevated and effortlessly livable.",
   },
@@ -87,6 +89,7 @@ const projects = [
     title: "NW Kearney",
     location: "2312 NW Kearney, Portland",
     count: 16,
+    omit: [3, 4, 8],
     description:
       "Two distinct residences in a restored Northwest Portland building — one bright and transitional, the other moody and modern with exposed brick and rich, layered tones. A full-service design and furnishing project, living spaces to bedrooms.",
   },
@@ -95,6 +98,7 @@ const projects = [
     title: "1032 SE 12th",
     location: "SE 12th Avenue, Portland",
     count: 16,
+    omit: [2, 6, 8, 9, 13],
     description:
       "A classic inner-Southeast Portland home, designed and furnished throughout. Statement wallpaper, layered textures, and warm wood floors give each room its own character while staying cohesive head to toe.",
   },
@@ -103,6 +107,7 @@ const projects = [
     title: "1036 SE 12th",
     location: "SE 12th Avenue, Portland",
     count: 16,
+    omit: [2, 5, 6, 8, 15],
     description:
       "A neighboring residence styled with bold blues, natural wood, and bright, airy bedrooms. Open living and dining spaces designed for comfort, gathering, and beautiful natural light.",
   },
@@ -111,6 +116,7 @@ const projects = [
     title: "The Adelynn Hotel",
     location: "NE 23rd Avenue, Portland",
     count: 16,
+    omit: [3, 10, 11],
     description:
       "A newly built boutique hotel on NE 23rd, designed suite by suite for a stylish, design-forward stay. Exposed wood beams, warm oak, and deep navy accents create light-filled spaces that feel modern, intimate, and distinctly Portland.",
   },
@@ -261,7 +267,7 @@ export default function InteriorDesignPage() {
 
                 <div className="mt-3 sm:mt-4">
                   <SodGallery
-                    images={galleryFrom(project.slug, 2, project.count)}
+                    images={galleryFrom(project.slug, 2, project.count).filter((_, n) => !project.omit.includes(n + 2))}
                     title={project.title}
                   />
                 </div>

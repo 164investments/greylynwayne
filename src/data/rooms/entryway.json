@@ -1,0 +1,170 @@
+{
+  "slug": "entryway",
+  "room": "Entryway",
+  "title": "Entryway Design in Portland",
+  "metaTitle": "Entryway Design in Portland | Greylyn Wayne Interior Design",
+  "metaDescription": "Portland entryway and mudroom design: storage, bench seating, lighting, rugs, mirrors and finishes for daily life, plus Oregon door and stair rules. Free call.",
+  "targetKeyword": "entryway design portland",
+  "answer": "We plan entries for daily use: storage, seating, lighting, rugs, mirrors and art.",
+  "hero": {
+    "src": "/images/sod/alla-famiglia/36.webp",
+    "alt": "Alla Famiglia mudroom hall: long upholstered bench, checkerboard stone floor, glass walls and a door at the far end"
+  },
+  "picks": {
+    "heading": "What does your entry need most?",
+    "items": [
+      {
+        "name": "Front foyer",
+        "bestFor": "Greeting guests and a first impression"
+      },
+      {
+        "name": "Mudroom",
+        "bestFor": "Kids, dogs and wet boots"
+      },
+      {
+        "name": "Drop zone",
+        "bestFor": "Keys, mail and bags by the door"
+      },
+      {
+        "name": "Stair hall",
+        "bestFor": "Homes where stairs face the door"
+      },
+      {
+        "name": "Narrow entry",
+        "bestFor": "Bungalows, condos and townhomes"
+      }
+    ]
+  },
+  "numbers": {
+    "heading": "Entry door and stair rules in Oregon",
+    "rows": [
+      {
+        "label": "Required exit door, clear width (code minimum)",
+        "value": "32″"
+      },
+      {
+        "label": "Required exit door, clear height (code minimum)",
+        "value": "78″"
+      },
+      {
+        "label": "Landing on each side of an exterior door (code minimum)",
+        "value": "36″ deep"
+      },
+      {
+        "label": "Stair width (code minimum)",
+        "value": "36″"
+      },
+      {
+        "label": "Stair headroom (code minimum)",
+        "value": "6′8″"
+      },
+      {
+        "label": "Stair riser height (code maximum)",
+        "value": "8″"
+      },
+      {
+        "label": "Stair tread depth (code minimum)",
+        "value": "9″"
+      },
+      {
+        "label": "Handrail height (code range)",
+        "value": "30″–38″"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Oregon Residential Specialty Code, 2023 edition, Chapter 3 via UpCodes (accepted alongside the 2026 edition through March 2027)",
+        "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+      }
+    ]
+  },
+  "art": {
+    "src": "/images/rooms/entryway-illustration.webp",
+    "alt": "",
+    "caption": ""
+  },
+  "photos": [
+    {
+      "src": "/images/sod/vista/02.webp",
+      "alt": "Vista stair: twisted brass balusters and handrail beside a marble ledge holding a sculpture",
+      "caption": "Vista stair · 2024 Street of Dreams · Portland",
+      "href": "/street-of-dreams#sod-2024"
+    },
+    {
+      "src": "/images/interiors/kearney/03.webp",
+      "alt": "NW Kearney living room opening through a wide cased doorway to a stair with turned newel posts",
+      "caption": "NW Kearney stair hall · Portland",
+      "href": "/interior-design"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What makes an entryway work day to day?",
+      "answer": "A place to sit, a place to drop keys and mail, hooks or a closet for coats, a rug that handles wet shoes, and good light. We plan those first, then the mirror, art and finishes."
+    },
+    {
+      "question": "How wide does a front door and its landing need to be?",
+      "answer": "Oregon's 2023 residential code requires at least one exit door with 32 inches of clear width and 78 inches of clear height, and a landing at least 36 inches deep on each side of an exterior door. Your contractor confirms the details; we plan the furniture around them."
+    },
+    {
+      "question": "How much does entryway design cost?",
+      "answer": "It depends on the scope, from a single consultation to full-service design. We quote after the discovery call. Our guide to [what an interior designer costs in Portland](/blog/interior-designer-cost-portland) explains how designers usually charge."
+    },
+    {
+      "question": "Can you add a mudroom to a home that doesn't have one?",
+      "answer": "Often. A wall near the garage or back door can take hooks, a bench and closed storage. If it needs built-in cabinetry, we design it and your contractor or cabinetmaker builds it."
+    }
+  ],
+  "factChecks": [
+    {
+      "claim": "Egress door clear width 32″",
+      "quote": "shall provide a clear width of not less than 32 inches (813 mm) where measured between the face of the door and the stop, with the door open 90 degrees (1.57 rad).",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Egress door clear height 78″",
+      "quote": "The clear height of the door opening shall be not less than 78 inches (1981 mm) in height measured from the top of the threshold to the bottom of the stop.",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Landing on each side of each exterior door",
+      "quote": "There shall be a landing or floor on each side of each exterior door.",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Landing 36″ deep",
+      "quote": "Landings shall have a dimension of not less than 36 inches (914 mm) measured in the direction of travel.",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Stair width 36″",
+      "quote": "Stairways shall be not less than 36 inches (914 mm) in clear width at all points above the permitted handrail height and below the required headroom height.",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Stair headroom 6′8″",
+      "quote": "The headroom in stairways shall be not less than 6 feet 8 inches (2032 mm)",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Risers 8″ max (Oregon)",
+      "quote": "The riser height shall be not more than 8 inches ( 203 mm).",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Treads 9″ min (Oregon)",
+      "quote": "The tread depth shall be not less than 9 inches ( 229 mm).",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Handrail height 30″–38″ (Oregon)",
+      "quote": "shall be not less than 30 inches ( 762 mm) and not more than 38 inches (965 mm).",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "2023 ORSC still usable during the 2026 ORSC phase-in (mandatory April 1, 2027)",
+      "quote": "effective Oct. 1, 2026, with a six-month phase-in period and mandatory April 1, 2027",
+      "url": "https://www.oregon.gov/bcd/laws-rules/Documents/20261001-2026orsc-adoption-pr.pdf"
+    }
+  ]
+}

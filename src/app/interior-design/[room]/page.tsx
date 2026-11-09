@@ -97,10 +97,6 @@ export default async function RoomPage({ params }: { params: Promise<{ room: str
                   <span className={label}>Best for</span>
                   {p.bestFor}
                 </p>
-                <p className="text-charcoal-light text-lg leading-relaxed mt-2 sm:mt-1">
-                  <span className={label}>Watch for</span>
-                  {p.watchFor}
-                </p>
               </div>
             ))}
           </div>

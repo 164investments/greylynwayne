@@ -15,33 +15,27 @@
     "items": [
       {
         "name": "Centered on the longest wall",
-        "bestFor": "Primary suites with room on both sides",
-        "watchFor": "A squeezed walkway at the foot"
+        "bestFor": "Primary suites with room on both sides"
       },
       {
         "name": "Facing the view",
-        "bestFor": "Rooms with a window worth waking to",
-        "watchFor": "Morning glare without good shades"
+        "bestFor": "Rooms with a window worth waking to"
       },
       {
         "name": "Under a window",
-        "bestFor": "Narrow rooms with one usable wall",
-        "watchFor": "Drafts and a short headboard"
+        "bestFor": "Narrow rooms with one usable wall"
       },
       {
         "name": "Four-poster or canopy",
-        "bestFor": "High ceilings and larger rooms",
-        "watchFor": "Crowding a low or small room"
+        "bestFor": "High ceilings and larger rooms"
       },
       {
         "name": "Two twins",
-        "bestFor": "Guest rooms and shared kids' rooms",
-        "watchFor": "Room for a nightstand between"
+        "bestFor": "Guest rooms and shared kids' rooms"
       },
       {
         "name": "Tucked in a corner",
-        "bestFor": "Small guest rooms and kids' rooms",
-        "watchFor": "Making the bed against the wall"
+        "bestFor": "Small guest rooms and kids' rooms"
       }
     ]
   },
