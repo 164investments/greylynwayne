@@ -15,33 +15,27 @@
     "items": [
       {
         "name": "Walk-in shower",
-        "bestFor": "Quick daily showers and easy access",
-        "watchFor": "Glass that needs wiping down"
+        "bestFor": "Quick daily showers and easy access"
       },
       {
         "name": "Freestanding tub",
-        "bestFor": "Soakers with floor space to spare",
-        "watchFor": "Room to clean around it"
+        "bestFor": "Soakers with floor space to spare"
       },
       {
         "name": "Tub and shower combo",
-        "bestFor": "Kids' baths and guest baths",
-        "watchFor": "Stepping over the tub wall"
+        "bestFor": "Kids' baths and guest baths"
       },
       {
         "name": "Double vanity",
-        "bestFor": "Two people getting ready at once",
-        "watchFor": "Plumbing for a second sink"
+        "bestFor": "Two people getting ready at once"
       },
       {
         "name": "Separate toilet room",
-        "bestFor": "Shared primary baths",
-        "watchFor": "A door swing that blocks the toilet"
+        "bestFor": "Shared primary baths"
       },
       {
         "name": "Powder room",
-        "bestFor": "Guests, near the main living spaces",
-        "watchFor": "Too small for a full-size vanity"
+        "bestFor": "Guests, near the main living spaces"
       }
     ]
   },

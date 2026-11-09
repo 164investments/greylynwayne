@@ -15,28 +15,23 @@
     "items": [
       {
         "name": "Facing into the room",
-        "bestFor": "Video calls with a styled backdrop",
-        "watchFor": "A window behind you glaring the screen"
+        "bestFor": "Video calls with a styled backdrop"
       },
       {
         "name": "Side-on to a window",
-        "bestFor": "Daylight without screen glare",
-        "watchFor": "Afternoon sun across the desk"
+        "bestFor": "Daylight without screen glare"
       },
       {
         "name": "Facing a wall",
-        "bestFor": "Small rooms and focused work",
-        "watchFor": "Your back to the door"
+        "bestFor": "Small rooms and focused work"
       },
       {
         "name": "Floating in a den",
-        "bestFor": "Shared rooms and libraries",
-        "watchFor": "Cords crossing the floor"
+        "bestFor": "Shared rooms and libraries"
       },
       {
         "name": "Closet or nook office",
-        "bestFor": "Small homes and guest rooms",
-        "watchFor": "Little light and air"
+        "bestFor": "Small homes and guest rooms"
       }
     ]
   },

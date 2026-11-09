@@ -15,28 +15,23 @@
     "items": [
       {
         "name": "Rectangle",
-        "bestFor": "Long rooms and bigger groups",
-        "watchFor": "Narrow rooms with tight walkways"
+        "bestFor": "Long rooms and bigger groups"
       },
       {
         "name": "Round",
-        "bestFor": "Square rooms and easy conversation",
-        "watchFor": "Big rounds where no one reaches the middle"
+        "bestFor": "Square rooms and easy conversation"
       },
       {
         "name": "Square",
-        "bestFor": "Small square rooms, groups of four",
-        "watchFor": "No easy seat for a fifth guest"
+        "bestFor": "Small square rooms, groups of four"
       },
       {
         "name": "Banquette",
-        "bestFor": "Corners, nooks and small rooms",
-        "watchFor": "Sliding in and out of the middle"
+        "bestFor": "Corners, nooks and small rooms"
       },
       {
         "name": "Extending table",
-        "bestFor": "Small rooms that host holidays",
-        "watchFor": "Room to open it to full length"
+        "bestFor": "Small rooms that host holidays"
       }
     ]
   },

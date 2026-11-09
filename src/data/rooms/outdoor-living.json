@@ -15,28 +15,23 @@
     "items": [
       {
         "name": "Covered patio",
-        "bestFor": "Using it through Portland's rainy months",
-        "watchFor": "Darker rooms inside behind a deep roof"
+        "bestFor": "Using it through Portland's rainy months"
       },
       {
         "name": "Open deck",
-        "bestFor": "Sun, views and sloped lots",
-        "watchFor": "Guards and stairs once it's raised"
+        "bestFor": "Sun, views and sloped lots"
       },
       {
         "name": "Outdoor kitchen",
-        "bestFor": "Hosts who cook outside often",
-        "watchFor": "Smoke drifting toward seating and doors"
+        "bestFor": "Hosts who cook outside often"
       },
       {
         "name": "Fire feature seating",
-        "bestFor": "Cool evenings and shoulder seasons",
-        "watchFor": "Clearance from walls, roofs and furniture"
+        "bestFor": "Cool evenings and shoulder seasons"
       },
       {
         "name": "Courtyard",
-        "bestFor": "Privacy close to the house",
-        "watchFor": "Too little sun in a tight space"
+        "bestFor": "Privacy close to the house"
       }
     ]
   },

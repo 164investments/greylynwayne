@@ -15,28 +15,23 @@
     "items": [
       {
         "name": "Facing the fireplace",
-        "bestFor": "Rooms with one clear focal point",
-        "watchFor": "TV and fireplace fighting for one wall"
+        "bestFor": "Rooms with one clear focal point"
       },
       {
         "name": "Sectional",
-        "bestFor": "Families and movie nights",
-        "watchFor": "Hard to rearrange later"
+        "bestFor": "Families and movie nights"
       },
       {
         "name": "Two sofas facing",
-        "bestFor": "Conversation and entertaining",
-        "watchFor": "Needs width for a path around"
+        "bestFor": "Conversation and entertaining"
       },
       {
         "name": "Sofa and two chairs",
-        "bestFor": "Smaller rooms and flexible seating",
-        "watchFor": "Chairs that block the main path"
+        "bestFor": "Smaller rooms and flexible seating"
       },
       {
         "name": "Floating in an open plan",
-        "bestFor": "Open plans that need a room edge",
-        "watchFor": "A rug too small to anchor it"
+        "bestFor": "Open plans that need a room edge"
       }
     ]
   },

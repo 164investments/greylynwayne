@@ -1,0 +1,203 @@
+{
+  "slug": "basement",
+  "room": "Basement",
+  "title": "Basement Design in Portland",
+  "metaTitle": "Basement Design in Portland | Greylyn Wayne Interior Design",
+  "metaDescription": "Portland basement design: family rooms, guest suites, media rooms and offices. We plan layout, finishes, lighting and furniture; Oregon code minimums inside.",
+  "targetKeyword": "basement design portland",
+  "answer": "We plan what your basement becomes: layout, finishes, lighting and furniture.",
+  "hero": {
+    "src": "/images/sod/alla-famiglia/35.webp",
+    "alt": "Alla Famiglia home theater: upholstered stools along a lit counter facing a large screen, dark walls and framed movie posters"
+  },
+  "picks": {
+    "heading": "What should your basement become?",
+    "items": [
+      {
+        "name": "Family room",
+        "bestFor": "Kids, games and overflow guests"
+      },
+      {
+        "name": "Guest suite",
+        "bestFor": "Visiting family and longer stays"
+      },
+      {
+        "name": "Media room",
+        "bestFor": "Movie nights with little daylight"
+      },
+      {
+        "name": "Home gym",
+        "bestFor": "Workouts without leaving home"
+      },
+      {
+        "name": "Home office",
+        "bestFor": "Quiet work away from household noise"
+      }
+    ]
+  },
+  "numbers": {
+    "heading": "Basement code minimums in Oregon",
+    "rows": [
+      {
+        "label": "Ceiling height, new living space (code minimum)",
+        "value": "7′"
+      },
+      {
+        "label": "Ceiling height, existing basement converted to living space (code minimum)",
+        "value": "6′8″"
+      },
+      {
+        "label": "Under beams and ducts in a finished basement (code minimum)",
+        "value": "6′4″"
+      },
+      {
+        "label": "Escape opening in each basement bedroom, clear area (code minimum)",
+        "value": "5.7 sq ft"
+      },
+      {
+        "label": "Escape opening, clear height and width (code minimum)",
+        "value": "24″ high, 20″ wide"
+      },
+      {
+        "label": "Escape opening sill above the floor (code maximum)",
+        "value": "44″"
+      },
+      {
+        "label": "Window well (code minimum)",
+        "value": "9 sq ft, 36″ out from the wall"
+      },
+      {
+        "label": "Stair headroom (code minimum)",
+        "value": "6′8″"
+      }
+    ],
+    "sources": [
+      {
+        "label": "Oregon Residential Specialty Code, 2023 edition, Chapter 3 via UpCodes (accepted alongside the 2026 edition through March 2027)",
+        "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+      }
+    ]
+  },
+  "art": {
+    "src": "/images/rooms/basement-illustration.webp",
+    "alt": "",
+    "caption": ""
+  },
+  "photos": [
+    {
+      "src": "/images/sod/alla-famiglia/27.webp",
+      "alt": "Alla Famiglia lower-level family room: plaid sectional facing a wall TV, with the lower-level kitchen and island behind",
+      "caption": "Alla Famiglia lower-level family room · 2025 Street of Dreams · Lake Oswego",
+      "href": "/alla-famiglia"
+    },
+    {
+      "src": "/images/sod/alla-famiglia/25.webp",
+      "alt": "Alla Famiglia lower-level kitchen: dark wood island with a marble top and round stools, an arched green-tile range alcove behind",
+      "caption": "Alla Famiglia lower-level kitchen · 2025 Street of Dreams · Lake Oswego",
+      "href": "/alla-famiglia"
+    },
+    {
+      "src": "/images/sod/alla-famiglia/26.webp",
+      "alt": "Alla Famiglia lower-level dining nook: white banquette around a round black table under a glass pendant, framed botanical prints",
+      "caption": "Alla Famiglia lower-level dining nook · 2025 Street of Dreams · Lake Oswego",
+      "href": "/alla-famiglia"
+    },
+    {
+      "src": "/images/sod/alla-famiglia/33.webp",
+      "alt": "Alla Famiglia bunk room: built-in wood bunks under an arch with steps, a pink rug and a patterned chair",
+      "caption": "Alla Famiglia bunk room · 2025 Street of Dreams · Lake Oswego",
+      "href": "/alla-famiglia"
+    },
+    {
+      "src": "/images/sod/alla-famiglia/30.webp",
+      "alt": "Alla Famiglia sauna and steam shower: glass-front steam shower beside a cedar sauna, herringbone stone floor and open wood shelves",
+      "caption": "Alla Famiglia sauna and bath · 2025 Street of Dreams · Lake Oswego",
+      "href": "/alla-famiglia"
+    },
+    {
+      "src": "/images/sod/alla-famiglia/29.webp",
+      "alt": "Alla Famiglia laundry room: tall white cabinets over oak drawers, open shelves, a wall-mounted sink and a front-load washer",
+      "caption": "Alla Famiglia laundry room · 2025 Street of Dreams · Lake Oswego",
+      "href": "/alla-famiglia"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How tall does a basement ceiling need to be for living space?",
+      "answer": "Under Oregon's 2023 residential code, new living space needs a ceiling of at least 7 feet. Converting an existing basement needs at least 6 feet 8 inches, and beams or ducts may come down to 6 feet 4 inches. Your contractor confirms what applies with the permit."
+    },
+    {
+      "question": "Can I put a bedroom in my basement?",
+      "answer": "Often, if it meets code. Oregon's 2023 residential code requires an emergency escape opening in each basement bedroom, with at least 5.7 square feet of clear opening and a sill no higher than 44 inches. Your contractor builds that; we design the room around it."
+    },
+    {
+      "question": "How much does basement design cost?",
+      "answer": "It depends on the scope, from a single consultation to full-service design. We quote after the discovery call. Our guide to [what an interior designer costs in Portland](/blog/interior-designer-cost-portland) explains how designers usually charge."
+    },
+    {
+      "question": "How do you make a basement feel less dark?",
+      "answer": "Layer the light: ceiling lights for the whole room, lamps at seating, and wall lights where people walk. Lighter colors, mirrors near windows and rugs that warm up hard floors help too."
+    },
+    {
+      "question": "Do you handle the construction?",
+      "answer": "No. We design the space and choose the finishes, lighting and furniture. A licensed contractor does the construction and handles permits."
+    }
+  ],
+  "factChecks": [
+    {
+      "claim": "Habitable basement ceiling 7′",
+      "quote": "portions of basements containing these spaces shall have a ceiling height of not less than 7 feet (2134 mm).",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Converted existing basement ceiling 6′8″ (Oregon)",
+      "quote": "shall provide a ceiling height of not less than 6 feet 8 inches (2032 mm) for flat ceilings",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Converted space rule applies to an existing basement",
+      "quote": "Conversion of existing nonhabitable space, such as a basement or attic",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Beams/ducts to 6′4″ in habitable basements",
+      "quote": "Beams, girders, ducts or other obstructions in basements containing habitable space shall be permitted to project to within 6 feet 4 inches (1931 mm) of the finished floor.",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Escape opening required in each basement sleeping room (R310.1 as amended Oct. 1, 2024; this sentence was kept)",
+      "quote": "Where basements contain one or more sleeping rooms, an emergency escape and rescue opening shall be required in each sleeping room.",
+      "url": "https://www.oregon.gov/bcd/codes-stand/Documents/23orsc-R310-amend.pdf"
+    },
+    {
+      "claim": "Escape opening 5.7 sq ft",
+      "quote": "Emergency escape and rescue openings shall have a net clear opening of not less than 5.7 square feet",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Escape opening 24″ high, 20″ wide",
+      "quote": "The minimum net clear opening height dimension shall be 24 inches (610 mm). The minimum net clear opening width dimension shall be 20 inches (508 mm).",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Escape opening sill 44″ max",
+      "quote": "Emergency escape and rescue openings shall have the bottom of the clear opening not greater than 44 inches (1118 mm) above the finished floor.",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Window well 9 sq ft, 36″ projection",
+      "quote": "The horizontal area of the area well shall be not less than 9 square feet (0.9 m 2 ), with a horizontal projection and width of not less than 36 inches (914 mm).",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "Stair headroom 6′8″",
+      "quote": "The headroom in stairways shall be not less than 6 feet 8 inches (2032 mm)",
+      "url": "https://up.codes/viewer/oregon/irc-2021/chapter/3/building-planning"
+    },
+    {
+      "claim": "2023 ORSC still usable during the 2026 ORSC phase-in (mandatory April 1, 2027)",
+      "quote": "effective Oct. 1, 2026, with a six-month phase-in period and mandatory April 1, 2027",
+      "url": "https://www.oregon.gov/bcd/laws-rules/Documents/20261001-2026orsc-adoption-pr.pdf"
+    }
+  ]
+}

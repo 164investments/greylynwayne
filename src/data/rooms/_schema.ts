@@ -27,7 +27,7 @@ export interface RoomPage {
   hero: { src: string; alt: string };
   picks: {
     heading: string;
-    items: { name: string; plan?: PlanKind; bestFor: string; watchFor: string }[];
+    items: { name: string; plan?: PlanKind; bestFor: string }[];
   };
   numbers: {
     heading: string;
